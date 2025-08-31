@@ -1,4 +1,3 @@
-import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 import './globals.css'
 import localFont from 'next/font/local'
@@ -16,8 +15,14 @@ const IMAGE = '/static/opengraph.jpg'
 
 export function generateMetadata(): Metadata {
   const isProduction = process.env.VERCEL_ENV === 'production'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
+
+  if (!baseUrl) {
+    throw new Error('NEXT_PUBLIC_SITE_URL is not set')
+  }
 
   return {
+    metadataBase: new URL(baseUrl),
     title: TITLE,
     description: DESCRIPTION,
     robots: isProduction ? undefined : { index: false, follow: false },
@@ -47,8 +52,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const isProduction = process.env.VERCEL_ENV === 'production'
-
   return (
     <html lang="en" className={`${brachial.variable} dark`}>
       <head>

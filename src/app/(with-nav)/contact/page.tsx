@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import { ContactForm } from '@/components/contact/contact-form'
-import AnimationsInit from '@/components/AnimationsInit'
 
 export const metadata: Metadata = {
   title: 'Contact Robo Inspo',
