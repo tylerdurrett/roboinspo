@@ -1,0 +1,46 @@
+/* FX Layer base styles */
+.fx-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  /* Prevent decorative elements from causing horizontal scrollbars */
+  overflow: hidden;
+}
+.fx-layer .fx-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url('/static/bg-texture-export.png');
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: top center;
+}
+.fx-spot {
+  position: absolute;
+  left: calc(var(--x) - var(--r));
+  top: calc(var(--y) - var(--r));
+  width: calc(var(--r) * 2);
+  height: calc(var(--r) * 2);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    oklch(var(--oklch) / var(--a, 0.3)) 0%,
+    oklch(var(--oklch) / 0) 70%
+  );
+  will-change: transform;
+}
+.fx-gradient {
+  position: absolute;
+  left: calc(var(--x) - (var(--w) / 2));
+  top: calc(var(--y) - (var(--h) / 2));
+  width: var(--w);
+  height: var(--h);
+  will-change: transform;
+}
+.fx-ornament {
+  position: absolute;
+  will-change: transform;
+}
+.fx-ornament * {
+  vector-effect: non-scaling-stroke;
+}

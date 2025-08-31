@@ -1,0 +1,25 @@
+/* Blog prose typography customizations */
+.prose h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75rem;
+}
+
+.prose h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5rem;
+}
+
+.prose h5 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5rem;
+}
+
+.prose h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5rem;
+}

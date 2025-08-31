@@ -1,0 +1,32 @@
+.root {
+  display: grid;
+  gap: 0.25em;
+}
+
+.line {
+  position: relative;
+}
+
+.textOutline {
+  color: var(--initial-color, currentColor);
+  -webkit-text-fill-color: var(--initial-color, currentColor);
+  -webkit-text-stroke-width: var(--stroke-width, 2px);
+  -webkit-text-stroke-color: var(--initial-outline-color, currentColor);
+  paint-order: stroke fill;
+}
+
+.maskWrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.textFill {
+  color: var(--revealed-color, var(--color-yellow));
+  /* Draw a stroke in the background color so the white outline
+     underneath is hidden where the fill has been revealed. */
+  -webkit-text-stroke-width: var(--revealed-stroke-width, 3px);
+  -webkit-text-stroke-color: var(--revealed-outline-color, var(--background));
+  paint-order: stroke fill;
+}

@@ -1,0 +1,28 @@
+.root {
+  position: relative;
+}
+
+.outline {
+  /* Outline-only text using WebKit stroke with a readable fallback */
+  color: var(--outline-color, currentColor);
+  -webkit-text-fill-color: transparent; /* outline-only on Blink/WebKit */
+  -webkit-text-stroke-width: var(--stroke-width, 2px);
+  -webkit-text-stroke-color: var(--outline-color, currentColor);
+  paint-order: stroke fill;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.fill {
+  color: var(--fill-color, var(--color-yellow));
+}
+
+.line {
+  display: inline-block;
+  overflow: hidden;
+  will-change: clip-path;
+}

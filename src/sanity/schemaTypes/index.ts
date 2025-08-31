@@ -1,0 +1,21 @@
+import { type SchemaTypeDefinition } from 'sanity'
+
+import { blockContentType } from './blockContentType'
+import { categoryType } from './categoryType'
+import { postType } from './postType'
+import { authorType } from './authorType'
+import { calloutType } from './calloutType'
+import { fileBlockType } from './fileBlockType'
+import { youtubeType } from './youtubeType'
+
+export const schema: { types: SchemaTypeDefinition[] } = {
+  types: [
+    postType,
+    categoryType,
+    blockContentType,
+    authorType,
+    calloutType,
+    fileBlockType,
+    youtubeType,
+  ],
+}
