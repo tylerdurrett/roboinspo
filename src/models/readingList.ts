@@ -15,12 +15,12 @@ export async function getReadingListItems(limit = 90) {
   const readingListItemsQuery = defineQuery(`*[
     _type == "readingList"
     && defined(slug.current)
-  ]|order(publishedAt desc)[0...$limit]{
+  ]|order(savedAt desc)[0...$limit]{
     _id, 
     title, 
     slug, 
     originalUrl,
-    publishedAt, 
+    savedAt, 
     body[]{
       ...,
       _type == "mux.video" => {
@@ -55,7 +55,7 @@ export async function getReadingListItemBySlug(slug: string) {
       slug, 
       originalUrl,
       category->{title, slug}, 
-      publishedAt, 
+      savedAt, 
       editedAt, 
       featuredImage{..., "caption": caption},
       body[]{

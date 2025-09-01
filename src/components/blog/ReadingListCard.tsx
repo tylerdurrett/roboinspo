@@ -37,13 +37,15 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
             <h2 className="text-2xl">{item.title}</h2>
           </div>
           <div className="mt-auto flex items-center gap-4 text-sm text-muted-foreground">
-            <time dateTime={item.publishedAt}>
-              {new Date(item.publishedAt).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric',
-              })}
-            </time>
+            {item.savedAt && (
+              <time dateTime={item.savedAt}>
+                {new Date(item.savedAt).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
+                })}
+              </time>
+            )}
           </div>
         </div>
       </Link>

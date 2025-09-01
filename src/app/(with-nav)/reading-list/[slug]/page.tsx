@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: item.title,
       description: `Reading list item: ${item.title}`,
       type: 'article',
-      publishedTime: item.publishedAt,
+      publishedTime: item.savedAt || undefined,
       images: [
         {
           url: ogImageUrl,
@@ -129,11 +129,13 @@ export default async function ReadingListItem({ params }: Props) {
               <div className="flex items-center gap-2">
                 <span className="text-off-white font-medium">
                   Added on{' '}
-                  {new Date(item.publishedAt).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
+                  {item.savedAt
+                    ? new Date(item.savedAt).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })
+                    : 'Unknown date'}
                 </span>
               </div>
               {bodyAsText && (
