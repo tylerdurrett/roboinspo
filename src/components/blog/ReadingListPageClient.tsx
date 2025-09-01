@@ -1,0 +1,51 @@
+'use client'
+
+import { useState, useMemo } from 'react'
+import { ReadingListCard } from '@/components/blog/ReadingListCard'
+import { CategoryPills } from '@/components/blog/CategoryPills'
+import { ReadingListItemMeta } from '@/models/readingList'
+import { Category } from '@/models/category'
+
+interface ReadingListPageClientProps {
+  items: ReadingListItemMeta[]
+  categories: Category[]
+}
+
+export function ReadingListPageClient({
+  items,
+  categories,
+}: ReadingListPageClientProps) {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+
+  const filteredItems = useMemo(() => {
+    if (!selectedCategory) {
+      return items
+    }
+    return items.filter(
+      (item) => item.category?.slug.current === selectedCategory
+    )
+  }, [items, selectedCategory])
+
+  return (
+    <div className="relative">
+      <CategoryPills
+        categories={categories}
+        selectedCategory={selectedCategory}
+        onCategorySelect={setSelectedCategory}
+      />
+      {filteredItems.length === 0 ? (
+        <p className="px-4 text-muted-foreground sm:px-6 lg:px-8">
+          {selectedCategory
+            ? 'No reading list items in this category yet.'
+            : 'No reading list items yet. Check back soon!'}
+        </p>
+      ) : (
+        <div className="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))] rounded-2xl overflow-hidden relative">
+          {filteredItems.map((item) => (
+            <ReadingListCard key={item._id} item={item} />
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
