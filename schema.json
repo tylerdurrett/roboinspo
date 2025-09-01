@@ -789,12 +789,12 @@
         },
         "optional": true
       },
-      "publishedAt": {
+      "savedAt": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": false
+        "optional": true
       },
       "editedAt": {
         "type": "objectAttribute",

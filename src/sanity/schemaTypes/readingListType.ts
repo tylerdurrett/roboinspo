@@ -52,10 +52,9 @@ export const readingListType = defineType({
       ],
     }),
     defineField({
-      name: 'publishedAt',
+      name: 'savedAt',
       title: 'Added to Reading List',
       type: 'datetime',
-      validation: (rule) => rule.required(),
       initialValue: new Date().toISOString(),
     }),
     defineField({

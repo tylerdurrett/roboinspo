@@ -135,7 +135,7 @@ export type ReadingList = {
     caption?: string
     _type: 'image'
   }
-  publishedAt: string
+  savedAt?: string
   editedAt?: string
   body?: BlockContent
 }
@@ -832,7 +832,7 @@ export type ReadingListItemsQueryResult = Array<{
   title: string
   slug: Slug
   originalUrl: string
-  publishedAt: string
+  publishedAt: null
   body: Array<
     | {
         children?: Array<{
@@ -966,7 +966,7 @@ export type ReadingListItemQueryResult = {
     title: string
     slug: Slug
   } | null
-  publishedAt: string
+  publishedAt: null
   editedAt: string | null
   featuredImage: {
     asset?: {
