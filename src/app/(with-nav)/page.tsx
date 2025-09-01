@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Robo Inspo | Slop Review',
@@ -6,11 +7,12 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen">
-      <img
+    <div className="w-screen h-screen relative">
+      <Image
         src="/static/opengraph.jpg"
         alt="Robo Inspo"
-        className="w-screen h-screen object-fill"
+        fill
+        className="object-fill"
       />
     </div>
   )
