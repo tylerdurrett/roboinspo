@@ -16,7 +16,7 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
   return (
     <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-purple-muted transition-colors duration-300 h-full">
       <Link
-        href={`/reading-list/${item.slug.current}`}
+        href={`/reading/${item.slug.current}`}
         className="group flex h-full flex-col"
       >
         {imageUrl && (
