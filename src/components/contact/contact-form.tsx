@@ -177,8 +177,8 @@ export function ContactForm() {
           <div
             className={`rounded-md p-4 ${
               submitStatus.type === 'success'
-                ? 'bg-green-50 text-green-800 dark:bg-green-900/20 dark:text-green-400'
-                : 'bg-red-50 text-red-800 dark:bg-red-900/20 dark:text-red-400'
+                ? 'bg-success/10 text-success'
+                : 'bg-destructive/10 text-destructive'
             }`}
           >
             {submitStatus.message}

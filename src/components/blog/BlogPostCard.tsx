@@ -15,7 +15,7 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
     ? urlFor(post.mainImage)?.width(550).height(310).url()
     : null
   return (
-    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-purple-muted transition-colors duration-300 h-full">
+    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-accent transition-colors duration-300 h-full">
       <Link
         href={`/blog/${post.category?.slug.current}/${post.slug.current}`}
         className="group flex h-full flex-col"
@@ -31,7 +31,9 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
         )}
         <div className="p-4 sm:p-5 flex flex-1 flex-col space-y-3">
           <div className="flex items-center gap-2">
-            <span className="text-sm text-yellow">{post.category?.title}</span>
+            <span className="text-sm text-muted-foreground">
+              {post.category?.title}
+            </span>
           </div>
           <div className="flex items-baseline justify-between gap-4">
             <h2 className="text-2xl">{post.title}</h2>

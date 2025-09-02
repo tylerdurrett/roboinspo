@@ -77,7 +77,7 @@ export default async function ReadingListItem({ params }: Props) {
         <Container size="xl">
           <header className="mb-8">
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl md:text-2xl font-league-gothic text-yellow">
+              <span className="text-xl md:text-2xl font-league-gothic text-muted-foreground">
                 {item.category?.title}
               </span>
             </div>
@@ -87,7 +87,7 @@ export default async function ReadingListItem({ params }: Props) {
             <div className="flex items-center gap-4 mt-6">
               <Button
                 asChild
-                className="bg-yellow text-black hover:bg-yellow/90"
+                className="bg-accent text-accent-foreground hover:bg-accent/90"
               >
                 <a
                   href={item.originalUrl}

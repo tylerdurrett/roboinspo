@@ -78,7 +78,7 @@ export default async function BlogPost({ params }: Props) {
         <Container size="xl">
           <header className="mb-8">
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl md:text-2xl font-league-gothic text-yellow">
+              <span className="text-xl md:text-2xl font-league-gothic text-muted-foreground">
                 {post.category?.title}
               </span>
             </div>
@@ -87,7 +87,7 @@ export default async function BlogPost({ params }: Props) {
             </h1>
             {post?.subtitle && (
               <div className="flex items-center gap-2">
-                <span className="text-xl md:text-2xl text-yellow">
+                <span className="text-xl md:text-2xl text-muted-foreground">
                   {post.subtitle}
                 </span>
               </div>
@@ -147,7 +147,7 @@ export default async function BlogPost({ params }: Props) {
               {post.author?.name && (
                 <>
                   <div className="flex items-center gap-2">
-                    <span className="text-yellow font-medium">
+                    <span className="text-muted-foreground font-medium">
                       by {post.author.name}
                     </span>
                   </div>

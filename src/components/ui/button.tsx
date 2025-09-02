@@ -10,16 +10,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'text-yellow font-league-gothic uppercase border-3 border-yellow bg-transparent hover:bg-yellow/10 active:bg-yellow/20 hover:border-yellow/80 active:border-yellow',
+          'text-accent-foreground font-league-gothic uppercase border-3 border-accent bg-transparent hover:bg-accent/10 active:bg-accent/20 hover:border-accent/80 active:border-accent',
         destructive:
-          'text-yellow font-league-gothic uppercase bg-destructive border-3 border-destructive shadow-xs hover:bg-destructive/80 active:bg-destructive/90 hover:border-destructive/80 active:border-destructive focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40',
+          'text-destructive-foreground font-league-gothic uppercase bg-destructive border-3 border-destructive shadow-xs hover:bg-destructive/80 active:bg-destructive/90 hover:border-destructive/80 active:border-destructive focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40',
         outline:
-          'text-yellow font-league-gothic uppercase border-3 border-yellow bg-transparent shadow-xs hover:bg-yellow/10 active:bg-yellow/20 hover:border-yellow/80 active:border-yellow dark:border-yellow dark:hover:bg-yellow/10 dark:active:bg-yellow/20',
+          'text-accent-foreground font-league-gothic uppercase border-3 border-accent bg-transparent shadow-xs hover:bg-accent/10 active:bg-accent/20 hover:border-accent/80 active:border-accent',
         secondary:
-          'text-yellow font-league-gothic uppercase bg-secondary border-3 border-secondary shadow-xs hover:bg-secondary/80 active:bg-secondary/90 hover:border-secondary/80 active:border-secondary',
+          'text-secondary-foreground font-league-gothic uppercase bg-secondary border-3 border-secondary shadow-xs hover:bg-secondary/80 active:bg-secondary/90 hover:border-secondary/80 active:border-secondary',
         ghost:
-          'text-yellow font-league-gothic uppercase bg-transparent border-3 border-transparent hover:bg-yellow/10 hover:border-yellow/80 active:bg-yellow/20 active:border-yellow dark:hover:bg-yellow/10 dark:active:bg-yellow/20 dark:hover:border-yellow/80 dark:active:border-yellow',
-        link: 'text-yellow font-league-gothic uppercase underline-offset-4 hover:underline active:underline active:text-yellow',
+          'text-accent-foreground font-league-gothic uppercase bg-transparent border-3 border-transparent hover:bg-accent/10 hover:border-accent/80 active:bg-accent/20 active:border-accent',
+        link: 'text-accent-foreground font-league-gothic uppercase underline-offset-4 hover:underline active:underline active:text-accent-foreground',
       },
       size: {
         default: 'h-9 px-2 sm:px-4 md:px-8 py-5 has-[>svg]:px-3 text-xl',

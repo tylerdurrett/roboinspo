@@ -17,7 +17,7 @@ export default async function ReadingListPage() {
   return (
     <div className="py-16 px-4 sm:px-8 md:px-12">
       <div className="relative isolate py-16 mb-8">
-        <h1 className="relative z-10 px-4 text-5xl sm:text-7xl md:text-8xl sm:px-6 lg:px-8 font-hepta-slab uppercase text-yellow text-center">
+        <h1 className="relative z-10 px-4 text-5xl sm:text-7xl md:text-8xl sm:px-6 lg:px-8 font-hepta-slab uppercase text-foreground text-center">
           Reading List
         </h1>
       </div>

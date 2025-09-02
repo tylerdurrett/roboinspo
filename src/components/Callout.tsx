@@ -36,16 +36,11 @@ export const Callout = ({ value }: CalloutProps) => {
         icon && 'gap-4',
         'bg-background',
         {
-          'border-neutral-200 text-neutral-800 dark:border-neutral-800 dark:text-neutral-200':
-            tone === 'neutral',
-          'border-blue-200 text-blue-800 dark:border-blue-800 dark:text-blue-200':
-            tone === 'info',
-          'border-green-200 text-green-800 dark:border-green-800 dark:text-green-200':
-            tone === 'success',
-          'border-yellow text-yellow-800 dark:border-yellow dark:text-yellow-200':
-            tone === 'warning',
-          'border-red-200 text-red-800 dark:border-red-800 dark:text-red-200':
-            tone === 'destructive',
+          'border-border text-muted-foreground': tone === 'neutral',
+          'border-info/40 text-info': tone === 'info',
+          'border-success/40 text-success': tone === 'success',
+          'border-warning/40 text-warning': tone === 'warning',
+          'border-destructive/40 text-destructive': tone === 'destructive',
         }
       )}
     >

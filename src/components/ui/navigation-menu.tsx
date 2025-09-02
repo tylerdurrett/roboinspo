@@ -69,7 +69,7 @@ const navigationMenuLinkStyle = cva(
       variant: {
         default: '',
         topnav:
-          'group inline-flex h-9 w-max items-center justify-center px-2 sm:px-4 py-2 font-medium text-off-white hover:text-yellow hover:bg-transparent focus:bg-transparent transition-colors outline-none flex-row gap-0 rounded-none uppercase text-[12px]',
+          'group inline-flex h-9 w-max items-center justify-center px-2 sm:px-4 py-2 font-medium text-off-white hover:text-accent-foreground hover:bg-transparent focus:bg-transparent transition-colors outline-none flex-row gap-0 rounded-none uppercase text-[12px]',
       },
     },
     defaultVariants: {

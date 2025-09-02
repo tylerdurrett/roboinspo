@@ -14,7 +14,7 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
     : null
 
   return (
-    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-purple-muted has-[.external-link:hover]:hover:border-purple-muted/60 transition-colors duration-300 h-full relative">
+    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-accent has-[.external-link:hover]:hover:border-accent/60 transition-colors duration-300 h-full relative">
       <Link
         href={`/reading/${item.slug.current}`}
         className="group flex h-full flex-col"
@@ -30,7 +30,9 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
         )}
         <div className="p-4 sm:p-5 flex flex-1 flex-col space-y-3">
           <div className="flex items-center gap-2">
-            <span className="text-sm text-yellow">{item.category?.title}</span>
+            <span className="text-sm text-muted-foreground">
+              {item.category?.title}
+            </span>
           </div>
           <div className="flex items-baseline justify-between gap-4">
             <h2 className="text-2xl">{item.title}</h2>
