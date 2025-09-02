@@ -13,7 +13,7 @@ export default function NotFound() {
     <LenisProvider>
       <FxProvider>
         <NavigationLayout>
-          <div className="px-4 sm:px-8 md:px-12 flex flex-col items-center justify-center h-[calc(80lvh-136px)]">
+          <div className="px-4 sm:px-8 md:px-12 flex flex-col items-center justify-center min-h-[calc(100vh-136px)]">
             <div className="relative isolate py-16 mb-8">
               <h1 className="relative z-10 px-4 text-5xl sm:text-7xl md:text-8xl sm:px-6 lg:px-8 font-brachial uppercase text-yellow text-center">
                 Not Found
