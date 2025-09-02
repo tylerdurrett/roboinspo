@@ -20,8 +20,8 @@ export default defineConfig({
   basePath: '/admin',
   projectId,
   dataset,
-  name: 'v47-website',
-  title: 'v47 Website',
+  name: 'roboinspo',
+  title: 'Robo Inspo',
   icon: RocketIcon,
   // Add and edit the content schema in the './sanity/schemaTypes' folder
   schema,

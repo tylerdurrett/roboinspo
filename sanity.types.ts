@@ -816,7 +816,7 @@ export type PostQueryResult = {
 
 // Source: ./src/models/category.ts
 // Variable: categoriesQuery
-// Query: *[    _type == "category"  ]|order(title asc){    _id,    title,    slug,    description  }
+// Query: *[    _type == "category"    && count(*[_type == "readingList" && references(^._id)]) > 0  ]|order(title asc){    _id,    title,    slug,    description  }
 export type CategoriesQueryResult = Array<{
   _id: string
   title: string
@@ -1093,7 +1093,7 @@ declare module '@sanity/client' {
   interface SanityQueries {
     '*[\n    _type == "post"\n    && defined(slug.current)\n  ]|order(publishedAt desc)[0...$limit]{\n    _id, \n    title, \n    slug, \n    publishedAt, \n    excerpt, \n    body[]{\n      ...,\n      _type == "mux.video" => {\n        asset->\n      }\n    }, \n    category->{title, slug}, \n    mainImage, \n    mainVideo{..., asset->},\n    author->{name, image}\n  }': PostsQueryResult
     '*[_type == "post" && slug.current == $slug && category->slug.current == $categorySlug][0]{\n      _id, \n      title, \n      slug, \n      subtitle, \n      intro, \n      category->{title, slug}, \n      publishedAt, \n      editedAt, \n      excerpt, \n      mainImage{..., "caption": caption},\n      hideMainImageOnPost,\n      mainVideo{..., asset->},\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }, \n      author->{name, image}\n    }': PostQueryResult
-    '*[\n    _type == "category"\n  ]|order(title asc){\n    _id,\n    title,\n    slug,\n    description\n  }': CategoriesQueryResult
+    '*[\n    _type == "category"\n    && count(*[_type == "readingList" && references(^._id)]) > 0\n  ]|order(title asc){\n    _id,\n    title,\n    slug,\n    description\n  }': CategoriesQueryResult
     '*[\n    _type == "readingList"\n    && defined(slug.current)\n  ]|order(savedAt desc)[0...$limit]{\n    _id, \n    title, \n    slug, \n    originalUrl,\n    savedAt, \n    body[]{\n      ...,\n      _type == "mux.video" => {\n        asset->\n      }\n    }, \n    category->{title, slug}, \n    featuredImage\n  }': ReadingListItemsQueryResult
     '*[_type == "readingList" && slug.current == $slug][0]{\n      _id, \n      title, \n      slug, \n      originalUrl,\n      category->{title, slug}, \n      savedAt, \n      editedAt, \n      featuredImage{..., "caption": caption},\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }\n    }': ReadingListItemQueryResult
   }
