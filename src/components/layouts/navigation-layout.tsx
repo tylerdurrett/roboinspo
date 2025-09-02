@@ -1,6 +1,7 @@
 'use client'
 import FxLayer from '@/components/fx/FxLayer'
 import { useFx } from '@/components/fx/FxProvider'
+import { TopNav } from '@/components/layouts/top-nav'
 
 export function NavigationLayout({ children }: { children: React.ReactNode }) {
   const { fx } = useFx()
@@ -17,7 +18,9 @@ export function NavigationLayout({ children }: { children: React.ReactNode }) {
         />
       </div>
 
-      <main>{children}</main>
+      <TopNav />
+
+      <main className="pt-[8vw] min-[1200px]:pt-24">{children}</main>
     </div>
   )
 }
