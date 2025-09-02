@@ -9,10 +9,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans:
-    museo-sans, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
-    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, sans-serif;
+    var(--font-hepta-slab), ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, sans-serif;
   --font-mono: var(--font-geist-mono);
-  --font-brachial: var(--font-brachial);
   --font-league-gothic: league-gothic, sans-serif;
   --font-hepta-slab: var(--font-hepta-slab);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -142,7 +141,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-league-gothic);
+    font-family: var(--font-hepta-slab);
     font-weight: 400;
     font-style: normal;
   }

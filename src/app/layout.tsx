@@ -1,14 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import localFont from 'next/font/local'
 import { Hepta_Slab } from 'next/font/google'
-
-const brachial = localFont({
-  // Path is relative to this file on the filesystem (not the public URL)
-  src: '../../public/fonts/variable.ttf',
-  display: 'swap',
-  variable: '--font-brachial',
-})
 
 const heptaSlab = Hepta_Slab({
   subsets: ['latin'],
@@ -60,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${brachial.variable} ${heptaSlab.variable} dark`}>
+    <html lang="en" className={`${heptaSlab.variable} dark`}>
       <head>
         <link
           rel="preconnect"
@@ -69,7 +61,7 @@ export default function RootLayout({
         />
         <link rel="stylesheet" href="https://use.typekit.net/rlo7jqr.css" />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-hepta-slab antialiased">{children}</body>
     </html>
   )
 }
