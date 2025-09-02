@@ -14,7 +14,7 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
     : null
 
   return (
-    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-purple-muted transition-colors duration-300 h-full">
+    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-purple-muted transition-colors duration-300 h-full relative">
       <Link
         href={`/reading/${item.slug.current}`}
         className="group flex h-full flex-col"
@@ -31,7 +31,6 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
         <div className="p-4 sm:p-5 flex flex-1 flex-col space-y-3">
           <div className="flex items-center gap-2">
             <span className="text-sm text-yellow">{item.category?.title}</span>
-            <ExternalLinkIcon className="w-3 h-3 text-muted-foreground" />
           </div>
           <div className="flex items-baseline justify-between gap-4">
             <h2 className="text-2xl">{item.title}</h2>
@@ -49,6 +48,17 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
           </div>
         </div>
       </Link>
+      {item.originalUrl && (
+        <Link
+          href={item.originalUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-3 right-3 p-1.5 rounded-full bg-background/80 hover:bg-background transition-colors duration-200 z-10"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <ExternalLinkIcon className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
+        </Link>
+      )}
     </article>
   )
 }
