@@ -14,7 +14,7 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
     : null
 
   return (
-    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-purple-muted transition-colors duration-300 h-full relative">
+    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-purple-muted has-[.external-link:hover]:hover:border-purple-muted/60 transition-colors duration-300 h-full relative">
       <Link
         href={`/reading/${item.slug.current}`}
         className="group flex h-full flex-col"
@@ -53,10 +53,10 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
           href={item.originalUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute bottom-3 right-3 p-1.5 rounded-full bg-background/80 hover:bg-background transition-colors duration-200 z-10"
+          className="external-link absolute bottom-3 right-3 p-1.5 rounded-full bg-background/80 hover:bg-background z-10 hover:scale-120 transition-all duration-200"
           onClick={(e) => e.stopPropagation()}
         >
-          <ExternalLinkIcon className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
+          <ExternalLinkIcon className="w-5 h-5 text-muted-foreground hover:text-foreground" />
         </Link>
       )}
     </article>
