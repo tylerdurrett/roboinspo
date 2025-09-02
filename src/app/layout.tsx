@@ -1,12 +1,19 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import localFont from 'next/font/local'
+import { Hepta_Slab } from 'next/font/google'
 
 const brachial = localFont({
   // Path is relative to this file on the filesystem (not the public URL)
   src: '../../public/fonts/variable.ttf',
   display: 'swap',
   variable: '--font-brachial',
+})
+
+const heptaSlab = Hepta_Slab({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-hepta-slab',
 })
 
 const TITLE = 'Robo Inspo'
@@ -53,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${brachial.variable} dark`}>
+    <html lang="en" className={`${brachial.variable} ${heptaSlab.variable} dark`}>
       <head>
         <link
           rel="preconnect"
