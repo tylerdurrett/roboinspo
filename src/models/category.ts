@@ -11,6 +11,7 @@ const options = { next: { revalidate: 30 } }
 export async function getCategories() {
   const categoriesQuery = defineQuery(`*[
     _type == "category"
+    && count(*[_type == "readingList" && references(^._id)]) > 0
   ]|order(title asc){
     _id,
     title,
