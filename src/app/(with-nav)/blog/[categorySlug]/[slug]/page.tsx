@@ -155,7 +155,7 @@ export default async function BlogPost({ params }: Props) {
                 </>
               )}
               <div className="flex items-center gap-2">
-                <span className="text-off-white font-medium">
+                <span className="text-muted-foreground font-medium">
                   {readingTime.text}
                 </span>
               </div>

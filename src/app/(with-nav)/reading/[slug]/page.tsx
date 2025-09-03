@@ -122,7 +122,7 @@ export default async function ReadingListItem({ params }: Props) {
           <div className="font-league-gothic text-xl bg-muted/30 rounded-xl p-6 mb-8 border border-border/50">
             <div className="flex flex-wrap items-center gap-6">
               <div className="flex items-center gap-2">
-                <span className="text-off-white font-medium">
+                <span className="text-muted-foreground font-medium">
                   Added on{' '}
                   {item.savedAt
                     ? new Date(item.savedAt).toLocaleDateString('en-US', {
@@ -137,7 +137,7 @@ export default async function ReadingListItem({ params }: Props) {
                 <>
                   <div className="rounded-full bg-off-white w-2 h-2"></div>
                   <div className="flex items-center gap-2">
-                    <span className="text-off-white font-medium">
+                    <span className="text-muted-foreground font-medium">
                       {readingTime.text}
                     </span>
                   </div>
