@@ -66,10 +66,17 @@ export default async function ReadingListItem({ params }: Props) {
   }
 
   const isAnimatedGif = imageUrl?.toLowerCase().includes('.gif') || false
-  const formattedDate = item.savedAt
+  const formattedDateLong = item.savedAt
     ? new Date(item.savedAt).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
+        day: 'numeric',
+      })
+    : 'unknown date'
+  const formattedDateShort = item.savedAt
+    ? new Date(item.savedAt).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
         day: 'numeric',
       })
     : 'unknown date'
@@ -89,16 +96,20 @@ export default async function ReadingListItem({ params }: Props) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 hover:underline"
               >
-                Read Original Article
+                <span className="sm:hidden">Read Article</span>
+                <span className="hidden sm:inline">Read Original Article</span>
                 <ExternalLinkIcon className="w-4 h-4" />
               </a>
               <span
                 aria-hidden="true"
-                className="mx-2 text-muted-foreground/60"
+                className="mx-2 text-muted-foreground/60 hidden sm:inline"
               >
                 |
               </span>
-              <span className="tracking-wide">added {formattedDate}</span>
+              <span className="tracking-wide">
+                added <span className="sm:hidden">{formattedDateShort}</span>
+                <span className="hidden sm:inline">{formattedDateLong}</span>
+              </span>
             </div>
           </header>
         </Container>
