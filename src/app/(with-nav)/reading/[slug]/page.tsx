@@ -86,7 +86,7 @@ export default async function ReadingListItem({ params }: Props) {
       <article>
         <Container size="xl">
           <header className="mb-8">
-            <h1 className="mb-4 text-5xl md:text-7xl tracking-tight">
+            <h1 className="mb-4 text-4xl sm:text-5xl md:text-7xl tracking-tight">
               {item.title}
             </h1>
             <div className="flex items-center gap-3 mt-6 text-muted-foreground">
