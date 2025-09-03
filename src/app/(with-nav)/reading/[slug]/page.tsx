@@ -1,14 +1,13 @@
 import { notFound } from 'next/navigation'
 import { Container } from '@/components/ui/container'
 import type { Metadata } from 'next'
-import { PortableText, toPlainText } from 'next-sanity'
+import { PortableText } from 'next-sanity'
 import { getReadingListItemBySlug } from '@/models/readingList'
 import Image from 'next/image'
-import { estimateReadingTime } from '@/lib/text'
 import { urlFor } from '@/sanity/lib/image'
 import { portableTextComponents } from '@/components/portable-text-components'
 import { ExternalLinkIcon } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+// removed button in favor of inline byline link
 import '../../blog/prose.css'
 
 type Props = {
@@ -66,10 +65,14 @@ export default async function ReadingListItem({ params }: Props) {
     notFound()
   }
 
-  const bodyAsText = item.body ? toPlainText(item.body) : ''
-  const readingTime = estimateReadingTime(bodyAsText)
-
   const isAnimatedGif = imageUrl?.toLowerCase().includes('.gif') || false
+  const formattedDate = item.savedAt
+    ? new Date(item.savedAt).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })
+    : 'unknown date'
 
   return (
     <div className="py-8 md:py-16">
@@ -79,21 +82,23 @@ export default async function ReadingListItem({ params }: Props) {
             <h1 className="mb-4 text-5xl md:text-7xl tracking-tight">
               {item.title}
             </h1>
-            <div className="flex items-center gap-4 mt-6">
-              <Button
-                asChild
-                className="bg-accent text-accent-foreground hover:bg-accent/90"
+            <div className="flex items-center gap-3 mt-6 text-muted-foreground">
+              <a
+                href={item.originalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 hover:underline"
               >
-                <a
-                  href={item.originalUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  Read Original Article
-                  <ExternalLinkIcon className="w-4 h-4" />
-                </a>
-              </Button>
+                Read Original Article
+                <ExternalLinkIcon className="w-4 h-4" />
+              </a>
+              <span
+                aria-hidden="true"
+                className="mx-2 text-muted-foreground/60"
+              >
+                |
+              </span>
+              <span className="tracking-wide">added {formattedDate}</span>
             </div>
           </header>
         </Container>
@@ -118,22 +123,7 @@ export default async function ReadingListItem({ params }: Props) {
           </Container>
         )}
 
-        <Container size="xl">
-          <div className="flex flex-wrap items-center gap-6">
-            <div className="flex items-center gap-2">
-              <span className="text-muted-foreground font-medium">
-                Added on{' '}
-                {item.savedAt
-                  ? new Date(item.savedAt).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })
-                  : 'Unknown date'}
-              </span>
-            </div>
-          </div>
-        </Container>
+        {/* byline moved into header above */}
 
         {item.body && Array.isArray(item.body) && item.body.length > 0 && (
           <Container size="xl">
