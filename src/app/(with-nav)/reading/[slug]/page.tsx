@@ -118,7 +118,7 @@ export default async function ReadingListItem({ params }: Props) {
           </Container>
         )}
 
-        <Container size="md">
+        <Container size="xl">
           <div className="font-league-gothic text-xl bg-muted/30 rounded-xl p-6 mb-8 border border-border/50">
             <div className="flex flex-wrap items-center gap-6">
               <div className="flex items-center gap-2">
@@ -148,7 +148,7 @@ export default async function ReadingListItem({ params }: Props) {
         </Container>
 
         {item.body && Array.isArray(item.body) && item.body.length > 0 && (
-          <Container size="md">
+          <Container size="xl">
             <div className="prose prose-lg prose-neutral max-w-none dark:prose-invert prose-headings:font-sans prose-headings:font-normal prose-h2:text-3xl md:prose-h2:text-4xl prose-h3:text-2xl md:prose-h3:text-3xl prose-h4:text-xl md:prose-h4:text-2xl">
               <PortableText
                 value={item.body}

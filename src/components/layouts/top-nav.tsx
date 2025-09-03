@@ -14,7 +14,7 @@ export function TopNav() {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex h-[6vw] min-h-[40px] w-full items-center justify-between bg-nav-inactive">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex w-full min-h-[44px] items-center justify-between bg-nav-inactive">
       <div className="flex">
         {navItems.map((item) => {
           const isActive = pathname.startsWith(item.href)
@@ -23,7 +23,7 @@ export function TopNav() {
             <Link
               key={item.href}
               href={item.href}
-              className={`px-[3vw] py-[2vw] text-[2vw] font-medium tracking-wider transition-colors
+              className={`px-[3vw] py-[1vw] text-[2vw] min-h-[44px] flex items-center font-medium tracking-wider transition-colors min-[1200px]:text-lg
                 ${
                   isActive
                     ? 'bg-nav-active text-nav-active-foreground'
@@ -38,7 +38,7 @@ export function TopNav() {
 
       <Link
         href="/"
-        className="h-full w-[6vw] min-w-[40px] bg-nav-active transition-colors hover:bg-nav-active/90"
+        className="py-[1vw] w-[6vw] min-w-[44px] min-h-[44px] flex items-center justify-center bg-nav-active transition-colors hover:bg-nav-active/90"
         aria-label="Home"
       />
     </nav>

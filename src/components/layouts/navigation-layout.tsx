@@ -20,7 +20,7 @@ export function NavigationLayout({ children }: { children: React.ReactNode }) {
 
       <TopNav />
 
-      <main className="pt-[8vw] min-[1200px]:pt-24">{children}</main>
+      <main className="pt-[4vw] min-[1200px]:pt-16">{children}</main>
     </div>
   )
 }
