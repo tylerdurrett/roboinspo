@@ -22,6 +22,10 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
+  --color-nav-active-foreground: var(--nav-active-foreground);
+  --color-nav-active: var(--nav-active);
+  --color-nav-inactive-foreground: var(--nav-inactive-foreground);
+  --color-nav-inactive: var(--nav-inactive);
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
@@ -102,6 +106,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --nav-active: oklch(0.86 0 0);
+  --nav-active-foreground: oklch(0.145 0 0);
+  --nav-inactive: oklch(0.32 0 0);
+  --nav-inactive-foreground: oklch(0.708 0 0);
 }
 
 .dark {
@@ -142,6 +150,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --nav-active: oklch(0.32 0 0);
+  --nav-active-foreground: oklch(0.985 0 0);
+  --nav-inactive: oklch(0.205 0 0);
+  --nav-inactive-foreground: oklch(0.556 0 0);
 }
 
 @layer base {
