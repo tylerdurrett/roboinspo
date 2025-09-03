@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation'
 
 const navItems = [
   { label: 'READING', href: '/reading' },
-  // { label: 'LOOKING', href: '/looking' },
-  // { label: 'THINKING', href: '/thinking' },
-  // { label: 'WATCHING', href: '/watching' },
+  { label: 'LOOKING', href: '/looking' },
+  { label: 'THINKING', href: '/thinking' },
+  { label: 'WATCHING', href: '/watching' },
 ]
 
 export function TopNav() {
