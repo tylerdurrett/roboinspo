@@ -54,6 +54,7 @@
     "remark-html": "^16.0.1",
     "resend": "^4.6.0",
     "sanity": "^3.99.0",
+    "sanity-plugin-media": "^4.0.0",
     "sanity-plugin-mux-input": "^2.8.1",
     "shiki": "^3.7.0",
     "styled-components": "^6.1.19",
