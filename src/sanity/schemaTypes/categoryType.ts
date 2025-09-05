@@ -24,5 +24,17 @@ export const categoryType = defineType({
       name: 'description',
       type: 'text',
     }),
+    defineField({
+      name: 'parent',
+      title: 'Parent Category',
+      type: 'reference',
+      to: { type: 'category' },
+      options: {
+        filter: ({ document }) => ({
+          filter: '_id != $id',
+          params: { id: document._id },
+        }),
+      },
+    }),
   ],
 })

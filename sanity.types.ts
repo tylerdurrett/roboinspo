@@ -193,6 +193,12 @@ export type Category = {
   title: string
   slug: Slug
   description?: string
+  parent?: {
+    _ref: string
+    _type: 'reference'
+    _weak?: boolean
+    [internalGroqTypeReferenceTo]?: 'category'
+  }
 }
 
 export type Author = {
@@ -338,6 +344,15 @@ export type MuxTrack = {
   max_height?: number
 }
 
+export type MediaTag = {
+  _id: string
+  _type: 'media.tag'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  name?: Slug
+}
+
 export type SanityImagePaletteSwatch = {
   _type: 'sanity.imagePaletteSwatch'
   background?: string
@@ -474,6 +489,7 @@ export type AllSanitySchemaTypes =
   | MuxStaticRenditionFile
   | MuxPlaybackId
   | MuxTrack
+  | MediaTag
   | SanityImagePaletteSwatch
   | SanityImagePalette
   | SanityImageDimensions
