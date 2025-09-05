@@ -137,6 +137,12 @@ export type ReadingList = {
   }
   savedAt?: string
   editedAt?: string
+  detailedSummary?: string
+  keyPoints?: Array<string>
+  conclusion?: string
+  shortSummary?: string
+  gist?: string
+  newTitle?: string
   body?: BlockContent
 }
 

@@ -6,6 +6,16 @@ export const readingListType = defineType({
   title: 'Reading List',
   type: 'document',
   icon: BookIcon,
+  fieldsets: [
+    {
+      name: 'summaryFields',
+      title: 'Article Summary & Analysis',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
+    },
+  ],
   fields: [
     defineField({
       name: 'title',
@@ -61,6 +71,50 @@ export const readingListType = defineType({
       name: 'editedAt',
       title: 'Last Edited',
       type: 'datetime',
+    }),
+    defineField({
+      name: 'detailedSummary',
+      title: 'Detailed Summary',
+      type: 'text',
+      description: 'A full summary, include all key information',
+      fieldset: 'summaryFields',
+    }),
+    defineField({
+      name: 'keyPoints',
+      title: 'Key Points',
+      type: 'array',
+      description: '3-5 key points that the author makes',
+      of: [{ type: 'string' }],
+      fieldset: 'summaryFields',
+    }),
+    defineField({
+      name: 'conclusion',
+      title: 'Conclusion',
+      type: 'text',
+      description: "What's the final conclusion the author makes?",
+      fieldset: 'summaryFields',
+    }),
+    defineField({
+      name: 'shortSummary',
+      title: 'Short Summary',
+      type: 'text',
+      description: 'A brief, 3 sentence summary',
+      fieldset: 'summaryFields',
+    }),
+    defineField({
+      name: 'gist',
+      title: 'Gist',
+      type: 'string',
+      description: 'A one-liner that captures the essence in one sentence.',
+      fieldset: 'summaryFields',
+    }),
+    defineField({
+      name: 'newTitle',
+      title: 'New Title',
+      type: 'string',
+      description:
+        'Your version of a descriptive title based on the above. Try to communicate the gist in only a short headline.',
+      fieldset: 'summaryFields',
     }),
     defineField({
       name: 'body',
