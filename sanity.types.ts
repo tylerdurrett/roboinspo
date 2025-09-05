@@ -143,6 +143,13 @@ export type ReadingList = {
   shortSummary?: string
   gist?: string
   newTitle?: string
+  discussionDetailedSummary?: string
+  keyAgreeingViewpoints?: Array<string>
+  keyOpposingViewpoints?: Array<string>
+  sentiment?: string
+  discussionShortSummary?: string
+  discussionGist?: string
+  discussionTitle?: string
   body?: BlockContent
 }
 
