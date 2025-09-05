@@ -136,7 +136,6 @@ export type ReadingList = {
     _type: 'image'
   }
   savedAt?: string
-  editedAt?: string
   detailedSummary?: string
   keyPoints?: Array<string>
   conclusion?: string
@@ -996,7 +995,7 @@ export type ReadingListItemQueryResult = {
     slug: Slug
   } | null
   savedAt: string | null
-  editedAt: string | null
+  editedAt: null
   featuredImage: {
     asset?: {
       _ref: string

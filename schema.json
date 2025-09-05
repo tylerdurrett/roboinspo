@@ -796,13 +796,6 @@
         },
         "optional": true
       },
-      "editedAt": {
-        "type": "objectAttribute",
-        "value": {
-          "type": "string"
-        },
-        "optional": true
-      },
       "detailedSummary": {
         "type": "objectAttribute",
         "value": {

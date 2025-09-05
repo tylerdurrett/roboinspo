@@ -76,11 +76,6 @@ export const readingListType = defineType({
       initialValue: new Date().toISOString(),
     }),
     defineField({
-      name: 'editedAt',
-      title: 'Last Edited',
-      type: 'datetime',
-    }),
-    defineField({
       name: 'detailedSummary',
       title: 'Detailed Summary',
       type: 'text',
