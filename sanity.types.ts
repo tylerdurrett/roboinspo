@@ -116,6 +116,7 @@ export type ReadingList = {
   originalTitle?: string
   slug: Slug
   originalUrl: string
+  discussionUrl?: string
   category?: {
     _ref: string
     _type: 'reference'

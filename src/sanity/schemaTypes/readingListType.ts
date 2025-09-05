@@ -51,6 +51,12 @@ export const readingListType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'discussionUrl',
+      title: 'Discussion URL',
+      type: 'url',
+      description: 'URL to the discussion (e.g., Hacker News comments)',
+    }),
+    defineField({
       name: 'category',
       type: 'reference',
       to: { type: 'category' },
