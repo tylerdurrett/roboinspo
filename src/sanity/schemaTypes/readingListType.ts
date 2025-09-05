@@ -31,6 +31,12 @@ export const readingListType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'originalTitle',
+      title: 'Original Title',
+      type: 'string',
+      description: 'The original title of the article',
+    }),
+    defineField({
       name: 'slug',
       type: 'slug',
       options: {

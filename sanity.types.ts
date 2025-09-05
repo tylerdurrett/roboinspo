@@ -113,6 +113,7 @@ export type ReadingList = {
   _updatedAt: string
   _rev: string
   title: string
+  originalTitle?: string
   slug: Slug
   originalUrl: string
   category?: {
