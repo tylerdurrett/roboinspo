@@ -1,13 +1,10 @@
 import { notFound } from 'next/navigation'
 import { Container } from '@/components/ui/container'
 import type { Metadata } from 'next'
-import { PortableText } from 'next-sanity'
 import { getReadingListItemBySlug } from '@/models/readingList'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
-import { portableTextComponents } from '@/components/portable-text-components'
 import { ExternalLinkIcon } from 'lucide-react'
-// removed button in favor of inline byline link
 import '../../blog/prose.css'
 
 type Props = {
