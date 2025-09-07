@@ -986,18 +986,19 @@ export type ReadingListItemsQueryResult = Array<{
   } | null
 }>
 // Variable: readingListItemQuery
-// Query: *[_type == "readingList" && slug.current == $slug][0]{      _id,       title,       slug,       originalUrl,      category->{title, slug},       savedAt,       editedAt,       featuredImage{..., "caption": caption},      body[]{        ...,        _type == "mux.video" => {          asset->        }      }    }
+// Query: *[_type == "readingList" && slug.current == $slug][0]{      _id,       title,       originalTitle,      slug,       originalUrl,      discussionUrl,      category->{title, slug},       savedAt,       featuredImage{..., "caption": caption},      detailedSummary,      keyPoints,      conclusion,      shortSummary,      gist,      newTitle,      discussionDetailedSummary,      keyAgreeingViewpoints,      keyOpposingViewpoints,      sentiment,      discussionShortSummary,      discussionGist,      discussionTitle,      body[]{        ...,        _type == "mux.video" => {          asset->        }      }    }
 export type ReadingListItemQueryResult = {
   _id: string
   title: string
+  originalTitle: string | null
   slug: Slug
   originalUrl: string
+  discussionUrl: string | null
   category: {
     title: string
     slug: Slug
   } | null
   savedAt: string | null
-  editedAt: null
   featuredImage: {
     asset?: {
       _ref: string
@@ -1012,6 +1013,19 @@ export type ReadingListItemQueryResult = {
     caption: string | null
     _type: 'image'
   } | null
+  detailedSummary: string | null
+  keyPoints: Array<string> | null
+  conclusion: string | null
+  shortSummary: string | null
+  gist: string | null
+  newTitle: string | null
+  discussionDetailedSummary: string | null
+  keyAgreeingViewpoints: Array<string> | null
+  keyOpposingViewpoints: Array<string> | null
+  sentiment: string | null
+  discussionShortSummary: string | null
+  discussionGist: string | null
+  discussionTitle: string | null
   body: Array<
     | {
         children?: Array<{
@@ -1125,6 +1139,6 @@ declare module '@sanity/client' {
     '*[_type == "post" && slug.current == $slug && category->slug.current == $categorySlug][0]{\n      _id, \n      title, \n      slug, \n      subtitle, \n      intro, \n      category->{title, slug}, \n      publishedAt, \n      editedAt, \n      excerpt, \n      mainImage{..., "caption": caption},\n      hideMainImageOnPost,\n      mainVideo{..., asset->},\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }, \n      author->{name, image}\n    }': PostQueryResult
     '*[\n    _type == "category"\n    && count(*[_type == "readingList" && references(^._id)]) > 0\n  ]|order(title asc){\n    _id,\n    title,\n    slug,\n    description\n  }': CategoriesQueryResult
     '*[\n    _type == "readingList"\n    && defined(slug.current)\n  ]|order(savedAt desc)[0...$limit]{\n    _id, \n    title, \n    slug, \n    originalUrl,\n    savedAt, \n    body[]{\n      ...,\n      _type == "mux.video" => {\n        asset->\n      }\n    }, \n    category->{title, slug}, \n    featuredImage\n  }': ReadingListItemsQueryResult
-    '*[_type == "readingList" && slug.current == $slug][0]{\n      _id, \n      title, \n      slug, \n      originalUrl,\n      category->{title, slug}, \n      savedAt, \n      editedAt, \n      featuredImage{..., "caption": caption},\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }\n    }': ReadingListItemQueryResult
+    '*[_type == "readingList" && slug.current == $slug][0]{\n      _id, \n      title, \n      originalTitle,\n      slug, \n      originalUrl,\n      discussionUrl,\n      category->{title, slug}, \n      savedAt, \n      featuredImage{..., "caption": caption},\n      detailedSummary,\n      keyPoints,\n      conclusion,\n      shortSummary,\n      gist,\n      newTitle,\n      discussionDetailedSummary,\n      keyAgreeingViewpoints,\n      keyOpposingViewpoints,\n      sentiment,\n      discussionShortSummary,\n      discussionGist,\n      discussionTitle,\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }\n    }': ReadingListItemQueryResult
   }
 }
