@@ -134,24 +134,40 @@ export default async function ReadingListItem({ params }: Props) {
         <Container size="xl">
           <div className="prose prose-lg prose-neutral max-w-none dark:prose-invert prose-headings:font-sans prose-headings:font-normal prose-h2:text-3xl md:prose-h2:text-4xl prose-h3:text-2xl md:prose-h3:text-3xl prose-h4:text-xl md:prose-h4:text-2xl">
             <p>{item.shortSummary}</p>
-            <h3>Key Points</h3>
-            <ul>
-              {item.keyPoints?.map((point) => <li key={point}>{point}</li>)}
-            </ul>
-            <h2>Sentiment</h2>
-            <p>{item.sentiment}</p>
-            <h3>In Agreement</h3>
-            <ul>
-              {item.keyAgreeingViewpoints?.map((point) => (
-                <li key={point}>{point}</li>
-              ))}
-            </ul>
-            <h3>Opposed</h3>
-            <ul>
-              {item.keyOpposingViewpoints?.map((point) => (
-                <li key={point}>{point}</li>
-              ))}
-            </ul>
+            {item.keyPoints && (
+              <>
+                <h3>Key Points</h3>
+                <ul>
+                  {item.keyPoints?.map((point) => <li key={point}>{point}</li>)}
+                </ul>
+              </>
+            )}
+            {item.sentiment && (
+              <>
+                <h3>Sentiment</h3>
+                <p>{item.sentiment}</p>
+              </>
+            )}
+            {item.keyAgreeingViewpoints && (
+              <>
+                <h3>In Agreement</h3>
+                <ul>
+                  {item.keyAgreeingViewpoints?.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {item.keyOpposingViewpoints && (
+              <>
+                <h3>Opposed</h3>
+                <ul>
+                  {item.keyOpposingViewpoints?.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </Container>
 
