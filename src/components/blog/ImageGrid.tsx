@@ -9,10 +9,10 @@ interface ImageGridProps {
 
 export function ImageGrid({ items }: ImageGridProps) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-px">
+    <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-px">
       {items.map((item) => {
         const imageUrl = item.featuredImage
-          ? urlFor(item.featuredImage)?.width(400).height(400).url()
+          ? urlFor(item.featuredImage)?.width(800).url()
           : null
 
         if (!imageUrl) return null
@@ -21,14 +21,15 @@ export function ImageGrid({ items }: ImageGridProps) {
           <Link
             key={item._id}
             href={`/reading/${item.slug.current}`}
-            className="aspect-square block overflow-hidden hover:opacity-80 transition-opacity duration-200"
+            className="block mb-px break-inside-avoid hover:opacity-80 transition-opacity duration-200"
           >
             <Image
               src={imageUrl}
               alt={item.title}
-              width={400}
-              height={400}
-              className="w-full h-full object-cover"
+              width={800}
+              height={0}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+              className="w-full h-auto"
             />
           </Link>
         )
