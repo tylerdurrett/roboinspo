@@ -10,44 +10,47 @@ interface ReadingListCardProps {
 
 export function ReadingListCard({ item }: ReadingListCardProps) {
   const imageUrl = item?.featuredImage
-    ? urlFor(item.featuredImage)?.width(550).height(310).url()
+    ? urlFor(item.featuredImage)?.width(120).height(120).url()
     : null
 
   return (
-    <article className="bg-card text-card-foreground rounded-4xl overflow-hidden border-4 border-transparent hover:border-accent has-[.external-link:hover]:hover:border-accent/60 transition-colors duration-300 h-full relative">
+    <article className="bg-card text-card-foreground rounded-3xl border-4 border-transparent hover:border-accent has-[.external-link:hover]:hover:border-accent/60 transition-colors duration-300 relative">
       <Link
         href={`/reading/${item.slug.current}`}
-        className="group flex h-full flex-col"
+        className="group flex items-start gap-4 p-4 sm:p-6"
       >
         {imageUrl && (
-          <Image
-            src={imageUrl}
-            alt={item.title}
-            width={550}
-            height={310}
-            className="w-full h-auto object-cover"
-          />
+          <div className="flex-shrink-0">
+            <Image
+              src={imageUrl}
+              alt={item.title}
+              width={120}
+              height={120}
+              className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-2xl"
+            />
+          </div>
         )}
-        <div className="p-4 sm:p-5 flex flex-1 flex-col space-y-3">
-          <div className="flex items-center gap-2">
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 mb-2">
             <span className="text-sm text-muted-foreground">
               {item.category?.title}
             </span>
           </div>
-          <div className="flex items-baseline justify-between gap-4">
-            <h2 className="text-2xl">{item.title}</h2>
-          </div>
-          <div className="mt-auto flex items-center gap-4 text-sm text-muted-foreground">
-            {item.savedAt && (
-              <time dateTime={item.savedAt}>
-                {new Date(item.savedAt).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'short',
-                  day: 'numeric',
-                })}
-              </time>
-            )}
-          </div>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2 leading-tight">
+            {item.title}
+          </h2>
+          {item.savedAt && (
+            <time
+              dateTime={item.savedAt}
+              className="text-sm text-muted-foreground"
+            >
+              {new Date(item.savedAt).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+              })}
+            </time>
+          )}
         </div>
       </Link>
       {item.originalUrl && (
@@ -55,10 +58,10 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
           href={item.originalUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="external-link absolute bottom-3 right-3 p-1.5 rounded-full bg-background/80 hover:bg-background z-10 hover:scale-120 transition-all duration-200"
+          className="external-link absolute top-4 right-4 sm:top-6 sm:right-6 p-1.5 rounded-full bg-background/80 hover:bg-background z-10 hover:scale-110 transition-all duration-200"
           onClick={(e) => e.stopPropagation()}
         >
-          <ExternalLinkIcon className="w-5 h-5 text-muted-foreground hover:text-foreground" />
+          <ExternalLinkIcon className="w-4 h-4 text-muted-foreground hover:text-foreground" />
         </Link>
       )}
     </article>

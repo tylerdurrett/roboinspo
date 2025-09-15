@@ -40,7 +40,7 @@ export function ReadingListPageClient({
             : 'No reading list items yet. Check back soon!'}
         </p>
       ) : (
-        <div className="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))] rounded-2xl overflow-hidden relative">
+        <div className="flex flex-col gap-4">
           {filteredItems.map((item) => (
             <ReadingListCard key={item._id} item={item} />
           ))}
