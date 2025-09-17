@@ -23,14 +23,16 @@ export function ImageGrid({ items }: ImageGridProps) {
             href={`/reading/${item.slug.current}`}
             className="block hover:opacity-80 transition-opacity duration-200"
           >
-            <Image
-              src={imageUrl}
-              alt={item.title}
-              width={800}
-              height={0}
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-              className="w-full h-auto"
-            />
+            <div className="aspect-video overflow-hidden">
+              <Image
+                src={imageUrl}
+                alt={item.title}
+                width={800}
+                height={450}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </Link>
         )
       })}
