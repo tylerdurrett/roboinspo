@@ -9,7 +9,7 @@ interface ImageGridProps {
 
 export function ImageGrid({ items }: ImageGridProps) {
   return (
-    <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-px">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1">
       {items.map((item) => {
         const imageUrl = item.featuredImage
           ? urlFor(item.featuredImage)?.width(800).url()
@@ -21,7 +21,7 @@ export function ImageGrid({ items }: ImageGridProps) {
           <Link
             key={item._id}
             href={`/reading/${item.slug.current}`}
-            className="block mb-px break-inside-avoid hover:opacity-80 transition-opacity duration-200"
+            className="block hover:opacity-80 transition-opacity duration-200"
           >
             <Image
               src={imageUrl}
