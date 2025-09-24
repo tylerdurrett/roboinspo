@@ -60,7 +60,6 @@ export const thingType = defineType({
               name: 'caption',
               type: 'string',
               title: 'Caption',
-              options: { isHighlighted: true },
             },
           ],
         },
@@ -89,7 +88,6 @@ export const thingType = defineType({
             defineField({
               name: 'caption',
               type: 'string',
-              options: { isHighlighted: true },
             }),
             defineField({
               name: 'poster',
