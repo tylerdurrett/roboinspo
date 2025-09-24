@@ -3,17 +3,8 @@ import MuxPlayer from '@mux/mux-player-react'
 import { urlFor } from '@/sanity/lib/image'
 import type { ThingQueryResult } from '../../../sanity.types'
 
-type ImageItem = NonNullable<ThingQueryResult>['images'] extends
-  | (infer U)[]
-  | null
-  ? NonNullable<U>
-  : never
-
-type VideoItem = NonNullable<ThingQueryResult>['videos'] extends
-  | (infer U)[]
-  | null
-  ? NonNullable<U>
-  : never
+type ImageItem = NonNullable<NonNullable<ThingQueryResult>['images']>[number]
+type VideoItem = NonNullable<NonNullable<ThingQueryResult>['videos']>[number]
 
 type ImageMediaItem = {
   type: 'image'
