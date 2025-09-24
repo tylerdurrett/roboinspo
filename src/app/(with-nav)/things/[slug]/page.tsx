@@ -11,11 +11,11 @@ import { ThingMediaGrid } from '@/components/things/ThingMediaGrid'
 import '../../blog/prose.css'
 
 type Props = {
-  params: Promise<{ slug: string }>
+  params: { slug: string }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params
+  const { slug } = params
   const thing = await getThingBySlug(slug)
 
   if (!thing) {
@@ -31,10 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: thing.title,
-    description: thing.description,
+    description: thing.description ?? undefined,
     openGraph: {
       title: thing.title,
-      description: thing.description,
+      description: thing.description ?? undefined,
       type: 'article',
       images: [
         {
@@ -48,14 +48,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: 'summary_large_image',
       title: thing.title,
-      description: thing.description,
+      description: thing.description ?? undefined,
       images: [ogImageUrl],
     },
   }
 }
 
 export default async function ThingPage({ params }: Props) {
-  const { slug } = await params
+  const { slug } = params
   const thing = await getThingBySlug(slug)
   const thingImageUrl = thing?.featuredImage
     ? urlFor(thing.featuredImage)?.width(1920).height(1080).url()
