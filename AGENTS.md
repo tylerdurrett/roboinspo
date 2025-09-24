@@ -44,3 +44,4 @@ This is a Next.js 15 application using the App Router pattern with TypeScript an
 - Always ask the user before making changes to which packages are installed.
 - You have outdated knowledge of the libraries used in this project. Always reference the current documenation before making changes.
 - You must always look up the correct types before implementing code. Your knowledge is incomplete and outdated. Look up the correct types. Solve the root of the problem, do NOT create workarounds or bypass the error.
+- Before you're done, make sure there aren't any type errors. If there are, fix the root cause.

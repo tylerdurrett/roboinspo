@@ -50,3 +50,4 @@ This is a Next.js 15 application using the App Router pattern with TypeScript an
 - You must always look up the correct types before implementing code. Your knowledge is incomplete and outdated. Look up the correct types. Solve the root of the problem, do NOT create workarounds or bypass the error.
 - Running the format command will fix a lot of Prettier formatting/lint issues.
 - Please make sure there are no lint errors before finishing.
+- Before you're done, make sure there aren't any type errors. If there are, fix the root cause.
