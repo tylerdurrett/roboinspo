@@ -17,11 +17,13 @@ export const thingType = defineType({
       type: 'text',
     }),
     defineField({
-      name: 'image',
+      name: 'featuredImage',
+      title: 'Featured Image',
       type: 'image',
       options: {
         hotspot: true,
       },
+      validation: (rule) => rule.required(),
       fields: [
         defineField({
           name: 'alt',
@@ -36,9 +38,90 @@ export const thingType = defineType({
       ],
     }),
     defineField({
-      name: 'video',
-      title: 'Video',
+      name: 'featuredVideo',
+      title: 'Featured Video (optional)',
       type: 'mux.video',
+    }),
+    defineField({
+      name: 'images',
+      title: 'Images',
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+          options: { hotspot: true },
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Alt text',
+            },
+            {
+              name: 'caption',
+              type: 'string',
+              title: 'Caption',
+              options: { isHighlighted: true },
+            },
+          ],
+        },
+      ],
+      options: { layout: 'grid' },
+    }),
+    defineField({
+      name: 'videos',
+      title: 'Videos',
+      type: 'array',
+      options: { layout: 'grid' },
+      of: [
+        {
+          type: 'object',
+          name: 'videoItem',
+          title: 'Video',
+          fields: [
+            defineField({
+              name: 'file',
+              title: 'Mux Video',
+              type: 'mux.video',
+              validation: (rule) => rule.required(),
+            }),
+            defineField({ name: 'title', type: 'string' }),
+            defineField({ name: 'alt', title: 'Alt text', type: 'string' }),
+            defineField({
+              name: 'caption',
+              type: 'string',
+              options: { isHighlighted: true },
+            }),
+            defineField({
+              name: 'poster',
+              title: 'Poster image (optional)',
+              type: 'image',
+              options: { hotspot: true },
+              fields: [{ name: 'alt', type: 'string', title: 'Alt text' }],
+            }),
+            defineField({
+              name: 'autoplay',
+              type: 'boolean',
+              initialValue: false,
+            }),
+            defineField({ name: 'loop', type: 'boolean', initialValue: true }),
+            defineField({ name: 'muted', type: 'boolean', initialValue: true }),
+          ],
+          preview: {
+            select: {
+              title: 'title',
+              caption: 'caption',
+              poster: 'poster',
+            },
+            prepare({ title, caption, poster }) {
+              return {
+                title: title || 'Video',
+                subtitle: caption,
+                media: poster,
+              }
+            },
+          },
+        },
+      ],
     }),
     defineField({
       name: 'isAiGenerated',
@@ -51,7 +134,7 @@ export const thingType = defineType({
   preview: {
     select: {
       title: 'title',
-      media: 'image',
+      media: 'featuredImage',
     },
   },
 })

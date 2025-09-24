@@ -21,7 +21,7 @@ export type Thing = {
   _rev: string
   title: string
   description?: string
-  image?: {
+  featuredImage: {
     asset?: {
       _ref: string
       _type: 'reference'
@@ -35,7 +35,46 @@ export type Thing = {
     caption?: string
     _type: 'image'
   }
-  video?: MuxVideo
+  featuredVideo?: MuxVideo
+  images?: Array<{
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    caption?: string
+    _type: 'image'
+    _key: string
+  }>
+  videos?: Array<{
+    file: MuxVideo
+    title?: string
+    alt?: string
+    caption?: string
+    poster?: {
+      asset?: {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+      }
+      media?: unknown
+      hotspot?: SanityImageHotspot
+      crop?: SanityImageCrop
+      alt?: string
+      _type: 'image'
+    }
+    autoplay?: boolean
+    loop?: boolean
+    muted?: boolean
+    _type: 'videoItem'
+    _key: string
+  }>
   isAiGenerated?: boolean
 }
 
