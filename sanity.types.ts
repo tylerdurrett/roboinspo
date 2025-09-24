@@ -20,6 +20,7 @@ export type Thing = {
   _updatedAt: string
   _rev: string
   title: string
+  slug: Slug
   description?: string
   featuredImage: {
     asset?: {

@@ -13,6 +13,14 @@ export const thingType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+      },
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'description',
       type: 'text',
     }),
