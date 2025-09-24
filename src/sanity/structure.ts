@@ -7,6 +7,7 @@ export const structure: StructureResolver = (S) =>
     .items([
       S.documentTypeListItem('post').title('Blog Posts'),
       S.documentTypeListItem('readingList').title('Reading List'),
+      S.documentTypeListItem('thing').title('Things'),
       S.divider(),
       S.documentTypeListItem('category').title('Categories'),
       S.documentTypeListItem('author').title('Authors'),
@@ -18,6 +19,7 @@ export const structure: StructureResolver = (S) =>
           ![
             'post',
             'readingList',
+            'thing',
             'category',
             'author',
             'mux.videoAsset',

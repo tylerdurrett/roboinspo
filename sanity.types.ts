@@ -13,6 +13,32 @@
  */
 
 // Source: schema.json
+export type Thing = {
+  _id: string
+  _type: 'thing'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title: string
+  description?: string
+  image?: {
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt?: string
+    caption?: string
+    _type: 'image'
+  }
+  video?: MuxVideo
+  isAiGenerated?: boolean
+}
+
 export type Youtube = {
   _type: 'youtube'
   url: string
@@ -486,6 +512,7 @@ export type SanityAssetSourceData = {
 }
 
 export type AllSanitySchemaTypes =
+  | Thing
   | Youtube
   | FileBlock
   | Callout

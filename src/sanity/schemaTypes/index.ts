@@ -8,6 +8,7 @@ import { authorType } from './authorType'
 import { calloutType } from './calloutType'
 import { fileBlockType } from './fileBlockType'
 import { youtubeType } from './youtubeType'
+import { thingType } from './thingType'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -19,5 +20,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     calloutType,
     fileBlockType,
     youtubeType,
+    thingType,
   ],
 }
