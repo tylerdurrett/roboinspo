@@ -1,8 +1,10 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
+import type { CSSProperties } from 'react'
 import MuxPlayer from '@mux/mux-player-react'
 import type { MuxPlayerProps } from '@mux/mux-player-react'
+import type MuxPlayerElement from '@mux/mux-player'
 
 interface AdaptiveVideoPlayerProps extends MuxPlayerProps {
   className?: string
@@ -20,53 +22,49 @@ export function AdaptiveVideoPlayer({
   const [aspectRatio, setAspectRatio] = useState<number>(16 / 9) // Default to 16:9
   const [aspectRatioType, setAspectRatioType] =
     useState<AspectRatioType>('loading')
+  const [playerEl, setPlayerEl] = useState<MuxPlayerElement | null>(null)
 
   const handlePlayerRef = useCallback(
-    (
-      muxPlayerEl:
-        | (HTMLElement & { media?: { nativeEl?: HTMLVideoElement } })
-        | null
-    ) => {
-      if (!muxPlayerEl) return
-
-      const nativeVideoEl = muxPlayerEl.media?.nativeEl
-      if (!nativeVideoEl) return
-
-      const handleLoadedMetadata = () => {
-        const { videoWidth, videoHeight } = nativeVideoEl
-
-        if (videoWidth > 0 && videoHeight > 0) {
-          const ratio = videoWidth / videoHeight
-          setAspectRatio(ratio)
-
-          // Categorize aspect ratio
-          if (ratio < 0.8) {
-            setAspectRatioType('vertical')
-          } else if (ratio >= 0.8 && ratio <= 1.2) {
-            setAspectRatioType('square')
-          } else {
-            setAspectRatioType('horizontal')
-          }
-        }
-      }
-
-      // Check if metadata is already loaded
-      if (nativeVideoEl.readyState >= 1) {
-        handleLoadedMetadata()
-      } else {
-        nativeVideoEl.addEventListener('loadedmetadata', handleLoadedMetadata)
-      }
-
-      // Cleanup function
-      return () => {
-        nativeVideoEl.removeEventListener(
-          'loadedmetadata',
-          handleLoadedMetadata
-        )
-      }
+    (muxPlayerEl: MuxPlayerElement | null) => {
+      setPlayerEl(muxPlayerEl)
     },
     []
   )
+
+  useEffect(() => {
+    if (!playerEl) return
+
+    const nativeVideoEl = playerEl.media?.nativeEl
+    if (!nativeVideoEl) return
+
+    const handleLoadedMetadata = () => {
+      const { videoWidth, videoHeight } = nativeVideoEl
+
+      if (videoWidth > 0 && videoHeight > 0) {
+        const ratio = videoWidth / videoHeight
+        setAspectRatio(ratio)
+
+        if (ratio < 0.8) {
+          setAspectRatioType('vertical')
+        } else if (ratio <= 1.2) {
+          setAspectRatioType('square')
+        } else {
+          setAspectRatioType('horizontal')
+        }
+      }
+    }
+
+    if (nativeVideoEl.readyState >= 1) {
+      handleLoadedMetadata()
+      return
+    }
+
+    nativeVideoEl.addEventListener('loadedmetadata', handleLoadedMetadata)
+
+    return () => {
+      nativeVideoEl.removeEventListener('loadedmetadata', handleLoadedMetadata)
+    }
+  }, [playerEl])
 
   const getAspectRatioClasses = () => {
     switch (aspectRatioType) {
@@ -82,9 +80,9 @@ export function AdaptiveVideoPlayer({
     }
   }
 
-  const containerStyle = {
-    aspectRatio: aspectRatioType === 'loading' ? '16/9' : `${aspectRatio}`,
-    ...style,
+  const containerStyle: CSSProperties = {
+    aspectRatio: aspectRatioType === 'loading' ? '16/9' : String(aspectRatio),
+    ...(style ?? {}),
   }
 
   return (
