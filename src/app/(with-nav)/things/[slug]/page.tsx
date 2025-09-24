@@ -11,11 +11,12 @@ import { ThingMediaGrid } from '@/components/things/ThingMediaGrid'
 import '../../blog/prose.css'
 
 type Props = {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
+  searchParams?: Promise<Record<string, string | string[]>>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params
+  const { slug } = await params
   const thing = await getThingBySlug(slug)
 
   if (!thing) {
@@ -55,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ThingPage({ params }: Props) {
-  const { slug } = params
+  const { slug } = await params
   const thing = await getThingBySlug(slug)
   const thingImageUrl = thing?.featuredImage
     ? urlFor(thing.featuredImage)?.width(1920).height(1080).url()
