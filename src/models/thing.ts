@@ -14,6 +14,7 @@ export async function getThings(limit = 90) {
   ]|order(_createdAt desc)[0...$limit]{
     _id,
     title,
+    slug,
     description,
     featuredImage{..., "caption": caption, "alt": alt},
     featuredVideo{..., asset->},
@@ -94,3 +95,47 @@ export async function getThingById(id: string) {
 }
 
 export type Thing = ThingQueryResult
+
+/**
+ * ------------------------------------------------------------------
+ * Get a single thing by slug
+ */
+export async function getThingBySlug(slug: string) {
+  const thingQuery = defineQuery(
+    `*[_type == "thing" && slug.current == $slug][0]{
+      _id,
+      title,
+      slug,
+      description,
+      featuredImage{..., "caption": caption, "alt": alt},
+      featuredVideo{..., asset->},
+      featuredVideoThumb{..., asset->},
+      images[]{
+        ...,
+        "caption": caption,
+        "alt": alt
+      },
+      videos[]{
+        file{..., asset->},
+        title,
+        alt,
+        caption,
+        poster{..., "alt": alt},
+        autoplay,
+        loop,
+        muted
+      },
+      isAiGenerated,
+      body[]{
+        ...,
+        _type == "mux.video" => {
+          asset->
+        }
+      }
+    }`
+  )
+
+  const thing = await client.fetch(thingQuery, { slug }, options)
+
+  return thing
+}
