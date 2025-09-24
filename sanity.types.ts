@@ -1247,6 +1247,426 @@ export type ReadingListItemQueryResult = {
   > | null
 } | null
 
+// Source: ./src/models/thing.ts
+// Variable: thingsQuery
+// Query: *[    _type == "thing"  ]|order(_createdAt desc)[0...$limit]{    _id,    title,    description,    featuredImage{..., "caption": caption, "alt": alt},    featuredVideo{..., asset->},    featuredVideoThumb{..., asset->},    images[]{      ...,      "caption": caption,      "alt": alt    },    videos[]{      file{..., asset->},      title,      alt,      caption,      poster{..., "alt": alt},      autoplay,      loop,      muted    },    isAiGenerated,    body[]{      ...,      _type == "mux.video" => {        asset->      }    }  }
+export type ThingsQueryResult = Array<{
+  _id: string
+  title: string
+  description: string | null
+  featuredImage: {
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt: string | null
+    caption: string | null
+    _type: 'image'
+  }
+  featuredVideo: {
+    _type: 'mux.video'
+    asset: {
+      _id: string
+      _type: 'mux.videoAsset'
+      _createdAt: string
+      _updatedAt: string
+      _rev: string
+      status?: string
+      assetId?: string
+      playbackId?: string
+      filename?: string
+      thumbTime?: number
+      data?: MuxAssetData
+    } | null
+  } | null
+  featuredVideoThumb: {
+    _type: 'mux.video'
+    asset: {
+      _id: string
+      _type: 'mux.videoAsset'
+      _createdAt: string
+      _updatedAt: string
+      _rev: string
+      status?: string
+      assetId?: string
+      playbackId?: string
+      filename?: string
+      thumbTime?: number
+      data?: MuxAssetData
+    } | null
+  } | null
+  images: Array<{
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt: string | null
+    caption: string | null
+    _type: 'image'
+    _key: string
+  }> | null
+  videos: Array<{
+    file: {
+      _type: 'mux.video'
+      asset: {
+        _id: string
+        _type: 'mux.videoAsset'
+        _createdAt: string
+        _updatedAt: string
+        _rev: string
+        status?: string
+        assetId?: string
+        playbackId?: string
+        filename?: string
+        thumbTime?: number
+        data?: MuxAssetData
+      } | null
+    }
+    title: string | null
+    alt: string | null
+    caption: string | null
+    poster: {
+      asset?: {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+      }
+      media?: unknown
+      hotspot?: SanityImageHotspot
+      crop?: SanityImageCrop
+      alt: string | null
+      _type: 'image'
+    } | null
+    autoplay: boolean | null
+    loop: boolean | null
+    muted: boolean | null
+  }> | null
+  isAiGenerated: boolean | null
+  body: Array<
+    | {
+        children?: Array<{
+          marks?: Array<string>
+          text?: string
+          _type: 'span'
+          _key: string
+        }>
+        style?: 'blockquote' | 'h1' | 'h2' | 'h3' | 'h4' | 'normal'
+        listItem?: 'bullet' | 'number'
+        markDefs?: Array<{
+          href?: string
+          _type: 'link'
+          _key: string
+        }>
+        level?: number
+        _type: 'block'
+        _key: string
+      }
+    | {
+        _key: string
+        _type: 'callout'
+        tone?: 'destructive' | 'info' | 'neutral' | 'success' | 'warning'
+        content?: Array<{
+          children?: Array<{
+            marks?: Array<string>
+            text?: string
+            _type: 'span'
+            _key: string
+          }>
+          style?: 'normal'
+          listItem?: never
+          markDefs?: Array<{
+            href?: string
+            _type: 'link'
+            _key: string
+          }>
+          level?: number
+          _type: 'block'
+          _key: string
+        }>
+      }
+    | {
+        _key: string
+        _type: 'fileBlock'
+        file: {
+          asset: {
+            _ref: string
+            _type: 'reference'
+            _weak?: boolean
+            [internalGroqTypeReferenceTo]?: 'sanity.fileAsset'
+          }
+          media?: unknown
+          _type: 'file'
+        }
+        caption?: string
+      }
+    | {
+        asset?: {
+          _ref: string
+          _type: 'reference'
+          _weak?: boolean
+          [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+        }
+        media?: unknown
+        hotspot?: SanityImageHotspot
+        crop?: SanityImageCrop
+        alt?: string
+        _type: 'image'
+        _key: string
+      }
+    | {
+        _key: string
+        _type: 'mux.video'
+        asset: {
+          _id: string
+          _type: 'mux.videoAsset'
+          _createdAt: string
+          _updatedAt: string
+          _rev: string
+          status?: string
+          assetId?: string
+          playbackId?: string
+          filename?: string
+          thumbTime?: number
+          data?: MuxAssetData
+        } | null
+      }
+    | {
+        _key: string
+        _type: 'table'
+        rows?: Array<
+          {
+            _key: string
+          } & TableRow
+        >
+      }
+    | {
+        _key: string
+        _type: 'youtube'
+        url: string
+      }
+  > | null
+}>
+// Variable: thingQuery
+// Query: *[_type == "thing" && _id == $id][0]{      _id,      title,      description,      featuredImage{..., "caption": caption, "alt": alt},      featuredVideo{..., asset->},      featuredVideoThumb{..., asset->},      images[]{        ...,        "caption": caption,        "alt": alt      },      videos[]{        file{..., asset->},        title,        alt,        caption,        poster{..., "alt": alt},        autoplay,        loop,        muted      },      isAiGenerated,      body[]{        ...,        _type == "mux.video" => {          asset->        }      }    }
+export type ThingQueryResult = {
+  _id: string
+  title: string
+  description: string | null
+  featuredImage: {
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt: string | null
+    caption: string | null
+    _type: 'image'
+  }
+  featuredVideo: {
+    _type: 'mux.video'
+    asset: {
+      _id: string
+      _type: 'mux.videoAsset'
+      _createdAt: string
+      _updatedAt: string
+      _rev: string
+      status?: string
+      assetId?: string
+      playbackId?: string
+      filename?: string
+      thumbTime?: number
+      data?: MuxAssetData
+    } | null
+  } | null
+  featuredVideoThumb: {
+    _type: 'mux.video'
+    asset: {
+      _id: string
+      _type: 'mux.videoAsset'
+      _createdAt: string
+      _updatedAt: string
+      _rev: string
+      status?: string
+      assetId?: string
+      playbackId?: string
+      filename?: string
+      thumbTime?: number
+      data?: MuxAssetData
+    } | null
+  } | null
+  images: Array<{
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    alt: string | null
+    caption: string | null
+    _type: 'image'
+    _key: string
+  }> | null
+  videos: Array<{
+    file: {
+      _type: 'mux.video'
+      asset: {
+        _id: string
+        _type: 'mux.videoAsset'
+        _createdAt: string
+        _updatedAt: string
+        _rev: string
+        status?: string
+        assetId?: string
+        playbackId?: string
+        filename?: string
+        thumbTime?: number
+        data?: MuxAssetData
+      } | null
+    }
+    title: string | null
+    alt: string | null
+    caption: string | null
+    poster: {
+      asset?: {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+      }
+      media?: unknown
+      hotspot?: SanityImageHotspot
+      crop?: SanityImageCrop
+      alt: string | null
+      _type: 'image'
+    } | null
+    autoplay: boolean | null
+    loop: boolean | null
+    muted: boolean | null
+  }> | null
+  isAiGenerated: boolean | null
+  body: Array<
+    | {
+        children?: Array<{
+          marks?: Array<string>
+          text?: string
+          _type: 'span'
+          _key: string
+        }>
+        style?: 'blockquote' | 'h1' | 'h2' | 'h3' | 'h4' | 'normal'
+        listItem?: 'bullet' | 'number'
+        markDefs?: Array<{
+          href?: string
+          _type: 'link'
+          _key: string
+        }>
+        level?: number
+        _type: 'block'
+        _key: string
+      }
+    | {
+        _key: string
+        _type: 'callout'
+        tone?: 'destructive' | 'info' | 'neutral' | 'success' | 'warning'
+        content?: Array<{
+          children?: Array<{
+            marks?: Array<string>
+            text?: string
+            _type: 'span'
+            _key: string
+          }>
+          style?: 'normal'
+          listItem?: never
+          markDefs?: Array<{
+            href?: string
+            _type: 'link'
+            _key: string
+          }>
+          level?: number
+          _type: 'block'
+          _key: string
+        }>
+      }
+    | {
+        _key: string
+        _type: 'fileBlock'
+        file: {
+          asset: {
+            _ref: string
+            _type: 'reference'
+            _weak?: boolean
+            [internalGroqTypeReferenceTo]?: 'sanity.fileAsset'
+          }
+          media?: unknown
+          _type: 'file'
+        }
+        caption?: string
+      }
+    | {
+        asset?: {
+          _ref: string
+          _type: 'reference'
+          _weak?: boolean
+          [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+        }
+        media?: unknown
+        hotspot?: SanityImageHotspot
+        crop?: SanityImageCrop
+        alt?: string
+        _type: 'image'
+        _key: string
+      }
+    | {
+        _key: string
+        _type: 'mux.video'
+        asset: {
+          _id: string
+          _type: 'mux.videoAsset'
+          _createdAt: string
+          _updatedAt: string
+          _rev: string
+          status?: string
+          assetId?: string
+          playbackId?: string
+          filename?: string
+          thumbTime?: number
+          data?: MuxAssetData
+        } | null
+      }
+    | {
+        _key: string
+        _type: 'table'
+        rows?: Array<
+          {
+            _key: string
+          } & TableRow
+        >
+      }
+    | {
+        _key: string
+        _type: 'youtube'
+        url: string
+      }
+  > | null
+} | null
+
 // Query TypeMap
 import '@sanity/client'
 declare module '@sanity/client' {
@@ -1256,5 +1676,7 @@ declare module '@sanity/client' {
     '*[\n    _type == "category"\n    && count(*[_type == "readingList" && references(^._id)]) > 0\n  ]|order(title asc){\n    _id,\n    title,\n    slug,\n    description\n  }': CategoriesQueryResult
     '*[\n    _type == "readingList"\n    && defined(slug.current)\n  ]|order(savedAt desc)[0...$limit]{\n    _id, \n    title, \n    slug, \n    originalUrl,\n    savedAt, \n    body[]{\n      ...,\n      _type == "mux.video" => {\n        asset->\n      }\n    }, \n    category->{title, slug}, \n    featuredImage\n  }': ReadingListItemsQueryResult
     '*[_type == "readingList" && slug.current == $slug][0]{\n      _id, \n      title, \n      originalTitle,\n      slug, \n      originalUrl,\n      discussionUrl,\n      category->{title, slug}, \n      savedAt, \n      featuredImage{..., "caption": caption},\n      detailedSummary,\n      keyPoints,\n      conclusion,\n      shortSummary,\n      gist,\n      newTitle,\n      discussionDetailedSummary,\n      keyAgreeingViewpoints,\n      keyOpposingViewpoints,\n      sentiment,\n      discussionShortSummary,\n      discussionGist,\n      discussionTitle,\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }\n    }': ReadingListItemQueryResult
+    '*[\n    _type == "thing"\n  ]|order(_createdAt desc)[0...$limit]{\n    _id,\n    title,\n    description,\n    featuredImage{..., "caption": caption, "alt": alt},\n    featuredVideo{..., asset->},\n    featuredVideoThumb{..., asset->},\n    images[]{\n      ...,\n      "caption": caption,\n      "alt": alt\n    },\n    videos[]{\n      file{..., asset->},\n      title,\n      alt,\n      caption,\n      poster{..., "alt": alt},\n      autoplay,\n      loop,\n      muted\n    },\n    isAiGenerated,\n    body[]{\n      ...,\n      _type == "mux.video" => {\n        asset->\n      }\n    }\n  }': ThingsQueryResult
+    '*[_type == "thing" && _id == $id][0]{\n      _id,\n      title,\n      description,\n      featuredImage{..., "caption": caption, "alt": alt},\n      featuredVideo{..., asset->},\n      featuredVideoThumb{..., asset->},\n      images[]{\n        ...,\n        "caption": caption,\n        "alt": alt\n      },\n      videos[]{\n        file{..., asset->},\n        title,\n        alt,\n        caption,\n        poster{..., "alt": alt},\n        autoplay,\n        loop,\n        muted\n      },\n      isAiGenerated,\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }\n    }': ThingQueryResult
   }
 }
