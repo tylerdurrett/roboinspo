@@ -106,8 +106,12 @@ export const thingType = defineType({
               type: 'boolean',
               initialValue: false,
             }),
-            defineField({ name: 'loop', type: 'boolean', initialValue: true }),
-            defineField({ name: 'muted', type: 'boolean', initialValue: true }),
+            defineField({ name: 'loop', type: 'boolean', initialValue: false }),
+            defineField({
+              name: 'muted',
+              type: 'boolean',
+              initialValue: false,
+            }),
           ],
           preview: {
             select: {
