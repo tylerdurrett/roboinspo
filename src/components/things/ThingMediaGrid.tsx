@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import MuxPlayer from '@mux/mux-player-react'
 import { urlFor } from '@/sanity/lib/image'
+import { AdaptiveVideoPlayer } from '@/components/video/AdaptiveVideoPlayer'
 import type { ThingQueryResult } from '../../../sanity.types'
 
 type ImageItem = NonNullable<NonNullable<ThingQueryResult>['images']>[number]
@@ -89,26 +89,20 @@ export function ThingMediaGrid({ images, videos }: ThingMediaGridProps) {
             : undefined
 
           return (
-            <div
+            <AdaptiveVideoPlayer
               key={item.id}
-              className="aspect-video overflow-hidden rounded-lg"
-            >
-              <MuxPlayer
-                playbackId={item.data.file.asset.playbackId}
-                metadata={{
-                  video_id: item.data.file.asset._id,
-                  video_title: item.data.title || '',
-                }}
-                className="w-full h-full"
-                poster={posterUrl}
-                accentColor="var(--color-yellow)"
-                streamType="on-demand"
-                autoPlay={item.data.autoplay || false}
-                loop={item.data.loop || false}
-                muted={item.data.muted || false}
-                style={{ width: '100%', height: '100%' }}
-              />
-            </div>
+              playbackId={item.data.file.asset.playbackId}
+              metadata={{
+                video_id: item.data.file.asset._id,
+                video_title: item.data.title || '',
+              }}
+              poster={posterUrl}
+              accentColor="var(--color-yellow)"
+              streamType="on-demand"
+              autoPlay={item.data.autoplay || false}
+              loop={item.data.loop || false}
+              muted={item.data.muted || false}
+            />
           )
         }
 

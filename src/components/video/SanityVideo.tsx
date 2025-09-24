@@ -1,4 +1,4 @@
-import MuxPlayer from '@mux/mux-player-react'
+import { AdaptiveVideoPlayer } from './AdaptiveVideoPlayer'
 
 type SanityVideoProps = {
   value: {
@@ -18,14 +18,13 @@ export function SanityVideo({ value }: SanityVideoProps) {
 
   return (
     <div className="my-6">
-      <MuxPlayer
+      <AdaptiveVideoPlayer
         playbackId={value.asset.playbackId}
         metadata={{
           video_id: value.asset._id,
         }}
-        className="aspect-video rounded-xl"
         streamType="on-demand"
-        style={{ width: '100%', height: 'auto' }}
+        containerClassName="rounded-xl"
       />
     </div>
   )
