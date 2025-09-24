@@ -3,30 +3,42 @@ import MuxPlayer from '@mux/mux-player-react'
 import { urlFor } from '@/sanity/lib/image'
 import type { ThingQueryResult } from '../../../sanity.types'
 
+type ImageItem = NonNullable<ThingQueryResult>['images'] extends
+  | (infer U)[]
+  | null
+  ? NonNullable<U>
+  : never
+
+type VideoItem = NonNullable<ThingQueryResult>['videos'] extends
+  | (infer U)[]
+  | null
+  ? NonNullable<U>
+  : never
+
 type ImageMediaItem = {
   type: 'image'
   id: string
-  data: NonNullable<ThingQueryResult['images']>[number]
+  data: ImageItem
 }
 
 type VideoMediaItem = {
   type: 'video'
   id: string
-  data: NonNullable<ThingQueryResult['videos']>[number]
+  data: VideoItem
 }
 
 type MediaItem = ImageMediaItem | VideoMediaItem
 
 interface ThingMediaGridProps {
-  images?: ThingQueryResult['images']
-  videos?: ThingQueryResult['videos']
+  images?: NonNullable<ThingQueryResult>['images']
+  videos?: NonNullable<ThingQueryResult>['videos']
 }
 
 export function ThingMediaGrid({ images, videos }: ThingMediaGridProps) {
   const mediaItems: MediaItem[] = []
 
   if (images) {
-    images.forEach((image) => {
+    images.forEach((image: ImageItem) => {
       if (image.asset) {
         mediaItems.push({
           type: 'image',
@@ -38,7 +50,7 @@ export function ThingMediaGrid({ images, videos }: ThingMediaGridProps) {
   }
 
   if (videos) {
-    videos.forEach((video, index) => {
+    videos.forEach((video: VideoItem, index: number) => {
       if (video.file?.asset?.playbackId) {
         mediaItems.push({
           type: 'video',
@@ -80,7 +92,7 @@ export function ThingMediaGrid({ images, videos }: ThingMediaGridProps) {
           )
         }
 
-        if (item.type === 'video') {
+        if (item.type === 'video' && item.data.file.asset) {
           const posterUrl = item.data.poster?.asset
             ? urlFor(item.data.poster)?.width(800).url()
             : undefined
