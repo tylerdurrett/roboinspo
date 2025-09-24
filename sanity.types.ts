@@ -36,6 +36,7 @@ export type Thing = {
     _type: 'image'
   }
   featuredVideo?: MuxVideo
+  featuredVideoThumb?: MuxVideo
   images?: Array<{
     asset?: {
       _ref: string

@@ -139,6 +139,14 @@
         },
         "optional": true
       },
+      "featuredVideoThumb": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "mux.video"
+        },
+        "optional": true
+      },
       "images": {
         "type": "objectAttribute",
         "value": {

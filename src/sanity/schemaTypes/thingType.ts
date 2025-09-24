@@ -43,6 +43,11 @@ export const thingType = defineType({
       type: 'mux.video',
     }),
     defineField({
+      name: 'featuredVideoThumb',
+      title: 'Featured Video Thumbnail (optional)',
+      type: 'mux.video',
+    }),
+    defineField({
       name: 'images',
       title: 'Images',
       type: 'array',
