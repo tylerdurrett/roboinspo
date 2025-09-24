@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
 import MuxPlayer from '@mux/mux-player-react'
 import { portableTextComponents } from '@/components/portable-text-components'
+import { ThingMediaGrid } from '@/components/things/ThingMediaGrid'
 import '../../blog/prose.css'
 
 type Props = {
@@ -133,6 +134,15 @@ export default async function ThingPage({ params }: Props) {
             )}
           </div>
         </Container>
+
+        {(thing.images && thing.images.length > 0) ||
+        (thing.videos && thing.videos.length > 0) ? (
+          <Container size="xl">
+            <div className="mt-8">
+              <ThingMediaGrid images={thing.images} videos={thing.videos} />
+            </div>
+          </Container>
+        ) : null}
       </article>
     </div>
   )

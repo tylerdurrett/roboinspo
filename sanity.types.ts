@@ -1250,10 +1250,11 @@ export type ReadingListItemQueryResult = {
 
 // Source: ./src/models/thing.ts
 // Variable: thingsQuery
-// Query: *[    _type == "thing"  ]|order(_createdAt desc)[0...$limit]{    _id,    title,    description,    featuredImage{..., "caption": caption, "alt": alt},    featuredVideo{..., asset->},    featuredVideoThumb{..., asset->},    images[]{      ...,      "caption": caption,      "alt": alt    },    videos[]{      file{..., asset->},      title,      alt,      caption,      poster{..., "alt": alt},      autoplay,      loop,      muted    },    isAiGenerated,    body[]{      ...,      _type == "mux.video" => {        asset->      }    }  }
+// Query: *[    _type == "thing"  ]|order(_createdAt desc)[0...$limit]{    _id,    title,    slug,    description,    featuredImage{..., "caption": caption, "alt": alt},    featuredVideo{..., asset->},    featuredVideoThumb{..., asset->},    images[]{      ...,      "caption": caption,      "alt": alt    },    videos[]{      file{..., asset->},      title,      alt,      caption,      poster{..., "alt": alt},      autoplay,      loop,      muted    },    isAiGenerated,    body[]{      ...,      _type == "mux.video" => {        asset->      }    }  }
 export type ThingsQueryResult = Array<{
   _id: string
   title: string
+  slug: Slug
   description: string | null
   featuredImage: {
     asset?: {
@@ -1459,10 +1460,11 @@ export type ThingsQueryResult = Array<{
   > | null
 }>
 // Variable: thingQuery
-// Query: *[_type == "thing" && _id == $id][0]{      _id,      title,      description,      featuredImage{..., "caption": caption, "alt": alt},      featuredVideo{..., asset->},      featuredVideoThumb{..., asset->},      images[]{        ...,        "caption": caption,        "alt": alt      },      videos[]{        file{..., asset->},        title,        alt,        caption,        poster{..., "alt": alt},        autoplay,        loop,        muted      },      isAiGenerated,      body[]{        ...,        _type == "mux.video" => {          asset->        }      }    }
+// Query: *[_type == "thing" && slug.current == $slug][0]{      _id,      title,      slug,      description,      featuredImage{..., "caption": caption, "alt": alt},      featuredVideo{..., asset->},      featuredVideoThumb{..., asset->},      images[]{        ...,        "caption": caption,        "alt": alt      },      videos[]{        file{..., asset->},        title,        alt,        caption,        poster{..., "alt": alt},        autoplay,        loop,        muted      },      isAiGenerated,      body[]{        ...,        _type == "mux.video" => {          asset->        }      }    }
 export type ThingQueryResult = {
   _id: string
   title: string
+  slug: Slug
   description: string | null
   featuredImage: {
     asset?: {
@@ -1677,7 +1679,7 @@ declare module '@sanity/client' {
     '*[\n    _type == "category"\n    && count(*[_type == "readingList" && references(^._id)]) > 0\n  ]|order(title asc){\n    _id,\n    title,\n    slug,\n    description\n  }': CategoriesQueryResult
     '*[\n    _type == "readingList"\n    && defined(slug.current)\n  ]|order(savedAt desc)[0...$limit]{\n    _id, \n    title, \n    slug, \n    originalUrl,\n    savedAt, \n    body[]{\n      ...,\n      _type == "mux.video" => {\n        asset->\n      }\n    }, \n    category->{title, slug}, \n    featuredImage\n  }': ReadingListItemsQueryResult
     '*[_type == "readingList" && slug.current == $slug][0]{\n      _id, \n      title, \n      originalTitle,\n      slug, \n      originalUrl,\n      discussionUrl,\n      category->{title, slug}, \n      savedAt, \n      featuredImage{..., "caption": caption},\n      detailedSummary,\n      keyPoints,\n      conclusion,\n      shortSummary,\n      gist,\n      newTitle,\n      discussionDetailedSummary,\n      keyAgreeingViewpoints,\n      keyOpposingViewpoints,\n      sentiment,\n      discussionShortSummary,\n      discussionGist,\n      discussionTitle,\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }\n    }': ReadingListItemQueryResult
-    '*[\n    _type == "thing"\n  ]|order(_createdAt desc)[0...$limit]{\n    _id,\n    title,\n    description,\n    featuredImage{..., "caption": caption, "alt": alt},\n    featuredVideo{..., asset->},\n    featuredVideoThumb{..., asset->},\n    images[]{\n      ...,\n      "caption": caption,\n      "alt": alt\n    },\n    videos[]{\n      file{..., asset->},\n      title,\n      alt,\n      caption,\n      poster{..., "alt": alt},\n      autoplay,\n      loop,\n      muted\n    },\n    isAiGenerated,\n    body[]{\n      ...,\n      _type == "mux.video" => {\n        asset->\n      }\n    }\n  }': ThingsQueryResult
-    '*[_type == "thing" && _id == $id][0]{\n      _id,\n      title,\n      description,\n      featuredImage{..., "caption": caption, "alt": alt},\n      featuredVideo{..., asset->},\n      featuredVideoThumb{..., asset->},\n      images[]{\n        ...,\n        "caption": caption,\n        "alt": alt\n      },\n      videos[]{\n        file{..., asset->},\n        title,\n        alt,\n        caption,\n        poster{..., "alt": alt},\n        autoplay,\n        loop,\n        muted\n      },\n      isAiGenerated,\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }\n    }': ThingQueryResult
+    '*[\n    _type == "thing"\n  ]|order(_createdAt desc)[0...$limit]{\n    _id,\n    title,\n    slug,\n    description,\n    featuredImage{..., "caption": caption, "alt": alt},\n    featuredVideo{..., asset->},\n    featuredVideoThumb{..., asset->},\n    images[]{\n      ...,\n      "caption": caption,\n      "alt": alt\n    },\n    videos[]{\n      file{..., asset->},\n      title,\n      alt,\n      caption,\n      poster{..., "alt": alt},\n      autoplay,\n      loop,\n      muted\n    },\n    isAiGenerated,\n    body[]{\n      ...,\n      _type == "mux.video" => {\n        asset->\n      }\n    }\n  }': ThingsQueryResult
+    '*[_type == "thing" && slug.current == $slug][0]{\n      _id,\n      title,\n      slug,\n      description,\n      featuredImage{..., "caption": caption, "alt": alt},\n      featuredVideo{..., asset->},\n      featuredVideoThumb{..., asset->},\n      images[]{\n        ...,\n        "caption": caption,\n        "alt": alt\n      },\n      videos[]{\n        file{..., asset->},\n        title,\n        alt,\n        caption,\n        poster{..., "alt": alt},\n        autoplay,\n        loop,\n        muted\n      },\n      isAiGenerated,\n      body[]{\n        ...,\n        _type == "mux.video" => {\n          asset->\n        }\n      }\n    }': ThingQueryResult
   }
 }
