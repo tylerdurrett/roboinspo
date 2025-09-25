@@ -27,7 +27,7 @@ export async function getReadingListItems(limit = 90) {
         asset->
       }
     }, 
-    category->{title, slug}, 
+    categories[]->{title, slug}, 
     featuredImage
   }`)
 
@@ -56,7 +56,7 @@ export async function getReadingListItemBySlug(slug: string) {
       slug, 
       originalUrl,
       discussionUrl,
-      category->{title, slug}, 
+      categories[]->{title, slug}, 
       savedAt, 
       featuredImage{..., "caption": caption},
       detailedSummary,

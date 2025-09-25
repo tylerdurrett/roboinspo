@@ -58,8 +58,25 @@ export const readingListType = defineType({
     }),
     defineField({
       name: 'category',
+      title: 'Category (deprecated)',
       type: 'reference',
       to: { type: 'category' },
+      deprecated: {
+        reason:
+          'Use "categories" field instead. This field will be removed in a future version.',
+      },
+      hidden: true,
+    }),
+    defineField({
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: { type: 'category' },
+        },
+      ],
     }),
     defineField({
       name: 'featuredImage',
@@ -197,14 +214,19 @@ export const readingListType = defineType({
   preview: {
     select: {
       title: 'title',
-      category: 'category.title',
+      categories: 'categories',
       media: 'featuredImage',
     },
     prepare(selection) {
-      const { category } = selection
+      const { categories } = selection
+      const categoryTitles =
+        categories?.map((cat: { title: string }) => cat.title) || []
       return {
         ...selection,
-        subtitle: category ? `${category}` : 'No category',
+        subtitle:
+          categoryTitles.length > 0
+            ? categoryTitles.join(', ')
+            : 'No categories',
       }
     },
   },

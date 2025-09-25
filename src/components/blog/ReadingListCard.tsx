@@ -33,7 +33,8 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-sm text-muted-foreground">
-              {item.category?.title}
+              {item.categories?.map((cat) => cat.title).join(', ') ||
+                'No categories'}
             </span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold mb-2 leading-tight">

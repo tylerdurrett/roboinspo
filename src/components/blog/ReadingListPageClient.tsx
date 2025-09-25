@@ -21,8 +21,10 @@ export function ReadingListPageClient({
     if (!selectedCategory) {
       return items
     }
-    return items.filter(
-      (item) => item.category?.slug.current === selectedCategory
+    return items.filter((item) =>
+      item.categories?.some(
+        (category) => category.slug.current === selectedCategory
+      )
     )
   }, [items, selectedCategory])
 
