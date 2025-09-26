@@ -33,6 +33,7 @@
     "@sanity/types": "^4.1.1",
     "@sanity/vision": "^3.99.0",
     "@tailwindcss/typography": "^0.5.16",
+    "@tanstack/react-virtual": "^3.13.12",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
