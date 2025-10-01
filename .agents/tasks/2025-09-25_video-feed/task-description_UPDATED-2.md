@@ -1,6 +1,6 @@
 # Overview
 
-This plan adapts the vertical video feed roadmap to the Robo Inspo codebase while keeping the feature module portable across React environments (including non-Next.js apps). It leans on the existing Sanity `thing` documents (which already ship poster images, Mux assets, and metadata), reuses shared utilities like `urlFor`, the Shadcn UI kit, and the global Tailwind token setup in `globals.css`. The feed grid will live at `/things`, while the full-screen feed mounts at `/thing/[id]` so URLs stay canonical and predictable across frameworks. All new feature code is grouped under `src/features/video-feed/**`, with a framework-agnostic core and thin Next.js wiring to keep runtime hooks, components, context, and config encapsulated yet shareable. We intentionally rely on native scrolling (no Lenis provider) so other pages' scroll behavior stays untouched.
+This plan adapts the vertical video feed roadmap to the Robo Inspo codebase while keeping the feature module portable across React environments (including non-Next.js apps). It leans on the existing Sanity `thing` documents (which already ship poster images, Mux assets, and metadata), reuses shared utilities like `urlFor`, the Shadcn UI kit, and the global Tailwind token setup in `globals.css`. The feed grid will live at `/things`, while the full-screen feed mounts at `/thing/[id]` so URLs stay canonical and predictable across frameworks. All new feature code is grouped under `src/features/video-feed/**`, with a framework-agnostic core and thin Next.js wiring to keep runtime hooks, components, context, and config encapsulated yet shareable. We intentionally rely on native scrolling (no Lenis provider) so other pages' scroll behavior stays untouched. Each feed item is derived solely from a Thing's featured video; gallery videos remain exclusive to the detail experience.
 
 We're building a fast, mobile-first, TikTok/Reels-style feed for React that opens from a thumbnail grid into a full-screen, vertically snapped player. Each card autoplays as it becomes the focused view, stops when it leaves, and honors a global, user-gesture sound opt-in so audio stays enabled across the session. The UI supports swipe/scroll threshold snapping, share and details overlays, captions/volume controls, and orientation-aware layout that adapts cleanly between portrait and landscape. Under the hood, we virtualize the list with `@tanstack/react-virtual` to keep only a few items mounted, and we separate JSON prefetch (to extend the feed) from media preload (to warm the next few videos) for instant starts without memory bloat. The feed is effectively infinite, loading more data in the background via a cursor API, and includes sensible lifecycle policies (page/tab visibility pausing), accessibility (keyboard + reduced-motion), basic analytics hooks, and performance tuning (preconnect, teardown, adaptive preload) — all on top of Mux Player for reliable streaming and Tailwind v4 for a clean, responsive UI.
 
@@ -17,7 +17,7 @@ We're building a fast, mobile-first, TikTok/Reels-style feed for React that open
 - [x] **Define feed domain types**
 
   - Add `src/features/video-feed/core/types.ts` exporting `VideoFeedItem`, `VideoFeedPage`, and `VideoCreator` types derived from `ThingQueryResult` + `MuxVideoAsset` in `sanity.types.ts`. Include computed fields we will supply (e.g., `muxPlaybackId`, `posterImage`, `shareHref`, `thingSlug`).
-  - Export a `mapThingToFeedItems(thing: ThingQueryResult): VideoFeedItem[]` helper that flattens a single Sanity thing (including featured video and `videos[]`) into feed items with stable IDs (`${thing._id}:${video._key ?? 'featured'}`), and ensure it is re-exported from `src/features/video-feed/index.ts`.
+  - Export a `mapThingToFeedItems(thing: ThingQueryResult): VideoFeedItem[]` helper that returns a feed item only when a Thing has a playable `featuredVideo`, assigning a stable ID like `${thing._id}:featured`, and ensure it is re-exported from `src/features/video-feed/index.ts`.
 
 - [ ] **Establish fetch contract**
 
@@ -44,7 +44,7 @@ We're building a fast, mobile-first, TikTok/Reels-style feed for React that open
 
 - [ ] **Server model for previews**
 
-  - Implement `src/models/video-feed.ts` exporting `getVideoFeedPreview(limit?: number)` that fetches the newest Things with any playable Mux asset using GROQ, reuses `mapThingToFeedItems`, and returns the first `limit` items (default 24) pre-sorted by newest available video.
+  - Implement `src/models/video-feed.ts` exporting `getVideoFeedPreview(limit?: number)` that fetches the newest Things whose `featuredVideo` resolves to a playable Mux asset using GROQ, reuses `mapThingToFeedItems`, and returns the first `limit` items (default 24) pre-sorted by newest available video.
   - **Acceptance check:** `npm run lint` passes and calling the model in `node --eval` prints an array with required fields (`posterUrl`, `muxPlaybackId`).
 
 - [ ] **Grid presentation**
@@ -150,7 +150,7 @@ We're building a fast, mobile-first, TikTok/Reels-style feed for React that open
 
 - [ ] **Implement fetcher + API route**
 
-  - Flesh out `fetchVideoFeedPage` to call a new GROQ query in `src/models/video-feed.ts` that accepts `{ cursor, limit }`, orders items by `_createdAt desc`, flattens via `mapThingToFeedItems`, and returns `{ items, nextCursor }` where `cursor` encodes the last thing ID + video key.
+  - Flesh out `fetchVideoFeedPage` to call a new GROQ query in `src/models/video-feed.ts` that accepts `{ cursor, limit }`, orders items by `_createdAt desc`, flattens via `mapThingToFeedItems`, and returns `{ items, nextCursor }` where `cursor` stores the last Thing ID.
   - Add `src/app/api/video-feed/route.ts` that invokes the model and returns JSON for client-side prefetches.
   - **Acceptance check:** `curl '/api/video-feed?limit=5'` returns well-typed JSON with `nextCursor` when more data exists.
 

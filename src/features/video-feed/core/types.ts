@@ -1,15 +1,8 @@
 import type { MuxVideoAsset, ThingQueryResult } from '../../../../sanity.types'
 
-type ThingVideoItem = NonNullable<ThingQueryResult['videos']>[number] & {
-  _key?: string
-}
+type ThingFeaturedImage = NonNullable<ThingQueryResult['featuredImage']>
 
-type ThingPosterImage = NonNullable<ThingQueryResult['featuredImage']>
-type ThingVideoPoster = NonNullable<
-  NonNullable<ThingQueryResult['videos']>[number]['poster']
->
-
-export type VideoFeedPosterImage = ThingPosterImage | ThingVideoPoster
+export type VideoFeedPosterImage = ThingFeaturedImage
 
 export type VideoCreator = {
   id: string
@@ -22,7 +15,7 @@ export type VideoCreator = {
 
 export type VideoFeedItem = {
   id: string
-  videoKey: string
+  videoKey: 'featured'
   thingId: string
   thingSlug: string | null
   thingTitle: string
@@ -60,31 +53,27 @@ const resolveShareHref = (thing: ThingQueryResult): string => {
   return `/thing/${segment}`
 }
 
-const extractPosterImage = (
-  poster: ThingVideoPoster | null | undefined,
-  fallback: ThingPosterImage | null | undefined
+const getFeaturedPosterImage = (
+  thing: ThingQueryResult
 ): VideoFeedPosterImage | null => {
-  if (poster?.asset) {
-    return poster
-  }
+  const image = thing.featuredImage
 
-  if (fallback?.asset) {
-    return fallback
+  if (image?.asset) {
+    return image
   }
 
   return null
 }
 
-const extractPosterAlt = (
-  video: ThingVideoItem | null | undefined,
-  poster: VideoFeedPosterImage | null,
-  fallbackTitle: string
+const getFeaturedPosterAlt = (
+  thing: ThingQueryResult,
+  poster: VideoFeedPosterImage | null
 ): string | null => {
-  if (video?.alt) {
-    return video.alt
+  if (poster?.alt) {
+    return poster.alt
   }
 
-  return poster?.alt ?? fallbackTitle ?? null
+  return thing.title
 }
 
 const extractPlaybackId = (
@@ -130,17 +119,6 @@ const extractThumbTime = (
   return typeof thumbTime === 'number' ? thumbTime : null
 }
 
-const normaliseVideoKey = (
-  video: ThingVideoItem | null | undefined,
-  fallbackIndex: number
-): string => {
-  if (video?._key) {
-    return video._key
-  }
-
-  return `video-${fallbackIndex}`
-}
-
 export const mapThingToFeedItems = (
   thing: ThingQueryResult | null | undefined
 ): VideoFeedItem[] => {
@@ -148,100 +126,45 @@ export const mapThingToFeedItems = (
     return []
   }
 
+  const featuredAsset = thing.featuredVideo?.asset ?? null
+  const playbackId = extractPlaybackId(featuredAsset)
+
+  if (!playbackId) {
+    return []
+  }
+
   const shareHref = resolveShareHref(thing)
-  const basePoster = thing.featuredImage ?? null
-  const baseTitle = thing.title
+  const posterImage = getFeaturedPosterImage(thing)
+  const posterAlt = getFeaturedPosterAlt(thing, posterImage)
   const description = thing.description ?? null
   const isAiGenerated = Boolean(thing.isAiGenerated)
-  const items: VideoFeedItem[] = []
 
-  const pushItem = (
-    params: Omit<
-      VideoFeedItem,
-      'thingId' | 'thingSlug' | 'thingTitle' | 'shareHref'
-    >
-  ) => {
-    items.push({
-      thingId: thing._id,
-      thingSlug: fallbackSlug(thing),
-      thingTitle: baseTitle,
-      shareHref,
-      ...params,
-    })
+  const item: VideoFeedItem = {
+    id: `${thing._id}:featured`,
+    videoKey: 'featured',
+    thingId: thing._id,
+    thingSlug: fallbackSlug(thing),
+    thingTitle: thing.title,
+    shareHref,
+    title: thing.title,
+    caption: null,
+    description,
+    altText: posterAlt,
+    posterImage,
+    posterAlt,
+    posterUrl: null,
+    muxAssetId: extractMuxAssetId(featuredAsset),
+    muxPlaybackId: playbackId,
+    muxDuration: extractMuxDuration(featuredAsset),
+    muxAspectRatio: extractMuxAspectRatio(featuredAsset),
+    muxPosterFrameTime: extractThumbTime(featuredAsset),
+    isFeatured: true,
+    isAiGenerated,
+    autoplay: true,
+    loop: false,
+    muted: true,
+    creator: null,
   }
 
-  const featuredAsset = thing.featuredVideo?.asset ?? null
-  const featuredPlaybackId = extractPlaybackId(featuredAsset)
-
-  if (featuredPlaybackId) {
-    const posterImage = extractPosterImage(null, basePoster)
-    const posterAlt = posterImage?.alt ?? baseTitle
-    pushItem({
-      id: `${thing._id}:featured`,
-      videoKey: 'featured',
-      title: baseTitle,
-      caption: null,
-      description,
-      altText: posterAlt,
-      posterImage,
-      posterAlt,
-      posterUrl: null,
-      muxAssetId: extractMuxAssetId(featuredAsset),
-      muxPlaybackId: featuredPlaybackId,
-      muxDuration: extractMuxDuration(featuredAsset),
-      muxAspectRatio: extractMuxAspectRatio(featuredAsset),
-      muxPosterFrameTime: extractThumbTime(featuredAsset),
-      isFeatured: true,
-      isAiGenerated,
-      autoplay: true,
-      loop: false,
-      muted: true,
-      creator: null,
-    })
-  }
-
-  const videos = thing.videos ?? []
-
-  videos.forEach((rawVideo, index) => {
-    const video = rawVideo as ThingVideoItem | null | undefined
-    const asset = video?.file?.asset ?? null
-    const playbackId = extractPlaybackId(asset)
-
-    if (!playbackId) {
-      return
-    }
-
-    const posterImage = extractPosterImage(
-      (video?.poster ?? null) as ThingVideoPoster | null,
-      basePoster
-    )
-    const videoKey = normaliseVideoKey(video, index)
-
-    const posterAlt = extractPosterAlt(video, posterImage, baseTitle)
-
-    pushItem({
-      id: `${thing._id}:${videoKey}`,
-      videoKey,
-      title: video?.title ?? baseTitle,
-      caption: video?.caption ?? null,
-      description,
-      altText: posterAlt,
-      posterImage,
-      posterAlt,
-      posterUrl: null,
-      muxAssetId: extractMuxAssetId(asset),
-      muxPlaybackId: playbackId,
-      muxDuration: extractMuxDuration(asset),
-      muxAspectRatio: extractMuxAspectRatio(asset),
-      muxPosterFrameTime: extractThumbTime(asset),
-      isFeatured: false,
-      isAiGenerated,
-      autoplay: video?.autoplay ?? true,
-      loop: video?.loop ?? false,
-      muted: video?.muted ?? true,
-      creator: null,
-    })
-  })
-
-  return items
+  return [item]
 }
