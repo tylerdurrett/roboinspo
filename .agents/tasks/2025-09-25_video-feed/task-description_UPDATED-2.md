@@ -27,11 +27,13 @@ We're building a fast, mobile-first, TikTok/Reels-style feed for React that open
     - `fetchVideoFeedPage` currently throws so host apps must provide an implementation before usage.
     - `mapThingToFeedItems` is re-exported through the API module to keep consumers framework-agnostic.
 
-- [ ] **Shared storage utilities**
+- [x] **Shared storage utilities**
 
   - Add `src/lib/storage.ts` with guarded `getBool`/`setBool` helpers (no `window` access during SSR) and export `SOUND_ALLOWED_KEY = 'robo-inspo:feedSoundAllowed'`.
   - Provide basic unit-style usage example in JSDoc so teammates know the SSR guard pattern.
   - **Acceptance check:** Running `npm run lint` after adding the file passes.
+  - Notes:
+    - Implemented `src/lib/storage.ts` with SSR guards and a `useState` lazy initializer example for reusing the helpers across runtimes.
 
 - [ ] **Viewport-safe utility class**
 
