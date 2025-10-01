@@ -1,6 +1,7 @@
 import type { MuxVideoAsset, ThingQueryResult } from '../../../../sanity.types'
 
-type ThingFeaturedImage = NonNullable<ThingQueryResult['featuredImage']>
+type Thing = NonNullable<ThingQueryResult>
+type ThingFeaturedImage = NonNullable<Thing['featuredImage']>
 
 export type VideoFeedPosterImage = ThingFeaturedImage
 
@@ -45,17 +46,15 @@ export type VideoFeedPage = {
   nextCursor: string | null
 }
 
-const fallbackSlug = (thing: ThingQueryResult): string | null =>
+const fallbackSlug = (thing: Thing): string | null =>
   thing.slug?.current ?? null
 
-const resolveShareHref = (thing: ThingQueryResult): string => {
+const resolveShareHref = (thing: Thing): string => {
   const segment = fallbackSlug(thing) ?? thing._id
   return `/thing/${segment}`
 }
 
-const getFeaturedPosterImage = (
-  thing: ThingQueryResult
-): VideoFeedPosterImage | null => {
+const getFeaturedPosterImage = (thing: Thing): VideoFeedPosterImage | null => {
   const image = thing.featuredImage
 
   if (image?.asset) {
@@ -66,7 +65,7 @@ const getFeaturedPosterImage = (
 }
 
 const getFeaturedPosterAlt = (
-  thing: ThingQueryResult,
+  thing: Thing,
   poster: VideoFeedPosterImage | null
 ): string | null => {
   if (poster?.alt) {
@@ -126,27 +125,29 @@ export const mapThingToFeedItems = (
     return []
   }
 
-  const featuredAsset = thing.featuredVideo?.asset ?? null
+  const resolvedThing = thing as Thing
+
+  const featuredAsset = resolvedThing.featuredVideo?.asset ?? null
   const playbackId = extractPlaybackId(featuredAsset)
 
   if (!playbackId) {
     return []
   }
 
-  const shareHref = resolveShareHref(thing)
-  const posterImage = getFeaturedPosterImage(thing)
-  const posterAlt = getFeaturedPosterAlt(thing, posterImage)
-  const description = thing.description ?? null
-  const isAiGenerated = Boolean(thing.isAiGenerated)
+  const shareHref = resolveShareHref(resolvedThing)
+  const posterImage = getFeaturedPosterImage(resolvedThing)
+  const posterAlt = getFeaturedPosterAlt(resolvedThing, posterImage)
+  const description = resolvedThing.description ?? null
+  const isAiGenerated = Boolean(resolvedThing.isAiGenerated)
 
   const item: VideoFeedItem = {
-    id: `${thing._id}:featured`,
+    id: `${resolvedThing._id}:featured`,
     videoKey: 'featured',
-    thingId: thing._id,
-    thingSlug: fallbackSlug(thing),
-    thingTitle: thing.title,
+    thingId: resolvedThing._id,
+    thingSlug: fallbackSlug(resolvedThing),
+    thingTitle: resolvedThing.title,
     shareHref,
-    title: thing.title,
+    title: resolvedThing.title,
     caption: null,
     description,
     altText: posterAlt,
