@@ -19,10 +19,13 @@ We're building a fast, mobile-first, TikTok/Reels-style feed for React that open
   - Add `src/features/video-feed/core/types.ts` exporting `VideoFeedItem`, `VideoFeedPage`, and `VideoCreator` types derived from `ThingQueryResult` + `MuxVideoAsset` in `sanity.types.ts`. Include computed fields we will supply (e.g., `muxPlaybackId`, `posterImage`, `shareHref`, `thingSlug`).
   - Export a `mapThingToFeedItems(thing: ThingQueryResult): VideoFeedItem[]` helper that returns a feed item only when a Thing has a playable `featuredVideo`, assigning a stable ID like `${thing._id}:featured`, and ensure it is re-exported from `src/features/video-feed/index.ts`.
 
-- [ ] **Establish fetch contract**
+- [x] **Establish fetch contract**
 
   - Create `src/features/video-feed/api.ts` that defines `export type FetchVideoFeedPage = (params: { cursor?: string; limit?: number }) => Promise<VideoFeedPage>` and exports a placeholder `fetchVideoFeedPage` implementation that throws `new Error('unimplemented')` for now.
   - Re-export `mapThingToFeedItems` so the future API implementation can consume it without circular imports and so non-Next apps can supply their own fetcher.
+  - Notes:
+    - `fetchVideoFeedPage` currently throws so host apps must provide an implementation before usage.
+    - `mapThingToFeedItems` is re-exported through the API module to keep consumers framework-agnostic.
 
 - [ ] **Shared storage utilities**
 

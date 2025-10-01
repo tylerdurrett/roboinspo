@@ -3,3 +3,4 @@
  * import from this entry point while shared logic remains under `core/`.
  */
 export * from './core'
+export * from './api'
