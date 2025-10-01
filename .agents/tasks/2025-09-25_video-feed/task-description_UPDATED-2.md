@@ -14,7 +14,7 @@ We're building a fast, mobile-first, TikTok/Reels-style feed for React that open
 
   - Create `src/features/video-feed/core` to house framework-agnostic exports (types, hooks, and components) and add `src/features/video-feed/index.ts` that re-exports the pieces needed by the Next.js integration. Split DOM-only behavior behind environment guards so the same code can compile inside a plain React (Vite/CRA) sandbox.
 
-- [ ] **Define feed domain types**
+- [x] **Define feed domain types**
 
   - Add `src/features/video-feed/core/types.ts` exporting `VideoFeedItem`, `VideoFeedPage`, and `VideoCreator` types derived from `ThingQueryResult` + `MuxVideoAsset` in `sanity.types.ts`. Include computed fields we will supply (e.g., `muxPlaybackId`, `posterImage`, `shareHref`, `thingSlug`).
   - Export a `mapThingToFeedItems(thing: ThingQueryResult): VideoFeedItem[]` helper that flattens a single Sanity thing (including featured video and `videos[]`) into feed items with stable IDs (`${thing._id}:${video._key ?? 'featured'}`), and ensure it is re-exported from `src/features/video-feed/index.ts`.
