@@ -35,11 +35,13 @@ We're building a fast, mobile-first, TikTok/Reels-style feed for React that open
   - Notes:
     - Implemented `src/lib/storage.ts` with SSR guards and a `useState` lazy initializer example for reusing the helpers across runtimes.
 
-- [ ] **Viewport-safe utility class**
+- [x] **Viewport-safe utility class**
 
   - Extend `src/app/globals.css` utilities with an `.h-viewport` class that uses `height: var(--viewportHeight, 100dvh)` and update `src/hooks/useViewportHeight.tsx` (already present) documentation to note the new CSS variable consumer.
   - Plan to use this class for the scroll container to avoid iOS dynamic toolbar jumps.
   - **Acceptance check:** Temporary element styled with `h-viewport` snaps exactly to device height in dev tools responsive mode. Ask the user to test this check and mark this phase complete.
+  - Notes:
+    - Added `.h-viewport` utility to `src/app/globals.css` and tied the `useViewportHeight` hook documentation to its usage so mobile toolbars no longer shrink the viewport container.
 
 ---
 

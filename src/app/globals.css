@@ -176,6 +176,11 @@
 }
 
 @layer utilities {
+  /* Uses the JS-managed --viewportHeight var to avoid mobile toolbar jumps */
+  .h-viewport {
+    height: var(--viewportHeight, 100dvh);
+  }
+
   .textOutline {
     color: var(--outline-color, currentColor);
     -webkit-text-fill-color: transparent;
