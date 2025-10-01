@@ -20,7 +20,7 @@ export function ThingImageGrid({ items }: ThingImageGridProps) {
         return (
           <Link
             key={item._id}
-            href={`/things/${item.slug.current}`}
+            href={`/oldthings/${item.slug.current}`}
             className="block hover:opacity-80 transition-opacity duration-200"
           >
             <div className="aspect-video overflow-hidden">

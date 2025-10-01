@@ -10,7 +10,7 @@ export default function Home() {
     <div className="w-screen h-screen flex items-center justify-center">
       <div className="flex flex-col gap-[2vh] items-center justify-center">
         <Link
-          href="/things"
+          href="/oldthings"
           className="text-[12vw] font-bold tracking-wider hover:opacity-70 transition-opacity duration-300 text-center leading-none"
         >
           THINGS
