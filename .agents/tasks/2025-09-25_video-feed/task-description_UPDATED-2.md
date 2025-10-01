@@ -10,7 +10,7 @@ We're building a fast, mobile-first, TikTok/Reels-style feed for React that open
 
 > Goal: lock down data contracts, routing touchpoints, and shared helpers so later phases drop in cleanly without fighting the existing app structure.
 
-- [ ] **Establish core module boundary**
+- [x] **Establish core module boundary**
 
   - Create `src/features/video-feed/core` to house framework-agnostic exports (types, hooks, and components) and add `src/features/video-feed/index.ts` that re-exports the pieces needed by the Next.js integration. Split DOM-only behavior behind environment guards so the same code can compile inside a plain React (Vite/CRA) sandbox.
 
