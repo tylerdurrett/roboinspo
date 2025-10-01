@@ -6,15 +6,18 @@ import { usePathname } from 'next/navigation'
 const navItems = [
   { label: 'THINGS', href: '/things' },
   { label: 'READING', href: '/reading' },
-  // { label: 'THINKING', href: '/thinking' },
-  // { label: 'WATCHING', href: '/watching' },
 ]
 
 export function TopNav() {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex w-full min-h-[44px] justify-between bg-nav-inactive">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex w-full min-h-[44px] justify-start bg-nav-inactive">
+      <Link
+        href="/"
+        className="w-[calc(2vw+44px)] h-[calc(2vw+44px)] flex items-center justify-center bg-blue-600 transition-colors hover:bg-blue-600/90"
+        aria-label="Home"
+      />
       <div className="flex">
         {navItems.map((item) => {
           const isActive = pathname.startsWith(item.href)
@@ -35,12 +38,6 @@ export function TopNav() {
           )
         })}
       </div>
-
-      <Link
-        href="/"
-        className="w-[calc(2vw+44px)] h-[calc(2vw+44px)] flex items-center justify-center bg-nav-active transition-colors hover:bg-nav-active/90"
-        aria-label="Home"
-      />
     </nav>
   )
 }
