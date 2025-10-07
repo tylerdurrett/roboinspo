@@ -1,4 +1,4 @@
-import { getReadingListItems } from '@/models/readingList'
+import { getReadingListItems, ReadingListItemMeta } from '@/models/readingList'
 import { ImageGrid } from '@/components/blog/ImageGrid'
 import type { Metadata } from 'next'
 
@@ -11,7 +11,9 @@ export default async function LookingPage() {
   const items = await getReadingListItems()
 
   // Filter items that have featured images
-  const itemsWithImages = items.filter((item) => item.featuredImage)
+  const itemsWithImages = items.filter(
+    (item: ReadingListItemMeta) => item.featuredImage
+  )
 
   return (
     <div className="w-full">
