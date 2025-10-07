@@ -9,35 +9,59 @@ const options = { next: { revalidate: 30 } }
 
 /**
  * ------------------------------------------------------------------
- * Get the latest [limit] reading list items
+ * Get reading list items with pagination support
  */
-export async function getReadingListItems(limit = 90) {
+export async function getReadingListItems(
+  options: {
+    page?: number
+    limit?: number
+  } = {}
+) {
+  const { page = 1, limit = 100 } = options
+  const start = (page - 1) * limit
+  const end = start + limit - 1
+
   const readingListItemsQuery = defineQuery(`*[
     _type == "readingList"
     && defined(slug.current)
-  ]|order(savedAt desc)[0...$limit]{
-    _id, 
-    title, 
-    slug, 
+  ]|order(savedAt desc)[$start...$end]{
+    _id,
+    title,
+    slug,
     originalUrl,
-    savedAt, 
+    savedAt,
     body[]{
       ...,
       _type == "mux.video" => {
         asset->
       }
-    }, 
-    categories[]->{title, slug}, 
+    },
+    categories[]->{title, slug},
     featuredImage
   }`)
 
   const readingListItems = await client.fetch(
     readingListItemsQuery,
-    { limit },
-    options
+    { start, end },
+    { next: { revalidate: 30 } }
   )
 
   return readingListItems
+}
+
+/**
+ * ------------------------------------------------------------------
+ * Get total count of reading list items
+ */
+export async function getReadingListItemsCount() {
+  const countQuery = defineQuery(`count(*[
+    _type == "readingList"
+    && defined(slug.current)
+  ])`)
+
+  const count = await client.fetch(countQuery, {}, { next: { revalidate: 30 } })
+
+  return count
 }
 
 /* A single reading list item meta data entry */
