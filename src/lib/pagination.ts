@@ -40,7 +40,7 @@ export function calculatePagination(
 export function generatePageNumbers(
   currentPage: number,
   totalPages: number,
-  maxDisplayed: number = 7
+  maxDisplayed: number = 5
 ): PageNumberGroup[] {
   if (totalPages <= maxDisplayed) {
     // Show all pages if total is small
