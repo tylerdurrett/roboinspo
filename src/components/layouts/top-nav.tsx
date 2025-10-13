@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { HomeIcon } from 'lucide-react'
 
 const navItems = [
   { label: 'THINGS', href: '/oldthings' },
@@ -16,9 +17,11 @@ export function TopNav() {
     <nav className="fixed top-0 left-0 right-0 z-50 flex w-full min-h-[44px] justify-start bg-nav-inactive">
       <Link
         href="/"
-        className="w-[calc(2vw+44px)] h-[calc(2vw+44px)] flex items-center justify-center bg-blue-600 transition-colors hover:bg-blue-600/90"
+        className="w-[calc(2vw+44px)] h-[calc(2vw+44px)] flex items-center justify-center bg-nav-inactive transition-colors hover:bg-nav-active"
         aria-label="Home"
-      />
+      >
+        <HomeIcon className="w-5 h-5 text-nav-inactive-foreground" />
+      </Link>
       <div className="flex">
         {navItems.map((item) => {
           const isActive = pathname.startsWith(item.href)
