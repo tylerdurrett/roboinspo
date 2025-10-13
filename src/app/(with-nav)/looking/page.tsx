@@ -1,5 +1,8 @@
-import { getReadingListItems, ReadingListItemMeta } from '@/models/readingList'
-import { ImageGrid } from '@/components/blog/ImageGrid'
+import {
+  getReadingListItems,
+  getReadingListItemsCount,
+} from '@/models/readingList'
+import { LookingPageClient } from '@/components/blog/LookingPageClient'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -7,17 +10,26 @@ export const metadata: Metadata = {
   description: 'A visual collection of featured images from our reading list',
 }
 
-export default async function LookingPage() {
-  const items = await getReadingListItems()
+type Props = {
+  searchParams?: Promise<Record<string, string | string[]>>
+}
 
-  // Filter items that have featured images
-  const itemsWithImages = items.filter(
-    (item: ReadingListItemMeta) => item.featuredImage
-  )
+export default async function LookingPage({ searchParams }: Props) {
+  const params = await searchParams
+  const page = Number(params?.page) || 1
+  const pageSize = 300
+
+  const [items, totalItems] = await Promise.all([
+    getReadingListItems({ page, limit: pageSize }),
+    getReadingListItemsCount(),
+  ])
 
   return (
-    <div className="w-full">
-      <ImageGrid items={itemsWithImages} />
-    </div>
+    <LookingPageClient
+      items={items}
+      currentPage={page}
+      totalItems={totalItems}
+      pageSize={pageSize}
+    />
   )
 }
