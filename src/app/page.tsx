@@ -21,6 +21,12 @@ export default function Home() {
         >
           READING
         </Link>
+        <Link
+          href="/looking"
+          className="text-[12vw] font-bold tracking-wider hover:opacity-70 transition-opacity duration-300 text-center leading-none"
+        >
+          LOOKING
+        </Link>
       </div>
     </div>
   )
