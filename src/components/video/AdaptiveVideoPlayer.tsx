@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
-import type { CSSProperties } from 'react'
 import MuxPlayer from '@mux/mux-player-react'
 import type { MuxPlayerProps } from '@mux/mux-player-react'
 import type MuxPlayerElement from '@mux/mux-player'
@@ -80,7 +79,7 @@ export function AdaptiveVideoPlayer({
     }
   }
 
-  const containerStyle: CSSProperties = {
+  const containerStyle: MuxPlayerProps['style'] = {
     aspectRatio: aspectRatioType === 'loading' ? '16/9' : String(aspectRatio),
     ...(style ?? {}),
   }
