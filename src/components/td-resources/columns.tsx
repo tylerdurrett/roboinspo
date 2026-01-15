@@ -9,26 +9,11 @@ import {
   sourceTypeLabels,
   pricingModelLabels,
   skillLevelLabels,
-  statusLabels,
   type ResourceWithRelations,
 } from '@/lib/td-resources'
 import { cn } from '@/lib/utils'
 
 const columnHelper = createColumnHelper<ResourceWithRelations>()
-
-/** Badge color classes based on status */
-function getStatusClasses(status: string): string {
-  switch (status) {
-    case 'active':
-      return 'bg-green-500/20 text-green-400 border-green-500/30'
-    case 'inactive':
-      return 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30'
-    case 'archived':
-      return 'bg-gray-500/20 text-gray-400 border-gray-500/30'
-    default:
-      return ''
-  }
-}
 
 /** Badge color classes based on pricing */
 function getPricingClasses(pricing: string): string {
@@ -111,7 +96,19 @@ export const columns = [
     },
   }),
   columnHelper.accessor('sourceType', {
-    header: 'Type',
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          size="sm"
+          className="h-8 px-2 -ml-2"
+          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+        >
+          Type
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      )
+    },
     cell: ({ getValue }) => {
       const sourceType = getValue()
       return (
@@ -123,7 +120,19 @@ export const columns = [
     },
   }),
   columnHelper.accessor('pricingModel', {
-    header: 'Pricing',
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          size="sm"
+          className="h-8 px-2 -ml-2"
+          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+        >
+          Pricing
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      )
+    },
     cell: ({ getValue }) => {
       const pricing = getValue()
       return (
@@ -134,7 +143,24 @@ export const columns = [
     },
   }),
   columnHelper.accessor('skillLevels', {
-    header: 'Skill Levels',
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          size="sm"
+          className="h-8 px-2 -ml-2"
+          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+        >
+          Skill Levels
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      )
+    },
+    sortingFn: (rowA, rowB) => {
+      const a = rowA.original.skillLevels ?? []
+      const b = rowB.original.skillLevels ?? []
+      return a.length - b.length
+    },
     cell: ({ getValue }) => {
       const levels = getValue() ?? []
       if (levels.length === 0)
@@ -151,7 +177,24 @@ export const columns = [
     },
   }),
   columnHelper.accessor('creators', {
-    header: 'Creator(s)',
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          size="sm"
+          className="h-8 px-2 -ml-2"
+          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+        >
+          Creator(s)
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      )
+    },
+    sortingFn: (rowA, rowB) => {
+      const a = rowA.original.creators?.[0]?.name ?? ''
+      const b = rowB.original.creators?.[0]?.name ?? ''
+      return a.localeCompare(b)
+    },
     cell: ({ getValue }) => {
       const creators = getValue() ?? []
       if (creators.length === 0)
@@ -159,52 +202,6 @@ export const columns = [
       return (
         <span className="text-sm">
           {creators.map((c) => c.name).join(', ')}
-        </span>
-      )
-    },
-  }),
-  columnHelper.accessor('status', {
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          size="sm"
-          className="h-8 px-2 -ml-2"
-          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
-        >
-          Status
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
-      )
-    },
-    cell: ({ getValue }) => {
-      const status = getValue()
-      return (
-        <Badge variant="outline" className={cn(getStatusClasses(status))}>
-          {statusLabels[status]}
-        </Badge>
-      )
-    },
-  }),
-  columnHelper.accessor('lastVerified', {
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          size="sm"
-          className="h-8 px-2 -ml-2"
-          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
-        >
-          Last Verified
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
-      )
-    },
-    cell: ({ getValue }) => {
-      const date = getValue()
-      return (
-        <span className="text-sm text-muted-foreground whitespace-nowrap">
-          {new Date(date).toLocaleDateString()}
         </span>
       )
     },
