@@ -21,6 +21,16 @@ export function ResourcesFilteredView({
 }: ResourcesFilteredViewProps) {
   const { filters, setFilters } = useResourceFilters(fixedSourceType)
 
+  const hiddenColumns = useMemo(() => {
+    if (fixedSourceType === 'youtube' || fixedSourceType === 'patreon') {
+      return ['sourceType', 'pricingModel']
+    }
+    return []
+  }, [fixedSourceType])
+
+  const hidePricingFilter =
+    fixedSourceType === 'youtube' || fixedSourceType === 'patreon'
+
   const filteredResources = useMemo(
     () => filterResources(resources, filters),
     [resources, filters]
@@ -69,6 +79,7 @@ export function ResourcesFilteredView({
         onClearFilters={handleClearFilters}
         activeFilterCount={activeFilterCount}
         hideSourceTypeFilter={!!fixedSourceType}
+        hidePricingFilter={hidePricingFilter}
       />
 
       <div className="text-sm text-muted-foreground">
@@ -90,7 +101,10 @@ export function ResourcesFilteredView({
           )}
         </div>
       ) : (
-        <ResourcesTable resources={filteredResources} />
+        <ResourcesTable
+          resources={filteredResources}
+          hiddenColumns={hiddenColumns}
+        />
       )}
     </div>
   )

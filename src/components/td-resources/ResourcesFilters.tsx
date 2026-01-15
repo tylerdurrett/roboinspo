@@ -26,6 +26,7 @@ interface ResourcesFiltersProps {
   onClearFilters: () => void
   activeFilterCount: number
   hideSourceTypeFilter?: boolean
+  hidePricingFilter?: boolean
 }
 
 /** Convert kebab-case to Title Case */
@@ -53,6 +54,7 @@ export function ResourcesFilters({
   onClearFilters,
   activeFilterCount,
   hideSourceTypeFilter = false,
+  hidePricingFilter = false,
 }: ResourcesFiltersProps) {
   const sourceTypeOptions = buildOptions(sourceTypes, sourceTypeLabels)
   const pricingOptions = buildOptions(pricingModels, pricingModelLabels)
@@ -103,13 +105,15 @@ export function ResourcesFilters({
           />
         )}
 
-        <MultiSelect
-          options={pricingOptions}
-          selected={filters.pricingModel}
-          onChange={(value) => updateFilter('pricingModel', value)}
-          placeholder="Pricing"
-          searchPlaceholder="Search pricing..."
-        />
+        {!hidePricingFilter && (
+          <MultiSelect
+            options={pricingOptions}
+            selected={filters.pricingModel}
+            onChange={(value) => updateFilter('pricingModel', value)}
+            placeholder="Pricing"
+            searchPlaceholder="Search pricing..."
+          />
+        )}
 
         <MultiSelect
           options={skillLevelOptions}

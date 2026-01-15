@@ -7,7 +7,7 @@ import {
   flexRender,
   type SortingState,
 } from '@tanstack/react-table'
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import {
   Table,
   TableBody,
@@ -21,14 +21,23 @@ import type { ResourceWithRelations } from '@/lib/td-resources'
 
 interface ResourcesTableProps {
   resources: ResourceWithRelations[]
+  hiddenColumns?: string[]
 }
 
-export function ResourcesTable({ resources }: ResourcesTableProps) {
+export function ResourcesTable({
+  resources,
+  hiddenColumns = [],
+}: ResourcesTableProps) {
   const [sorting, setSorting] = useState<SortingState>([])
+
+  const visibleColumns = useMemo(
+    () => columns.filter((col) => !hiddenColumns.includes(col.id as string)),
+    [hiddenColumns]
+  )
 
   const table = useReactTable({
     data: resources,
-    columns,
+    columns: visibleColumns,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     onSortingChange: setSorting,
@@ -68,7 +77,10 @@ export function ResourcesTable({ resources }: ResourcesTableProps) {
           ))
         ) : (
           <TableRow>
-            <TableCell colSpan={columns.length} className="h-24 text-center">
+            <TableCell
+              colSpan={visibleColumns.length}
+              className="h-24 text-center"
+            >
               No resources found.
             </TableCell>
           </TableRow>

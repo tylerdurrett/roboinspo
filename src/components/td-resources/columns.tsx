@@ -96,6 +96,7 @@ export const columns = [
     },
   }),
   columnHelper.accessor('sourceType', {
+    id: 'sourceType',
     header: ({ column }) => {
       return (
         <Button
@@ -120,6 +121,7 @@ export const columns = [
     },
   }),
   columnHelper.accessor('pricingModel', {
+    id: 'pricingModel',
     header: ({ column }) => {
       return (
         <Button
@@ -201,7 +203,17 @@ export const columns = [
         return <span className="text-muted-foreground">-</span>
       return (
         <span className="text-sm">
-          {creators.map((c) => c.name).join(', ')}
+          {creators.map((c, i) => (
+            <span key={c.slug}>
+              {i > 0 && ', '}
+              <Link
+                href={`/touchdesigner/resources/creators/${c.slug}`}
+                className="hover:underline"
+              >
+                {c.name}
+              </Link>
+            </span>
+          ))}
         </span>
       )
     },
