@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { Metadata } from 'next'
 import { getResourcesWithRelations } from '@/lib/td-resources'
 import { ResourcesFilteredView } from '@/components/td-resources/ResourcesFilteredView'
@@ -13,5 +14,9 @@ export default function PatreonResourcesPage() {
     (r) => r.sourceType === 'patreon'
   )
 
-  return <ResourcesFilteredView resources={resources} fixedSourceType="patreon" />
+  return (
+    <Suspense>
+      <ResourcesFilteredView resources={resources} fixedSourceType="patreon" />
+    </Suspense>
+  )
 }

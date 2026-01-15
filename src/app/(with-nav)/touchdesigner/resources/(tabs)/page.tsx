@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { Metadata } from 'next'
 import { getResourcesWithRelations } from '@/lib/td-resources'
 import { ResourcesFilteredView } from '@/components/td-resources/ResourcesFilteredView'
@@ -10,5 +11,9 @@ export const metadata: Metadata = {
 
 export default function TouchDesignerResourcesPage() {
   const resources = getResourcesWithRelations()
-  return <ResourcesFilteredView resources={resources} />
+  return (
+    <Suspense>
+      <ResourcesFilteredView resources={resources} />
+    </Suspense>
+  )
 }

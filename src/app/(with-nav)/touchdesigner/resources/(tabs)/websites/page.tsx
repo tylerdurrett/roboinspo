@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { Metadata } from 'next'
 import { getResourcesWithRelations } from '@/lib/td-resources'
 import { ResourcesFilteredView } from '@/components/td-resources/ResourcesFilteredView'
@@ -12,5 +13,9 @@ export default function WebsitesResourcesPage() {
     (r) => r.sourceType === 'website'
   )
 
-  return <ResourcesFilteredView resources={resources} fixedSourceType="website" />
+  return (
+    <Suspense>
+      <ResourcesFilteredView resources={resources} fixedSourceType="website" />
+    </Suspense>
+  )
 }

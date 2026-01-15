@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { Metadata } from 'next'
 import { getResourcesWithRelations } from '@/lib/td-resources'
 import { ResourcesFilteredView } from '@/components/td-resources/ResourcesFilteredView'
@@ -13,5 +14,9 @@ export default function YouTubeResourcesPage() {
     (r) => r.sourceType === 'youtube'
   )
 
-  return <ResourcesFilteredView resources={resources} fixedSourceType="youtube" />
+  return (
+    <Suspense>
+      <ResourcesFilteredView resources={resources} fixedSourceType="youtube" />
+    </Suspense>
+  )
 }
