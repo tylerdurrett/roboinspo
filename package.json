@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack -p 9600",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "add": "npx shadcn@latest add",

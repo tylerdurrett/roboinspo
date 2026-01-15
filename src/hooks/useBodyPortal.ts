@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useSyncExternalStore, useCallback } from 'react'
 
 export type UseBodyPortalOptions = {
   id: string
@@ -19,11 +19,18 @@ export function useBodyPortal(
   options: UseBodyPortalOptions
 ): HTMLElement | null {
   const { id, className, tag = 'div', removeOnUnmount = true } = options
-  const [container, setContainer] = useState<HTMLElement | null>(null)
   const createdRef = useRef(false)
+  const containerRef = useRef<HTMLElement | null>(null)
 
-  useEffect(() => {
-    if (typeof window === 'undefined') return
+  // Memoize getSnapshot to include className application
+  const getSnapshot = useCallback(() => {
+    // Check if we need to update the existing element
+    if (containerRef.current) {
+      if (className !== undefined) {
+        containerRef.current.className = className
+      }
+      return containerRef.current
+    }
 
     let el = document.getElementById(id) as HTMLElement | null
     if (!el) {
@@ -33,18 +40,34 @@ export function useBodyPortal(
       createdRef.current = true
     }
 
-    if (className) {
+    if (className !== undefined) {
       el.className = className
     }
 
-    setContainer(el)
+    containerRef.current = el
+    return el
+  }, [id, tag, className])
+
+  // Use useSyncExternalStore for safe synchronous access to DOM
+  const container = useSyncExternalStore(
+    // subscribe - no-op since we don't need to listen for external changes
+    () => () => {},
+    getSnapshot,
+    // getServerSnapshot - return null on server
+    () => null
+  )
+
+  // Cleanup on unmount
+  useEffect(() => {
+    const wasCreated = createdRef.current
+    const el = containerRef.current
 
     return () => {
-      if (createdRef.current && removeOnUnmount && el && el.parentNode) {
+      if (wasCreated && removeOnUnmount && el && el.parentNode) {
         el.parentNode.removeChild(el)
       }
     }
-  }, [id, className, tag, removeOnUnmount])
+  }, [removeOnUnmount])
 
   return container
 }

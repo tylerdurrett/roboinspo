@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect, useCallback } from 'react'
 
 interface ScreenSize {
@@ -5,18 +7,20 @@ interface ScreenSize {
   height: number
 }
 
-const getScreenSize = (): ScreenSize => ({
-  width: window.innerWidth,
-  height: window.innerHeight,
-})
+const getScreenSize = (): ScreenSize => {
+  if (typeof window === 'undefined') {
+    return { width: 0, height: 0 }
+  }
+  return {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  }
+}
 
 const useScreenSize = (
   callback?: (screenSize: ScreenSize) => void
 ): ScreenSize => {
-  const [screenSize, setScreenSize] = useState<ScreenSize>({
-    width: 0,
-    height: 0,
-  })
+  const [screenSize, setScreenSize] = useState<ScreenSize>(getScreenSize)
 
   const handleResize = useCallback(() => {
     const newScreenSize = getScreenSize()
@@ -28,7 +32,6 @@ const useScreenSize = (
 
   useEffect(() => {
     window.addEventListener('resize', handleResize)
-    handleResize()
     return () => {
       window.removeEventListener('resize', handleResize)
     }

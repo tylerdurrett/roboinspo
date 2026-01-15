@@ -1034,12 +1034,12 @@ Evaluated options for relationship resolution and confirmed the current runtime 
 
 ### Files Modified
 
-| File | Changes |
-|------|---------|
-| `velite.config.ts` | Added `basename` import, `.transform()` for auto-slug, `prepare` hook for uniqueness validation |
-| `content/creators/*.md` | Removed explicit `slug` fields (2 files) |
-| `content/organizations/*.md` | Removed explicit `slug` fields (2 files) |
-| `content/resources/*.md` | Removed explicit `slug` fields (3 files) |
+| File                         | Changes                                                                                         |
+| ---------------------------- | ----------------------------------------------------------------------------------------------- |
+| `velite.config.ts`           | Added `basename` import, `.transform()` for auto-slug, `prepare` hook for uniqueness validation |
+| `content/creators/*.md`      | Removed explicit `slug` fields (2 files)                                                        |
+| `content/organizations/*.md` | Removed explicit `slug` fields (2 files)                                                        |
+| `content/resources/*.md`     | Removed explicit `slug` fields (3 files)                                                        |
 
 ### Verification
 
