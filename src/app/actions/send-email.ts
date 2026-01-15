@@ -73,7 +73,7 @@ export async function sendContactEmail(data: ContactFormWithTurnstileData) {
 
   try {
     const { data: emailData, error } = await resend.emails.send({
-      from: 'Robo Inspo <noreply@web.version47.com>',
+      from: 'Generative Learning <noreply@web.version47.com>',
       to: toEmails,
       subject: `New message from ${name} (${company})`,
       replyTo: email,

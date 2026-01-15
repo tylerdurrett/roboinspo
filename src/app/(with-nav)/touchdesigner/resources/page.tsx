@@ -3,7 +3,7 @@ import { getResourcesWithRelations } from '@/lib/td-resources'
 import { ResourcesPageClient } from '@/components/td-resources/ResourcesPageClient'
 
 export const metadata: Metadata = {
-  title: 'TouchDesigner Resources | Robo Inspo',
+  title: 'TouchDesigner Resources | Generative Learning',
   description:
     'A curated database of TouchDesigner tutorials, courses, and learning resources.',
 }

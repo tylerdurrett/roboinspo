@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { ContactForm } from '@/components/contact/contact-form'
 
 export const metadata: Metadata = {
-  title: 'Contact Robo Inspo',
+  title: 'Contact Generative Learning',
   description: 'Get in touch with our team',
 }
 

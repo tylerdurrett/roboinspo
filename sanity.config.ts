@@ -22,7 +22,7 @@ export default defineConfig({
   projectId,
   dataset,
   name: 'roboinspo',
-  title: 'Robo Inspo',
+  title: 'Generative Learning',
   icon: RocketIcon,
   // Add and edit the content schema in the './sanity/schemaTypes' folder
   schema,

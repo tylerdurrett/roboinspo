@@ -86,7 +86,7 @@ export function ContactEmailTemplate({
       />
 
       <p style={{ fontSize: '12px', color: '#666', margin: '0' }}>
-        This email was sent from the contact form on Robo Inspo.
+        This email was sent from the contact form on Generative Learning.
       </p>
     </div>
   )

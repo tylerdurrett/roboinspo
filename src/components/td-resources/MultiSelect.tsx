@@ -70,7 +70,7 @@ export function MultiSelect({
           role="combobox"
           aria-expanded={open}
           className={cn(
-            'h-auto min-h-9 justify-between',
+            'h-auto min-h-9 py-2 justify-between',
             selected.length > 0 && 'h-auto',
             className
           )}

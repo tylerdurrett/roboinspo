@@ -8,8 +8,8 @@ const heptaSlab = Hepta_Slab({
   variable: '--font-hepta-slab',
 })
 
-const TITLE = 'Robo Inspo'
-const DESCRIPTION = 'Slop Review'
+const TITLE = 'Generative Learning'
+const DESCRIPTION = 'Generative art learning resources'
 const IMAGE = '/static/opengraph.jpg'
 
 export function generateMetadata(): Metadata {

@@ -1,4 +1,4 @@
-# Robo Inspo
+# Generative Learning
 
 A personal portfolio and content curation site built with Next.js 16, Sanity CMS, and modern web technologies.
 
