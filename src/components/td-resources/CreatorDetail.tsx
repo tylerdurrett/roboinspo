@@ -120,7 +120,7 @@ export function CreatorDetail({ creator, resources }: CreatorDetailProps) {
           Resources ({resources.length})
         </h2>
         {resources.length > 0 ? (
-          <ResourcesTable resources={resources} />
+          <ResourcesTable resources={resources} hiddenColumns={['creators']} />
         ) : (
           <p className="text-muted-foreground">
             No resources linked to this creator yet.

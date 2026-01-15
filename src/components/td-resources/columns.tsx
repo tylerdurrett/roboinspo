@@ -179,6 +179,7 @@ export const columns = [
     },
   }),
   columnHelper.accessor('creators', {
+    id: 'creators',
     header: ({ column }) => {
       return (
         <Button
