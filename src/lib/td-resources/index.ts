@@ -4,7 +4,13 @@
  */
 
 // Re-export types
-export type { Creator, Organization, Resource, ResourceWithRelations, FilterState } from './types'
+export type {
+  Creator,
+  Organization,
+  Resource,
+  ResourceWithRelations,
+  FilterState,
+} from './types'
 export { defaultFilterState } from './types'
 
 // Re-export data access functions

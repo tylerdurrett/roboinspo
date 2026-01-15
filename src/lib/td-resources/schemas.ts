@@ -53,7 +53,12 @@ export const domains = [
 ] as const
 export type Domain = (typeof domains)[number]
 
-export const organizationTypes = ['company', 'platform', 'institution', 'community'] as const
+export const organizationTypes = [
+  'company',
+  'platform',
+  'institution',
+  'community',
+] as const
 export type OrganizationType = (typeof organizationTypes)[number]
 
 export const resourceStatuses = ['active', 'inactive', 'archived'] as const

@@ -1,5 +1,4 @@
 ---
-slug: matthew-ragan
 name: Matthew Ragan
 bio: Technical Director and educator with extensive TouchDesigner expertise at Arizona State University.
 location: Phoenix, Arizona

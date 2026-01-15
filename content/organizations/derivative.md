@@ -1,5 +1,4 @@
 ---
-slug: derivative
 name: Derivative
 type: company
 description: Creator and maintainer of TouchDesigner software.

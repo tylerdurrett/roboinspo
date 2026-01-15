@@ -48,9 +48,9 @@ Astro's built-in content system has first-class `reference()` support for relati
 // Astro's ideal API (for reference)
 const blog = defineCollection({
   schema: z.object({
-    author: reference('authors'),  // Declarative relationship
-  })
-});
+    author: reference('authors'), // Declarative relationship
+  }),
+})
 ```
 
 - **Verdict:** Best relationship API, but requires Astro framework (not Next.js)
@@ -91,8 +91,8 @@ const resources = defineCollection({
     status: s.enum(['active', 'inactive', 'archived']),
     creatorSlug: s.string().optional(),
     orgSlug: s.string().optional(),
-  })
-});
+  }),
+})
 ```
 
 ### 2. Multiple Collections with Relationships
@@ -119,21 +119,25 @@ export default defineConfig({
   collections: { creators, organizations, resources },
   prepare: ({ creators, organizations, resources }) => {
     // Resolve creator references
-    resources.forEach(resource => {
+    resources.forEach((resource) => {
       if (resource.creatorSlug) {
-        resource.creator = creators.find(c => c.slug === resource.creatorSlug);
+        resource.creator = creators.find((c) => c.slug === resource.creatorSlug)
       }
       if (resource.orgSlug) {
-        resource.organization = organizations.find(o => o.slug === resource.orgSlug);
+        resource.organization = organizations.find(
+          (o) => o.slug === resource.orgSlug
+        )
       }
-    });
+    })
 
     // Build reverse relationships
-    creators.forEach(creator => {
-      creator.resources = resources.filter(r => r.creatorSlug === creator.slug);
-    });
-  }
-});
+    creators.forEach((creator) => {
+      creator.resources = resources.filter(
+        (r) => r.creatorSlug === creator.slug
+      )
+    })
+  },
+})
 ```
 
 ### 3. Framework-Agnostic JSON Output
@@ -162,16 +166,16 @@ Velite runs at build time (or in watch mode during development):
 
 ## Comparison Summary
 
-| Feature | Velite | Content Collections | Astro | Custom |
-|---------|--------|---------------------|-------|--------|
-| Next.js 15 Support | Yes | Yes | No | Yes |
-| Zod Schemas | Yes | Yes | Yes | Manual |
-| Multiple Collections | Yes | Yes | Yes | Manual |
-| Relationship Support | Via `prepare` hook | Via transforms | Native `reference()` | Manual |
-| Type Generation | Automatic | Automatic | Automatic | Manual |
-| Package Extraction | Easy (JSON output) | Easy | Hard | Medium |
-| Active Maintenance | Yes | Yes | Yes | N/A |
-| Community/Docs | Good | Moderate | Excellent | N/A |
+| Feature              | Velite             | Content Collections | Astro                | Custom |
+| -------------------- | ------------------ | ------------------- | -------------------- | ------ |
+| Next.js 15 Support   | Yes                | Yes                 | No                   | Yes    |
+| Zod Schemas          | Yes                | Yes                 | Yes                  | Manual |
+| Multiple Collections | Yes                | Yes                 | Yes                  | Manual |
+| Relationship Support | Via `prepare` hook | Via transforms      | Native `reference()` | Manual |
+| Type Generation      | Automatic          | Automatic           | Automatic            | Manual |
+| Package Extraction   | Easy (JSON output) | Easy                | Hard                 | Medium |
+| Active Maintenance   | Yes                | Yes                 | Yes                  | N/A    |
+| Community/Docs       | Good               | Moderate            | Excellent            | N/A    |
 
 ---
 

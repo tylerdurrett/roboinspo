@@ -1,5 +1,4 @@
 ---
-slug: derivative-learn
 title: TouchDesigner Official Curriculum
 url: https://derivative.ca/learn
 status: active

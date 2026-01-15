@@ -1,5 +1,4 @@
 ---
-slug: bileam-tschepe
 name: Bileam Tschepe
 aliases:
   - Elekktronaut

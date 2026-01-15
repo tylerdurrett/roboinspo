@@ -1,5 +1,4 @@
 ---
-slug: elekktronaut-youtube
 title: Elekktronaut YouTube Channel
 url: https://www.youtube.com/@elekktronaut
 status: active

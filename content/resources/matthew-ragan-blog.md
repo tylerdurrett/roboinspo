@@ -1,5 +1,4 @@
 ---
-slug: matthew-ragan-blog
 title: Matthew Ragan's TouchDesigner Blog
 url: https://matthewragan.com/teaching-resources/touchdesigner/
 status: active

@@ -1,5 +1,4 @@
 ---
-slug: the-node-institute
 name: The NODE Institute
 type: institution
 description: Berlin-based training hub offering advanced TouchDesigner workshops.

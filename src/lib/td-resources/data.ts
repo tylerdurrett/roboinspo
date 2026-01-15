@@ -55,13 +55,17 @@ export function resolveCreators(resource: Resource): Creator[] {
 }
 
 /** Resolve organization reference for a resource */
-export function resolveOrganization(resource: Resource): Organization | undefined {
+export function resolveOrganization(
+  resource: Resource
+): Organization | undefined {
   if (!resource.orgSlug) return undefined
   return orgsMap.get(resource.orgSlug)
 }
 
 /** Get a resource with all relationships resolved */
-export function getResourceWithRelations(slug: string): ResourceWithRelations | undefined {
+export function getResourceWithRelations(
+  slug: string
+): ResourceWithRelations | undefined {
   const resource = getResourceBySlug(slug)
   if (!resource) return undefined
 
@@ -92,13 +96,18 @@ export function getResourcesByOrganization(orgSlug: string): Resource[] {
 }
 
 /** Filter resources based on filter state */
-export function filterResources(allResources: Resource[], filters: FilterState): Resource[] {
+export function filterResources(
+  allResources: Resource[],
+  filters: FilterState
+): Resource[] {
   return allResources.filter((resource) => {
     // Search filter (title and description)
     if (filters.search) {
       const searchLower = filters.search.toLowerCase()
       const matchesTitle = resource.title.toLowerCase().includes(searchLower)
-      const matchesDescription = resource.description.toLowerCase().includes(searchLower)
+      const matchesDescription = resource.description
+        .toLowerCase()
+        .includes(searchLower)
       if (!matchesTitle && !matchesDescription) return false
     }
 
@@ -115,21 +124,27 @@ export function filterResources(allResources: Resource[], filters: FilterState):
     // Skill levels filter (OR - resource matches if it has ANY of the selected levels)
     if (filters.skillLevels.length > 0) {
       const resourceLevels = resource.skillLevels ?? []
-      const hasMatchingLevel = resourceLevels.some((level) => filters.skillLevels.includes(level))
+      const hasMatchingLevel = resourceLevels.some((level) =>
+        filters.skillLevels.includes(level)
+      )
       if (!hasMatchingLevel) return false
     }
 
     // Topics filter (OR - resource matches if it has ANY of the selected topics)
     if (filters.topics.length > 0) {
       const resourceTopics = resource.topics ?? []
-      const hasMatchingTopic = resourceTopics.some((topic) => filters.topics.includes(topic))
+      const hasMatchingTopic = resourceTopics.some((topic) =>
+        filters.topics.includes(topic)
+      )
       if (!hasMatchingTopic) return false
     }
 
     // Domains filter (OR - resource matches if it has ANY of the selected domains)
     if (filters.domains.length > 0) {
       const resourceDomains = resource.domains ?? []
-      const hasMatchingDomain = resourceDomains.some((domain) => filters.domains.includes(domain))
+      const hasMatchingDomain = resourceDomains.some((domain) =>
+        filters.domains.includes(domain)
+      )
       if (!hasMatchingDomain) return false
     }
 
