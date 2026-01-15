@@ -148,6 +148,15 @@ export function filterResources(
       if (!hasMatchingDomain) return false
     }
 
+    // Platforms filter (OR - resource matches if it has ANY of the selected platforms)
+    if (filters.platforms.length > 0) {
+      const resourcePlatforms = resource.platforms ?? ['touchdesigner']
+      const hasMatchingPlatform = resourcePlatforms.some((platform) =>
+        filters.platforms.includes(platform)
+      )
+      if (!hasMatchingPlatform) return false
+    }
+
     // Status filter (OR within category)
     if (filters.status.length > 0) {
       if (!filters.status.includes(resource.status)) return false

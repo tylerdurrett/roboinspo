@@ -36,6 +36,7 @@ export {
   skillLevels,
   topics,
   domains,
+  platforms,
   organizationTypes,
   resourceStatuses,
   sourceTypes,
@@ -45,12 +46,14 @@ export {
   skillLevelLabels,
   statusLabels,
   organizationTypeLabels,
+  platformLabels,
 } from './schemas'
 
 export type {
   SkillLevel,
   Topic,
   Domain,
+  Platform,
   OrganizationType,
   ResourceStatus,
   SourceType,

@@ -34,6 +34,16 @@ export function ResourcesPageClient({ resources }: ResourcesPageClientProps) {
     if (filters.skillLevels.length > 0) count++
     if (filters.topics.length > 0) count++
     if (filters.domains.length > 0) count++
+    // Don't count platforms if it's just ['touchdesigner'] (the default)
+    if (
+      filters.platforms.length > 0 &&
+      !(
+        filters.platforms.length === 1 &&
+        filters.platforms[0] === 'touchdesigner'
+      )
+    ) {
+      count++
+    }
     // Don't count status if it's just ['active'] (the default)
     if (
       filters.status.length > 0 &&

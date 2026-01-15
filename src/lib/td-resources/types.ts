@@ -21,6 +21,7 @@ export interface FilterState {
   skillLevels: string[]
   topics: string[]
   domains: string[]
+  platforms: string[]
   status: string[]
   search: string
 }
@@ -32,6 +33,7 @@ export const defaultFilterState: FilterState = {
   skillLevels: [],
   topics: [],
   domains: [],
+  platforms: ['touchdesigner'],
   status: ['active'],
   search: '',
 }

@@ -70,6 +70,17 @@ const sourceTypes = [
 ] as const
 const pricingModels = ['free', 'freemium', 'paid'] as const
 
+const platforms = [
+  'touchdesigner',
+  'processing',
+  'p5js',
+  'openframeworks',
+  'cables',
+  'unity',
+  'unreal',
+  'general', // Platform-agnostic creative coding
+] as const
+
 // Socials schema for creators
 const socialsSchema = s
   .object({
@@ -140,6 +151,7 @@ const resources = defineCollection({
       skillLevels: s.array(s.enum(skillLevels)).optional(),
       topics: s.array(s.enum(topics)).optional(),
       domains: s.array(s.enum(domains)).optional(),
+      platforms: s.array(s.enum(platforms)).default(['touchdesigner']),
       creatorSlugs: s.array(s.string()).optional(),
       orgSlug: s.string().optional(),
       description: s.string(),

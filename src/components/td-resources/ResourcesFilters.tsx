@@ -13,6 +13,8 @@ import {
   skillLevelLabels,
   topics,
   domains,
+  platforms,
+  platformLabels,
   resourceStatuses,
   statusLabels,
   type FilterState,
@@ -55,6 +57,7 @@ export function ResourcesFilters({
   const skillLevelOptions = buildOptions(skillLevels, skillLevelLabels)
   const topicOptions = buildOptions(topics)
   const domainOptions = buildOptions(domains)
+  const platformOptions = buildOptions(platforms, platformLabels)
   const statusOptions = buildOptions(resourceStatuses, statusLabels)
 
   const updateFilter = <K extends keyof FilterState>(
@@ -126,6 +129,14 @@ export function ResourcesFilters({
           onChange={(value) => updateFilter('domains', value)}
           placeholder="Domains"
           searchPlaceholder="Search domains..."
+        />
+
+        <MultiSelect
+          options={platformOptions}
+          selected={filters.platforms}
+          onChange={(value) => updateFilter('platforms', value)}
+          placeholder="Platforms"
+          searchPlaceholder="Search platforms..."
         />
 
         <MultiSelect

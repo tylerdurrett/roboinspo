@@ -81,6 +81,18 @@ export type SourceType = (typeof sourceTypes)[number]
 export const pricingModels = ['free', 'freemium', 'paid'] as const
 export type PricingModel = (typeof pricingModels)[number]
 
+export const platforms = [
+  'touchdesigner',
+  'processing',
+  'p5js',
+  'openframeworks',
+  'cables',
+  'unity',
+  'unreal',
+  'general',
+] as const
+export type Platform = (typeof platforms)[number]
+
 /** Human-readable labels for source types */
 export const sourceTypeLabels: Record<SourceType, string> = {
   youtube: 'YouTube',
@@ -122,4 +134,16 @@ export const organizationTypeLabels: Record<OrganizationType, string> = {
   platform: 'Platform',
   institution: 'Institution',
   community: 'Community',
+}
+
+/** Human-readable labels for platforms */
+export const platformLabels: Record<Platform, string> = {
+  touchdesigner: 'TouchDesigner',
+  processing: 'Processing',
+  p5js: 'p5.js',
+  openframeworks: 'openFrameworks',
+  cables: 'Cables.gl',
+  unity: 'Unity',
+  unreal: 'Unreal Engine',
+  general: 'General',
 }
