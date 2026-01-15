@@ -2,16 +2,18 @@
 
 ## Project Overview
 
-This is a Next.js 15 application using the App Router pattern with TypeScript and Tailwind CSS v4.
+This is a Next.js 16 application using the App Router pattern with TypeScript and Tailwind CSS v4.
 
 ## Architecture
 
 ### Tech Stack
 
-- **Next.js 15.3.3** with App Router
-- **React 19.0.0**
+- **Next.js 16** with App Router and Turbopack
+- **React 19**
 - **TypeScript 5** with strict mode enabled
 - **Tailwind CSS v4** with PostCSS
+- **Sanity CMS** for content management
+- **Velite** for markdown-based content (TD Resources)
 - **Shadcn/ui** for component library
 - **ESLint 9** with Next.js configuration and Prettier integration
 - **Prettier** for code formatting (auto-format on save in VS Code)
@@ -19,7 +21,8 @@ This is a Next.js 15 application using the App Router pattern with TypeScript an
 ### Project Structure
 
 - `/src/app/` - App Router pages and layouts
-- TypeScript path alias: `@/*` maps to `./src/*`
+- `/content/` - Markdown content for TD Resources (creators, organizations, resources)
+- TypeScript path aliases: `@/*` maps to `./src/*`, `#content` maps to `./.velite`
 - Tailwind CSS uses the new v4 inline theme approach with CSS custom properties
 
 ### UI Components
@@ -33,9 +36,21 @@ This is a Next.js 15 application using the App Router pattern with TypeScript an
 ## Sanity CMS
 
 - The site uses Sanity CMS to bring in some of the content.
-- Sanity settings are in `sanity.donfig.ts` and `src/sanity/`
-- Sanity types are generated with `npm run gen` and land in `sanityp.types.ts`
+- Sanity settings are in `sanity.config.ts` and `src/sanity/`
+- Sanity types are generated with `npm run gen` and land in `sanity.types.ts`
 - Fetch functions are in `src/models/*`
+
+## TouchDesigner Resources (Velite)
+
+A markdown-based content system for curating TouchDesigner learning resources.
+
+- Content lives in `/content/` directory (creators, organizations, resources)
+- Schema defined in `velite.config.ts`
+- Data access layer in `src/lib/td-resources/`
+- UI components in `src/components/td-resources/`
+- Pages at `/touchdesigner/resources`
+
+See [\_docs/td-resources-system.md](_docs/td-resources-system.md) for full documentation.
 
 ## Important Reminders
 

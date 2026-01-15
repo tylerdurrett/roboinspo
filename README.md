@@ -9,6 +9,7 @@ A personal portfolio and content curation site built with Next.js 16, Sanity CMS
 - **TypeScript 5** with strict mode
 - **Tailwind CSS v4** with PostCSS
 - **Sanity CMS** for content management
+- **Velite** for markdown-based content (TD Resources)
 - **Mux** for video hosting and streaming
 - **GSAP** for animations
 - **Shadcn/ui** for component library
@@ -62,6 +63,11 @@ npm run gen
 ## Project Structure
 
 ```
+content/                    # Markdown content for TD Resources
+├── creators/               # Creator profiles
+├── organizations/          # Organization profiles
+└── resources/              # Learning resources
+
 src/
 ├── app/                    # Next.js App Router pages
 │   ├── (with-nav)/         # Pages with navigation layout
@@ -69,7 +75,8 @@ src/
 │   │   ├── contact/        # Contact form
 │   │   ├── looking/        # Visual gallery from reading list
 │   │   ├── oldthings/      # Portfolio/things gallery
-│   │   └── reading/        # Curated reading list
+│   │   ├── reading/        # Curated reading list
+│   │   └── touchdesigner/  # TD Resources pages
 │   ├── admin/              # Sanity Studio (/admin)
 │   └── actions/            # Server actions
 ├── components/             # React components
@@ -78,6 +85,7 @@ src/
 │   ├── fx/                 # Visual effects (FxLayer)
 │   ├── graphics/           # Background graphics (noise, shaders)
 │   ├── layouts/            # Navigation and layout components
+│   ├── td-resources/       # TD Resources components
 │   ├── things/             # Portfolio item components
 │   ├── typography/         # Text animation components
 │   ├── ui/                 # Shadcn UI components
@@ -86,7 +94,8 @@ src/
 │   └── video-feed/         # Video feed functionality
 ├── hooks/                  # Custom React hooks
 ├── lib/                    # Utility libraries
-│   └── gsap/               # GSAP animation system
+│   ├── gsap/               # GSAP animation system
+│   └── td-resources/       # TD Resources data access layer
 ├── models/                 # Sanity data fetching functions
 └── sanity/                 # Sanity configuration
     └── schemaTypes/        # Content type definitions
@@ -123,6 +132,17 @@ A traditional blog powered by Sanity CMS with:
 ### Contact (`/contact`)
 
 A contact form with Cloudflare Turnstile bot protection, built with react-hook-form and Zod validation.
+
+### TouchDesigner Resources (`/touchdesigner/resources`)
+
+A curated database of TouchDesigner learning resources built with markdown files and Velite. Features include:
+
+- Filterable table of tutorials, courses, YouTube channels, and more
+- Multi-select filters for source type, pricing, skill level, topics, and domains
+- Detail pages for each resource with creator/organization info
+- Type-safe content with build-time schema validation
+
+See [\_docs/td-resources-system.md](_docs/td-resources-system.md) for full documentation.
 
 ## Sanity CMS
 
