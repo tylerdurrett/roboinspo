@@ -25,6 +25,7 @@ interface ResourcesFiltersProps {
   onFiltersChange: (filters: FilterState) => void
   onClearFilters: () => void
   activeFilterCount: number
+  hideSourceTypeFilter?: boolean
 }
 
 /** Convert kebab-case to Title Case */
@@ -51,6 +52,7 @@ export function ResourcesFilters({
   onFiltersChange,
   onClearFilters,
   activeFilterCount,
+  hideSourceTypeFilter = false,
 }: ResourcesFiltersProps) {
   const sourceTypeOptions = buildOptions(sourceTypes, sourceTypeLabels)
   const pricingOptions = buildOptions(pricingModels, pricingModelLabels)
@@ -91,13 +93,15 @@ export function ResourcesFilters({
 
       {/* Filter dropdowns */}
       <div className="flex flex-wrap gap-3 items-center">
-        <MultiSelect
-          options={sourceTypeOptions}
-          selected={filters.sourceType}
-          onChange={(value) => updateFilter('sourceType', value)}
-          placeholder="Source Type"
-          searchPlaceholder="Search types..."
-        />
+        {!hideSourceTypeFilter && (
+          <MultiSelect
+            options={sourceTypeOptions}
+            selected={filters.sourceType}
+            onChange={(value) => updateFilter('sourceType', value)}
+            placeholder="Source Type"
+            searchPlaceholder="Search types..."
+          />
+        )}
 
         <MultiSelect
           options={pricingOptions}

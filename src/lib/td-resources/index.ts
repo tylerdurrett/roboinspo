@@ -31,6 +31,9 @@ export {
   filterResources,
 } from './data'
 
+// Re-export hooks
+export { useResourceFilters } from './hooks'
+
 // Re-export schemas and constants
 export {
   skillLevels,
