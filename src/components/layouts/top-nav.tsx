@@ -5,9 +5,8 @@ import { usePathname } from 'next/navigation'
 import { HomeIcon } from 'lucide-react'
 
 const navItems = [
-  { label: 'THINGS', href: '/oldthings' },
-  { label: 'READING', href: '/reading' },
-  { label: 'LOOKING', href: '/looking' },
+  { label: 'READING LIST', href: '/reading' },
+  { label: 'TD RESOURCES', href: '/touchdesigner/resources' },
 ]
 
 export function TopNav() {
