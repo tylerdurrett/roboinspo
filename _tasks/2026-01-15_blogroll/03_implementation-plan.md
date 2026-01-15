@@ -804,6 +804,82 @@ Recommended order for implementation:
 
 ---
 
+## Implementation Notes (2026-01-15)
+
+### Completed Steps (Steps 1-5)
+
+**Step 1: Dependencies - COMPLETE**
+- Installed `velite@0.3.1` (dev dependency)
+- Installed `@tanstack/react-table@8.21.3` (dependency)
+
+**Step 2: Velite Configuration - COMPLETE with divergence**
+- Created `velite.config.ts` with all three collections
+- Uses `defineCollection()` function from Velite (updated API)
+- **Divergence:** Removed the `prepare` hook for relationship resolution. The original plan had bidirectional relationships (resources → creators AND creators → resources) which caused circular JSON reference errors during serialization. Relationships are now resolved at runtime in the data access layer instead.
+
+**Step 3: Next.js Integration - COMPLETE**
+- Updated `next.config.ts` with Velite build integration
+- Added `#content` path alias to `tsconfig.json`
+- Added `.velite/` to `.gitignore`
+- Added npm scripts: `content:build` and `content:watch`
+
+**Step 4: Content Structure - COMPLETE**
+- Created `content/creators/`, `content/organizations/`, `content/resources/` directories
+- Created seed files:
+  - `content/creators/bileam-tschepe.md`
+  - `content/creators/matthew-ragan.md`
+  - `content/organizations/derivative.md`
+  - `content/organizations/the-node-institute.md`
+  - `content/resources/elekktronaut-youtube.md`
+  - `content/resources/derivative-learn.md`
+  - `content/resources/matthew-ragan-blog.md`
+- **Note:** Each file requires an explicit `slug` field in frontmatter. Velite's `s.slug()` validates but doesn't auto-generate from filename.
+
+**Step 5: Data Access Layer - COMPLETE with enhancements**
+- Created `src/lib/td-resources/types.ts` - Type re-exports and FilterState
+- Created `src/lib/td-resources/schemas.ts` - Taxonomy constants with human-readable labels
+- Created `src/lib/td-resources/data.ts` - All data access functions including relationship resolution
+- Created `src/lib/td-resources/index.ts` - Barrel export
+
+**Enhancements beyond original plan:**
+- Added `resolveCreators()` and `resolveOrganization()` functions for runtime relationship resolution
+- Added `getResourceWithRelations()` and `getResourcesWithRelations()` functions
+- Added human-readable label maps for all taxonomies (e.g., `sourceTypeLabels`, `skillLevelLabels`)
+- Added `defaultFilterState` export
+
+### Key Divergences from Plan
+
+1. **Relationship Resolution Location:**
+   - Plan: Use Velite `prepare` hook to embed full creator/org objects in resources
+   - Actual: Resolve relationships at runtime in data access layer
+   - Reason: Bidirectional relationships caused JSON circular reference errors
+
+2. **Slug Handling:**
+   - Plan: Implied auto-generation from filename
+   - Actual: Explicit `slug` field required in frontmatter
+   - Note: Could be improved with a custom transform in velite.config.ts
+
+3. **Output Path:**
+   - Plan: `public/static/`
+   - Actual: `public/static/content/` (more specific subdirectory)
+
+### Remaining Steps (Steps 6-9)
+
+- [ ] Step 6: Build Resources page and components (TanStack Table, filters)
+- [ ] Step 7: Update Homepage
+- [ ] Step 8: Update Navigation
+- [ ] Step 9: (Already done - npm scripts were added in Step 3)
+
+### Current State
+
+The foundation is complete and verified:
+- Velite builds successfully with `npm run content:build`
+- Generated types are correct in `.velite/index.d.ts`
+- Data access layer compiles with no TypeScript errors
+- All seed content validates against schemas
+
+---
+
 ## References
 
 - [Velite Documentation](https://velite.js.org)
