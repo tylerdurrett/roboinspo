@@ -12,16 +12,24 @@ import {
 
 interface ResourcesFilteredViewProps {
   resources: ResourceWithRelations[]
+  /** Lock to a single source type (e.g., youtube page) */
   fixedSourceType?: string
+  /** Allow filtering within these source types (e.g., websites category page) */
+  fixedSourceTypes?: string[]
 }
 
 export function ResourcesFilteredView({
   resources,
   fixedSourceType,
+  fixedSourceTypes,
 }: ResourcesFilteredViewProps) {
-  const { filters, setFilters } = useResourceFilters(fixedSourceType)
+  const { filters, setFilters } = useResourceFilters(
+    fixedSourceType,
+    fixedSourceTypes
+  )
 
   const hiddenColumns = useMemo(() => {
+    // Only hide columns for single-type pages like youtube/patreon
     if (fixedSourceType === 'youtube' || fixedSourceType === 'patreon') {
       return ['sourceType', 'pricingModel']
     }
@@ -30,6 +38,9 @@ export function ResourcesFilteredView({
 
   const hidePricingFilter =
     fixedSourceType === 'youtube' || fixedSourceType === 'patreon'
+
+  // Hide source type filter only for single fixed type (not for categories)
+  const hideSourceTypeFilter = !!fixedSourceType
 
   const filteredResources = useMemo(
     () => filterResources(resources, filters),
@@ -46,6 +57,8 @@ export function ResourcesFilteredView({
   const activeFilterCount = useMemo(() => {
     let count = 0
     if (filters.search) count++
+    // Count sourceType filter unless it's a single fixed type
+    // (for categories, user can filter within category so it should count)
     if (!fixedSourceType && filters.sourceType.length > 0) count++
     if (filters.pricingModel.length > 0) count++
     if (filters.skillLevels.length > 0) count++
@@ -78,8 +91,9 @@ export function ResourcesFilteredView({
         onFiltersChange={setFilters}
         onClearFilters={handleClearFilters}
         activeFilterCount={activeFilterCount}
-        hideSourceTypeFilter={!!fixedSourceType}
+        hideSourceTypeFilter={hideSourceTypeFilter}
         hidePricingFilter={hidePricingFilter}
+        allowedSourceTypes={fixedSourceTypes}
       />
 
       <div className="text-sm text-muted-foreground">

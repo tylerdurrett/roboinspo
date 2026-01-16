@@ -78,6 +78,35 @@ export const sourceTypes = [
 ] as const
 export type SourceType = (typeof sourceTypes)[number]
 
+/**
+ * Source Type Categories
+ * Logical groupings of source types for filtering and display
+ */
+export const sourceTypeCategories = ['websites', 'social'] as const
+export type SourceTypeCategory = (typeof sourceTypeCategories)[number]
+
+/** Mapping of categories to their constituent source types */
+export const sourceTypeCategoryMap: Record<
+  SourceTypeCategory,
+  readonly SourceType[]
+> = {
+  websites: ['website', 'blog', 'course', 'aggregator', 'forum', 'github'],
+  social: ['youtube', 'patreon', 'discord', 'social'],
+} as const
+
+/** Human-readable labels for categories */
+export const sourceTypeCategoryLabels: Record<SourceTypeCategory, string> = {
+  websites: 'Websites',
+  social: 'Social & Platforms',
+}
+
+/** Get all source types for a category */
+export function getSourceTypesForCategory(
+  category: SourceTypeCategory
+): SourceType[] {
+  return [...sourceTypeCategoryMap[category]]
+}
+
 export const pricingModels = ['free', 'freemium', 'paid'] as const
 export type PricingModel = (typeof pricingModels)[number]
 

@@ -50,6 +50,11 @@ export {
   statusLabels,
   organizationTypeLabels,
   platformLabels,
+  // Category exports
+  sourceTypeCategories,
+  sourceTypeCategoryMap,
+  sourceTypeCategoryLabels,
+  getSourceTypesForCategory,
 } from './schemas'
 
 export type {
@@ -61,4 +66,5 @@ export type {
   ResourceStatus,
   SourceType,
   PricingModel,
+  SourceTypeCategory,
 } from './schemas'

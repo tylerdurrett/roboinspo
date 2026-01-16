@@ -27,6 +27,8 @@ interface ResourcesFiltersProps {
   activeFilterCount: number
   hideSourceTypeFilter?: boolean
   hidePricingFilter?: boolean
+  /** If provided, limit source type options to these values (for category pages) */
+  allowedSourceTypes?: string[]
 }
 
 /** Convert kebab-case to Title Case */
@@ -55,8 +57,11 @@ export function ResourcesFilters({
   activeFilterCount,
   hideSourceTypeFilter = false,
   hidePricingFilter = false,
+  allowedSourceTypes,
 }: ResourcesFiltersProps) {
-  const sourceTypeOptions = buildOptions(sourceTypes, sourceTypeLabels)
+  const sourceTypeOptions = buildOptions(sourceTypes, sourceTypeLabels).filter(
+    (opt) => !allowedSourceTypes || allowedSourceTypes.includes(opt.value)
+  )
   const pricingOptions = buildOptions(pricingModels, pricingModelLabels)
   const skillLevelOptions = buildOptions(skillLevels, skillLevelLabels)
   const topicOptions = buildOptions(topics)
