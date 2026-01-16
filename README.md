@@ -58,6 +58,11 @@ npm run add <component-name>
 
 # Extract Sanity schema and generate types
 npm run gen
+
+# Export content data to stdout (see --help for options)
+npm run export creators              # Creator names
+npm run export creators -- --json    # As JSON
+npm run export creators > list.txt   # Save to file
 ```
 
 ## Project Structure

@@ -196,6 +196,33 @@ Build-time validation:
 - Global slug uniqueness check
 - Output to `.velite/` directory
 
+## Exporting Data
+
+Export content to stdout for external use:
+
+```bash
+npm run export <type> [options]
+
+# Types: creators, resources, organizations
+
+# Options:
+#   --fields=f1,f2  Export specific fields
+#   --full          Export all fields
+#   --json          Output as JSON (default: plain text/CSV)
+#   --resolve       Resolve relationship slugs to names
+
+# Examples:
+npm run export creators                              # Names, one per line
+npm run export creators -- --json                    # JSON array
+npm run export creators -- --fields=name,bio        # CSV with headers
+npm run export resources -- --full --resolve --json  # Full objects with resolved creators
+
+# Save to file:
+npm run export creators > creators.txt
+```
+
+Run `npm run export` for help and available fields.
+
 ## Adding Content
 
 1. Create a markdown file in the appropriate `content/` subdirectory
