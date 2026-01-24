@@ -8,7 +8,7 @@ const heptaSlab = Hepta_Slab({
   variable: '--font-hepta-slab',
 })
 
-const TITLE = 'Generative Learning'
+const TITLE = 'TD Stuff'
 const DESCRIPTION = 'Generative art learning resources'
 const IMAGE = '/static/opengraph.jpg'
 
