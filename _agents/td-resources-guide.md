@@ -2,7 +2,7 @@
 
 Quick guide for adding new creators and resources to the TD content database.
 
-For full schema details, see [_docs/td-resources-system.md](../_docs/td-resources-system.md).
+For full schema details, see [\_docs/td-resources-system.md](../_docs/td-resources-system.md).
 
 ## Research Checklist
 
@@ -43,7 +43,6 @@ socials: # optional
   github: handle
   twitter: handle
 ---
-
 Optional extended bio in markdown.
 ```
 
@@ -70,7 +69,6 @@ creatorSlugs: # optional - links to creator files by slug
 description: Brief description. # required
 featured: true # optional, default false
 ---
-
 Optional extended notes in markdown.
 ```
 
