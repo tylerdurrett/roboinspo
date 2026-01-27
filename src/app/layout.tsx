@@ -52,6 +52,11 @@ export function generateMetadata(): Metadata {
       description: DESCRIPTION,
       images: [IMAGE],
     },
+    alternates: {
+      types: {
+        'application/rss+xml': '/reading/feed.xml',
+      },
+    },
   }
 }
 

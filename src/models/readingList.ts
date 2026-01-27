@@ -30,12 +30,12 @@ export async function getReadingListItems(
     slug,
     originalUrl,
     savedAt,
-    body[]{
-      ...,
-      _type == "mux.video" => {
-        asset->
-      }
-    },
+    gist,
+    shortSummary,
+    keyPoints,
+    sentiment,
+    keyAgreeingViewpoints,
+    keyOpposingViewpoints,
     categories[]->{title, slug},
     featuredImage
   }`)
