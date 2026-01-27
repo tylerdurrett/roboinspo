@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const ogImageUrl = item.featuredImage
     ? urlFor(item.featuredImage).width(1200).height(630).url()
-    : '/static/opengraph.jpg'
+    : '/static/td-logo-wide.jpg'
 
   return {
     title: item.title,

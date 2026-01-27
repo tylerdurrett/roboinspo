@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Generate OpenGraph image URL - use thing's featuredImage or fallback to default
   const ogImageUrl = thing.featuredImage
     ? urlFor(thing.featuredImage).width(1200).height(630).url()
-    : '/static/opengraph.jpg'
+    : '/static/td-logo-wide.jpg'
 
   return {
     title: thing.title,

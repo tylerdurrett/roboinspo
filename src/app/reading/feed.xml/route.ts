@@ -23,7 +23,7 @@ export async function GET() {
     id: `${baseUrl}/reading`,
     link: `${baseUrl}/reading`,
     language: 'en',
-    image: `${baseUrl}/static/opengraph.jpg`,
+    image: `${baseUrl}/static/td-logo-wide.jpg`,
     favicon: `${baseUrl}/favicon.ico`,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     updated: items[0]?.savedAt ? new Date(items[0].savedAt) : new Date(),

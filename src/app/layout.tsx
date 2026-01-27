@@ -10,7 +10,7 @@ const heptaSlab = Hepta_Slab({
 
 const TITLE = 'TD Stuff'
 const DESCRIPTION = 'Generative art learning resources'
-const IMAGE = '/static/opengraph.jpg'
+const IMAGE = '/static/td-logo-wide.jpg'
 
 export function generateMetadata(): Metadata {
   const isProduction = process.env.VERCEL_ENV === 'production'
