@@ -28,15 +28,15 @@ export interface FilterState {
   search: string
 }
 
-/** Default filter state (legacy, uses touchdesigner default) */
+/** Default filter state - empty arrays show all resources */
 export const defaultFilterState: FilterState = {
   sourceType: [],
   pricingModel: [],
   skillLevels: [],
   topics: [],
   domains: [],
-  platforms: ['touchdesigner'],
-  status: ['active'],
+  platforms: [],
+  status: [],
   search: '',
 }
 

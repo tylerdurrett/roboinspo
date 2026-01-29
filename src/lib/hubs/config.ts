@@ -116,7 +116,7 @@ export const hubConfigs: Record<Hub, HubConfig> = {
     name: 'Creative Coding',
     description: 'TouchDesigner and generative visuals',
     basePath: '/creative-coding/resources',
-    defaultPlatforms: ['touchdesigner'],
+    defaultPlatforms: [],
     tabs: [
       { path: '', label: 'All' },
       { path: '/creators', label: 'Creators' },
@@ -137,7 +137,7 @@ export const hubConfigs: Record<Hub, HubConfig> = {
     name: 'Agentic Systems',
     description: 'Programming and agentic systems',
     basePath: '/agentic-systems/resources',
-    defaultPlatforms: ['general'],
+    defaultPlatforms: [],
     tabs: [
       { path: '', label: 'All' },
       { path: '/creators', label: 'Creators' },
