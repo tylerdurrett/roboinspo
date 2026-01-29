@@ -22,10 +22,10 @@ export default function Home() {
           CREATIVE CODING
         </Link>
         <Link
-          href="/agentic-coding/resources"
+          href="/agentic-systems/resources"
           className="text-[8vw] font-bold tracking-wider hover:opacity-70 transition-opacity duration-300 text-center leading-none"
         >
-          AGENTIC CODING
+          AGENTIC SYSTEMS
         </Link>
       </div>
     </div>

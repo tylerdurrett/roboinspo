@@ -26,7 +26,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return [{ hub: 'creative-coding' }, { hub: 'agentic-coding' }]
+  return [{ hub: 'creative-coding' }, { hub: 'agentic-systems' }]
 }
 
 export default async function HubResourcesTabsLayout({

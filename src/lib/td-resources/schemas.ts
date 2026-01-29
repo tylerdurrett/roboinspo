@@ -4,7 +4,7 @@
  */
 
 // Hub definitions
-export const hubs = ['creative-coding', 'agentic-coding'] as const
+export const hubs = ['creative-coding', 'agentic-systems'] as const
 export type Hub = (typeof hubs)[number]
 
 export const skillLevels = ['beginner', 'intermediate', 'advanced'] as const
@@ -153,7 +153,7 @@ export type Platform = (typeof platforms)[number]
 /** Human-readable labels for hubs */
 export const hubLabels: Record<Hub, string> = {
   'creative-coding': 'Creative Coding',
-  'agentic-coding': 'Agentic Coding',
+  'agentic-systems': 'Agentic Systems',
 }
 
 /** Human-readable labels for source types */

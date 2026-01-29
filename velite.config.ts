@@ -2,7 +2,7 @@ import { basename } from 'node:path'
 import { defineCollection, defineConfig, s } from 'velite'
 
 // Hub definitions
-const hubs = ['creative-coding', 'agentic-coding'] as const
+const hubs = ['creative-coding', 'agentic-systems'] as const
 
 // Taxonomy definitions (from data model)
 const skillLevels = ['beginner', 'intermediate', 'advanced'] as const

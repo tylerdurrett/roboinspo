@@ -47,7 +47,7 @@ const creativeCodingTopics: Topic[] = [
   'tool-building',
 ]
 
-const agenticCodingTopics: Topic[] = [
+const agenticSystemsTopics: Topic[] = [
   'fundamentals',
   'python',
   'optimization',
@@ -79,7 +79,7 @@ const creativeCodingDomains: Domain[] = [
   'education',
 ]
 
-const agenticCodingDomains: Domain[] = [
+const agenticSystemsDomains: Domain[] = [
   'ai-ml',
   'education',
   'developer-tools',
@@ -100,7 +100,7 @@ const creativeCodingPlatforms: Platform[] = [
   'general',
 ]
 
-const agenticCodingPlatforms: Platform[] = [
+const agenticSystemsPlatforms: Platform[] = [
   'general',
   'langchain',
   'llamaindex',
@@ -132,11 +132,11 @@ export const hubConfigs: Record<Hub, HubConfig> = {
     relevantDomains: creativeCodingDomains,
     relevantPlatforms: creativeCodingPlatforms,
   },
-  'agentic-coding': {
-    slug: 'agentic-coding',
-    name: 'Agentic Coding',
+  'agentic-systems': {
+    slug: 'agentic-systems',
+    name: 'Agentic Systems',
     description: 'Programming and agentic systems',
-    basePath: '/agentic-coding/resources',
+    basePath: '/agentic-systems/resources',
     defaultPlatforms: ['general'],
     tabs: [
       { path: '', label: 'All' },
@@ -145,9 +145,9 @@ export const hubConfigs: Record<Hub, HubConfig> = {
       { path: '/discords', label: 'Discords', sourceType: 'discord' },
       { path: '/reddits', label: 'Reddits', sourceType: 'reddit' },
     ],
-    relevantTopics: agenticCodingTopics,
-    relevantDomains: agenticCodingDomains,
-    relevantPlatforms: agenticCodingPlatforms,
+    relevantTopics: agenticSystemsTopics,
+    relevantDomains: agenticSystemsDomains,
+    relevantPlatforms: agenticSystemsPlatforms,
   },
 }
 

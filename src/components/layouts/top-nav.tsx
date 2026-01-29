@@ -7,7 +7,7 @@ import { HomeIcon } from 'lucide-react'
 const navItems = [
   { label: 'READING LIST', href: '/reading' },
   { label: 'CREATIVE CODING', href: '/creative-coding/resources' },
-  { label: 'AGENTIC CODING', href: '/agentic-coding/resources' },
+  { label: 'AGENTIC SYSTEMS', href: '/agentic-systems/resources' },
 ]
 
 export function TopNav() {
