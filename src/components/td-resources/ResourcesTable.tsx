@@ -16,23 +16,28 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import { columns } from './columns'
-import type { ResourceWithRelations } from '@/lib/td-resources'
+import { createColumns } from './columns'
+import type { ResourceWithRelations, Hub } from '@/lib/td-resources'
 
 interface ResourcesTableProps {
   resources: ResourceWithRelations[]
   hiddenColumns?: string[]
+  hubSlug: Hub
 }
 
 export function ResourcesTable({
   resources,
   hiddenColumns = [],
+  hubSlug,
 }: ResourcesTableProps) {
   const [sorting, setSorting] = useState<SortingState>([])
 
+  // Create columns with hub context
+  const allColumns = useMemo(() => createColumns(hubSlug), [hubSlug])
+
   const visibleColumns = useMemo(
-    () => columns.filter((col) => !hiddenColumns.includes(col.id as string)),
-    [hiddenColumns]
+    () => allColumns.filter((col) => !hiddenColumns.includes(col.id as string)),
+    [allColumns, hiddenColumns]
   )
 
   const table = useReactTable({

@@ -6,7 +6,8 @@ import { HomeIcon } from 'lucide-react'
 
 const navItems = [
   { label: 'READING LIST', href: '/reading' },
-  { label: 'TD RESOURCES', href: '/touchdesigner/resources' },
+  { label: 'CREATIVE CODING', href: '/creative-coding/resources' },
+  { label: 'AGENTIC CODING', href: '/agentic-coding/resources' },
 ]
 
 export function TopNav() {

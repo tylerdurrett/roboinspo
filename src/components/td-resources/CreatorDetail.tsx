@@ -2,11 +2,13 @@ import Link from 'next/link'
 import { ArrowLeft, MapPin, Globe, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ResourcesTable } from './ResourcesTable'
-import type { Creator, ResourceWithRelations } from '@/lib/td-resources'
+import type { Creator, ResourceWithRelations, Hub } from '@/lib/td-resources'
+import { getHubConfig } from '@/lib/hubs'
 
 interface CreatorDetailProps {
   creator: Creator
   resources: ResourceWithRelations[]
+  hubSlug: Hub
 }
 
 const socialConfig: Record<string, { label: string; baseUrl: string }> = {
@@ -19,7 +21,8 @@ const socialConfig: Record<string, { label: string; baseUrl: string }> = {
   discord: { label: 'Discord', baseUrl: '' },
 }
 
-export function CreatorDetail({ creator, resources }: CreatorDetailProps) {
+export function CreatorDetail({ creator, resources, hubSlug }: CreatorDetailProps) {
+  const hubConfig = getHubConfig(hubSlug)
   const socials = creator.socials ?? {}
   const socialEntries = Object.entries(socials).filter(
     ([, handle]) => handle != null && handle !== ''
@@ -29,7 +32,7 @@ export function CreatorDetail({ creator, resources }: CreatorDetailProps) {
     <div className="max-w-4xl mx-auto">
       {/* Back link */}
       <Link
-        href="/touchdesigner/resources/creators"
+        href={`${hubConfig.basePath}/creators`}
         className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6"
       >
         <ArrowLeft className="h-4 w-4" />
@@ -120,7 +123,11 @@ export function CreatorDetail({ creator, resources }: CreatorDetailProps) {
           Resources ({resources.length})
         </h2>
         {resources.length > 0 ? (
-          <ResourcesTable resources={resources} hiddenColumns={['creators']} />
+          <ResourcesTable
+            resources={resources}
+            hiddenColumns={['creators']}
+            hubSlug={hubSlug}
+          />
         ) : (
           <p className="text-muted-foreground">
             No resources linked to this creator yet.

@@ -11,11 +11,14 @@ import {
   type ResourceWithRelations,
   type Creator,
   type Organization,
+  type Hub,
 } from '@/lib/td-resources'
+import { getHubConfig } from '@/lib/hubs'
 import { cn } from '@/lib/utils'
 
 interface ResourceDetailProps {
   resource: ResourceWithRelations
+  hubSlug: Hub
 }
 
 /** Badge color classes based on status */
@@ -142,7 +145,8 @@ function OrganizationCard({ organization }: { organization: Organization }) {
   )
 }
 
-export function ResourceDetail({ resource }: ResourceDetailProps) {
+export function ResourceDetail({ resource, hubSlug }: ResourceDetailProps) {
+  const hubConfig = getHubConfig(hubSlug)
   const hasTopics = resource.topics && resource.topics.length > 0
   const hasDomains = resource.domains && resource.domains.length > 0
   const hasSkillLevels = resource.skillLevels && resource.skillLevels.length > 0
@@ -153,7 +157,7 @@ export function ResourceDetail({ resource }: ResourceDetailProps) {
     <div className="py-16 px-4 sm:px-8 md:px-12 max-w-4xl mx-auto">
       {/* Back link */}
       <Link
-        href="/touchdesigner/resources"
+        href={hubConfig.basePath}
         className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6"
       >
         <ArrowLeft className="h-4 w-4" />

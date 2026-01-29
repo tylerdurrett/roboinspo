@@ -6,12 +6,15 @@ import { ResourcesFilters } from './ResourcesFilters'
 import {
   filterResources,
   useResourceFilters,
-  defaultFilterState,
+  getHubDefaultFilterState,
   type ResourceWithRelations,
 } from '@/lib/td-resources'
+import type { Hub } from '@/lib/td-resources/schemas'
 
 interface ResourcesFilteredViewProps {
   resources: ResourceWithRelations[]
+  /** Hub context for defaults and filtering */
+  hubSlug: Hub
   /** Lock to a single source type (e.g., youtube page) */
   fixedSourceType?: string
   /** Allow filtering within these source types (e.g., websites category page) */
@@ -20,13 +23,17 @@ interface ResourcesFilteredViewProps {
 
 export function ResourcesFilteredView({
   resources,
+  hubSlug,
   fixedSourceType,
   fixedSourceTypes,
 }: ResourcesFilteredViewProps) {
   const { filters, setFilters } = useResourceFilters(
+    hubSlug,
     fixedSourceType,
     fixedSourceTypes
   )
+
+  const hubDefaults = useMemo(() => getHubDefaultFilterState(hubSlug), [hubSlug])
 
   const hiddenColumns = useMemo(() => {
     // Only hide columns for single-type pages like youtube/patreon
@@ -49,7 +56,7 @@ export function ResourcesFilteredView({
 
   const handleClearFilters = () => {
     setFilters({
-      ...defaultFilterState,
+      ...hubDefaults,
       sourceType: fixedSourceType ? [fixedSourceType] : [],
     })
   }
@@ -64,25 +71,22 @@ export function ResourcesFilteredView({
     if (filters.skillLevels.length > 0) count++
     if (filters.topics.length > 0) count++
     if (filters.domains.length > 0) count++
-    // Don't count platforms if it's just ['touchdesigner'] (the default)
+    // Don't count platforms if it's the hub default
     if (
       filters.platforms.length > 0 &&
-      !(
-        filters.platforms.length === 1 &&
-        filters.platforms[0] === 'touchdesigner'
-      )
+      JSON.stringify(filters.platforms) !== JSON.stringify(hubDefaults.platforms)
     ) {
       count++
     }
-    // Don't count status if it's just ['active'] (the default)
+    // Don't count status if it's the hub default
     if (
       filters.status.length > 0 &&
-      !(filters.status.length === 1 && filters.status[0] === 'active')
+      JSON.stringify(filters.status) !== JSON.stringify(hubDefaults.status)
     ) {
       count++
     }
     return count
-  }, [filters, fixedSourceType])
+  }, [filters, fixedSourceType, hubDefaults])
 
   return (
     <div className="space-y-6">
@@ -94,6 +98,7 @@ export function ResourcesFilteredView({
         hideSourceTypeFilter={hideSourceTypeFilter}
         hidePricingFilter={hidePricingFilter}
         allowedSourceTypes={fixedSourceTypes}
+        hubSlug={hubSlug}
       />
 
       <div className="text-sm text-muted-foreground">
@@ -118,6 +123,7 @@ export function ResourcesFilteredView({
         <ResourcesTable
           resources={filteredResources}
           hiddenColumns={hiddenColumns}
+          hubSlug={hubSlug}
         />
       )}
     </div>

@@ -1,11 +1,12 @@
 /**
- * Data access functions for TouchDesigner Resources
+ * Data access functions for Resource Hubs
  * Provides typed access to Velite-generated content with relationship resolution
  */
 
 import { creators, organizations, resources } from '#content'
 import type { Creator, Organization, Resource } from '#content'
 import type { ResourceWithRelations, FilterState } from './types'
+import type { Hub } from './schemas'
 
 // Build lookup maps for efficient relationship resolution
 const creatorsMap = new Map(creators.map((c) => [c.slug, c]))
@@ -93,6 +94,44 @@ export function getResourcesByCreator(creatorSlug: string): Resource[] {
 /** Get resources by organization slug */
 export function getResourcesByOrganization(orgSlug: string): Resource[] {
   return resources.filter((r) => r.orgSlug === orgSlug)
+}
+
+// Hub-aware data access functions
+
+/** Get resources for a specific hub */
+export function getResourcesByHub(hubSlug: Hub): Resource[] {
+  return resources.filter((r) => r.hubs.includes(hubSlug))
+}
+
+/** Get creators for a specific hub */
+export function getCreatorsByHub(hubSlug: Hub): Creator[] {
+  return creators.filter((c) => c.hubs.includes(hubSlug))
+}
+
+/** Get organizations for a specific hub */
+export function getOrganizationsByHub(hubSlug: Hub): Organization[] {
+  return organizations.filter((o) => o.hubs.includes(hubSlug))
+}
+
+/** Get resources with relations for a specific hub */
+export function getResourcesWithRelationsByHub(
+  hubSlug: Hub
+): ResourceWithRelations[] {
+  return getResourcesByHub(hubSlug).map((resource) => ({
+    ...resource,
+    creators: resolveCreators(resource),
+    organization: resolveOrganization(resource),
+  }))
+}
+
+/** Get resources by creator slug, filtered by hub */
+export function getResourcesByCreatorAndHub(
+  creatorSlug: string,
+  hubSlug: Hub
+): Resource[] {
+  return resources.filter(
+    (r) => r.creatorSlugs?.includes(creatorSlug) && r.hubs.includes(hubSlug)
+  )
 }
 
 /** Filter resources based on filter state */

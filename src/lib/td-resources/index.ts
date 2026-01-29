@@ -1,5 +1,5 @@
 /**
- * TouchDesigner Resources Data Layer
+ * Resource Hubs Data Layer
  * Provides typed access to the markdown-based resource database
  */
 
@@ -11,7 +11,7 @@ export type {
   ResourceWithRelations,
   FilterState,
 } from './types'
-export { defaultFilterState } from './types'
+export { defaultFilterState, getHubDefaultFilterState } from './types'
 
 // Re-export data access functions
 export {
@@ -29,6 +29,12 @@ export {
   getResourcesByCreator,
   getResourcesByOrganization,
   filterResources,
+  // Hub-aware functions
+  getResourcesByHub,
+  getCreatorsByHub,
+  getOrganizationsByHub,
+  getResourcesWithRelationsByHub,
+  getResourcesByCreatorAndHub,
 } from './data'
 
 // Re-export hooks
@@ -36,6 +42,10 @@ export { useResourceFilters } from './hooks'
 
 // Re-export schemas and constants
 export {
+  // Hub exports
+  hubs,
+  hubLabels,
+  // Taxonomy exports
   skillLevels,
   topics,
   domains,
@@ -58,6 +68,7 @@ export {
 } from './schemas'
 
 export type {
+  Hub,
   SkillLevel,
   Topic,
   Domain,

@@ -1,16 +1,19 @@
 import { basename } from 'node:path'
 import { defineCollection, defineConfig, s } from 'velite'
 
+// Hub definitions
+const hubs = ['creative-coding', 'agentic-coding'] as const
+
 // Taxonomy definitions (from data model)
 const skillLevels = ['beginner', 'intermediate', 'advanced'] as const
 
 const topics = [
-  // Core fundamentals
+  // Core fundamentals (shared)
   'fundamentals',
   'python',
   'glsl',
   'shaders',
-  // Visual techniques
+  // Visual techniques (creative-coding)
   'audio-reactive',
   'feedback-loops',
   'particles',
@@ -19,7 +22,7 @@ const topics = [
   'raymarching',
   'procedural',
   'textures',
-  // Hardware integration
+  // Hardware integration (creative-coding)
   'projection-mapping',
   'kinect',
   'leap-motion',
@@ -28,14 +31,24 @@ const topics = [
   'websockets',
   'osc',
   'dmx',
-  // Workflow & architecture
+  // Workflow & architecture (shared)
   'optimization',
   'architecture',
   'best-practices',
   'tool-building',
+  // Agentic coding topics
+  'llm-integration',
+  'prompt-engineering',
+  'agent-architectures',
+  'tool-use',
+  'rag-retrieval',
+  'memory-systems',
+  'multi-agent',
+  'code-generation',
 ] as const
 
 const domains = [
+  // Creative coding domains
   'generative-art',
   'vj-performance',
   'installations',
@@ -47,6 +60,11 @@ const domains = [
   'motion-capture',
   'video-synthesis',
   'education',
+  // Agentic coding domains
+  'developer-tools',
+  'automation',
+  'research-assistants',
+  'productivity',
 ] as const
 
 const organizationTypes = [
@@ -65,12 +83,14 @@ const sourceTypes = [
   'aggregator',
   'forum',
   'discord',
+  'reddit',
   'website',
   'social',
 ] as const
 const pricingModels = ['free', 'freemium', 'paid'] as const
 
 const platforms = [
+  // Creative coding platforms
   'touchdesigner',
   'processing',
   'p5js',
@@ -78,7 +98,14 @@ const platforms = [
   'cables',
   'unity',
   'unreal',
-  'general', // Platform-agnostic creative coding
+  'general', // Platform-agnostic
+  // Agentic coding platforms
+  'langchain',
+  'llamaindex',
+  'autogen',
+  'crewai',
+  'claude-code',
+  'cursor',
 ] as const
 
 // Socials schema for creators
@@ -102,6 +129,7 @@ const creators = defineCollection({
     .object({
       name: s.string(),
       slug: s.string().optional(), // Optional: derived from filename if not provided
+      hubs: s.array(s.enum(hubs)).default(['creative-coding']),
       aliases: s.array(s.string()).optional(),
       bio: s.string().optional(),
       location: s.string().optional(),
@@ -123,6 +151,7 @@ const organizations = defineCollection({
     .object({
       name: s.string(),
       slug: s.string().optional(), // Optional: derived from filename if not provided
+      hubs: s.array(s.enum(hubs)).default(['creative-coding']),
       type: s.enum(organizationTypes),
       description: s.string().optional(),
       website: s.string().url(),
@@ -143,6 +172,7 @@ const resources = defineCollection({
     .object({
       title: s.string(),
       slug: s.string().optional(), // Optional: derived from filename if not provided
+      hubs: s.array(s.enum(hubs)).default(['creative-coding']),
       url: s.string().url(),
       status: s.enum(resourceStatuses),
       lastVerified: s.isodate(),

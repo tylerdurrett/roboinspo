@@ -1,5 +1,5 @@
 /**
- * Type definitions for TouchDesigner Resources
+ * Type definitions for Resource Hubs
  * Re-exports Velite generated types and adds UI-specific types
  */
 
@@ -7,6 +7,8 @@
 export type { Creator, Organization, Resource } from '#content'
 
 import type { Creator, Organization, Resource } from '#content'
+import type { Hub } from './schemas'
+import { getHubConfig } from '../hubs'
 
 /** Resource with resolved creator and organization relationships */
 export interface ResourceWithRelations extends Resource {
@@ -26,7 +28,7 @@ export interface FilterState {
   search: string
 }
 
-/** Default filter state */
+/** Default filter state (legacy, uses touchdesigner default) */
 export const defaultFilterState: FilterState = {
   sourceType: [],
   pricingModel: [],
@@ -36,4 +38,13 @@ export const defaultFilterState: FilterState = {
   platforms: ['touchdesigner'],
   status: ['active'],
   search: '',
+}
+
+/** Get default filter state for a specific hub */
+export function getHubDefaultFilterState(hubSlug: Hub): FilterState {
+  const config = getHubConfig(hubSlug)
+  return {
+    ...defaultFilterState,
+    platforms: config.defaultPlatforms,
+  }
 }

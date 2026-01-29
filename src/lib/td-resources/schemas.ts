@@ -1,18 +1,22 @@
 /**
- * Taxonomy constants for TouchDesigner Resources
+ * Taxonomy constants for Resource Hubs
  * These match the enums defined in velite.config.ts
  */
+
+// Hub definitions
+export const hubs = ['creative-coding', 'agentic-coding'] as const
+export type Hub = (typeof hubs)[number]
 
 export const skillLevels = ['beginner', 'intermediate', 'advanced'] as const
 export type SkillLevel = (typeof skillLevels)[number]
 
 export const topics = [
-  // Core fundamentals
+  // Core fundamentals (shared)
   'fundamentals',
   'python',
   'glsl',
   'shaders',
-  // Visual techniques
+  // Visual techniques (creative-coding)
   'audio-reactive',
   'feedback-loops',
   'particles',
@@ -21,7 +25,7 @@ export const topics = [
   'raymarching',
   'procedural',
   'textures',
-  // Hardware integration
+  // Hardware integration (creative-coding)
   'projection-mapping',
   'kinect',
   'leap-motion',
@@ -30,15 +34,25 @@ export const topics = [
   'websockets',
   'osc',
   'dmx',
-  // Workflow & architecture
+  // Workflow & architecture (shared)
   'optimization',
   'architecture',
   'best-practices',
   'tool-building',
+  // Agentic coding topics
+  'llm-integration',
+  'prompt-engineering',
+  'agent-architectures',
+  'tool-use',
+  'rag-retrieval',
+  'memory-systems',
+  'multi-agent',
+  'code-generation',
 ] as const
 export type Topic = (typeof topics)[number]
 
 export const domains = [
+  // Creative coding domains
   'generative-art',
   'vj-performance',
   'installations',
@@ -50,6 +64,11 @@ export const domains = [
   'motion-capture',
   'video-synthesis',
   'education',
+  // Agentic coding domains
+  'developer-tools',
+  'automation',
+  'research-assistants',
+  'productivity',
 ] as const
 export type Domain = (typeof domains)[number]
 
@@ -73,6 +92,7 @@ export const sourceTypes = [
   'aggregator',
   'forum',
   'discord',
+  'reddit',
   'website',
   'social',
 ] as const
@@ -91,7 +111,7 @@ export const sourceTypeCategoryMap: Record<
   readonly SourceType[]
 > = {
   websites: ['website', 'blog', 'course', 'aggregator', 'forum', 'github'],
-  social: ['youtube', 'patreon', 'discord', 'social'],
+  social: ['youtube', 'patreon', 'discord', 'reddit', 'social'],
 } as const
 
 /** Human-readable labels for categories */
@@ -111,6 +131,7 @@ export const pricingModels = ['free', 'freemium', 'paid'] as const
 export type PricingModel = (typeof pricingModels)[number]
 
 export const platforms = [
+  // Creative coding platforms
   'touchdesigner',
   'processing',
   'p5js',
@@ -119,8 +140,21 @@ export const platforms = [
   'unity',
   'unreal',
   'general',
+  // Agentic coding platforms
+  'langchain',
+  'llamaindex',
+  'autogen',
+  'crewai',
+  'claude-code',
+  'cursor',
 ] as const
 export type Platform = (typeof platforms)[number]
+
+/** Human-readable labels for hubs */
+export const hubLabels: Record<Hub, string> = {
+  'creative-coding': 'Creative Coding',
+  'agentic-coding': 'Agentic Coding',
+}
 
 /** Human-readable labels for source types */
 export const sourceTypeLabels: Record<SourceType, string> = {
@@ -132,6 +166,7 @@ export const sourceTypeLabels: Record<SourceType, string> = {
   aggregator: 'Aggregator',
   forum: 'Forum',
   discord: 'Discord',
+  reddit: 'Reddit',
   website: 'Website',
   social: 'Social',
 }
@@ -175,4 +210,10 @@ export const platformLabels: Record<Platform, string> = {
   unity: 'Unity',
   unreal: 'Unreal Engine',
   general: 'General',
+  langchain: 'LangChain',
+  llamaindex: 'LlamaIndex',
+  autogen: 'AutoGen',
+  crewai: 'CrewAI',
+  'claude-code': 'Claude Code',
+  cursor: 'Cursor',
 }

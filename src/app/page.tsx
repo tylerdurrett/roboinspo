@@ -16,10 +16,16 @@ export default function Home() {
           READING LIST
         </Link>
         <Link
-          href="/touchdesigner/resources"
+          href="/creative-coding/resources"
           className="text-[8vw] font-bold tracking-wider hover:opacity-70 transition-opacity duration-300 text-center leading-none"
         >
-          TD RESOURCES
+          CREATIVE CODING
+        </Link>
+        <Link
+          href="/agentic-coding/resources"
+          className="text-[8vw] font-bold tracking-wider hover:opacity-70 transition-opacity duration-300 text-center leading-none"
+        >
+          AGENTIC CODING
         </Link>
       </div>
     </div>

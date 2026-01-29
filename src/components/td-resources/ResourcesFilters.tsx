@@ -1,5 +1,6 @@
 'use client'
 
+import { useMemo } from 'react'
 import { Search, X } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -18,7 +19,9 @@ import {
   resourceStatuses,
   statusLabels,
   type FilterState,
+  type Hub,
 } from '@/lib/td-resources'
+import { getHubConfig } from '@/lib/hubs'
 
 interface ResourcesFiltersProps {
   filters: FilterState
@@ -29,6 +32,8 @@ interface ResourcesFiltersProps {
   hidePricingFilter?: boolean
   /** If provided, limit source type options to these values (for category pages) */
   allowedSourceTypes?: string[]
+  /** Hub context for filtering options */
+  hubSlug?: Hub
 }
 
 /** Convert kebab-case to Title Case */
@@ -58,15 +63,50 @@ export function ResourcesFilters({
   hideSourceTypeFilter = false,
   hidePricingFilter = false,
   allowedSourceTypes,
+  hubSlug,
 }: ResourcesFiltersProps) {
-  const sourceTypeOptions = buildOptions(sourceTypes, sourceTypeLabels).filter(
-    (opt) => !allowedSourceTypes || allowedSourceTypes.includes(opt.value)
+  // Get hub config for filtering options
+  const hubConfig = useMemo(
+    () => (hubSlug ? getHubConfig(hubSlug) : null),
+    [hubSlug]
   )
+
+  // Build options, optionally filtered by hub relevance
+  const sourceTypeOptions = useMemo(() => {
+    let opts = buildOptions(sourceTypes, sourceTypeLabels)
+    if (allowedSourceTypes) {
+      opts = opts.filter((opt) => allowedSourceTypes.includes(opt.value))
+    }
+    return opts
+  }, [allowedSourceTypes])
+
   const pricingOptions = buildOptions(pricingModels, pricingModelLabels)
   const skillLevelOptions = buildOptions(skillLevels, skillLevelLabels)
-  const topicOptions = buildOptions(topics)
-  const domainOptions = buildOptions(domains)
-  const platformOptions = buildOptions(platforms, platformLabels)
+
+  const topicOptions = useMemo(() => {
+    const opts = buildOptions(topics)
+    if (hubConfig) {
+      return opts.filter((opt) => hubConfig.relevantTopics.includes(opt.value))
+    }
+    return opts
+  }, [hubConfig])
+
+  const domainOptions = useMemo(() => {
+    const opts = buildOptions(domains)
+    if (hubConfig) {
+      return opts.filter((opt) => hubConfig.relevantDomains.includes(opt.value))
+    }
+    return opts
+  }, [hubConfig])
+
+  const platformOptions = useMemo(() => {
+    const opts = buildOptions(platforms, platformLabels)
+    if (hubConfig) {
+      return opts.filter((opt) => hubConfig.relevantPlatforms.includes(opt.value))
+    }
+    return opts
+  }, [hubConfig])
+
   const statusOptions = buildOptions(resourceStatuses, statusLabels)
 
   const updateFilter = <K extends keyof FilterState>(

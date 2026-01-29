@@ -11,7 +11,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { CreatorCard } from './CreatorCard'
-import type { Creator } from '@/lib/td-resources'
+import type { Creator, Hub } from '@/lib/td-resources'
 
 type SortOption = 'name-asc' | 'name-desc'
 
@@ -21,9 +21,10 @@ interface CreatorWithCount extends Creator {
 
 interface CreatorsGridProps {
   creators: CreatorWithCount[]
+  hubSlug: Hub
 }
 
-export function CreatorsGrid({ creators }: CreatorsGridProps) {
+export function CreatorsGrid({ creators, hubSlug }: CreatorsGridProps) {
   const [search, setSearch] = useState('')
   const [sort, setSort] = useState<SortOption>('name-asc')
 
@@ -91,6 +92,7 @@ export function CreatorsGrid({ creators }: CreatorsGridProps) {
             key={creator.slug}
             creator={creator}
             resourceCount={creator.resourceCount}
+            hubSlug={hubSlug}
           />
         ))}
       </div>

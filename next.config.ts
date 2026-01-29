@@ -12,6 +12,20 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [{ hostname: 'cdn.sanity.io' }],
   },
+  async redirects() {
+    return [
+      {
+        source: '/touchdesigner/resources/:path*',
+        destination: '/creative-coding/resources/:path*',
+        permanent: true,
+      },
+      {
+        source: '/touchdesigner/resources',
+        destination: '/creative-coding/resources',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig

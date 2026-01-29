@@ -1,17 +1,21 @@
 import Link from 'next/link'
 import { MapPin } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
-import type { Creator } from '@/lib/td-resources'
+import type { Creator, Hub } from '@/lib/td-resources'
+import { getHubConfig } from '@/lib/hubs'
 
 interface CreatorCardProps {
   creator: Creator
   resourceCount?: number
+  hubSlug: Hub
 }
 
-export function CreatorCard({ creator, resourceCount }: CreatorCardProps) {
+export function CreatorCard({ creator, resourceCount, hubSlug }: CreatorCardProps) {
+  const hubConfig = getHubConfig(hubSlug)
+
   return (
     <Link
-      href={`/touchdesigner/resources/creators/${creator.slug}`}
+      href={`${hubConfig.basePath}/creators/${creator.slug}`}
       className="block border rounded-lg p-4 hover:border-accent transition-colors"
     >
       <div className="flex items-start gap-4">
