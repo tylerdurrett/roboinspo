@@ -1,0 +1,32 @@
+---
+title: Andrej Karpathy YouTube
+hubs:
+  - agentic-systems
+url: https://www.youtube.com/@AndrejKarpathy
+status: active
+lastVerified: 2026-01-29
+sourceType: youtube
+pricingModel: free
+skillLevels:
+  - intermediate
+  - advanced
+topics:
+  - fundamentals
+  - llm-integration
+  - architecture
+domains:
+  - ai-ml
+  - education
+platforms:
+  - general
+creatorSlugs:
+  - andrej-karpathy
+description: Thought leadership on Software 2.0, LLM OS, and the philosophy of AI as a kernel process.
+featured: true
+---
+
+While uploads are infrequent, Andrej Karpathy's influence is outsized. His discussions on "Software 2.0," "LLM OS," and the philosophy of AI as a kernel process define the intellectual framework of the entire agentic coding movement.
+
+When he posts, the community analyzes his every word for clues about the future direction of the field. He is credited with popularizing the term "vibe coding" and his conceptual frameworks shape how developers think about the relationship between natural language and code generation.
+
+Essential viewing for understanding the theoretical foundations of agentic systems.
