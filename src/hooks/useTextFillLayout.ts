@@ -38,7 +38,7 @@
 
 import { useState, useEffect, useCallback, useRef, type RefObject } from 'react'
 import { measureCharacters } from '@/lib/text-fill/measure'
-import { computeLayout } from '@/lib/text-fill/layout'
+import { computeLayout, type LayoutOptions } from '@/lib/text-fill/layout'
 import type { CharMetrics, BlockLayout } from '@/lib/text-fill/types'
 
 interface UseTextFillLayoutOptions {
@@ -50,6 +50,8 @@ interface UseTextFillLayoutOptions {
   fontFamily: string
   /** Debounce delay for resize recalculations (ms) */
   debounceMs?: number
+  /** Optional break hints for word-boundary-aware breaking (mobile only) */
+  breakHints?: number[]
 }
 
 /**
@@ -62,6 +64,7 @@ export function useTextFillLayout({
   containerRef,
   fontFamily,
   debounceMs = 100,
+  breakHints,
 }: UseTextFillLayoutOptions): BlockLayout | null {
   const [layout, setLayout] = useState<BlockLayout | null>(null)
   const [fontReady, setFontReady] = useState(false)
@@ -119,15 +122,25 @@ export function useTextFillLayout({
 
     if (blockWidth <= 0 || blockHeight <= 0) return
 
+    // Calculate aspect ratio for responsive balancing
+    const aspectRatio = blockWidth / blockHeight
+
+    // Build layout options
+    const layoutOptions: LayoutOptions | undefined = breakHints
+      ? { breakHints }
+      : undefined
+
     const newLayout = computeLayout(
       text,
       metricsRef.current,
       blockWidth,
-      blockHeight
+      blockHeight,
+      aspectRatio,
+      layoutOptions
     )
 
     setLayout(newLayout)
-  }, [text, fontFamily, fontReady, containerRef])
+  }, [text, fontFamily, fontReady, containerRef, breakHints])
 
   // Initial calculation + ResizeObserver for recalculation
   useEffect(() => {

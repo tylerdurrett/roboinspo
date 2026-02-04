@@ -82,6 +82,8 @@ interface TextFillBlockProps {
   onReady?: () => void
   /** Additional CSS classes */
   className?: string
+  /** Preferred break point indices for word-boundary-aware breaking (mobile only) */
+  breakHints?: number[]
 }
 
 export default function TextFillBlock({
@@ -91,6 +93,7 @@ export default function TextFillBlock({
   videoPlaybackId,
   onReady,
   className,
+  breakHints,
 }: TextFillBlockProps) {
   const containerRef = useRef<HTMLAnchorElement>(null)
   const measureRef = useRef<HTMLDivElement>(null)
@@ -101,6 +104,7 @@ export default function TextFillBlock({
     text,
     containerRef,
     fontFamily: FONT_FAMILY,
+    breakHints,
   })
 
   const showVideo = videoPlaybackId && !prefersReducedMotion

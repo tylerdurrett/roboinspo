@@ -8,6 +8,8 @@ interface BlockConfig {
   label: string
   href: string
   videoPlaybackIds: string[]
+  /** Preferred break point indices for word-boundary-aware breaking (mobile only) */
+  breakHints?: number[]
 }
 
 const BLOCKS: BlockConfig[] = [
@@ -16,6 +18,7 @@ const BLOCKS: BlockConfig[] = [
     label: 'Reading List',
     href: '/reading',
     videoPlaybackIds: ['penMkr9zNyYGXc5GjcJnHTqtMUBn8N901l3SfO8Rp01Os'],
+    breakHints: [7], // READING|LIST
   },
   {
     text: 'CREATIVECODING',
@@ -25,6 +28,7 @@ const BLOCKS: BlockConfig[] = [
       // '45Fj9902Qepq02JDMAcXojiXF7ilTZb1NxjFmkKafppqA',
       'LuwmQgGmPIcLLTc01tTgUX65Miefb5SPhtUVEYibZblk',
     ],
+    breakHints: [8], // CREATIVE|CODING
   },
   {
     text: 'AGENTICSYSTEMS',
@@ -34,6 +38,7 @@ const BLOCKS: BlockConfig[] = [
       // 'M8AbkflI02D7FIHsz8DjXheLOPU8IhWjXepzG00httyC4',
       'vSr45xWBsnpKHWs5hV2rL2O2OpxwJrxLDmn301vlgNFs',
     ],
+    breakHints: [7], // AGENTIC|SYSTEMS
   },
 ]
 
@@ -141,6 +146,7 @@ export default function HomeClient() {
           videoPlaybackId={selectedIds[i]}
           onReady={handleBlockReady}
           className="landscape:w-1/3 landscape:h-full portrait:w-full portrait:h-1/3"
+          breakHints={block.breakHints}
         />
       ))}
     </div>

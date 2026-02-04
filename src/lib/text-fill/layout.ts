@@ -64,7 +64,7 @@
 
 import type { CharMetrics, RowLayout, BlockLayout } from './types'
 
-/** Minimum characters allowed in the last row before rebalancing */
+/** Minimum characters allowed in the last row before rebalancing (landscape/default) */
 const MIN_CHARS_LAST_ROW = 3
 
 /** Binary search converges when height difference is within this tolerance (px) */
@@ -79,6 +79,40 @@ const BINARY_SEARCH_MAX_ITERATIONS = 50
  * to handle differences between canvas measurement and DOM rendering.
  */
 const HORIZONTAL_SAFETY_MARGIN = 1.0
+
+/**
+ * Aspect ratio threshold above which we consider the container "mobile/short" mode.
+ * When blocks are wide and short (typical of stacked mobile layout), we use more
+ * aggressive rebalancing for better visual results.
+ *
+ * On mobile portrait: blocks are full-width, 1/3 height → aspect ratio ~1.4
+ * On desktop landscape: blocks are 1/3 width, full height → aspect ratio ~0.5
+ */
+const MOBILE_ASPECT_RATIO_THRESHOLD = 1.2
+
+/**
+ * Minimum width ratio between the shorter and longer row when there are only 2 rows
+ * in mobile/short mode. This prevents awkward splits like "READINGL/IST" (3 chars).
+ * A ratio of 0.5 means the shorter row must be at least 50% the width of the longer.
+ */
+const MIN_TWO_ROW_BALANCE_RATIO_MOBILE = 0.5
+
+/**
+ * Minimum width ratio for desktop/tall mode (more permissive).
+ */
+const MIN_TWO_ROW_BALANCE_RATIO_DESKTOP = 0.25
+
+/**
+ * Options for the layout algorithm.
+ */
+export interface LayoutOptions {
+  /**
+   * Preferred break point indices (0-based position after which to break).
+   * Only used in mobile mode. For example, for "READINGLIST" with breakHints: [7],
+   * the algorithm will prefer breaking after position 7 → "READING" / "LIST".
+   */
+  breakHints?: number[]
+}
 
 /**
  * Sum the reference-size widths of characters in a string.
@@ -145,6 +179,114 @@ function rebalanceLastRow(rows: string[]): string[] {
 }
 
 /**
+ * Enhanced rebalancing that considers visual width ratios, not just character counts.
+ * For two-row layouts in mobile mode, ensures the shorter row is at least
+ * MIN_TWO_ROW_BALANCE_RATIO_MOBILE of the longer row's width.
+ *
+ * When breakHints are provided and we're in mobile mode, prefers breaking at
+ * the hint position for more semantic word breaks.
+ */
+function rebalanceRowsForAspectRatio(
+  rows: string[],
+  widths: Map<string, number>,
+  aspectRatio: number,
+  options?: LayoutOptions
+): string[] {
+  // First apply basic character-count rebalancing
+  let result = rebalanceLastRow(rows)
+
+  // Enhanced balancing only applies to 2-row layouts
+  if (result.length !== 2) return result
+
+  // Mobile/stacked layouts have wide, short blocks (aspect ratio > threshold)
+  // Desktop/side-by-side layouts have narrow, tall blocks (aspect ratio < threshold)
+  const isMobileLayout = aspectRatio > MOBILE_ASPECT_RATIO_THRESHOLD
+
+  // If we're on mobile and have break hints, try to use them first
+  if (isMobileLayout && options?.breakHints?.length) {
+    const combined = result[0] + result[1]
+    const hint = options.breakHints[0] // Use first hint for 2-row layouts
+
+    // Validate hint is within bounds
+    if (hint > 0 && hint < combined.length) {
+      const hintRow0 = combined.slice(0, hint)
+      const hintRow1 = combined.slice(hint)
+
+      // Calculate the balance ratio with the hint split
+      const hintWidth0 = rowRefWidth(hintRow0, widths)
+      const hintWidth1 = rowRefWidth(hintRow1, widths)
+      const hintRatio =
+        Math.min(hintWidth0, hintWidth1) / Math.max(hintWidth0, hintWidth1)
+
+      // Use hint split if it meets minimum balance threshold
+      if (hintRatio >= MIN_TWO_ROW_BALANCE_RATIO_MOBILE) {
+        return [hintRow0, hintRow1]
+      }
+    }
+  }
+
+  // Fall back to algorithmic rebalancing
+  const minBalanceRatio = isMobileLayout
+    ? MIN_TWO_ROW_BALANCE_RATIO_MOBILE
+    : MIN_TWO_ROW_BALANCE_RATIO_DESKTOP
+
+  const width0 = rowRefWidth(result[0], widths)
+  const width1 = rowRefWidth(result[1], widths)
+
+  // Calculate current balance ratio (shorter / longer)
+  const currentRatio = Math.min(width0, width1) / Math.max(width0, width1)
+
+  // If already balanced enough, return as-is
+  if (currentRatio >= minBalanceRatio) return result
+
+  // Need to rebalance: combine and re-split for better balance
+  const combined = result[0] + result[1]
+  const totalWidth = rowRefWidth(combined, widths)
+
+  // Target: split so that the shorter row is at least minBalanceRatio of the longer
+  // For ratio r, shorter = r * longer, and shorter + longer = total
+  // So: r*longer + longer = total => longer = total / (1 + r)
+  // And: shorter = total - longer = total * r / (1 + r)
+  const targetLongerWidth = totalWidth / (1 + minBalanceRatio)
+
+  // Find the best split point that gets us closest to the target balance
+  let bestSplit = result[0].length
+  let bestDiff = Infinity
+
+  // Try all possible split points and find the one closest to target balance
+  let runningWidth = 0
+  for (let i = 1; i < combined.length; i++) {
+    runningWidth += widths.get(combined[i - 1]) ?? 0
+    const row0Width = runningWidth
+    const row1Width = totalWidth - runningWidth
+
+    // We want the longer row to be close to targetLongerWidth
+    const longerWidth = Math.max(row0Width, row1Width)
+    const diff = Math.abs(longerWidth - targetLongerWidth)
+
+    if (diff < bestDiff) {
+      bestDiff = diff
+      bestSplit = i
+    }
+  }
+
+  // Apply the new split, but only if it's actually better
+  const newRow0 = combined.slice(0, bestSplit)
+  const newRow1 = combined.slice(bestSplit)
+  const newWidth0 = rowRefWidth(newRow0, widths)
+  const newWidth1 = rowRefWidth(newRow1, widths)
+  const newRatio =
+    Math.min(newWidth0, newWidth1) / Math.max(newWidth0, newWidth1)
+
+  // Only use new split if it improves balance
+  if (newRatio > currentRatio) {
+    result = [newRow0, newRow1]
+  }
+
+  return result
+}
+
+/**
  * Convert row strings into RowLayout objects with computed font sizes
  * and heights based on block width.
  */
@@ -175,9 +317,17 @@ function totalHeightForTarget(
   text: string,
   metrics: CharMetrics,
   blockWidth: number,
-  targetRefWidth: number
+  targetRefWidth: number,
+  aspectRatio: number,
+  options?: LayoutOptions
 ): number {
-  const rows = rebalanceLastRow(packRows(text, metrics.widths, targetRefWidth))
+  const packedRows = packRows(text, metrics.widths, targetRefWidth)
+  const rows = rebalanceRowsForAspectRatio(
+    packedRows,
+    metrics.widths,
+    aspectRatio,
+    options
+  )
   const layouts = buildRowLayouts(rows, metrics, blockWidth)
   return layouts.reduce((sum, r) => sum + r.height, 0)
 }
@@ -192,12 +342,21 @@ function totalHeightForTarget(
  * totalHeight(targetRefWidth) is monotonically decreasing:
  * - Smaller targetRefWidth = more rows = taller total
  * - Larger targetRefWidth = fewer rows = shorter total
+ *
+ * @param text - The text to layout
+ * @param metrics - Character metrics from canvas measurement
+ * @param blockWidth - Container width in pixels
+ * @param blockHeight - Container height in pixels
+ * @param aspectRatio - Container aspect ratio (width/height), used for responsive balancing
+ * @param options - Optional layout options including break hints
  */
 export function computeLayout(
   text: string,
   metrics: CharMetrics,
   blockWidth: number,
-  blockHeight: number
+  blockHeight: number,
+  aspectRatio: number = blockWidth / blockHeight,
+  options?: LayoutOptions
 ): BlockLayout {
   const { widths } = metrics
 
@@ -227,7 +386,14 @@ export function computeLayout(
 
   for (let i = 0; i < BINARY_SEARCH_MAX_ITERATIONS; i++) {
     const mid = (lo + hi) / 2
-    const h = totalHeightForTarget(text, metrics, blockWidth, mid)
+    const h = totalHeightForTarget(
+      text,
+      metrics,
+      blockWidth,
+      mid,
+      aspectRatio,
+      options
+    )
 
     if (Math.abs(h - blockHeight) < BINARY_SEARCH_TOLERANCE) {
       break
@@ -243,7 +409,13 @@ export function computeLayout(
   }
 
   const finalTargetWidth = (lo + hi) / 2
-  const rows = rebalanceLastRow(packRows(text, widths, finalTargetWidth))
+  const packedRows = packRows(text, widths, finalTargetWidth)
+  const rows = rebalanceRowsForAspectRatio(
+    packedRows,
+    widths,
+    aspectRatio,
+    options
+  )
   let layouts = buildRowLayouts(rows, metrics, blockWidth)
 
   // Final uniform correction to ensure pixel-perfect vertical fill
