@@ -3,8 +3,8 @@ import type { CharMetrics, RowLayout, BlockLayout } from './types'
 const MIN_CHARS_LAST_ROW = 3
 const BINARY_SEARCH_TOLERANCE = 0.5 // pixels
 const BINARY_SEARCH_MAX_ITERATIONS = 50
-// Safety margin to prevent horizontal overflow due to font rendering differences
-const HORIZONTAL_SAFETY_MARGIN = 0.98
+// No safety margin needed - scaleX handles width adjustment
+const HORIZONTAL_SAFETY_MARGIN = 1.0
 
 /**
  * Sum the reference-size widths of characters in a string.

@@ -24,7 +24,7 @@ const BLOCKS: BlockConfig[] = [
 
 export default function HomeClient() {
   return (
-    <div className="h-dvh w-dvw flex landscape:flex-row portrait:flex-col gap-1 overflow-hidden">
+    <div className="h-dvh w-dvw flex landscape:flex-row portrait:flex-col overflow-hidden">
       {BLOCKS.map((block) => (
         <TextFillBlock
           key={block.text}
