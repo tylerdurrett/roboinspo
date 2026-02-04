@@ -4,7 +4,7 @@ import { getCategories } from '@/models/category'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Generative Learning',
+  title: 'Blog',
   description: '',
 }
 

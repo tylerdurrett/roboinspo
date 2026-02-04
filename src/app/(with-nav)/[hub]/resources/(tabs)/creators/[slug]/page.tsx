@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const config = getHubConfig(hub)
   return {
-    title: `${creator.name} | ${config.name} Creators | Generative Learning`,
+    title: `${creator.name} | ${config.name} Creators`,
     description: creator.bio ?? `${config.name} resources by ${creator.name}`,
   }
 }

@@ -20,7 +20,7 @@ export async function generateMetadata({
   }
   const config = getHubConfig(hub)
   return {
-    title: `${config.name} Resources | Generative Learning`,
+    title: `${config.name} Resources`,
     description: `A curated database of ${config.name.toLowerCase()} tutorials, courses, and learning resources.`,
   }
 }

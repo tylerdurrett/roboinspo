@@ -22,7 +22,10 @@ export function generateMetadata(): Metadata {
 
   return {
     metadataBase: new URL(baseUrl),
-    title: TITLE,
+    title: {
+      default: TITLE,
+      template: `%s | ${TITLE}`,
+    },
     description: DESCRIPTION,
     icons: {
       icon: [
