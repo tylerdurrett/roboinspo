@@ -198,7 +198,7 @@ export default function TextFillBlock({
           <video
             className="absolute inset-0 w-full h-full object-cover"
             style={{ mixBlendMode: 'multiply' }}
-            src={`https://stream.mux.com/${videoPlaybackId}/medium.mp4`}
+            src={`https://stream.mux.com/${videoPlaybackId}`}
             autoPlay
             muted
             loop
