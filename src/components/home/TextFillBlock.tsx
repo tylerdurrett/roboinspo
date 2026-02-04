@@ -25,23 +25,49 @@
  *    - Phase 1: Render hidden measurement spans, compute scale factors
  *    - Phase 2: Render visible scaled content (only after scales computed)
  *
- * ## Why ScaleX?
+ * ## Video Hover Effect
  *
- * The canvas measureText() API doesn't account for:
- * - CSS-specific font rendering
- * - Font hinting at different sizes
- * - Sub-pixel rendering differences
- *
- * Rather than trying to predict these differences, we measure the actual
- * DOM-rendered width and apply a transform to achieve exact fit.
+ * When `videoPlaybackId` is provided, hovering the block reveals a Mux video
+ * visible only through the text letterforms using `mix-blend-mode: multiply`:
+ * - Mask layer: black background + white text (same layout)
+ * - Video layer on top with multiply blend — video shows through white text,
+ *   black areas stay black.
  */
 
 import { useRef, useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { useTextFillLayout } from '@/hooks/useTextFillLayout'
+import type { BlockLayout } from '@/lib/text-fill/types'
 
 const FONT_FAMILY = 'league-gothic, sans-serif'
+
+interface TextRowsProps {
+  layout: BlockLayout
+  scaleFactors: number[]
+  className?: string
+}
+
+function TextRows({ layout, scaleFactors, className }: TextRowsProps) {
+  return (
+    <div className={cn('flex flex-col', className)} aria-hidden="true">
+      {layout.rows.map((row, i) => (
+        <span
+          key={i}
+          className="block font-league-gothic uppercase leading-none whitespace-nowrap origin-left"
+          style={{
+            fontSize: `${row.fontSize}px`,
+            lineHeight: `${row.height}px`,
+            height: `${row.height}px`,
+            transform: `scaleX(${scaleFactors[i]})`,
+          }}
+        >
+          {row.chars}
+        </span>
+      ))}
+    </div>
+  )
+}
 
 interface TextFillBlockProps {
   /** Text to display (spaces will be preserved, shown character-by-character) */
@@ -50,6 +76,8 @@ interface TextFillBlockProps {
   label: string
   /** Navigation destination */
   href: string
+  /** Mux playback ID for the hover video effect */
+  videoPlaybackId?: string
   /** Additional CSS classes */
   className?: string
 }
@@ -58,17 +86,27 @@ export default function TextFillBlock({
   text,
   label,
   href,
+  videoPlaybackId,
   className,
 }: TextFillBlockProps) {
   const containerRef = useRef<HTMLAnchorElement>(null)
   const measureRef = useRef<HTMLDivElement>(null)
   const [scaleFactors, setScaleFactors] = useState<number[]>([])
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
   const layout = useTextFillLayout({
     text,
     containerRef,
     fontFamily: FONT_FAMILY,
   })
+
+  const showVideo = videoPlaybackId && !prefersReducedMotion
+
+  useEffect(() => {
+    setPrefersReducedMotion(
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    )
+  }, [])
 
   // Measure text widths using hidden element and compute scale factors
   const computeScales = useCallback(() => {
@@ -100,13 +138,15 @@ export default function TextFillBlock({
     }
   }, [layout, computeScales])
 
+  const isReady = layout && scaleFactors.length === layout.rows.length
+
   return (
     <Link
       ref={containerRef}
       href={href}
       className={cn(
-        'relative block overflow-hidden',
-        'hover:opacity-70 transition-opacity duration-300',
+        'group relative block overflow-hidden',
+        !showVideo && 'hover:opacity-70 transition-opacity duration-300',
         !layout && 'invisible',
         className
       )}
@@ -136,24 +176,38 @@ export default function TextFillBlock({
       )}
 
       {/* Visible scaled content */}
-      {layout && scaleFactors.length === layout.rows.length && (
-        <div className="flex flex-col" aria-hidden="true">
-          {layout.rows.map((row, i) => (
-            <span
-              key={i}
-              className="block font-league-gothic uppercase leading-none whitespace-nowrap origin-left"
-              style={{
-                fontSize: `${row.fontSize}px`,
-                lineHeight: `${row.height}px`,
-                height: `${row.height}px`,
-                transform: `scaleX(${scaleFactors[i]})`,
-              }}
-            >
-              {row.chars}
-            </span>
-          ))}
+      {isReady && <TextRows layout={layout} scaleFactors={scaleFactors} />}
+
+      {/* Video overlay — visible on hover through text letterforms */}
+      {isReady && showVideo && (
+        <div
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+          style={{ isolation: 'isolate' }}
+          aria-hidden="true"
+        >
+          {/* Mask layer: black background + white text */}
+          <div className="absolute inset-0 bg-black">
+            <TextRows
+              layout={layout}
+              scaleFactors={scaleFactors}
+              className="text-white"
+            />
+          </div>
+          {/* Video layer with multiply blend — video shows through white text */}
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ mixBlendMode: 'multiply' }}
+            src={`https://stream.mux.com/${videoPlaybackId}/medium.mp4`}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+          />
         </div>
       )}
+
       <span className="sr-only">{label}</span>
     </Link>
   )
