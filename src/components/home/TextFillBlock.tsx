@@ -1,5 +1,41 @@
 'use client'
 
+/**
+ * TextFillBlock Component
+ * =======================
+ *
+ * A navigational block that fills its container with text, where each row
+ * is independently scaled to fill the width and total heights fill the height.
+ *
+ * ## How It Works
+ *
+ * 1. **Layout Calculation**: Uses `useTextFillLayout` hook to determine:
+ *    - How to break text into rows
+ *    - Font size for each row (based on canvas measurements)
+ *    - Row heights that sum to container height
+ *
+ * 2. **Width Correction**: Canvas measurements don't perfectly match DOM rendering.
+ *    To achieve pixel-perfect width filling:
+ *    - Render text in a hidden measurement container
+ *    - Measure actual rendered width of each row
+ *    - Calculate scaleX factor: containerWidth / actualWidth
+ *    - Apply CSS transform: scaleX(factor) to stretch/compress text
+ *
+ * 3. **Two-Phase Render**:
+ *    - Phase 1: Render hidden measurement spans, compute scale factors
+ *    - Phase 2: Render visible scaled content (only after scales computed)
+ *
+ * ## Why ScaleX?
+ *
+ * The canvas measureText() API doesn't account for:
+ * - CSS-specific font rendering
+ * - Font hinting at different sizes
+ * - Sub-pixel rendering differences
+ *
+ * Rather than trying to predict these differences, we measure the actual
+ * DOM-rendered width and apply a transform to achieve exact fit.
+ */
+
 import { useRef, useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
@@ -8,9 +44,13 @@ import { useTextFillLayout } from '@/hooks/useTextFillLayout'
 const FONT_FAMILY = 'league-gothic, sans-serif'
 
 interface TextFillBlockProps {
+  /** Text to display (spaces will be preserved, shown character-by-character) */
   text: string
+  /** Accessible label for the link */
   label: string
+  /** Navigation destination */
   href: string
+  /** Additional CSS classes */
   className?: string
 }
 

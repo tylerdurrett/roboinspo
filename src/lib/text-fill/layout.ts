@@ -1,9 +1,83 @@
+/**
+ * Text-Fill Layout Algorithm
+ * ==========================
+ *
+ * This module implements a layout algorithm that fills a rectangular block with
+ * text, where each row is independently scaled to fill the block width, and the
+ * total row heights fill the block height exactly.
+ *
+ * ## Problem Statement
+ *
+ * Given:
+ * - A string of characters (spaces stripped)
+ * - A block with known width and height
+ * - Character metrics (widths at a reference font size)
+ *
+ * Find:
+ * - How to break the text into rows
+ * - The font size for each row such that it fills the block width
+ * - Row heights that sum to exactly the block height
+ *
+ * ## Algorithm Overview
+ *
+ * The key insight is that the relationship between "target reference width"
+ * (the maximum width a row can have at reference size before breaking) and
+ * total height is monotonically decreasing:
+ *
+ * - Smaller targetRefWidth → more line breaks → more rows → taller total
+ * - Larger targetRefWidth → fewer line breaks → fewer rows → shorter total
+ *
+ * This monotonic relationship allows us to use binary search to find the
+ * exact targetRefWidth that produces a total height equal to the block height.
+ *
+ * ## Steps
+ *
+ * 1. **Character Measurement**: Measure each unique character's width at a
+ *    reference font size (100px) using canvas. Also measure line height.
+ *
+ * 2. **Binary Search**: Search for the targetRefWidth where:
+ *    - Pack characters greedily into rows (break when adding next char exceeds target)
+ *    - Calculate each row's scale factor: blockWidth / rowRefWidth
+ *    - Row height = lineHeight × scale
+ *    - Total height = sum of row heights
+ *    - Converge when totalHeight ≈ blockHeight (within 0.5px tolerance)
+ *
+ * 3. **Last Row Rebalancing**: If the last row has fewer than 3 characters,
+ *    steal characters from the previous row to avoid orphaned letters.
+ *
+ * 4. **Final Correction**: Apply a uniform correction factor to all rows to
+ *    ensure pixel-perfect vertical fill (accounts for floating-point errors).
+ *
+ * ## Post-Processing (in component)
+ *
+ * After layout calculation, the component measures each row's actual rendered
+ * width and applies a CSS scaleX transform to stretch/compress the text to
+ * exactly fill the container width. This compensates for differences between
+ * canvas measurement and DOM rendering.
+ *
+ * ## Complexity
+ *
+ * - Binary search: O(log(maxWidth/tolerance)) ≈ 20 iterations
+ * - Each iteration packs O(n) characters
+ * - Total: O(n × log(maxWidth)) where n = text length
+ */
+
 import type { CharMetrics, RowLayout, BlockLayout } from './types'
 
+/** Minimum characters allowed in the last row before rebalancing */
 const MIN_CHARS_LAST_ROW = 3
-const BINARY_SEARCH_TOLERANCE = 0.5 // pixels
+
+/** Binary search converges when height difference is within this tolerance (px) */
+const BINARY_SEARCH_TOLERANCE = 0.5
+
+/** Maximum binary search iterations (safety limit) */
 const BINARY_SEARCH_MAX_ITERATIONS = 50
-// No safety margin needed - scaleX handles width adjustment
+
+/**
+ * Horizontal safety margin for width calculation.
+ * Set to 1.0 (no margin) because the component applies scaleX correction
+ * to handle differences between canvas measurement and DOM rendering.
+ */
 const HORIZONTAL_SAFETY_MARGIN = 1.0
 
 /**

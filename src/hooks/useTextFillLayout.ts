@@ -1,17 +1,62 @@
 'use client'
 
+/**
+ * useTextFillLayout Hook
+ * ======================
+ *
+ * React hook that computes a text-fill layout for a container element.
+ * The layout fills the container with text where each row is independently
+ * scaled to fill the width, and total row heights fill the height exactly.
+ *
+ * ## Features
+ *
+ * - **Font Loading**: Waits for the specified font to load before measuring
+ * - **Responsive**: Uses ResizeObserver to recalculate on container resize
+ * - **Debounced**: Resize recalculations are debounced (default 100ms)
+ * - **Cached Metrics**: Character measurements are cached between resizes
+ *
+ * ## Usage
+ *
+ * ```tsx
+ * const containerRef = useRef<HTMLDivElement>(null)
+ * const layout = useTextFillLayout({
+ *   text: 'HELLOWORLD',
+ *   containerRef,
+ *   fontFamily: 'league-gothic, sans-serif',
+ * })
+ *
+ * // layout.rows contains the row breaks and font sizes
+ * ```
+ *
+ * ## Font Loading Strategy
+ *
+ * 1. Wait for document.fonts.ready
+ * 2. Check if font is available with document.fonts.check()
+ * 3. If not available (Typekit fonts may load later), poll every 50ms
+ * 4. Safety timeout after 3 seconds proceeds with fallback font
+ */
+
 import { useState, useEffect, useCallback, useRef, type RefObject } from 'react'
 import { measureCharacters } from '@/lib/text-fill/measure'
 import { computeLayout } from '@/lib/text-fill/layout'
 import type { CharMetrics, BlockLayout } from '@/lib/text-fill/types'
 
 interface UseTextFillLayoutOptions {
+  /** Text to layout (spaces preserved) */
   text: string
+  /** Ref to the container element to fill */
   containerRef: RefObject<HTMLElement | null>
+  /** CSS font-family string */
   fontFamily: string
+  /** Debounce delay for resize recalculations (ms) */
   debounceMs?: number
 }
 
+/**
+ * Compute text-fill layout for a container element.
+ *
+ * @returns BlockLayout with row breaks and font sizes, or null if not ready
+ */
 export function useTextFillLayout({
   text,
   containerRef,
