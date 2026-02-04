@@ -37,6 +37,8 @@ const BLOCKS: BlockConfig[] = [
   },
 ]
 
+let hasLoadedOnce = false
+
 export default function HomeClient() {
   const [selectedIds] = useState(() =>
     BLOCKS.map(
@@ -47,8 +49,8 @@ export default function HomeClient() {
     )
   )
   const [, setReadyCount] = useState(0)
-  const [displayPercent, setDisplayPercent] = useState(0)
-  const [fadeOut, setFadeOut] = useState(false)
+  const [displayPercent, setDisplayPercent] = useState(hasLoadedOnce ? 100 : 0)
+  const [fadeOut, setFadeOut] = useState(hasLoadedOnce)
   const readyCountRef = useRef(0)
   const currentPercentRef = useRef(0)
   const startTimeRef = useRef(0)
@@ -63,8 +65,10 @@ export default function HomeClient() {
     })
   }, [])
 
-  // Smooth percentage counter animation
+  // Smooth percentage counter animation (skipped on return visits)
   useEffect(() => {
+    if (hasLoadedOnce) return
+
     startTimeRef.current = performance.now()
 
     const TOTAL_BLOCKS = BLOCKS.length
@@ -102,6 +106,7 @@ export default function HomeClient() {
         rafRef.current = requestAnimationFrame(tick)
       } else {
         // Hold at 100% briefly, then trigger fade-out
+        hasLoadedOnce = true
         holdTimerRef.current = setTimeout(() => {
           setFadeOut(true)
         }, HOLD_DURATION)
