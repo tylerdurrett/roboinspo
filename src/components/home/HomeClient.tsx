@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import TextFillBlock from './TextFillBlock'
 
 interface BlockConfig {
@@ -46,9 +46,22 @@ export default function HomeClient() {
         ]
     )
   )
+  const [readyCount, setReadyCount] = useState(0)
+  const allReady = readyCount === BLOCKS.length
+
+  const handleBlockReady = useCallback(() => {
+    setReadyCount((c) => c + 1)
+  }, [])
 
   return (
     <div className="h-dvh w-dvw flex landscape:flex-row portrait:flex-col overflow-hidden">
+      {/* Loader */}
+      <div
+        className={`absolute inset-0 z-10 flex items-center justify-center transition-opacity duration-300 ${allReady ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+      >
+        <div className="h-8 w-8 animate-spin rounded-full border-4 border-current border-t-transparent" />
+      </div>
+
       {BLOCKS.map((block, i) => (
         <TextFillBlock
           key={block.text}
@@ -56,6 +69,7 @@ export default function HomeClient() {
           label={block.label}
           href={block.href}
           videoPlaybackId={selectedIds[i]}
+          onReady={handleBlockReady}
           className="landscape:w-1/3 landscape:h-full portrait:w-full portrait:h-1/3"
         />
       ))}

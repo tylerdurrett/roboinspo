@@ -78,6 +78,8 @@ interface TextFillBlockProps {
   href: string
   /** Mux playback ID for the hover video effect */
   videoPlaybackId?: string
+  /** Called once when the block has finished computing its layout */
+  onReady?: () => void
   /** Additional CSS classes */
   className?: string
 }
@@ -87,6 +89,7 @@ export default function TextFillBlock({
   label,
   href,
   videoPlaybackId,
+  onReady,
   className,
 }: TextFillBlockProps) {
   const containerRef = useRef<HTMLAnchorElement>(null)
@@ -139,6 +142,10 @@ export default function TextFillBlock({
   }, [layout, computeScales])
 
   const isReady = layout && scaleFactors.length === layout.rows.length
+
+  useEffect(() => {
+    if (isReady) onReady?.()
+  }, [isReady, onReady])
 
   return (
     <Link
