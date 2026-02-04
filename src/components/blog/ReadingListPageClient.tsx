@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useMemo } from 'react'
 import { ReadingListCard } from '@/components/blog/ReadingListCard'
 import { CategoryPills } from '@/components/blog/CategoryPills'
 import { ReadingListItemMeta } from '@/models/readingList'
@@ -14,6 +13,7 @@ interface ReadingListPageClientProps {
   currentPage: number
   totalItems: number
   pageSize: number
+  selectedCategory: string | null
 }
 
 export function ReadingListPageClient({
@@ -22,20 +22,8 @@ export function ReadingListPageClient({
   currentPage,
   totalItems,
   pageSize,
+  selectedCategory,
 }: ReadingListPageClientProps) {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
-
-  const filteredItems = useMemo(() => {
-    if (!selectedCategory) {
-      return items
-    }
-    return items.filter((item) =>
-      item.categories?.some(
-        (category) => category.slug.current === selectedCategory
-      )
-    )
-  }, [items, selectedCategory])
-
   const {
     pagination,
     pageNumbers,
@@ -54,9 +42,9 @@ export function ReadingListPageClient({
       <CategoryPills
         categories={categories}
         selectedCategory={selectedCategory}
-        onCategorySelect={setSelectedCategory}
+        basePath="/reading"
       />
-      {filteredItems.length === 0 ? (
+      {items.length === 0 ? (
         <p className="px-4 text-muted-foreground sm:px-6 lg:px-8">
           {selectedCategory
             ? 'No reading list items in this category yet.'
@@ -65,7 +53,7 @@ export function ReadingListPageClient({
       ) : (
         <>
           <div className="flex flex-col gap-4">
-            {filteredItems.map((item) => (
+            {items.map((item) => (
               <ReadingListCard key={item._id} item={item} />
             ))}
           </div>

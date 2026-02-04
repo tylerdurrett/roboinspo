@@ -18,12 +18,14 @@ type Props = {
 export default async function ReadingListPage({ searchParams }: Props) {
   const params = await searchParams
   const page = Number(params?.page) || 1
+  const category =
+    typeof params?.category === 'string' ? params.category : ''
   const pageSize = 100
 
   const [items, categories, totalItems] = await Promise.all([
-    getReadingListItems({ page, limit: pageSize }),
+    getReadingListItems({ page, limit: pageSize, category }),
     getCategories(),
-    getReadingListItemsCount(),
+    getReadingListItemsCount(category),
   ])
 
   return (
@@ -34,6 +36,7 @@ export default async function ReadingListPage({ searchParams }: Props) {
         currentPage={page}
         totalItems={totalItems}
         pageSize={pageSize}
+        selectedCategory={category || null}
       />
     </div>
   )
