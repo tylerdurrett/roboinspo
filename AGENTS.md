@@ -40,15 +40,16 @@ This is a Next.js 16 application using the App Router pattern with TypeScript an
 - Sanity types are generated with `npm run gen` and land in `sanity.types.ts`
 - Fetch functions are in `src/models/*`
 
-## TouchDesigner Resources (Velite)
+## Resource Hubs (Velite)
 
-A markdown-based content system for curating TouchDesigner learning resources.
+A markdown-based content system for curating learning resources, organized into hubs.
 
 - Content lives in `/content/` directory (creators, organizations, resources)
 - Schema defined in `velite.config.ts`
+- Hub configuration in `src/lib/hubs/config.ts`
 - Data access layer in `src/lib/td-resources/`
 - UI components in `src/components/td-resources/`
-- Pages at `/touchdesigner/resources`
+- Pages at `/[hub]/resources` (e.g., `/creative-coding/resources`, `/agentic-systems/resources`)
 
 See [\_docs/td-resources-system.md](_docs/td-resources-system.md) for full documentation.
 

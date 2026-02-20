@@ -1,238 +1,84 @@
 # Generative Learning
 
-A personal portfolio and content curation site built with Next.js 16, Sanity CMS, and modern web technologies.
+A personal site for curating learning resources, writing, and showcasing creative work — built around the things I'm most interested in: creative coding, agentic systems, and generative art.
 
-## Tech Stack
+## What's Here
 
-- **Next.js 16** with App Router and Turbopack
-- **React 19**
-- **TypeScript 5** with strict mode
-- **Tailwind CSS v4** with PostCSS
-- **Sanity CMS** for content management
-- **Velite** for markdown-based content (TD Resources)
-- **Mux** for video hosting and streaming
-- **GSAP** for animations
-- **Shadcn/ui** for component library
-- **Resend** for transactional emails
-- **Cloudflare Turnstile** for bot protection
+### Resource Hubs
 
-## Getting Started
+The heart of the site. Curated collections of the best learning resources — YouTube channels, courses, Patreon pages, Discord communities, and more — organized into browsable, filterable hubs.
 
-Install dependencies:
+- **[Creative Coding](/creative-coding/resources)** — TouchDesigner, generative visuals, shaders, audio-reactive art, projection mapping, and more
+- **[Agentic Systems](/agentic-systems/resources)** — AI agents, LLM integration, prompt engineering, and developer tools
+
+Each hub has its own set of topics, platforms, and filters. Browse by source type, skill level, pricing, or dive into specific categories like YouTube or Patreon.
+
+Resources, creators, and organizations are all written as simple markdown files — easy to add, easy to maintain. See the [Resource Hubs deep dive](_docs/td-resources-system.md) for details.
+
+### Blog (`/blog`)
+
+Long-form writing with rich text, syntax-highlighted code, and embedded video.
+
+### Reading List (`/reading`)
+
+Articles I've saved and found valuable, with AI-generated summaries, key points, and discussion analysis. Available as an [RSS feed](/reading/feed.xml) too.
+
+### Portfolio (`/oldthings`)
+
+A gallery of past creative projects — images, videos, and write-ups.
+
+### Contact (`/contact`)
+
+A simple contact form with bot protection.
+
+## Running Locally
 
 ```bash
 npm install
-```
-
-Run the development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:9600](http://localhost:9600) with your browser to see the result.
+The dev server starts at [http://localhost:9600](http://localhost:9600).
 
-## Essential Commands
+## Useful Commands
 
-```bash
-# Development server (runs on port 9600 with Turbopack)
-npm run dev
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Dev server (port 9600, Turbopack) |
+| `npm run build` | Production build |
+| `npm run lint` | Lint the codebase |
+| `npm run format` | Auto-format with Prettier |
+| `npm run gen` | Generate TypeScript types from Sanity schema |
+| `npm run add <name>` | Add a Shadcn/ui component |
+| `npm run export creators` | Export content data (see `--help` for options) |
 
-# Production build
-npm run build
+## Tech Stack
 
-# Start production server
-npm run start
-
-# Lint the codebase
-npm run lint
-
-# Format all files with Prettier
-npm run format
-
-# Check formatting without modifying files
-npm run format:check
-
-# Add a new Shadcn component
-npm run add <component-name>
-
-# Extract Sanity schema and generate types
-npm run gen
-
-# Export content data to stdout (see --help for options)
-npm run export creators              # Creator names
-npm run export creators -- --json    # As JSON
-npm run export creators > list.txt   # Save to file
-```
+- **Next.js 16** (App Router, Turbopack) + **React 19**
+- **TypeScript 5** with strict mode
+- **Tailwind CSS v4**
+- **Sanity CMS** — blog, reading list, portfolio content
+- **Velite** — markdown-based resource hubs
+- **Mux** — video hosting and streaming
+- **GSAP** — animations
+- **Shadcn/ui** — component library
 
 ## Project Structure
 
 ```
-content/                    # Markdown content for TD Resources
+content/                    # Markdown content for resource hubs
 ├── creators/               # Creator profiles
 ├── organizations/          # Organization profiles
 └── resources/              # Learning resources
 
 src/
-├── app/                    # Next.js App Router pages
-│   ├── (with-nav)/         # Pages with navigation layout
-│   │   ├── blog/           # Blog posts (Sanity CMS)
-│   │   ├── contact/        # Contact form
-│   │   ├── looking/        # Visual gallery from reading list
-│   │   ├── oldthings/      # Portfolio/things gallery
-│   │   ├── reading/        # Curated reading list
-│   │   └── touchdesigner/  # TD Resources pages
-│   ├── admin/              # Sanity Studio (/admin)
-│   └── actions/            # Server actions
+├── app/                    # Pages and routes
 ├── components/             # React components
-│   ├── blog/               # Blog-related components
-│   ├── contact/            # Contact form components
-│   ├── fx/                 # Visual effects (FxLayer)
-│   ├── graphics/           # Background graphics (noise, shaders)
-│   ├── layouts/            # Navigation and layout components
-│   ├── td-resources/       # TD Resources components
-│   ├── things/             # Portfolio item components
-│   ├── typography/         # Text animation components
-│   ├── ui/                 # Shadcn UI components
-│   └── video/              # Video player components (Mux)
-├── features/               # Feature modules
-│   └── video-feed/         # Video feed functionality
-├── hooks/                  # Custom React hooks
-├── lib/                    # Utility libraries
-│   ├── gsap/               # GSAP animation system
-│   └── td-resources/       # TD Resources data access layer
-├── models/                 # Sanity data fetching functions
-└── sanity/                 # Sanity configuration
-    └── schemaTypes/        # Content type definitions
+├── lib/                    # Utilities and data access
+├── models/                 # Sanity query functions
+└── sanity/                 # Sanity CMS config and schemas
 ```
 
-## Main Sections
+## Further Reading
 
-### Things (`/oldthings`)
-
-A portfolio gallery displaying creative projects with featured images and Mux videos. Each "thing" can have multiple images, videos, and rich text content.
-
-### Reading (`/reading`)
-
-A curated reading list with AI-summarized articles. Features include:
-
-- Article summaries and key points
-- Discussion analysis (e.g., Hacker News sentiment)
-- Category filtering
-- Pagination
-
-### Looking (`/looking`)
-
-A visual gallery view of featured images from the reading list.
-
-### Blog (`/blog`)
-
-A traditional blog powered by Sanity CMS with:
-
-- Rich text content with syntax-highlighted code blocks
-- Mux video support
-- Category organization
-- Author attribution
-
-### Contact (`/contact`)
-
-A contact form with Cloudflare Turnstile bot protection, built with react-hook-form and Zod validation.
-
-### TouchDesigner Resources (`/touchdesigner/resources`)
-
-A curated database of TouchDesigner learning resources built with markdown files and Velite. Features include:
-
-- Filterable table of tutorials, courses, YouTube channels, and more
-- Multi-select filters for source type, pricing, skill level, topics, and domains
-- Detail pages for each resource with creator/organization info
-- Type-safe content with build-time schema validation
-
-See [\_docs/td-resources-system.md](_docs/td-resources-system.md) for full documentation.
-
-## Sanity CMS
-
-Content is managed through Sanity CMS, accessible at `/admin`.
-
-### Content Types
-
-- **Post** - Blog posts with rich text, images, and videos
-- **Reading List** - Curated articles with summaries and discussion analysis
-- **Thing** - Portfolio items with images and videos
-- **Category** - Taxonomy for organizing content
-- **Author** - Blog post authors
-
-### Working with Sanity
-
-```bash
-# Generate TypeScript types from schema
-npm run gen
-```
-
-Types are generated to `sanity.types.ts`. Data fetching functions live in `src/models/`.
-
-## GSAP Animations
-
-The project includes a reusable GSAP animation system using `data-animate` attributes.
-
-### Available Animations
-
-- `stretch` - Font stretch animation
-- `revealOnLoad` - Reveal animation on page load
-- `fadeUp` - Fade up on scroll
-
-### Usage in Server Components
-
-```tsx
-import AnimationsInit from '@/components/AnimationsInit'
-
-export default function Page() {
-  return (
-    <div>
-      <AnimationsInit animations={['stretch']} />
-      <span data-animate="stretch" data-duration="1.1">
-        Animated text
-      </span>
-    </div>
-  )
-}
-```
-
-### Usage in Client Components
-
-```tsx
-'use client'
-import { useRef } from 'react'
-import { useAnimations } from '@/hooks/useAnimations'
-
-export default function ClientSection() {
-  const scopeRef = useRef<HTMLDivElement | null>(null)
-  useAnimations({ scopeRef, animations: ['stretch'] })
-
-  return (
-    <div ref={scopeRef}>
-      <span data-animate="stretch">Animated</span>
-    </div>
-  )
-}
-```
-
-### Adding New Animations
-
-1. Create a file in `src/lib/gsap/animations/yourAnimation.ts` exporting an `AnimationInit` function
-2. Register it in `src/lib/gsap/animations/index.ts`
-3. Use via `data-animate="yourAnimation"` attribute
-
-## Video Integration
-
-Videos are hosted on Mux and played using the Mux Player React component. The `video-feed` feature module provides utilities for mapping Sanity video data to a consistent format.
-
-## Theming
-
-The site supports light and dark mode via CSS custom properties in `globals.css`. Currently defaults to dark mode. Colors use the OKLCH color space for perceptually uniform adjustments.
-
-## Development Tips
-
-- Install the **PostCSS Language Support** VS Code extension for Tailwind CSS v4 syntax highlighting
-- Use semantic color variables (e.g., `text-foreground`, `bg-background`) for theme compatibility
-- Run `npm run format` to fix Prettier formatting issues
-- Types are auto-generated from Sanity schema - run `npm run gen` after schema changes
+- [Resource Hubs System](_docs/td-resources-system.md) — how the markdown-based resource system works, content schemas, filtering, and how to add new content
