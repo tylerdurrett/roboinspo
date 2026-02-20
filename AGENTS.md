@@ -53,6 +53,18 @@ A markdown-based content system for curating learning resources, organized into 
 
 See [\_docs/td-resources-system.md](_docs/td-resources-system.md) for full documentation.
 
+## Video (Mux)
+
+- Videos are hosted on **Mux** and played with `@mux/mux-player-react`
+- Video components live in `src/components/video/`
+- The `src/features/video-feed/` module maps Sanity video data to a consistent format
+
+## Animations (GSAP)
+
+- Uses a custom `data-animate` attribute system (e.g., `data-animate="fadeUp"`)
+- Animation definitions live in `src/lib/gsap/animations/`
+- Server components use `AnimationsInit`; client components use the `useAnimations` hook
+
 ## Important Reminders
 
 - Don't run the dev server - it's already running.
