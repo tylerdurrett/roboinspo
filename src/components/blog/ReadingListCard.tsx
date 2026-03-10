@@ -57,7 +57,7 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
               </span>
             </div>
           )}
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2 leading-tight">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2 leading-tight break-words">
             {item.title}
           </h2>
           <div className="flex items-center gap-2 flex-wrap">
