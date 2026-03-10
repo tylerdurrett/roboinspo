@@ -4,15 +4,18 @@ import { urlFor } from '@/sanity/lib/image'
 import Image from 'next/image'
 import { ArrowUpIcon, ExternalLinkIcon } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
-import { sentimentToColor } from '@/lib/reading-list/metrics'
+import { SentimentIndicator } from '@/components/blog/SentimentIndicator'
 
 interface ReadingListCardProps {
   item: ReadingListItemMeta
 }
 
 export function ReadingListCard({ item }: ReadingListCardProps) {
-  const imageUrl = item?.featuredImage
+  const thumbnailUrl = item?.featuredImage
     ? urlFor(item.featuredImage)?.width(120).height(120).url()
+    : null
+  const mobileImageUrl = item?.featuredImage
+    ? urlFor(item.featuredImage)?.width(800).height(400).url()
     : null
 
   return (
@@ -23,15 +26,26 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
       >
         <span className="sr-only">{item.title}</span>
       </Link>
+      {mobileImageUrl && (
+        <div className="sm:hidden">
+          <Image
+            src={mobileImageUrl}
+            alt=""
+            width={800}
+            height={400}
+            className="w-full h-48 object-cover rounded-t-[20px]"
+          />
+        </div>
+      )}
       <div className="flex items-start gap-4 p-4 sm:p-6">
-        {imageUrl && (
-          <div className="flex-shrink-0">
+        {thumbnailUrl && (
+          <div className="flex-shrink-0 hidden sm:block">
             <Image
-              src={imageUrl}
+              src={thumbnailUrl}
               alt={item.title}
               width={120}
               height={120}
-              className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-2xl"
+              className="w-24 h-24 object-cover rounded-2xl"
             />
           </div>
         )}
@@ -43,7 +57,7 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
               </span>
             </div>
           )}
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2 leading-tight">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2 leading-tight break-words">
             {item.title}
           </h2>
           <div className="flex items-center gap-2 flex-wrap">
@@ -59,15 +73,10 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
                 })}
               </time>
             )}
-            {item.sentimentArticle != null && (
-              <span
-                className="inline-block h-2 w-2 rounded-full"
-                style={{
-                  backgroundColor: sentimentToColor(item.sentimentArticle),
-                }}
-                title={`Sentiment: ${item.sentimentArticle}`}
-              />
-            )}
+            <SentimentIndicator
+              sentimentArticle={item.sentimentArticle ?? null}
+              sentimentCommunity={item.sentimentCommunity ?? null}
+            />
             {item.hnScore != null && item.hnScore >= 100 && (
               <span
                 className="inline-flex items-center gap-0.5 text-xs text-muted-foreground"
