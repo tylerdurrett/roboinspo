@@ -19,7 +19,7 @@ export function SentimentIndicator({
   if (sentimentArticle == null && sentimentCommunity == null) return null
 
   return (
-    <>
+    <span className="mx-1 inline-flex items-center gap-2">
       {sentimentArticle != null && (
         <SentimentDot
           score={sentimentArticle}
@@ -32,20 +32,24 @@ export function SentimentIndicator({
           label={`Community tone: ${getSentimentLabel(sentimentCommunity)}`}
         />
       )}
-    </>
+    </span>
   )
 }
 
 function SentimentDot({ score, label }: { score: number; label: string }) {
   return (
-    <Tooltip>
+    <Tooltip disableHoverableContent>
       <TooltipTrigger asChild>
-        <span
-          className="relative z-10 inline-block h-2 w-2 rounded-full cursor-default"
-          style={{ backgroundColor: sentimentToColor(score) }}
-        />
+        <span className="relative z-10 inline-flex h-2.5 w-2.5 cursor-default items-center justify-center">
+          <span
+            className="h-2 w-2 rounded-full"
+            style={{ backgroundColor: sentimentToColor(score) }}
+          />
+        </span>
       </TooltipTrigger>
-      <TooltipContent>{label}</TooltipContent>
+      <TooltipContent side="top" sideOffset={4}>
+        {label}
+      </TooltipContent>
     </Tooltip>
   )
 }
