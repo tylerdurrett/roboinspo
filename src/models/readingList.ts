@@ -44,6 +44,7 @@ export async function getReadingListItems(
     topics[]->{_id, title, slug},
     featuredImage,
     sentimentArticle,
+    sentimentCommunity,
     hnScore,
     hnCommentCount
   }`)

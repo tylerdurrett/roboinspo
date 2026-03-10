@@ -82,44 +82,46 @@ export default async function ReadingListItem({ params }: Props) {
             <h1 className="mb-4 text-4xl sm:text-5xl md:text-7xl tracking-tight">
               {item.title}
             </h1>
-            <div className="flex items-center gap-3 mt-6 text-muted-foreground">
-              <a
-                href={item.originalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 hover:underline"
-              >
-                Article
-                <ExternalLinkIcon className="w-4 h-4" />
-              </a>
-              {item.discussionUrl && (
-                <>
-                  <span
-                    aria-hidden="true"
-                    className="mx-2 text-muted-foreground/60"
-                  >
-                    |
-                  </span>
-                  <a
-                    href={item.discussionUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 hover:underline"
-                  >
-                    Discussion
-                    <ExternalLinkIcon className="w-4 h-4" />
-                  </a>
-                </>
-              )}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mt-6 text-muted-foreground">
+              <span className="tracking-wide">
+                added {formattedDate}
+              </span>
               <span
                 aria-hidden="true"
                 className="mx-2 text-muted-foreground/60 hidden sm:inline"
               >
                 |
               </span>
-              <span className="tracking-wide">
-                added {formattedDate}
-              </span>
+              <div className="flex items-center gap-3">
+                <a
+                  href={item.originalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:underline"
+                >
+                  Article
+                  <ExternalLinkIcon className="w-4 h-4" />
+                </a>
+                {item.discussionUrl && (
+                  <>
+                    <span
+                      aria-hidden="true"
+                      className="mx-2 text-muted-foreground/60"
+                    >
+                      |
+                    </span>
+                    <a
+                      href={item.discussionUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 hover:underline"
+                    >
+                      Discussion
+                      <ExternalLinkIcon className="w-4 h-4" />
+                    </a>
+                  </>
+                )}
+              </div>
               {item.topics && item.topics.length > 0 && (
                 <>
                   <span
