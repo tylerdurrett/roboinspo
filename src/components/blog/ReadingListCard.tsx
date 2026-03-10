@@ -11,8 +11,11 @@ interface ReadingListCardProps {
 }
 
 export function ReadingListCard({ item }: ReadingListCardProps) {
-  const imageUrl = item?.featuredImage
+  const thumbnailUrl = item?.featuredImage
     ? urlFor(item.featuredImage)?.width(120).height(120).url()
+    : null
+  const mobileImageUrl = item?.featuredImage
+    ? urlFor(item.featuredImage)?.width(800).height(400).url()
     : null
 
   return (
@@ -23,15 +26,26 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
       >
         <span className="sr-only">{item.title}</span>
       </Link>
+      {mobileImageUrl && (
+        <div className="sm:hidden">
+          <Image
+            src={mobileImageUrl}
+            alt=""
+            width={800}
+            height={400}
+            className="w-full h-48 object-cover rounded-t-[20px]"
+          />
+        </div>
+      )}
       <div className="flex items-start gap-4 p-4 sm:p-6">
-        {imageUrl && (
-          <div className="flex-shrink-0">
+        {thumbnailUrl && (
+          <div className="flex-shrink-0 hidden sm:block">
             <Image
-              src={imageUrl}
+              src={thumbnailUrl}
               alt={item.title}
               width={120}
               height={120}
-              className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-2xl"
+              className="w-24 h-24 object-cover rounded-2xl"
             />
           </div>
         )}
