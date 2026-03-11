@@ -155,7 +155,15 @@ PATCH_EOF
 node .claude/skills/sanity-cms/scripts/validate-patch.js --schema refetch-discussion --file /tmp/patch-payload.json
 ```
 
-If validation fails, read the error output carefully — it will tell you exactly which fields have wrong types or values. Fix the payload and re-validate before proceeding. Common issues: arrays passed as strings, scores outside their allowed range, non-ISO datetime formats.
+If validation fails, read the error output carefully — it will tell you exactly which fields have wrong types or values. Fix the payload in `/tmp/patch-payload.json` and re-validate. You may retry up to **2 times**. Common issues: arrays passed as strings, scores outside their allowed range, non-ISO datetime formats.
+
+If validation still fails after 2 retries, do NOT patch. Instead, skip to Step 7 and report the failure:
+
+```
+<output>{"error": true, "reason": "Validation failed after 2 retries", "validationErrors": [...]}</output>
+```
+
+Then emit `<promise>COMPLETE</promise>`.
 
 ### 6b: Patch the document
 
