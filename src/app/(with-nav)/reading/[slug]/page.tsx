@@ -87,10 +87,21 @@ export default async function ReadingListItem({ params }: Props) {
       <article>
         <Container size="xl">
           <header className="mb-8">
+            {item.topics && item.topics.length > 0 && (
+              <div className="flex items-center gap-1.5 flex-wrap mb-4">
+                {item.topics.filter(Boolean).map((topic) => (
+                  <Badge key={topic._id} variant="secondary" asChild>
+                    <Link href={`/reading?topic=${topic.slug.current}`}>
+                      {topic.title}
+                    </Link>
+                  </Badge>
+                ))}
+              </div>
+            )}
             <h1 className="mb-4 text-4xl sm:text-5xl md:text-7xl tracking-tight">
               {item.title}
             </h1>
-            <div className="mt-6 text-muted-foreground space-y-2">
+            <div className="mt-6 text-muted-foreground">
               <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                 <span className="tracking-wide">
                   added {formattedDate}
@@ -111,7 +122,7 @@ export default async function ReadingListItem({ params }: Props) {
                   )}
                 <span
                   aria-hidden="true"
-                  className="mx-2 text-muted-foreground/60 hidden sm:inline"
+                  className="mx-2 text-muted-foreground/60"
                 >
                   |
                 </span>
@@ -146,17 +157,6 @@ export default async function ReadingListItem({ params }: Props) {
                   )}
                 </div>
               </div>
-              {item.topics && item.topics.length > 0 && (
-                <div className="flex items-center gap-1.5 flex-wrap">
-                  {item.topics.filter(Boolean).map((topic) => (
-                    <Badge key={topic._id} variant="secondary" asChild>
-                      <Link href={`/reading?topic=${topic.slug.current}`}>
-                        {topic.title}
-                      </Link>
-                    </Badge>
-                  ))}
-                </div>
-              )}
             </div>
             <ReadingListMetrics
               hnScore={item.hnScore ?? null}
