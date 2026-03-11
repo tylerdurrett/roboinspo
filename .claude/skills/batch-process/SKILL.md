@@ -1,6 +1,6 @@
 ---
 name: batch-process
-description: Batch-process Sanity CMS reading list items using ralph_json.sh. Use when the user wants to run a bulk operation on reading list items — such as assigning topics, categorizing, or any batch task that processes items one-by-one through Claude. Also use when the user mentions ralph_json, batch processing, or running a checklist through Claude.
+description: Batch-process Sanity CMS reading list items using ralph_json.sh. Use when the user wants to run a bulk operation on reading list items — such as assigning topics, categorizing, discussion updates, refetching discussions, or any batch task that processes items one-by-one through Claude. Also use when the user mentions ralph_json, batch processing, running a checklist through Claude, or updating/refetching HN discussions.
 ---
 
 # Batch Process

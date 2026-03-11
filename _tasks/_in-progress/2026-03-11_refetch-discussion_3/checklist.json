@@ -1,0 +1,191 @@
+[
+  {
+    "title": "Safehouse: Secure Kernel-Level Sandboxing for AI Agents",
+    "_id": "readingList-safehouse-secure-kernel-level-sandboxing-for-ai-agents-1773006922573",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Sandboxing",
+      "AI Agents",
+      "AI Coding Agents",
+      "macOS",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47301085",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Autoresearch: Autonomous AI Agents for Self-Improving LLMs",
+    "_id": "readingList-autoresearch-autonomous-ai-agents-for-self-improving-llms-1772930597316",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Self-Modifying AI",
+      "LLM Training",
+      "AI for Science",
+      "Model Fine-Tuning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47291123",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Senators Introduce Bill to Ban Federal Officials from Prediction Markets",
+    "_id": "readingList-senators-introduce-bill-to-ban-federal-officials-from-prediction-markets-1772930556667",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Financial Markets",
+      "Government Accountability",
+      "Public Policy",
+      "Prediction Markets"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47291406",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The Eye That Cannot See Itself: Life Inside the Context Window",
+    "_id": "readingList-the-eye-that-cannot-see-itself-life-inside-the-context-window-1772915038920",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Consciousness",
+      "LLM Context Management",
+      "AI Hallucinations",
+      "AI Interpretability",
+      "Prompt Engineering"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47290631",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Plausibility vs. Performance: The Hidden Cost of LLM Code",
+    "_id": "readingList-plausibility-vs-performance-the-hidden-cost-of-llm-code-1772904239200",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Sycophancy",
+      "Vibe Coding",
+      "AI Coding Agents",
+      "AI Deskilling",
+      "Rust"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47283337",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Claude AI Accelerates Firefox Security Research",
+    "_id": "readingList-claude-ai-accelerates-firefox-security-research-1772830309525",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Cybersecurity",
+      "Vulnerability Research",
+      "Anthropic",
+      "AI Coding Agents",
+      "AI Safety"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47273854",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "From Coder to AI System Architect",
+    "_id": "readingList-from-coder-to-ai-system-architect-1772829960663",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Future of Work",
+      "AI Deskilling",
+      "Software Architecture",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47272734",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Claude-Replay: Interactive HTML Players for AI Coding Sessions",
+    "_id": "readingList-claude-replay-interactive-html-players-for-ai-coding-sessions-1772829845185",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "Technical Writing",
+      "Open Source",
+      "API Key Security"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47276604",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "RFC 406i: Standardized Rejection of AI-Generated Slop",
+    "_id": "readingList-rfc-406i-standardized-rejection-of-ai-generated-slop-1772754533413",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI-Generated Content",
+      "Open Source",
+      "AI Deskilling",
+      "Code Review",
+      "AI Hype"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47267947",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Pentagon Blacklists Anthropic as National Security Risk",
+    "_id": "readingList-pentagon-blacklists-anthropic-as-national-security-risk-1772739940860",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "Military AI",
+      "AI Regulation",
+      "AI Safety",
+      "Government Contracting"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47266084",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  }
+]
