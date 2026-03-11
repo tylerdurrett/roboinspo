@@ -96,15 +96,28 @@ If `discussionNeedsRefetch` is explicitly `false`, the summarization you just di
 
 Save the **previous** `hnCommentCount` value for the activity comparison. If the previous value was null, treat it as 0.
 
-### 4c: Assess discussion activity
+### 4c: Staleness detection
+
+Before assessing activity, check if the scraped discussion content was stale. Estimate the number of comments visible in the scraped content (rough count from the markdown structure) and compare it to the HN API's `descendants` count from 4a.
+
+If the API comment count is **3x or more** the number of comments visible in the scraped content, the scrape was stale (likely served from Firecrawl's cache). In this case:
+- The summarization from Step 3 is based on incomplete data
+- **Force `discussionNeedsRefetch: true`** regardless of the normal activity assessment below
+- Add `"staleScrape": true` to your output in Step 6 so this is visible in the report
+
+### 4d: Assess discussion activity
 
 Determine whether this discussion should be refetched again. Consider:
 
 1. **Comment growth**: Compare new `hnCommentCount` (from 4a) to the previous value (from 4b).
 2. **Post age**: How old is the post? (`savedAt` vs current time)
 3. **Refetch count**: How many times has this already been refetched? (`discussionRefetchCount`, null = 0)
+4. **Stale scrape**: If 4c flagged the scrape as stale, force `discussionNeedsRefetch: true`.
 
 ### Decision logic:
+
+**If the scrape was stale (from 4c):**
+- Always set `discussionNeedsRefetch: true` — the discussion needs a fresh scrape.
 
 **If `discussionRefetchCount` is 0 or null (first refetch):**
 - Be lenient. Flag as still active (`discussionNeedsRefetch: true`) if:
