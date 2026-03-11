@@ -1,0 +1,95 @@
+[
+  {
+    "title": "Debunking the $5,000 Claude Code Loss Myth",
+    "_id": "readingList-debunking-the-5-000-claude-code-loss-myth-1773151633000",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "AI Business Models",
+      "LLM Inference",
+      "AI Hype",
+      "Competitive Moats"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47317132",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Remote Access to a Physical Boss TU3 Tuner",
+    "_id": "readingList-remote-access-to-a-physical-boss-tu3-tuner-1773151595359",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "DIY Electronics",
+      "Interactive Web Tools",
+      "IoT Security",
+      "Internet Culture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47280654",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Florida Judge Rules Red-Light Camera Law Unconstitutional",
+    "_id": "readingList-florida-judge-rules-red-light-camera-law-unconstitutional-1773091421880",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Constitutional Law",
+      "Surveillance Technology",
+      "Civil Liberties",
+      "Automated Traffic Enforcement"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47312090",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "DenchClaw: The Local AI CRM and Productivity Framework",
+    "_id": "readingList-denchclaw-the-local-ai-crm-and-productivity-framework-1773090827923",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Self-Hosting",
+      "Open Source",
+      "AI Agents",
+      "AI & Productivity",
+      "Local-First Software"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47309953",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The End of Writing Code: A Developer's AI Productivity Explosion",
+    "_id": "readingList-the-end-of-writing-code-a-developer-s-ai-productivity-explosion-1773090745870",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Vibe Coding",
+      "AI & Productivity",
+      "AI Coding Agents",
+      "AI Deskilling",
+      "Automated Testing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47314123",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  }
+]
