@@ -168,7 +168,11 @@ async function main() {
     discussionRefetchCount
   }`;
 
-  const items = await client.fetch(query, params);
+  const allItems = await client.fetch(query, params);
+
+  // Apply --limit if specified
+  const limit = args.limit ? parseInt(args.limit, 10) : 0;
+  const items = limit > 0 ? allItems.slice(0, limit) : allItems;
 
   // Build checklist
   const checklist = items.map((item) => ({
@@ -195,11 +199,14 @@ async function main() {
     }
   }
 
+  const limitApplied = limit > 0 && allItems.length > limit;
+
   if (isDryRun) {
     outputJSON({
       success: true,
       dryRun: true,
       resultCount: checklist.length,
+      ...(limitApplied && { totalMatched: allItems.length }),
       breakdown,
       preview: checklist.slice(0, 5),
     });
@@ -209,6 +216,7 @@ async function main() {
     outputJSON({
       success: true,
       resultCount: checklist.length,
+      ...(limitApplied && { totalMatched: allItems.length }),
       outputFile: outputPath,
       breakdown,
     });

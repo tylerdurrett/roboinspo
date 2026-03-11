@@ -19,7 +19,8 @@ Determine three things from the user's message:
 - `--no-metrics` — items missing any of the 5 metric fields (hnScore, hnCommentCount, sentimentArticle, sentimentCommunity, controversyScore)
 - `--no-article-sentiment` — items missing the sentimentArticle field specifically
 - `--needs-discussion-refetch` — items with a discussionUrl whose discussion needs refetching (null or true)
-- `--fetched-before "ISO-datetime"` — items whose discussion was last fetched before this time (or never fetched)
+- `--fetched-before "ISO-datetime"` — items whose discussion was last fetched before this time (or never fetched). **Default: 24 hours ago** when using the `refetch-discussion` template and no explicit time is given.
+- `--limit N` — max number of items to include in the checklist
 - `--categories "slug1,slug2"` — items in specific categories (comma-separated slugs)
 - `--exclude-categories "slug1,slug2"` — items NOT in specific categories
 - `--topic "slug"` — items with a specific topic
@@ -32,6 +33,8 @@ Determine three things from the user's message:
 **Task name** — a short kebab-case label (e.g. `topic-assignment`, `recategorize`). Infer from context.
 
 If any of these are ambiguous, ask the user before proceeding.
+
+**Smart defaults for `refetch-discussion`:** When the instruction is `refetch-discussion` and the user doesn't specify a time threshold, automatically add `--needs-discussion-refetch` and `--fetched-before` set to 24 hours ago (ISO datetime). This prevents re-processing items that were just fetched. The user can override with an explicit `--fetched-before` value or by saying "all" to skip time filtering.
 
 ### Step 2: Create Task Directory
 
@@ -63,7 +66,7 @@ Ask the user to confirm before launching the batch process.
 
 - **Bundled template**: Copy from `.claude/skills/batch-process/assets/instructions/<name>.md` to the task directory as `instruction.md`
 - **Custom path**: Verify the file exists. No copy needed.
-- **Neither specified**: Ask the user which instruction to use. Show available templates: `topics`, `categorize`, `metrics`.
+- **Neither specified**: Ask the user which instruction to use. Show available templates: `topics`, `categorize`, `metrics`, `refetch-discussion`.
 
 ### Step 6: Launch ralph_json.sh
 

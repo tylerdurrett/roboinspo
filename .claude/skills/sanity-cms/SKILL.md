@@ -162,7 +162,7 @@ node .claude/skills/sanity-cms/scripts/checklist.js \
   --exclude-categories "damage-control" --output checklist.json --dry-run
 ```
 
-**Args:** `--output` (required), `--exclude-categories` (optional, comma-separated slugs), `--categories` (optional, comma-separated slugs), `--topic` (optional, single slug), `--uncategorized` (optional flag), `--no-topics` (optional flag), `--no-metrics` (optional flag), `--no-article-sentiment` (optional flag), `--needs-discussion-refetch` (optional flag, items with a discussionUrl that need refetching), `--fetched-before` (optional, ISO datetime — items whose discussion was last fetched before this time or never fetched), `--dry-run`
+**Args:** `--output` (required), `--exclude-categories` (optional, comma-separated slugs), `--categories` (optional, comma-separated slugs), `--topic` (optional, single slug), `--uncategorized` (optional flag), `--no-topics` (optional flag), `--no-metrics` (optional flag), `--no-article-sentiment` (optional flag), `--needs-discussion-refetch` (optional flag, items with a discussionUrl that need refetching), `--fetched-before` (optional, ISO datetime — items whose discussion was last fetched before this time or never fetched), `--limit` (optional, max number of items to include in the checklist), `--dry-run`
 
 `--categories` and `--exclude-categories` are mutually exclusive. `--topic` can be combined with either.
 
