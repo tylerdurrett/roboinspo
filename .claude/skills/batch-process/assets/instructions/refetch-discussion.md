@@ -45,13 +45,23 @@ If the HN API call fails, skip this item — output `<output>{"skipped": true, "
 
 ## Step 3: Scrape the HN discussion page
 
-Use `WebFetch` to fetch the full HN discussion page at the `discussionUrl`. This gives you the current state of the conversation including all comments.
+Use the Bash tool to scrape the discussion page with Firecrawl:
+
+```bash
+firecrawl scrape "<discussionUrl>" --only-main-content
+```
+
+**Important:** The URL must be quoted (it contains `?` and `&` characters that the shell will misinterpret otherwise). The `--only-main-content` flag strips HN's navigation and footer, returning just the post title and comment tree as clean markdown. Do not use `-o` — let the output return inline so you can use it directly.
 
 If the scrape fails or returns no meaningful content, still proceed with the HN metadata from Step 2 — just skip the re-summarization in Step 4 and go straight to Step 5 with only the updated metrics.
 
 ## Step 4: Re-summarize the discussion and re-score metrics
 
-Use the article's `detailedSummary` (from Step 1) as context alongside the scraped discussion content (from Step 3). This context is critical for identifying which viewpoints agree or disagree with the article.
+Frame your analysis with two structured inputs:
+- The **article summary** (`detailedSummary` from Step 1) — this provides essential context for understanding which discussion viewpoints agree or disagree with the article
+- The **scraped discussion content** (from Step 3) — this is the primary input to analyze
+
+If the scraped content is extremely long (>100,000 characters), focus on the most substantive comment threads rather than trying to process every comment.
 
 ### 4a: Discussion summarization
 
@@ -67,7 +77,7 @@ Read the scraped discussion content (ignoring any extraneous metadata or UI text
 
 ### 4b: Community sentiment scoring
 
-Using both the article summary and the scraped discussion content, provide two integer scores:
+Act as a community sentiment analyst. Using both the article summary and the scraped discussion content, provide two integer scores:
 
 **Community Sentiment (`sentimentCommunity`): -100 to 100**
 The overall tone of the community's reaction.
