@@ -27,7 +27,7 @@ Determine three things from the user's message:
 - No filter — all published items
 
 **Instruction source** — one of:
-- A bundled template name: `topics`, `categorize`, `metrics` (see [assets/instructions/](assets/instructions/))
+- A bundled template name: `topics`, `categorize`, `metrics`, `refetch-discussion` (see [assets/instructions/](assets/instructions/))
 - A file path to a custom instruction `.md` file
 
 **Task name** — a short kebab-case label (e.g. `topic-assignment`, `recategorize`). Infer from context.
@@ -74,18 +74,24 @@ Always use `--no-plan`. Default max-iterations: 30 (override with user-specified
 
 **IMPORTANT — Nested session fix:** `ralph_json.sh` spawns `claude` subprocesses. When launched from inside Claude Code, the `CLAUDECODE` env var blocks nesting. Always prefix the command with `unset CLAUDECODE &&` to bypass this.
 
+**ralph_json.sh argument order:**
+```
+./ralph_json.sh <json-file> <prompt-file> [max-iterations] [extra-instructions] [--stop-on-manual-test] [--no-plan]
+```
+Note: `max-iterations` is a **positional argument** (3rd), not a `--flag`.
+
 **Small batches (≤5 items):** Run in foreground so the user sees streaming output directly.
 
 Use the Bash tool with `timeout: 600000` (10 minutes):
 ```bash
-unset CLAUDECODE && ./ralph_json.sh <checklist> <instruction> --no-plan
+unset CLAUDECODE && ./ralph_json.sh <checklist> <instruction> 30 --no-plan
 ```
 When complete, summarize results (complete/error/needs_human_test counts).
 
 **Larger batches (>5 items):** Run via the Bash tool with `run_in_background: true`. This auto-notifies the user when the process finishes.
 
 ```bash
-unset CLAUDECODE && ./ralph_json.sh <checklist> <instruction> --no-plan 2>&1 | tee <task-dir>/ralph.log
+unset CLAUDECODE && ./ralph_json.sh <checklist> <instruction> 30 --no-plan 2>&1 | tee <task-dir>/ralph.log
 ```
 
 Tell the user: "Batch process started for N items. You'll be notified when it completes. You can continue working in the meantime."

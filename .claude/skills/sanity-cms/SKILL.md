@@ -89,7 +89,36 @@ node .claude/skills/sanity-cms/scripts/mutate.js --action create --data '...' --
 
 **Args:** `--action` (create|createOrReplace|patch|delete), `--data` or `--file`, `--id` (patch/delete), `--set`/`--unset`/`--insert` (patch), `--dry-run`
 
+`--file` works for both create and patch. For patch, it's equivalent to `--set` with the file contents:
+
+```bash
+# Patch from file (useful for large payloads or validated JSON)
+node .claude/skills/sanity-cms/scripts/mutate.js --action patch --id "abc123" --file /tmp/payload.json
+```
+
 Array items without `_key` get one auto-generated.
+
+### validate-patch.js — Validate Patch Payloads
+
+Validates a JSON payload against a named Zod schema before patching. Catches type errors, out-of-range values, and missing fields before they hit Sanity.
+
+```bash
+# Validate inline JSON
+node .claude/skills/sanity-cms/scripts/validate-patch.js \
+  --schema refetch-discussion --json '{"sentimentCommunity": 25, ...}'
+
+# Validate from file
+node .claude/skills/sanity-cms/scripts/validate-patch.js \
+  --schema refetch-discussion --file /tmp/patch-payload.json
+```
+
+**Args:** `--schema` (required, schema name matching a file in `scripts/schemas/`), `--json` or `--file` (one required)
+
+Exits 0 on success, 1 on failure with detailed error output showing which fields failed and why.
+
+**Available schemas:** `refetch-discussion`
+
+New schemas can be added by creating a `.js` file in `scripts/schemas/` that exports a Zod object schema (export name must end in `Schema`).
 
 ### upload.js — Upload Assets
 
