@@ -1,0 +1,934 @@
+[
+  {
+    "title": "OpenAI Debuts GPT-5.4: The Frontier Model for Professional Agents",
+    "_id": "readingList-openai-debuts-gpt-5-4-the-frontier-model-for-professional-agents-1772739820237",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "AI Agents",
+      "Foundation Models",
+      "LLM Reasoning",
+      "LLM Context Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47265005",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "GPT-5.4 Thinking Sets New Safety Bar as First General-Purpose Model with Cybersecurity Mitigations",
+    "_id": "readingList-gpt-5-4-thinking-sets-new-safety-bar-as-first-general-purpose-model-with-cybersecurity-mitigati-1772739790601",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "AI Safety",
+      "Cybersecurity",
+      "LLM Reasoning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47265045",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Context: The New Moat in the Age of AI",
+    "_id": "readingList-context-the-new-moat-in-the-age-of-ai-1772729606509",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Business Models",
+      "AI Agents",
+      "Competitive Moats",
+      "LLM Context Management",
+      "AI Alignment"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47205009",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The Forgery of Vibe-Coding: Why AI Needs Source Attribution",
+    "_id": "readingList-the-forgery-of-vibe-coding-why-ai-needs-source-attribution-1772720899817",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Vibe Coding",
+      "AI Hallucinations",
+      "Code Provenance",
+      "AI Deskilling",
+      "Software Craftsmanship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47257394",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "MOSS: The Programmable Pixel Art Playground",
+    "_id": "readingList-moss-the-programmable-pixel-art-playground-1772678869379",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Pixel Art",
+      "Creative Coding",
+      "Generative Art",
+      "Creative Software"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47245491",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Anthropic CEO Slams OpenAI's Pentagon Deal as 'Straight Up Lies'",
+    "_id": "readingList-anthropic-ceo-slams-openai-s-pentagon-deal-as-straight-up-lies-1772678829062",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Military AI",
+      "AI Safety",
+      "OpenAI",
+      "Anthropic",
+      "Corporate Accountability"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47255662",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "gws: The AI-Ready Google Workspace CLI",
+    "_id": "readingList-gws-the-ai-ready-google-workspace-cli-1772678725184",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Model Context Protocol",
+      "AI Agents",
+      "Developer Tooling",
+      "Rust",
+      "Google Workspace Integration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47255881",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "DeFlock: Crowdsourcing the Map of License Plate Surveillance",
+    "_id": "readingList-deflock-crowdsourcing-the-map-of-license-plate-surveillance-1772664298242",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Surveillance Technology",
+      "Data Privacy",
+      "Crowdsourced Mapping",
+      "Civil Liberties"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47252049",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Glaze: Chat with AI to Build Native Desktop Apps",
+    "_id": "readingList-glaze-chat-with-ai-to-build-native-desktop-apps-1772640020640",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI App Builders",
+      "Low-Code Platforms",
+      "macOS",
+      "Vibe Coding",
+      "Local-First Software"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47247033",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Nuclear Hallucination: Why LLMs in Warfare Threaten Global Survival",
+    "_id": "readingList-the-nuclear-hallucination-why-llms-in-warfare-threaten-global-survival-1772632214177",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Military AI",
+      "AI Hallucinations",
+      "AI Safety",
+      "AI Regulation",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47244651",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Agentic Engineering: Patterns for Mastering AI Coding",
+    "_id": "readingList-agentic-engineering-patterns-for-mastering-ai-coding-1772631876583",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Vibe Coding",
+      "Software Craftsmanship",
+      "Automated Testing",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47243272",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Choosing Digital Isolation Over Identity Verification",
+    "_id": "readingList-choosing-digital-isolation-over-identity-verification-1772578665653",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Data Privacy",
+      "Self-Hosting",
+      "Digital Wellbeing",
+      "Age Verification",
+      "Civil Liberties"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47232768",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "OpenAI Releases GPT-5.3 Instant: A More Direct and Accurate AI Experience",
+    "_id": "readingList-openai-releases-gpt-5-3-instant-a-more-direct-and-accurate-ai-experience-1772578626893",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "AI Hallucinations",
+      "AI Sycophancy",
+      "Foundation Models",
+      "AI UX"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47236169",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Etiquette of AI: Why You Must Curate Your Chatbot's Output",
+    "_id": "readingList-the-etiquette-of-ai-why-you-must-curate-your-chatbot-s-output-1772578553236",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI-Generated Content",
+      "Human-AI Collaboration",
+      "Digital Communication",
+      "AI Deskilling",
+      "Writing & AI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47239943",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Case for a Mathematically Verified AI Software Stack",
+    "_id": "readingList-the-case-for-a-mathematically-verified-ai-software-stack-1772562082837",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Formal Verification",
+      "AI Coding Agents",
+      "AI Safety",
+      "Software Craftsmanship",
+      "AI-Generated Content"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47234917",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Virtualizing Browser Time for Deterministic Video Rendering",
+    "_id": "readingList-virtualizing-browser-time-for-deterministic-video-rendering-1772548551386",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Browser Automation",
+      "Media Processing",
+      "Web Audio",
+      "Deterministic Rendering",
+      "AI Coding Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47203827",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The $82,000 API Key: Why Billing Caps are Essential",
+    "_id": "readingList-the-82-000-api-key-why-billing-caps-are-essential-1772547731576",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Cybersecurity",
+      "Cloud Infrastructure",
+      "API Key Security",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47231469",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Claude Opus 4.6 Solves Knuth's Hamiltonian Cycle Problem for Odd m",
+    "_id": "readingList-claude-opus-4-6-solves-knuth-s-hamiltonian-cycle-problem-for-odd-m-1772547431473",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "LLM Reasoning",
+      "AI for Science",
+      "Anthropic",
+      "Algorithms & Optimization",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47230710",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Web Audio Studio: Visual Debugging for Browser Audio",
+    "_id": "readingList-web-audio-studio-visual-debugging-for-browser-audio-1772478526328",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Web Audio",
+      "Developer Tooling",
+      "Interactive Web Tools",
+      "Signal Processing",
+      "Data Visualization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47216773",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "git-memento: Attaching AI Session Traces to Git Commits",
+    "_id": "readingList-git-memento-attaching-ai-session-traces-to-git-commits-1772427044368",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "GitHub Actions",
+      "Code Provenance"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47212355",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "SynapsCAD: The AI-Powered OpenSCAD IDE",
+    "_id": "readingList-synapscad-the-ai-powered-openscad-ide-1772427034705",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "3D Modeling",
+      "Rust",
+      "AI Coding Agents",
+      "3D Printing",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47183039",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "WebMCP: Building a Standardized Bridge for AI Agents",
+    "_id": "readingList-webmcp-building-a-standardized-bridge-for-ai-agents-1772426837692",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Web Standards",
+      "Agentic Commerce",
+      "Browser Development",
+      "Model Context Protocol"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47211249",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Beyond Shallow Competence: Building Engineering Intuition in the AI Era",
+    "_id": "readingList-beyond-shallow-competence-building-engineering-intuition-in-the-ai-era-1772379239707",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Deskilling",
+      "Skill Development",
+      "AI Coding Agents",
+      "Software Craftsmanship",
+      "Tech Career Strategy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47206663",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The AI Productivity Paradox: Why Coding is Easier but Engineering is Harder",
+    "_id": "readingList-the-ai-productivity-paradox-why-coding-is-easier-but-engineering-is-harder-1772375998121",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Deskilling",
+      "Future of Work",
+      "Cognitive Debt",
+      "AI & Productivity",
+      "Software Craftsmanship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47206824",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Google Gemini CLI Updates ToS Enforcement and Restores Banned Accounts",
+    "_id": "readingList-google-gemini-cli-updates-tos-enforcement-and-restores-banned-accounts-1772374017082",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Google",
+      "Platform Policy",
+      "Developer Tooling",
+      "Compliance Automation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47195371",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "OpenAI Secures Pentagon Deal with Strict Safety Red Lines",
+    "_id": "readingList-openai-secures-pentagon-deal-with-strict-safety-red-lines-1772369908866",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "Military AI",
+      "AI Safety",
+      "AI Ethics",
+      "Government Contracting"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47199948",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Claude Adds Persistent Memory and Context Import Tools",
+    "_id": "readingList-claude-adds-persistent-memory-and-context-import-tools-1772369655619",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "AI Personalization",
+      "Platform Migration",
+      "LLM Context Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47204571",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "AI Oligarchy: How OpenAI's 'Scam' Sidelined Anthropic",
+    "_id": "readingList-ai-oligarchy-how-openai-s-scam-sidelined-anthropic-1772303397823",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI and Politics",
+      "OpenAI",
+      "Anthropic",
+      "Corporate Accountability",
+      "AI Business Models"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47197505",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Cognitive Debt: The Invisible Cost of AI-Driven Velocity",
+    "_id": "readingList-cognitive-debt-the-invisible-cost-of-ai-driven-velocity-1772295060920",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Cognitive Debt",
+      "AI Deskilling",
+      "AI Coding Agents",
+      "Engineering Management",
+      "Technical Debt"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47196582",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "gitcredits: Cinematic Credits for Your Git Repositories",
+    "_id": "readingList-gitcredits-cinematic-credits-for-your-git-repositories-1772293781597",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Developer Tooling",
+      "Creative Coding",
+      "Open Source",
+      "Git Visualization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47194679",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Simplification Myth: Why AI is the Latest Chapter in a 60-Year Cycle",
+    "_id": "readingList-the-simplification-myth-why-ai-is-the-latest-chapter-in-a-60-year-cycle-1772293376192",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "Computing History",
+      "AI Deskilling",
+      "Future of Work",
+      "Software Craftsmanship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47147597",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Now I Get It: Science Simplified for Everyone",
+    "_id": "readingList-now-i-get-it-science-simplified-for-everyone-1772292156350",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Science Communication",
+      "AI-Generated Content",
+      "Information Literacy",
+      "Academic Publishing",
+      "Interactive Web Tools"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47195123",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Pentagon Blacklists Anthropic as OpenAI Secures Military Deal",
+    "_id": "readingList-pentagon-blacklists-anthropic-as-openai-secures-military-deal-1772291672615",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Military AI",
+      "Anthropic",
+      "OpenAI",
+      "AI Safety",
+      "AI Regulation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47195085",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Hidden Cognitive Debt of AI-Driven Coding",
+    "_id": "readingList-the-hidden-cognitive-debt-of-ai-driven-coding-1772290104273",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Deskilling",
+      "AI Coding Agents",
+      "Cognitive Debt",
+      "Software Craftsmanship",
+      "Future of Work"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47194847",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Anthropic to Legally Challenge Department of War's 'Supply Chain Risk' Designation",
+    "_id": "readingList-anthropic-to-legally-challenge-department-of-war-s-supply-chain-risk-designation-1772289018419",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "Military AI",
+      "AI Ethics",
+      "Government Surveillance",
+      "Corporate Accountability"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47188697",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Wisdom Gap: Why AI Safety is a Human Evolution Problem",
+    "_id": "readingList-the-wisdom-gap-why-ai-safety-is-a-human-evolution-problem-1772286269027",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Safety",
+      "AI Alignment",
+      "AI Ethics",
+      "Critical Thinking",
+      "Information Literacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47193476",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Design for Distrust: Securing AI Agents via Container Isolation",
+    "_id": "readingList-design-for-distrust-securing-ai-agents-via-container-isolation-1772286222981",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI Safety",
+      "Sandboxing",
+      "Prompt Injection"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47194611",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "How to Permanently Delete Your OpenAI Account",
+    "_id": "readingList-how-to-permanently-delete-your-openai-account-1772286040904",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "Data Privacy",
+      "Consumer Rights",
+      "Account Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47193478",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "AI Workers Unite Against Pentagon Demands for Autonomous Warfare and Surveillance",
+    "_id": "readingList-ai-workers-unite-against-pentagon-demands-for-autonomous-warfare-and-surveillance-1772250225503",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Military AI",
+      "AI Ethics",
+      "Government Surveillance",
+      "Corporate Accountability",
+      "Tech Worker Activism"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47188473",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Agentic Breakthrough: How Modern LLMs Mastered High-Performance Coding",
+    "_id": "readingList-the-agentic-breakthrough-how-modern-llms-mastered-high-performance-coding-1772227331425",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Rust",
+      "Algorithms & Optimization",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47183527",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Breaking Free: A Global Push to End Digital Enshittification",
+    "_id": "readingList-breaking-free-a-global-push-to-end-digital-enshittification-1772227265053",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Platform Decay",
+      "Corporate Accountability",
+      "Platform Policy",
+      "Consumer Rights"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47178678",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Cards Against Humanity Pledges 100% of Tariff Refunds to Customers",
+    "_id": "readingList-cards-against-humanity-pledges-100-of-tariff-refunds-to-customers-1772222945334",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Corporate Accountability",
+      "Trade Policy",
+      "Consumer Economics",
+      "Government Accountability"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47183719",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Pentagon's Dangerous Blunder in the Anthropic Showdown",
+    "_id": "readingList-the-pentagon-s-dangerous-blunder-in-the-anthropic-showdown-1772222566963",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Safety",
+      "Anthropic",
+      "Military AI",
+      "Executive Power",
+      "AI Alignment"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47181380",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Anthropic Defies Department of War Over AI Safety Guardrails",
+    "_id": "readingList-anthropic-defies-department-of-war-over-ai-safety-guardrails-1772222182621",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "AI Safety",
+      "Military AI",
+      "Surveillance Technology",
+      "AI Ethics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47173121",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Tenth Circuit Rejects Overbroad Digital Warrants Against Protesters",
+    "_id": "readingList-tenth-circuit-rejects-overbroad-digital-warrants-against-protesters-1772221634949",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Constitutional Law",
+      "Civil Liberties",
+      "Government Surveillance",
+      "Data Privacy",
+      "Government Accountability"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47181391",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Hidden Security Costs of AI Vibe-Coding",
+    "_id": "readingList-the-hidden-security-costs-of-ai-vibe-coding-1772219396926",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Vibe Coding",
+      "AI App Builders",
+      "Cybersecurity",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47182659",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "ChatGPT Health's Triage Failures Labeled 'Unbelievably Dangerous'",
+    "_id": "readingList-chatgpt-health-s-triage-failures-labeled-unbelievably-dangerous-1772215083522",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI in Healthcare",
+      "AI Safety",
+      "AI Regulation",
+      "OpenAI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47181841",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Anthropic Launches Free Claude Max Program for Open-Source Maintainers",
+    "_id": "readingList-anthropic-launches-free-claude-max-program-for-open-source-maintainers-1772214650204",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "Open Source",
+      "Developer Tooling",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47178371",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The AI Hype Cycle and the Fallacy of 'This Time is Different'",
+    "_id": "readingList-the-ai-hype-cycle-and-the-fallacy-of-this-time-is-different-1772143903683",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "Technology Economics",
+      "AI Bubble",
+      "Critical Thinking"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47165792",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "The Pentagon's Dangerous Push for Autonomous AI Weapons",
+    "_id": "readingList-the-pentagon-s-dangerous-push-for-autonomous-ai-weapons-1772143776285",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Military AI",
+      "AI Safety",
+      "Executive Power",
+      "AI Regulation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47171771",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  }
+]
