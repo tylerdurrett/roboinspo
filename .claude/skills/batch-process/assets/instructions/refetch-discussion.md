@@ -120,12 +120,22 @@ Determine whether this discussion should be refetched again. Consider:
 
 Record your decision and reasoning.
 
-## Step 6: Patch the Sanity document
+## Step 6: Validate and patch the Sanity document
 
-Use your Sanity skill to patch the document by `_id`. Set all updated fields in a single patch:
+First, build your patch payload as JSON with all updated fields. Set:
+- `discussionLastFetchedAt` to the current ISO timestamp
+- `discussionRefetchCount` to the previous value + 1 (null counts as 0)
+- `discussionNeedsRefetch` based on your assessment in Step 5
+
+If you skipped re-summarization in Step 4 (scrape failed), only include the metrics and tracking fields — do NOT overwrite existing discussion summaries with empty values. Skip validation in this case since the payload won't contain all fields.
+
+### 6a: Validate the payload
+
+Write your patch JSON to a temp file and validate it against the Zod schema:
 
 ```bash
-node .claude/skills/sanity-cms/scripts/mutate.js --action patch --id "THE_DOCUMENT_ID" --set '{
+cat > /tmp/patch-payload.json << 'PATCH_EOF'
+{
   "discussionDetailedSummary": "...",
   "discussionShortSummary": "...",
   "discussionGist": "...",
@@ -140,14 +150,20 @@ node .claude/skills/sanity-cms/scripts/mutate.js --action patch --id "THE_DOCUME
   "discussionLastFetchedAt": "2026-03-10T12:00:00.000Z",
   "discussionRefetchCount": 1,
   "discussionNeedsRefetch": false
-}'
+}
+PATCH_EOF
+node .claude/skills/sanity-cms/scripts/validate-patch.js --schema refetch-discussion --file /tmp/patch-payload.json
 ```
 
-Set `discussionLastFetchedAt` to the current ISO timestamp.
-Set `discussionRefetchCount` to the previous value + 1 (null counts as 0).
-Set `discussionNeedsRefetch` based on your assessment in Step 5.
+If validation fails, read the error output carefully — it will tell you exactly which fields have wrong types or values. Fix the payload and re-validate before proceeding. Common issues: arrays passed as strings, scores outside their allowed range, non-ISO datetime formats.
 
-If you skipped re-summarization in Step 4 (scrape failed), only patch the metrics and tracking fields — do NOT overwrite existing discussion summaries with empty values.
+### 6b: Patch the document
+
+Once validation passes, apply the patch:
+
+```bash
+node .claude/skills/sanity-cms/scripts/mutate.js --action patch --id "THE_DOCUMENT_ID" --file /tmp/patch-payload.json
+```
 
 ## Step 7: Report results
 

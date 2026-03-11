@@ -151,11 +151,13 @@ try {
       }
     }
 
-    // Also support --data for patch as a full set operation
-    if (args.data && !args.set) {
-      const data = JSON.parse(args.data);
-      addMissingKeys(data);
-      patch = patch.set(data);
+    // Also support --data or --file for patch as a full set operation
+    if ((args.data || args.file) && !args.set) {
+      const data = loadData();
+      if (data) {
+        addMissingKeys(data);
+        patch = patch.set(data);
+      }
     }
 
     if (isDryRun) {

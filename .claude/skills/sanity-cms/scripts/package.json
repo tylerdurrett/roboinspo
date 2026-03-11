@@ -3,6 +3,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@sanity/client": "^7"
+    "@sanity/client": "^7",
+    "zod": "^4"
   }
 }
