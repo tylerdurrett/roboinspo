@@ -1,0 +1,190 @@
+[
+  {
+    "title": "The Dehumanizing Rise of the AI Job Interview",
+    "_id": "readingList-the-dehumanizing-rise-of-the-ai-job-interview-1773259976957",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Future of Work",
+      "AI Bias",
+      "AI Ethics",
+      "AI Hiring"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339164",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Perplexity's Objective-Driven AI Operating System",
+    "_id": "readingList-perplexity-s-objective-driven-ai-operating-system-1773259938412",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI Operating System",
+      "On-Device AI",
+      "AI & Productivity",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339223",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Prism: The All-In-One AI Video Creation Hub",
+    "_id": "readingList-prism-the-all-in-one-ai-video-creation-hub-1773259926448",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Video Generation",
+      "AI Image Generation",
+      "Creator Economy",
+      "AI & Productivity",
+      "AI Business Models"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47337548",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Hisense TVs Spark Outrage with Intrusive UI Ads",
+    "_id": "readingList-hisense-tvs-spark-outrage-with-intrusive-ui-ads-1773259867080",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Consumer Electronics",
+      "Dark Patterns",
+      "Surveillance Capitalism",
+      "Digital Advertising",
+      "Consumer Rights"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339888",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The MacBook Neo: Apple's $600 iPad Killer",
+    "_id": "readingList-the-macbook-neo-apple-s-600-ipad-killer-1773259764847",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Apple",
+      "macOS",
+      "Consumer Electronics",
+      "Semiconductor Industry",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47334293",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Hacker News: Standards for Intellectual Curiosity and Civil Discourse",
+    "_id": "readingList-hacker-news-standards-for-intellectual-curiosity-and-civil-discourse-1773259638743",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Online Communities",
+      "Content Moderation",
+      "Digital Communication",
+      "Information Literacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47340079",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Grammarly's AI 'Expert' Avatars Spark Ethical Outrage",
+    "_id": "readingList-grammarly-s-ai-expert-avatars-spark-ethical-outrage-1773084205884",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Ethics",
+      "AI-Generated Content",
+      "Intellectual Property",
+      "Academic Integrity",
+      "Writing & AI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47259366",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Building Procedural Hex Worlds with WebGPU",
+    "_id": "readingList-building-procedural-hex-worlds-with-webgpu-1773079862371",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Procedural Generation",
+      "Three.js",
+      "Shaders",
+      "WebGPU",
+      "Constraint Solving"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47311815",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Agent Kanban: Persistent AI Task Management for VS Code",
+    "_id": "readingList-agent-kanban-persistent-ai-task-management-for-vs-code-1773059662175",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "LLM Context Management",
+      "Task Orchestration",
+      "Knowledge Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47307169",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Agents: The Missing Link for Literate Programming",
+    "_id": "readingList-ai-agents-the-missing-link-for-literate-programming-1773031344958",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Literate Programming",
+      "Technical Writing",
+      "Human-AI Collaboration",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47300747",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  }
+]

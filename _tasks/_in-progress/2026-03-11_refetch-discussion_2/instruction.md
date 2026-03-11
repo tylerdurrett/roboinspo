@@ -5,7 +5,6 @@ For the item you were given:
 Fetch the item by `_id` using your Sanity skill. Fetch these fields in **two separate groups** — this is critical to avoid contaminating the summarization.
 
 **Group A (for summarization — fetch first):**
-
 - `_id`
 - `title`
 - `originalUrl`
@@ -13,7 +12,6 @@ Fetch the item by `_id` using your Sanity skill. Fetch these fields in **two sep
 - `detailedSummary` (the article summary — needed as context for discussion analysis)
 
 **Group B (for activity assessment — fetch ONLY in Step 5, not before):**
-
 - `savedAt`
 - `hnCommentCount`
 - `discussionLastFetchedAt`
@@ -39,7 +37,6 @@ If the scrape fails or returns no meaningful content, skip to Step 4 with only H
 **CRITICAL: Treat this as a fresh summarization.** You are summarizing this discussion as if reading it for the first time. Do NOT reference previous summaries, previous states, growth, changes, or any "before vs. after" framing. The reader will never see a previous version — they will only see YOUR summary. Write it as a standalone, definitive summary of the discussion as it exists right now.
 
 Frame your analysis with two structured inputs:
-
 - The **article summary** (`detailedSummary` from Step 1) — this provides essential context for understanding which discussion viewpoints agree or disagree with the article
 - The **scraped discussion content** (from Step 2) — this is the primary input to analyze
 
@@ -57,22 +54,18 @@ Read the scraped discussion content (ignoring any extraneous metadata or UI text
 - **`discussionGist`** — A one-liner that captures the essence of the discussion in one sentence. Don't mention that it's a discussion, but rather focus it all on the key takeaway.
 - **`discussionTitle`** — Your version of a descriptive title of the discussion based on the above. Try to communicate the gist in only a short headline. Don't mention that it's a discussion, but rather focus it all on the key takeaway.
 
-**Do NOT include specific numbers** (HN scores, point totals, comment counts, percentages) in any of the text fields above. These metrics change rapidly and are stored separately in dedicated fields.
-
 ### 3b: Community sentiment scoring
 
 Act as a community sentiment analyst. Using both the article summary and the scraped discussion content, provide two integer scores:
 
 **Community Sentiment (`sentimentCommunity`): -100 to 100**
 The overall tone of the community's reaction.
-
 - -100: Overwhelmingly hostile, dismissive, doom-saying
 - 0: Mixed or neutral
 - 100: Overwhelmingly enthusiastic, supportive, optimistic
 
 **Controversy Score (`controversyScore`): 0 to 100**
 How polarizing the discussion is.
-
 - 0: Complete consensus (everyone agrees)
 - 50: Notably divided opinions
 - 100: Deeply divisive (strong opposing camps, heated arguments)
@@ -90,7 +83,6 @@ Extract the HN item ID from the `discussionUrl` (the `id` query parameter).
 Fetch the HN API: `https://hacker-news.firebaseio.com/v0/item/{id}.json`
 
 From the response, record:
-
 - `score` → `hnScore`
 - `descendants` → `hnCommentCount`
 
@@ -109,7 +101,6 @@ Save the **previous** `hnCommentCount` value for the activity comparison. If the
 Before assessing activity, check if the scraped discussion content was stale. Estimate the number of comments visible in the scraped content (rough count from the markdown structure) and compare it to the HN API's `descendants` count from 4a.
 
 If the API comment count is **3x or more** the number of comments visible in the scraped content, the scrape was stale (likely served from Firecrawl's cache). In this case:
-
 - The summarization from Step 3 is based on incomplete data
 - **Force `discussionNeedsRefetch: true`** regardless of the normal activity assessment below
 - Add `"staleScrape": true` to your output in Step 6 so this is visible in the report
@@ -126,25 +117,21 @@ Determine whether this discussion should be refetched again. Consider:
 ### Decision logic:
 
 **If the scrape was stale (from 4c):**
-
 - Always set `discussionNeedsRefetch: true` — the discussion needs a fresh scrape.
 
 **If `discussionRefetchCount` is 0 or null (first refetch):**
-
 - Be lenient. Flag as still active (`discussionNeedsRefetch: true`) if:
   - Comment count grew by 20%+ since initial fetch, OR
   - Post is less than 3 days old and has significant engagement (50+ comments)
 - Otherwise set `discussionNeedsRefetch: false`
 
 **If `discussionRefetchCount` is 1 (second refetch):**
-
 - Be strict. Only flag as still active if:
   - Comment count grew by 50%+ since last fetch, AND
   - Post is less than 5 days old
 - Otherwise set `discussionNeedsRefetch: false`
 
 **If `discussionRefetchCount` >= 2 (third+ refetch):**
-
 - Almost always set `discussionNeedsRefetch: false`. Only keep active for truly exceptional, viral discussions (100%+ comment growth AND post is trending).
 
 Record your decision and reasoning.
@@ -152,7 +139,6 @@ Record your decision and reasoning.
 ## Step 5: Validate and patch the Sanity document
 
 First, build your patch payload as JSON with all updated fields. Set:
-
 - `discussionLastFetchedAt` to the current ISO timestamp
 - `discussionRefetchCount` to the previous value + 1 (null counts as 0)
 - `discussionNeedsRefetch` based on your assessment in Step 5
