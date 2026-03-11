@@ -282,6 +282,9 @@ export type ReadingList = {
   discussionShortSummary?: string
   discussionGist?: string
   discussionTitle?: string
+  discussionLastFetchedAt?: string
+  discussionNeedsRefetch?: boolean
+  discussionRefetchCount?: number
   hnScore?: number
   hnCommentCount?: number
   sentimentArticle?: number

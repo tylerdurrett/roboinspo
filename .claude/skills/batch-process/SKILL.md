@@ -18,6 +18,8 @@ Determine three things from the user's message:
 - `--uncategorized` — items with no categories
 - `--no-metrics` — items missing any of the 5 metric fields (hnScore, hnCommentCount, sentimentArticle, sentimentCommunity, controversyScore)
 - `--no-article-sentiment` — items missing the sentimentArticle field specifically
+- `--needs-discussion-refetch` — items with a discussionUrl whose discussion needs refetching (null or true)
+- `--fetched-before "ISO-datetime"` — items whose discussion was last fetched before this time (or never fetched)
 - `--categories "slug1,slug2"` — items in specific categories (comma-separated slugs)
 - `--exclude-categories "slug1,slug2"` — items NOT in specific categories
 - `--topic "slug"` — items with a specific topic
@@ -100,3 +102,4 @@ Mention the log file and checklist paths casually in case they want to check pro
 - **topics** — Assign 2-5 topics to a reading list item. Creates new topics if needed, reuses existing ones. See [assets/instructions/topics.md](assets/instructions/topics.md).
 - **categorize** — Assign a single category to a reading list item based on editorial guidelines. See [assets/instructions/categorize.md](assets/instructions/categorize.md).
 - **metrics** — Score article sentiment, community sentiment, controversy, and fetch HN engagement data. See [assets/instructions/metrics.md](assets/instructions/metrics.md).
+- **refetch-discussion** — Re-scrape HN discussion, update discussion summaries and metrics, assess if discussion is still active. See [assets/instructions/refetch-discussion.md](assets/instructions/refetch-discussion.md).

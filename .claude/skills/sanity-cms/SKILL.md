@@ -142,6 +142,17 @@ node .claude/skills/sanity-cms/scripts/checklist.js \
   --no-article-sentiment \
   --output /path/to/checklist.json
 
+# Items with discussions that need refetching
+node .claude/skills/sanity-cms/scripts/checklist.js \
+  --needs-discussion-refetch \
+  --output /path/to/checklist.json
+
+# Items with discussions last fetched before a specific time (or never fetched)
+node .claude/skills/sanity-cms/scripts/checklist.js \
+  --needs-discussion-refetch \
+  --fetched-before "2026-03-09T00:00:00Z" \
+  --output /path/to/checklist.json
+
 # All published items (no filter)
 node .claude/skills/sanity-cms/scripts/checklist.js \
   --output /path/to/checklist.json
@@ -151,7 +162,7 @@ node .claude/skills/sanity-cms/scripts/checklist.js \
   --exclude-categories "damage-control" --output checklist.json --dry-run
 ```
 
-**Args:** `--output` (required), `--exclude-categories` (optional, comma-separated slugs), `--categories` (optional, comma-separated slugs), `--topic` (optional, single slug), `--uncategorized` (optional flag), `--no-topics` (optional flag), `--no-metrics` (optional flag), `--no-article-sentiment` (optional flag), `--dry-run`
+**Args:** `--output` (required), `--exclude-categories` (optional, comma-separated slugs), `--categories` (optional, comma-separated slugs), `--topic` (optional, single slug), `--uncategorized` (optional flag), `--no-topics` (optional flag), `--no-metrics` (optional flag), `--no-article-sentiment` (optional flag), `--needs-discussion-refetch` (optional flag, items with a discussionUrl that need refetching), `--fetched-before` (optional, ISO datetime — items whose discussion was last fetched before this time or never fetched), `--dry-run`
 
 `--categories` and `--exclude-categories` are mutually exclusive. `--topic` can be combined with either.
 

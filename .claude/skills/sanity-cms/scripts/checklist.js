@@ -136,6 +136,19 @@ async function main() {
     filters.push('!defined(sentimentArticle)');
   }
 
+  if (args['needs-discussion-refetch'] === 'true') {
+    // Items with a discussionUrl that need refetching
+    // (discussionNeedsRefetch is null or true)
+    filters.push('defined(discussionUrl)');
+    filters.push('(defined(discussionNeedsRefetch) == false || discussionNeedsRefetch == true)');
+  }
+
+  if (args['fetched-before']) {
+    params.fetchedBefore = args['fetched-before'];
+    // Items whose discussion was last fetched before this time, OR never fetched
+    filters.push('(defined(discussionLastFetchedAt) == false || discussionLastFetchedAt < $fetchedBefore)');
+  }
+
   if (args['no-topics'] === 'true') {
     filters.push('(!defined(topics) || count(topics) == 0)');
   } else if (args.topic) {
@@ -148,7 +161,11 @@ async function main() {
     _id,
     title,
     "currentCategories": categories[]->{ title, "slug": slug.current },
-    "currentTopics": topics[]->{ title, "slug": slug.current }
+    "currentTopics": topics[]->{ title, "slug": slug.current },
+    discussionUrl,
+    discussionLastFetchedAt,
+    discussionNeedsRefetch,
+    discussionRefetchCount
   }`;
 
   const items = await client.fetch(query, params);
@@ -159,6 +176,10 @@ async function main() {
     _id: item._id,
     currentCategories: (item.currentCategories || []).filter(Boolean).map((c) => c.title),
     currentTopics: (item.currentTopics || []).filter(Boolean).map((t) => t.title),
+    discussionUrl: item.discussionUrl || null,
+    discussionLastFetchedAt: item.discussionLastFetchedAt || null,
+    discussionNeedsRefetch: item.discussionNeedsRefetch ?? null,
+    discussionRefetchCount: item.discussionRefetchCount ?? 0,
     status: 'unprocessed',
   }));
 

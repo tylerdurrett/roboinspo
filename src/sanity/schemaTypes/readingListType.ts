@@ -31,6 +31,14 @@ export const readingListType = defineType({
         collapsed: true,
       },
     },
+    {
+      name: 'discussionTrackingFields',
+      title: 'Discussion Tracking',
+      options: {
+        collapsible: true,
+        collapsed: true,
+      },
+    },
   ],
   fields: [
     defineField({
@@ -222,6 +230,32 @@ export const readingListType = defineType({
       description:
         'Your version of a descriptive title of the discussion based on the above. Try to communicate the gist in only a short headline.',
       fieldset: 'discussionFields',
+    }),
+    defineField({
+      name: 'discussionLastFetchedAt',
+      title: 'Discussion Last Fetched',
+      type: 'datetime',
+      description: 'When the discussion page was last crawled for updates',
+      fieldset: 'discussionTrackingFields',
+    }),
+    defineField({
+      name: 'discussionNeedsRefetch',
+      title: 'Discussion Needs Refetch',
+      type: 'boolean',
+      description:
+        'Whether this discussion should be refetched. Unset or true = yes.',
+      fieldset: 'discussionTrackingFields',
+      initialValue: true,
+    }),
+    defineField({
+      name: 'discussionRefetchCount',
+      title: 'Discussion Refetch Count',
+      type: 'number',
+      description:
+        'How many times the discussion has been refetched beyond the initial fetch',
+      fieldset: 'discussionTrackingFields',
+      initialValue: 0,
+      validation: (rule) => rule.min(0).integer(),
     }),
     defineField({
       name: 'hnScore',

@@ -54,6 +54,9 @@ Project: `g1sakegy` | Dataset: `production`
 | sentimentArticle | number | No | Article tone: -100 (negative) to 100 (positive) |
 | sentimentCommunity | number | No | Community reaction: -100 (negative) to 100 (positive) |
 | controversyScore | number | No | How polarizing: 0 (consensus) to 100 (deeply divisive) |
+| discussionLastFetchedAt | datetime | No | When the discussion page was last crawled for updates |
+| discussionNeedsRefetch | boolean | No | Whether discussion should be refetched. Null/true = yes, false = done |
+| discussionRefetchCount | number | No | Times the discussion was refetched beyond initial fetch (null = 0) |
 | body | blockContent | No | Notes about the article |
 
 ### category

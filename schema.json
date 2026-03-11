@@ -1677,6 +1677,27 @@
         },
         "optional": true
       },
+      "discussionLastFetchedAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "discussionNeedsRefetch": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "boolean"
+        },
+        "optional": true
+      },
+      "discussionRefetchCount": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "number"
+        },
+        "optional": true
+      },
       "hnScore": {
         "type": "objectAttribute",
         "value": {
