@@ -1,0 +1,97 @@
+[
+  {
+    "title": "The Teenager Making $400,000 a Month on Roblox",
+    "_id": "readingList-the-teenager-making-400-000-a-month-on-roblox-1773177576860",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Creator Economy",
+      "Game Development",
+      "Indie Development",
+      "Entrepreneurship",
+      "Youth Culture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47293337",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "ffmpeg-over-ip: Remote GPU Transcoding Without the Infrastructure Headache",
+    "_id": "readingList-ffmpeg-over-ip-remote-gpu-transcoding-without-the-infrastructure-headache-1773177489979",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Media Processing",
+      "GPU Computing",
+      "Open Source",
+      "Self-Hosting",
+      "Networking"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47327015",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Verifying the Autonomous Agent: Why AI Coding Needs TDD",
+    "_id": "readingList-verifying-the-autonomous-agent-why-ai-coding-needs-tdd-1773176856593",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Automated Testing",
+      "Code Review",
+      "AI Deskilling",
+      "Vibe Coding"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47327559",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "A Million Pixels: Collaborative AI Art for a Cause",
+    "_id": "readingList-a-million-pixels-collaborative-ai-art-for-a-cause-1773162049823",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "AI Image Generation",
+      "Generative Art",
+      "Creator Economy",
+      "AI in Education",
+      "Online Communities"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47321625",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Meta Acquires AI-Agent Social Network Moltbook",
+    "_id": "readingList-meta-acquires-ai-agent-social-network-moltbook-1773158617300",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Multi-Agent Systems",
+      "Corporate AI Strategy",
+      "Social Media",
+      "AI Infrastructure"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47323900",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  }
+]
