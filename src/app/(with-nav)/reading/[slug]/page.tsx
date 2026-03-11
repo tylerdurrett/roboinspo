@@ -74,6 +74,14 @@ export default async function ReadingListItem({ params }: Props) {
       })
     : 'unknown date'
 
+  const formattedUpdatedDate = item._updatedAt
+    ? new Date(item._updatedAt).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      })
+    : null
+
   return (
     <div className="py-8 md:py-16">
       <article>
@@ -82,64 +90,72 @@ export default async function ReadingListItem({ params }: Props) {
             <h1 className="mb-4 text-4xl sm:text-5xl md:text-7xl tracking-tight">
               {item.title}
             </h1>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mt-6 text-muted-foreground">
-              <span className="tracking-wide">
-                added {formattedDate}
-              </span>
-              <span
-                aria-hidden="true"
-                className="mx-2 text-muted-foreground/60 hidden sm:inline"
-              >
-                |
-              </span>
-              <div className="flex items-center gap-3">
-                <a
-                  href={item.originalUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 hover:underline"
+            <div className="mt-6 text-muted-foreground space-y-2">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                <span className="tracking-wide">
+                  added {formattedDate}
+                </span>
+                {formattedUpdatedDate &&
+                  formattedUpdatedDate !== formattedDate && (
+                    <>
+                      <span
+                        aria-hidden="true"
+                        className="mx-2 text-muted-foreground/60 hidden sm:inline"
+                      >
+                        |
+                      </span>
+                      <span className="hidden sm:inline tracking-wide">
+                        updated {formattedUpdatedDate}
+                      </span>
+                    </>
+                  )}
+                <span
+                  aria-hidden="true"
+                  className="mx-2 text-muted-foreground/60 hidden sm:inline"
                 >
-                  Article
-                  <ExternalLinkIcon className="w-4 h-4" />
-                </a>
-                {item.discussionUrl && (
-                  <>
-                    <span
-                      aria-hidden="true"
-                      className="mx-2 text-muted-foreground/60"
-                    >
-                      |
-                    </span>
-                    <a
-                      href={item.discussionUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 hover:underline"
-                    >
-                      Discussion
-                      <ExternalLinkIcon className="w-4 h-4" />
-                    </a>
-                  </>
-                )}
+                  |
+                </span>
+                <div className="flex items-center gap-3">
+                  <a
+                    href={item.originalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 hover:underline"
+                  >
+                    Article
+                    <ExternalLinkIcon className="w-4 h-4" />
+                  </a>
+                  {item.discussionUrl && (
+                    <>
+                      <span
+                        aria-hidden="true"
+                        className="mx-2 text-muted-foreground/60"
+                      >
+                        |
+                      </span>
+                      <a
+                        href={item.discussionUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 hover:underline"
+                      >
+                        Discussion
+                        <ExternalLinkIcon className="w-4 h-4" />
+                      </a>
+                    </>
+                  )}
+                </div>
               </div>
               {item.topics && item.topics.length > 0 && (
-                <>
-                  <span
-                    aria-hidden="true"
-                    className="mx-2 text-muted-foreground/60 hidden sm:inline"
-                  >
-                    |
-                  </span>
-                  <div className="flex items-center gap-1.5 flex-wrap">
-                    {item.topics.filter(Boolean).map((topic) => (
-                      <Badge key={topic._id} variant="secondary" asChild>
-                        <Link href={`/reading?topic=${topic.slug.current}`}>
-                          {topic.title}
-                        </Link>
-                      </Badge>
-                    ))}
-                  </div>
-                </>
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {item.topics.filter(Boolean).map((topic) => (
+                    <Badge key={topic._id} variant="secondary" asChild>
+                      <Link href={`/reading?topic=${topic.slug.current}`}>
+                        {topic.title}
+                      </Link>
+                    </Badge>
+                  ))}
+                </div>
               )}
             </div>
             <ReadingListMetrics

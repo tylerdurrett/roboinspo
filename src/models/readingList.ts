@@ -92,8 +92,9 @@ export type ReadingListItemMeta = ReadingListItemsQueryResult[number]
 export async function getReadingListItemBySlug(slug: string) {
   const readingListItemQuery = defineQuery(
     `*[_type == "readingList" && slug.current == $slug][0]{
-      _id, 
-      title, 
+      _id,
+      _updatedAt,
+      title,
       originalTitle,
       slug, 
       originalUrl,
