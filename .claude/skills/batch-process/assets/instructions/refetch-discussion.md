@@ -132,7 +132,7 @@ Determine whether this discussion should be refetched again. Consider:
 **If `discussionRefetchCount` is 0 or null (first refetch):**
 
 - Be lenient. Flag as still active (`discussionNeedsRefetch: true`) if:
-  - Comment count grew by 20%+ since initial fetch, OR
+  - Comment count grew by 25%+ since initial fetch, AND
   - Post is less than 3 days old and has significant engagement (50+ comments)
 - Otherwise set `discussionNeedsRefetch: false`
 
