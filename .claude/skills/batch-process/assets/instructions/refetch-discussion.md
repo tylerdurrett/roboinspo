@@ -9,6 +9,7 @@ Fetch the item with all its fields by `_id` using your Sanity skill. You need th
 - `originalUrl`
 - `discussionUrl`
 - `savedAt`
+- `detailedSummary` (the article summary — needed as context for discussion analysis)
 - `discussionDetailedSummary`
 - `discussionShortSummary`
 - `discussionGist`
@@ -48,22 +49,39 @@ Use `WebFetch` to fetch the full HN discussion page at the `discussionUrl`. This
 
 If the scrape fails or returns no meaningful content, still proceed with the HN metadata from Step 2 — just skip the re-summarization in Step 4 and go straight to Step 5 with only the updated metrics.
 
-## Step 4: Re-summarize the discussion
+## Step 4: Re-summarize the discussion and re-score metrics
 
-Based on the scraped discussion content, produce updated versions of all discussion summary fields:
+Use the article's `detailedSummary` (from Step 1) as context alongside the scraped discussion content (from Step 3). This context is critical for identifying which viewpoints agree or disagree with the article.
+
+### 4a: Discussion summarization
+
+Read the scraped discussion content (ignoring any extraneous metadata or UI text) and produce these fields:
 
 - **`discussionDetailedSummary`** — A full, detailed summary of the discussion. Include all key information, arguments, and notable exchanges.
-- **`discussionShortSummary`** — A brief, 3-sentence summary of the discussion.
-- **`discussionGist`** — A one-liner that captures the essence of the discussion.
-- **`discussionTitle`** — A descriptive headline for the discussion that communicates the gist.
-- **`keyAgreeingViewpoints`** — Array of 3-5 key viewpoints and arguments made in agreement with the article.
-- **`keyOpposingViewpoints`** — Array of 3-5 key viewpoints and arguments against the article's point.
-- **`sentiment`** — Overall description of the community sentiment as it relates to the article. Does HN agree or disagree?
+- **`keyAgreeingViewpoints`** — Array of the key viewpoints and arguments made in agreement with the article.
+- **`keyOpposingViewpoints`** — Array of the key viewpoints and arguments against the point of the article.
+- **`sentiment`** — Overall, describe the overall sentiment of the discussion as it relates to the article at hand. Does Hacker News agree or disagree?
+- **`discussionShortSummary`** — A brief, 3-sentence summary of the Hacker News discussion.
+- **`discussionGist`** — A one-liner that captures the essence of the discussion in one sentence. Don't mention that it's a discussion, but rather focus it all on the key takeaway.
+- **`discussionTitle`** — Your version of a descriptive title of the discussion based on the above. Try to communicate the gist in only a short headline. Don't mention that it's a discussion, but rather focus it all on the key takeaway.
 
-Also re-score community metrics:
+### 4b: Community sentiment scoring
 
-- **`sentimentCommunity`** — Community reaction on a scale from -100 (hostile/dismissive) to 100 (enthusiastic/supportive). Integer.
-- **`controversyScore`** — How polarizing the discussion is: 0 (consensus) to 100 (deeply divisive). Integer.
+Using both the article summary and the scraped discussion content, provide two integer scores:
+
+**Community Sentiment (`sentimentCommunity`): -100 to 100**
+The overall tone of the community's reaction.
+- -100: Overwhelmingly hostile, dismissive, doom-saying
+- 0: Mixed or neutral
+- 100: Overwhelmingly enthusiastic, supportive, optimistic
+
+**Controversy Score (`controversyScore`): 0 to 100**
+How polarizing the discussion is.
+- 0: Complete consensus (everyone agrees)
+- 50: Notably divided opinions
+- 100: Deeply divisive (strong opposing camps, heated arguments)
+
+Consider the balance of agreeing vs. opposing viewpoints, the emotional intensity, and whether the discussion generated constructive debate or hostile conflict. Return integer values (whole numbers, no decimals).
 
 ## Step 5: Assess discussion activity
 
