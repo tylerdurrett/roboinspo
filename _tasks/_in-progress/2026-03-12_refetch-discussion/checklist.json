@@ -449,7 +449,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Bubblewrap: A Practical Linux Sandbox for AI Coding Agents",
@@ -467,7 +467,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Deno Sandbox: Secure MicroVMs with Secret Shielding and Egress Control",
@@ -485,7 +485,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Small Hybrid Coder Model Sets New Efficiency Bar for Agentic Coding",
@@ -503,7 +503,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Agent Skills: An Open Standard for On‑Demand Agent Expertise",
@@ -521,7 +521,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Failures Drift Toward Incoherence as Tasks and Reasoning Grow",
@@ -539,7 +539,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "OpenAI launches Codex macOS app: multi‑agent control, skills, and automations",
@@ -557,7 +557,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Microsoft Pushes Claude Code Across Teams, Even as It Sells Copilot",
@@ -574,7 +574,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Self-Growing Minimal AI That Edits Itself Live",
@@ -592,7 +592,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Use AI for Research, Not Writing: Keeping Unverifiable Chatbot Text Off Wikipedia",
@@ -610,7 +610,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "How Software Survives When AI Writes It All",
@@ -628,7 +628,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Lemonade Halves Tesla FSD Mile Costs with Automatic, Usage-Based Insurance",
@@ -646,7 +646,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Moltbook: The Wild, Risky Social Network for AI Agents",
@@ -664,7 +664,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Two-Day High-Dose Oatmeal Diet Lowers LDL via Gut Microbes",
@@ -682,7 +682,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AGENTS.md Beats Skills: 100% Next.js Agent Evals with an 8KB Docs Index",
@@ -700,7 +700,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Help Speeds Coding, But Slows Learning—Especially Debugging",
@@ -719,7 +719,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "OpenClaw: A Security-First, Local AI Agent Rebrand and Release",
@@ -738,7 +738,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Software Pump and Dump",
@@ -756,7 +756,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Moltbook: The Social Network for AI Agents",
@@ -774,7 +774,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "OpenAI to Retire GPT-4o and Legacy ChatGPT Models on Feb 13, 2026",
@@ -791,7 +791,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "How OpenAI Built a Self-Correcting, Context-Rich Data Agent",
@@ -809,7 +809,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Project Genie debuts: Real-time AI world-building for AI Ultra users",
@@ -827,7 +827,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Report: Acting CISA chief uploaded sensitive DHS files to ChatGPT, triggering review",
@@ -845,7 +845,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Run Moltbot on Cloudflare: Moltworker replaces the Mac mini with secure edge infrastructure",
@@ -863,7 +863,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The Real Value: Crafting Exact-Fit Solutions",
@@ -880,7 +880,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "OTelBench: LLMs Still Can’t Reliably Instrument Distributed Tracing",
@@ -898,7 +898,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Apple Sets Nov. 1, 2026 Deadline for Patreon iOS In‑App Purchases, Taking Up to 30% Cut",
@@ -916,7 +916,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Claude Code Opus 4.5 Shows Significant 30-Day Performance Dip",
@@ -933,7 +933,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Cracking Figma Make: From .make File to Runnable React App",
@@ -951,7 +951,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Why Everyone’s Trying to Build a Browser with AI",
@@ -969,7 +969,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "TikTok Upload Woes Spark Censorship Fears Amid US Ownership Shift",
@@ -987,7 +987,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "LLM-as-a-Courtroom: Evidence-Backed Doc Updates from Code Changes",
@@ -1006,7 +1006,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Only Action Counts",
@@ -1023,7 +1023,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "SERA: Open, Low‑Cost, Repo‑Adaptive Coding Agents",
@@ -1041,7 +1041,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Prism: A Free AI Workspace for LaTeX-Based Scientific Writing",
@@ -1059,7 +1059,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Hype Meets Crypto: The Pump-and-Dump Software Playbook",
@@ -1077,7 +1077,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "To Get Anything Done in Tech, Learn How Companies Work",
@@ -1094,7 +1094,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Is Eating Low-Code: Why We Ditched Our Platform for In‑House Tools",
@@ -1113,7 +1113,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "ChatGPT’s New Bash-Capable Containers With Package Installs and Safe Web Downloads",
@@ -1131,7 +1131,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Toward a Software Arts & Crafts Movement",
@@ -1149,7 +1149,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Build the Independent Auditor: Autonomous AI Code Review with Closed Loops",
@@ -1167,7 +1167,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Qwen3-Max-Thinking: Autonomous Tools and Test-Time Scaling Drive SOTA Reasoning",
@@ -1184,7 +1184,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Back to Hand Coding: Why Agentic AI Still Ships Plausible Slop",
@@ -1202,7 +1202,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Coding Works—Lose the Tribalism",
@@ -1220,7 +1220,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "ICE Using Palantir’s ELITE With Medicaid Data, EFF Urges Congressional Action",
@@ -1239,7 +1239,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Posturr: Blur Your Mac Screen When You Slouch",
@@ -1258,7 +1258,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "TikTok’s New US Privacy Policy: Precise Location, AI Data, and a Wider Ad Network",
@@ -1276,7 +1276,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Inside Codex: How the Agent Loop Builds, Calls Tools, and Stays Fast",
@@ -1294,7 +1294,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Orchestrates a Real Corn Harvest",
@@ -1312,7 +1312,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Gas Town as Design Fiction: What a Chaotic Agent Orchestrator Teaches Us",
@@ -1330,7 +1330,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Needs Reins: Useful, Costly, and Not Autonomous",
@@ -1347,7 +1347,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task – MIT Media Lab",
@@ -1365,7 +1365,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Coding Automation in Practice: Agents with Tests, Orchestration, and Human Oversight",
@@ -1383,7 +1383,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Safely Unleash Claude Code with a Vagrant VM",
@@ -1401,7 +1401,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Ralph Wiggum Technique: Field Notes, Failures, and What Actually Works",
@@ -1419,7 +1419,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Metal-Accelerated Image Reconstruction with Random Bézier Strokes",
@@ -1437,7 +1437,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Exploits at Scale: When Token Throughput Becomes the Bottleneck",
@@ -1455,7 +1455,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "US Tariffs in 2025: Americans Paid, Trade Shrunk",
@@ -1473,7 +1473,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Texas Cops’ Secretive Phone-Tracking Tool Raises Big Costs, Bigger Civil Liberties Fears",
@@ -1492,7 +1492,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Inside A$AP Rocky’s ‘Helicopter’: Real Stunts, Volumetric Capture, and Dynamic Gaussian Splats",
@@ -1510,7 +1510,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Life Under ICE Occupation in Minneapolis",
@@ -1528,7 +1528,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Nvidia Edges Apple for TSMC’s Leading Edge as AI Wins the Wafers",
@@ -1546,7 +1546,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Cowork: Let Claude Work in Your Files",
@@ -1564,7 +1564,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Insiders Rally Data-Poisoning Campaign to Cripple AI",
@@ -1582,7 +1582,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Stop Killing Sandboxes: Agents Need Durable Disposable Computers",
@@ -1600,7 +1600,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "When AI Makes the Mugs, We’ll Build the Hypercubes",
@@ -1618,7 +1618,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Is Commoditizing Specs—Operations Are the New Moat",
@@ -1636,7 +1636,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Let AI Handle the Rote—You Do the Design",
@@ -1655,7 +1655,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "From Clean Code to Clean Outcomes: Embracing Vibe Coding",
@@ -1673,7 +1673,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Interactive Piano & Metronome: Enable Audio to Start",
@@ -1691,7 +1691,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Recent insights on BGP anomalies, zombies, and AS-SET monitoring",
@@ -1708,7 +1708,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "ICE’s Webloc Enables Warrantless Neighborhood Phone Tracking",
@@ -1726,7 +1726,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Notion AI Pre-Approval Edits Enable Prompt-Injection Data Exfiltration",
@@ -1745,7 +1745,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Tailwind Rejects LLM-Optimized Docs PR Amid Sustainability Concerns",
@@ -1763,7 +1763,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Opus 4.5 Convincing Case: AI Coding Agents Can Replace Developers",
@@ -1782,7 +1782,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "From Miles to Meters: GeoSpy’s SuperBolt Pinpoints Vehicle Photos Fast",
@@ -1800,6 +1800,6 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   }
 ]
