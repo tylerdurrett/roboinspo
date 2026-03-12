@@ -88,8 +88,19 @@ export default async function ReadingListItem({ params }: Props) {
       <article>
         <Container size="xl">
           <header className="mb-8">
+            {item.categories && item.categories.filter(Boolean).length > 0 && (
+              <div className="mb-4 text-sm text-muted-foreground tracking-wide">
+                {item.categories
+                  .filter(Boolean)
+                  .map((cat) => cat.title)
+                  .join(', ')}
+              </div>
+            )}
+            <h1 className="mb-4 text-4xl sm:text-5xl md:text-7xl tracking-tight">
+              {item.title}
+            </h1>
             {item.topics && item.topics.length > 0 && (
-              <div className="flex items-center gap-1.5 flex-wrap mb-4">
+              <div className="mt-4 flex items-center gap-1.5 flex-wrap">
                 {item.topics.filter(Boolean).map((topic) => (
                   <Badge key={topic._id} variant="secondary" asChild>
                     <Link href={`/reading?topic=${topic.slug.current}`}>
@@ -99,10 +110,7 @@ export default async function ReadingListItem({ params }: Props) {
                 ))}
               </div>
             )}
-            <h1 className="mb-4 text-4xl sm:text-5xl md:text-7xl tracking-tight">
-              {item.title}
-            </h1>
-            <div className="mt-6 text-muted-foreground">
+            <div className="mt-4 text-muted-foreground">
               <div className="flex flex-wrap items-center gap-3">
                 <span className="tracking-wide">
                   Added {formattedDate}
@@ -155,12 +163,9 @@ export default async function ReadingListItem({ params }: Props) {
               </div>
             </div>
             <ReadingListMetrics
-              hnScore={null}
-              hnCommentCount={null}
               sentimentArticle={item.sentimentArticle ?? null}
               sentimentCommunity={item.sentimentCommunity ?? null}
               controversyScore={item.controversyScore ?? null}
-              savedAt={null}
             />
           </header>
         </Container>
