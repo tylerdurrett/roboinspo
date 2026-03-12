@@ -100,12 +100,12 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
               {item.gist}
             </p>
           )}
-          {item.discussionGist && (
+          {/* {item.discussionGist && (
             <div className="mt-2 flex gap-2 rounded-lg bg-secondary/50 p-2.5 text-sm text-muted-foreground">
               <MessageCircleIcon className="h-4 w-4 shrink-0 mt-0.5" />
               <p>{item.discussionGist}</p>
             </div>
-          )}
+          )} */}
           {item.topics && item.topics.length > 0 && (
             <div className="mt-2 flex items-center gap-1.5 flex-wrap">
               {item.topics.filter(Boolean).map((topic) => (
