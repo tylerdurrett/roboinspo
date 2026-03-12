@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ReadingListItemMeta } from '@/models/readingList'
 import { urlFor } from '@/sanity/lib/image'
 import Image from 'next/image'
-import { ArrowUpIcon, ExternalLinkIcon } from 'lucide-react'
+import { ArrowUpIcon, ExternalLinkIcon, MessageCircleIcon } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { SentimentIndicator } from '@/components/blog/SentimentIndicator'
 
@@ -96,15 +96,15 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
             )}
           </div>
           {item.gist && (
-            <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
+            <p className="mt-2 text-sm text-muted-foreground">
               {item.gist}
             </p>
           )}
           {item.discussionGist && (
-            <p className="mt-1 text-sm text-muted-foreground line-clamp-2">
-              <span className="text-muted-foreground/70">Community Says:</span>{' '}
-              {item.discussionGist}
-            </p>
+            <div className="mt-2 flex gap-2 rounded-lg bg-secondary/50 p-2.5 text-sm text-muted-foreground">
+              <MessageCircleIcon className="h-4 w-4 shrink-0 mt-0.5" />
+              <p>{item.discussionGist}</p>
+            </div>
           )}
           {item.topics && item.topics.length > 0 && (
             <div className="mt-2 flex items-center gap-1.5 flex-wrap">
