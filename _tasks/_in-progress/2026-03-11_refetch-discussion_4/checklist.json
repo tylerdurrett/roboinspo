@@ -109,7 +109,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "gws: The AI-Ready Google Workspace CLI",
@@ -128,7 +128,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "DeFlock: Crowdsourcing the Map of License Plate Surveillance",
@@ -146,7 +146,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Glaze: Chat with AI to Build Native Desktop Apps",
@@ -165,7 +165,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The Nuclear Hallucination: Why LLMs in Warfare Threaten Global Survival",
@@ -184,7 +184,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Agentic Engineering: Patterns for Mastering AI Coding",
@@ -203,7 +203,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Choosing Digital Isolation Over Identity Verification",
@@ -222,7 +222,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "OpenAI Releases GPT-5.3 Instant: A More Direct and Accurate AI Experience",
@@ -241,7 +241,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The Etiquette of AI: Why You Must Curate Your Chatbot's Output",
@@ -260,7 +260,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The Case for a Mathematically Verified AI Software Stack",
@@ -279,7 +279,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Virtualizing Browser Time for Deterministic Video Rendering",
@@ -298,7 +298,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The $82,000 API Key: Why Billing Caps are Essential",
@@ -316,7 +316,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Claude Opus 4.6 Solves Knuth's Hamiltonian Cycle Problem for Odd m",
@@ -335,7 +335,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Web Audio Studio: Visual Debugging for Browser Audio",
@@ -354,7 +354,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "git-memento: Attaching AI Session Traces to Git Commits",
@@ -372,7 +372,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "SynapsCAD: The AI-Powered OpenSCAD IDE",
@@ -391,7 +391,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "WebMCP: Building a Standardized Bridge for AI Agents",
@@ -410,7 +410,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Beyond Shallow Competence: Building Engineering Intuition in the AI Era",
@@ -429,7 +429,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The AI Productivity Paradox: Why Coding is Easier but Engineering is Harder",
@@ -448,7 +448,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Google Gemini CLI Updates ToS Enforcement and Restores Banned Accounts",
@@ -466,7 +466,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "OpenAI Secures Pentagon Deal with Strict Safety Red Lines",
@@ -485,7 +485,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Claude Adds Persistent Memory and Context Import Tools",
@@ -503,7 +503,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "AI Oligarchy: How OpenAI's 'Scam' Sidelined Anthropic",
@@ -522,7 +522,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Cognitive Debt: The Invisible Cost of AI-Driven Velocity",
@@ -541,7 +541,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "gitcredits: Cinematic Credits for Your Git Repositories",
@@ -559,7 +559,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The Simplification Myth: Why AI is the Latest Chapter in a 60-Year Cycle",
