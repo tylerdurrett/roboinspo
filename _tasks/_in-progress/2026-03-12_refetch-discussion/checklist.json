@@ -413,7 +413,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Why Orbital AI Data Centers Don’t Add Up",
@@ -431,7 +431,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Vibe Coding Is Starving Open Source",
