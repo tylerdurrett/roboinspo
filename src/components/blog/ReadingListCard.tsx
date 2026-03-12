@@ -96,7 +96,7 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
             )}
           </div>
           {item.gist && (
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm text-foreground/80">
               {item.gist}
             </p>
           )}
@@ -107,7 +107,7 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
             </div>
           )} */}
           {item.topics && item.topics.length > 0 && (
-            <div className="mt-2 flex items-center gap-1.5 flex-wrap">
+            <div className="mt-3 -ml-2 flex items-center gap-1.5 flex-wrap">
               {item.topics.filter(Boolean).map((topic) => (
                 <Badge key={topic._id} variant="secondary" asChild>
                   <Link
