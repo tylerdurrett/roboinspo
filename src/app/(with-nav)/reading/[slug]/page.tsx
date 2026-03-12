@@ -102,31 +102,29 @@ export default async function ReadingListItem({ params }: Props) {
               {item.title}
             </h1>
             <div className="mt-6 text-muted-foreground">
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                <span className="tracking-wide">
-                  added {formattedDate}
-                </span>
-                {formattedUpdatedDate &&
-                  formattedUpdatedDate !== formattedDate && (
-                    <>
-                      <span
-                        aria-hidden="true"
-                        className="mx-2 text-muted-foreground/60 hidden sm:inline"
-                      >
-                        |
+              <div className="block sm:flex sm:items-center sm:gap-3">
+                <span className="block sm:inline tracking-wide">
+                  Added {formattedDate}
+                  {formattedUpdatedDate &&
+                    formattedUpdatedDate !== formattedDate && (
+                      <span className="hidden sm:inline">
+                        <span
+                          aria-hidden="true"
+                          className="mx-2 text-muted-foreground/60"
+                        >
+                          |
+                        </span>
+                        Updated {formattedUpdatedDate}
                       </span>
-                      <span className="hidden sm:inline tracking-wide">
-                        updated {formattedUpdatedDate}
-                      </span>
-                    </>
-                  )}
-                <span
-                  aria-hidden="true"
-                  className="mx-2 text-muted-foreground/60"
-                >
-                  |
+                    )}
                 </span>
-                <div className="flex items-center gap-3">
+                <div className="mt-2 sm:mt-0 flex items-center gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="hidden sm:inline text-muted-foreground/60"
+                  >
+                    |
+                  </span>
                   <a
                     href={item.originalUrl}
                     target="_blank"
@@ -159,12 +157,12 @@ export default async function ReadingListItem({ params }: Props) {
               </div>
             </div>
             <ReadingListMetrics
-              hnScore={item.hnScore ?? null}
-              hnCommentCount={item.hnCommentCount ?? null}
+              hnScore={null}
+              hnCommentCount={null}
               sentimentArticle={item.sentimentArticle ?? null}
               sentimentCommunity={item.sentimentCommunity ?? null}
               controversyScore={item.controversyScore ?? null}
-              savedAt={item.savedAt ?? null}
+              savedAt={null}
             />
           </header>
         </Container>
