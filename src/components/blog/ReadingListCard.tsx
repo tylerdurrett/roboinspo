@@ -94,9 +94,21 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
                 {item.hnScore}
               </span>
             )}
-            {item.topics &&
-              item.topics.length > 0 &&
-              item.topics.filter(Boolean).map((topic) => (
+          </div>
+          {item.gist && (
+            <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
+              {item.gist}
+            </p>
+          )}
+          {item.discussionGist && (
+            <p className="mt-1 text-sm text-muted-foreground line-clamp-2">
+              <span className="text-muted-foreground/70">Community Says:</span>{' '}
+              {item.discussionGist}
+            </p>
+          )}
+          {item.topics && item.topics.length > 0 && (
+            <div className="mt-2 flex items-center gap-1.5 flex-wrap">
+              {item.topics.filter(Boolean).map((topic) => (
                 <Badge key={topic._id} variant="secondary" asChild>
                   <Link
                     href={`/reading?topic=${topic.slug.current}`}
@@ -106,7 +118,8 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
                   </Link>
                 </Badge>
               ))}
-          </div>
+            </div>
+          )}
         </div>
       </div>
       {item.originalUrl && (
