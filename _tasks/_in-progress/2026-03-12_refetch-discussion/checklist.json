@@ -142,7 +142,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Stop Database Sprawl: Postgres Now Does It All",
@@ -160,7 +160,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "From Chatbots to Agents: A Pragmatic Workflow for AI-Assisted Coding",
@@ -178,7 +178,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Claude Opus 4.6: Finance-Grade Reasoning Meets Native Excel and PowerPoint",
@@ -196,7 +196,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Agent Teams in Claude Code: Parallel Collaboration (Experimental)",
