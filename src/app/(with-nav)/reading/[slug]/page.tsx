@@ -89,11 +89,18 @@ export default async function ReadingListItem({ params }: Props) {
         <Container size="xl">
           <header className="mb-8">
             {item.categories && item.categories.filter(Boolean).length > 0 && (
-              <div className="mb-4 text-sm text-muted-foreground tracking-wide">
-                {item.categories
-                  .filter(Boolean)
-                  .map((cat) => cat.title)
-                  .join(', ')}
+              <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground tracking-wide">
+                {item.categories.filter(Boolean).map((cat, i) => (
+                  <span key={cat.slug.current}>
+                    {i > 0 && ', '}
+                    <Link
+                      href={`/reading?category=${cat.slug.current}`}
+                      className="hover:underline"
+                    >
+                      {cat.title}
+                    </Link>
+                  </span>
+                ))}
               </div>
             )}
             <h1 className="mb-4 text-4xl sm:text-5xl md:text-7xl tracking-tight">

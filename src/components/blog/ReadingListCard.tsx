@@ -51,10 +51,18 @@ export function ReadingListCard({ item }: ReadingListCardProps) {
         )}
         <div className="flex-1 min-w-0">
           {item.categories && item.categories.filter(Boolean).length > 0 && (
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-sm text-muted-foreground">
-                {item.categories.filter(Boolean).map((cat) => cat.title).join(', ')}
-              </span>
+            <div className="flex items-center gap-2 mb-2 text-sm text-muted-foreground">
+              {item.categories.filter(Boolean).map((cat, i) => (
+                <span key={cat.slug.current}>
+                  {i > 0 && ', '}
+                  <Link
+                    href={`/reading?category=${cat.slug.current}`}
+                    className="relative z-10 hover:underline"
+                  >
+                    {cat.title}
+                  </Link>
+                </span>
+              ))}
             </div>
           )}
           <h2 className="text-2xl sm:text-3xl font-bold mb-2 leading-tight break-words">
