@@ -1,0 +1,370 @@
+[
+  {
+    "title": "The Political Dismantling of America's Iconic Climate Lab",
+    "_id": "readingList-the-political-dismantling-of-america-s-iconic-climate-lab-1773345549804",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Climate Change",
+      "Science Funding",
+      "Executive Power",
+      "AI for Science",
+      "Government Reform"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47355702",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Claude Introduces Interactive In-Line Visualizations",
+    "_id": "readingList-claude-introduces-interactive-in-line-visualizations-1773343310077",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "AI UX",
+      "Data Visualization",
+      "Interactive Web Tools",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47352751",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Paradigms, Not Tasks: The Real Driver of Job Loss",
+    "_id": "readingList-paradigms-not-tasks-the-real-driver-of-job-loss-1773340212869",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Future of Work",
+      "Labor Economics",
+      "AI Deskilling",
+      "Technology Economics",
+      "Paradigm Shifts"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47351371",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Atlassian Cuts 1,600 Jobs in Strategic Pivot to AI",
+    "_id": "readingList-atlassian-cuts-1-600-jobs-in-strategic-pivot-to-ai-1773336400465",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Business Models",
+      "Corporate AI Strategy",
+      "Future of Work",
+      "B2B SaaS",
+      "Labor Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47352335",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The Met Debuts 140 High-Def 3D Art Scans",
+    "_id": "readingList-the-met-debuts-140-high-def-3d-art-scans-1773336268953",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Digital Preservation",
+      "Cultural Heritage",
+      "Augmented Reality",
+      "3D Modeling",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47352459",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Rudel: Open-Source Analytics for Claude Code",
+    "_id": "readingList-rudel-open-source-analytics-for-claude-code-1773330241356",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Open Source",
+      "Observability",
+      "Self-Hosting",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47350416",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Why CI Failure is Actually Success",
+    "_id": "readingList-why-ci-failure-is-actually-success-1773330235064",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "CI/CD",
+      "Automated Testing",
+      "Software Craftsmanship",
+      "Developer Experience"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47311634",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Axe: Composable LLM Agents for the Command Line",
+    "_id": "readingList-axe-composable-llm-agents-for-the-command-line-1773330117306",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Developer Tooling",
+      "Sandboxing",
+      "AI Coding Agents",
+      "Unix Philosophy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47350516",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "DeepMind’s Gemini AI to Power Boston Dynamics’ New Atlas Humanoids",
+    "_id": "readingList-deepminds-gemini-ai-to-power-boston-dynamics-new-atlas-humanoids-1767659866674",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Robotics",
+      "Corporate AI Strategy",
+      "Multimodal AI",
+      "AI Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46504966",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Why AI Video Is Net Harmful Today",
+    "_id": "readingList-why-ai-video-is-net-harmful-today-1767638142874",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI-Generated Content",
+      "Disinformation",
+      "AI Ethics",
+      "AI Creativity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46498651",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Rising Smoke in three.js with Noise-Driven Alpha and Vertex Twisting",
+    "_id": "readingList-rising-smoke-in-threejs-with-noise-driven-alpha-and-vertex-twisting-1767622288371",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Three.js",
+      "Shaders",
+      "Computer Graphics",
+      "Creative Coding"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46497589",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "A Field Guide to Real‑World Agentic AI Patterns",
+    "_id": "readingList-a-field-guide-to-realworld-agentic-ai-patterns-1767563493117",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI Architecture",
+      "Task Orchestration",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46491244",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Async Mobile Dev: Six Claude Agents from a Phone",
+    "_id": "readingList-async-mobile-dev-six-claude-agents-from-a-phone-1767563493118",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "Cloud Infrastructure",
+      "AI & Productivity",
+      "Task Orchestration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46491486",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Brought the Joy Back to Full‑Stack Web Dev",
+    "_id": "readingList-ai-brought-the-joy-back-to-fullstack-web-dev-1767558346588",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "AI & Productivity",
+      "Software Craftsmanship",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46488576",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Make Claude Code Remember: Auto-Capture and Sync Your Preferences",
+    "_id": "readingList-make-claude-code-remember-auto-capture-and-sync-your-preferences-1767536262813",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "LLM Context Management",
+      "Developer Tooling",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46484933",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI-Forged Damage Photos Are Breaking Ecommerce Refunds",
+    "_id": "readingList-ai-forged-damage-photos-are-breaking-ecommerce-refunds-1767536204105",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI-Generated Content",
+      "Platform Policy",
+      "Ecommerce Fraud",
+      "Digital Trust"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46440637",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Industrialized Software and the Coming Stewardship Crisis",
+    "_id": "readingList-industrialized-software-and-the-coming-stewardship-crisis-1767211301217",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Software Craftsmanship",
+      "Technology Economics",
+      "Technical Debt"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46442597",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Spiral Piano: Explore Microtonal Equal Temperaments",
+    "_id": "readingList-spiral-piano-explore-microtonal-equal-temperaments-1767211165683",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Music Theory",
+      "Web Audio",
+      "Music Education",
+      "Creative Coding"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46390312",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Agents Make Best Practices Non‑Optional",
+    "_id": "readingList-ai-agents-make-best-practices-nonoptional-1767047884287",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Software Craftsmanship",
+      "Developer Tooling",
+      "Software Architecture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46424200",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Stop Slopware: Build Small, Clean, Human-Written Software",
+    "_id": "readingList-stop-slopware-build-small-clean-human-written-software-1766508402022",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Software Craftsmanship",
+      "AI-Generated Content",
+      "Vibe Coding",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46366285",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  }
+]
