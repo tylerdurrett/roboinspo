@@ -120,10 +120,7 @@ export default async function ReadingListItem({ params }: Props) {
                     )}
                 </span>
                 <div className="flex items-center gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="text-muted-foreground/60"
-                  >
+                  <span aria-hidden="true" className="text-muted-foreground/60">
                     |
                   </span>
                   <a
