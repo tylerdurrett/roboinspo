@@ -35,7 +35,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Pentagon Blacklists Anthropic as OpenAI Secures Military Deal",
@@ -54,7 +54,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The Hidden Cognitive Debt of AI-Driven Coding",
@@ -73,7 +73,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Anthropic to Legally Challenge Department of War's 'Supply Chain Risk' Designation",
@@ -92,7 +92,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "The Wisdom Gap: Why AI Safety is a Human Evolution Problem",
@@ -111,7 +111,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "Design for Distrust: Securing AI Agents via Container Isolation",
@@ -129,7 +129,7 @@
     "discussionLastFetchedAt": null,
     "discussionNeedsRefetch": null,
     "discussionRefetchCount": 0,
-    "status": "unprocessed"
+    "status": "complete"
   },
   {
     "title": "How to Permanently Delete Your OpenAI Account",
