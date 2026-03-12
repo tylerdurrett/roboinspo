@@ -5,7 +5,7 @@ import { getReadingListItemBySlug } from '@/models/readingList'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
 import Link from 'next/link'
-import { ExternalLinkIcon } from 'lucide-react'
+import { ExternalLinkIcon, MessageCircleIcon } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { ReadingListMetrics } from '@/components/blog/ReadingListMetrics'
 import '../../blog/prose.css'
@@ -134,7 +134,7 @@ export default async function ReadingListItem({ params }: Props) {
                     Article
                     <ExternalLinkIcon className="w-4 h-4" />
                   </a>
-                  {item.discussionUrl && (
+                  {item.discussionUrl && item.hnCommentCount != null && (
                     <>
                       <span
                         aria-hidden="true"
@@ -146,10 +146,10 @@ export default async function ReadingListItem({ params }: Props) {
                         href={item.discussionUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 hover:underline"
+                        className="inline-flex items-center gap-1.5 hover:underline"
                       >
-                        Discussion
-                        <ExternalLinkIcon className="w-4 h-4" />
+                        <MessageCircleIcon className="w-4 h-4" />
+                        {item.hnCommentCount}
                       </a>
                     </>
                   )}

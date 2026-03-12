@@ -39,7 +39,8 @@ export function ReadingListMetrics({
 }: ReadingListMetricsProps) {
   const hotness = calculateHotness(hnScore, savedAt)
   const engagementRatio = calculateEngagementRatio(hnCommentCount, hnScore)
-  const hasAnyMetric = hnScore != null || sentimentArticle != null
+  const hasAnyMetric =
+    hnScore != null || hnCommentCount != null || sentimentArticle != null
 
   if (!hasAnyMetric) return null
 
