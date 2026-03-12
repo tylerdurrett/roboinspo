@@ -66,20 +66,21 @@ export default async function ReadingListItem({ params }: Props) {
   }
 
   const isAnimatedGif = imageUrl?.toLowerCase().includes('.gif') || false
-  const formattedDate = item.savedAt
-    ? new Date(item.savedAt).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-      })
-    : 'unknown date'
+  const currentYear = new Date().getFullYear()
+  const formatDate = (iso: string) => {
+    const d = new Date(iso)
+    const opts: Intl.DateTimeFormatOptions = {
+      month: 'short',
+      day: 'numeric',
+      ...(d.getFullYear() !== currentYear && { year: 'numeric' }),
+    }
+    return d.toLocaleDateString('en-US', opts)
+  }
+
+  const formattedDate = item.savedAt ? formatDate(item.savedAt) : 'unknown date'
 
   const formattedUpdatedDate = item._updatedAt
-    ? new Date(item._updatedAt).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-      })
+    ? formatDate(item._updatedAt)
     : null
 
   return (
@@ -102,8 +103,8 @@ export default async function ReadingListItem({ params }: Props) {
               {item.title}
             </h1>
             <div className="mt-6 text-muted-foreground">
-              <div className="block sm:flex sm:items-center sm:gap-3">
-                <span className="block sm:inline tracking-wide">
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="tracking-wide">
                   Added {formattedDate}
                   {formattedUpdatedDate &&
                     formattedUpdatedDate !== formattedDate && (
@@ -118,10 +119,10 @@ export default async function ReadingListItem({ params }: Props) {
                       </span>
                     )}
                 </span>
-                <div className="mt-2 sm:mt-0 flex items-center gap-3">
+                <div className="flex items-center gap-3">
                   <span
                     aria-hidden="true"
-                    className="hidden sm:inline text-muted-foreground/60"
+                    className="text-muted-foreground/60"
                   >
                     |
                   </span>
@@ -131,14 +132,14 @@ export default async function ReadingListItem({ params }: Props) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 hover:underline"
                   >
-                    Article
+                    Link
                     <ExternalLinkIcon className="w-4 h-4" />
                   </a>
                   {item.discussionUrl && item.hnCommentCount != null && (
                     <>
                       <span
                         aria-hidden="true"
-                        className="mx-2 text-muted-foreground/60"
+                        className="text-muted-foreground/60"
                       >
                         |
                       </span>
