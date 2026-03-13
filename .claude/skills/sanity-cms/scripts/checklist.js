@@ -143,6 +143,12 @@ async function main() {
     filters.push('(defined(discussionNeedsRefetch) == false || discussionNeedsRefetch == true)');
   }
 
+  if (args['never-refetched'] === 'true') {
+    // Items that have never been refetched (refetchCount is 0 or not set)
+    filters.push('defined(discussionUrl)');
+    filters.push('(!defined(discussionRefetchCount) || discussionRefetchCount == 0)');
+  }
+
   if (args['fetched-before']) {
     params.fetchedBefore = args['fetched-before'];
     // Items whose discussion was last fetched before this time, OR never fetched
