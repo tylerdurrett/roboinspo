@@ -1,0 +1,93 @@
+[
+  {
+    "title": "AI Facial Recognition Error Jails Innocent Woman for Six Months",
+    "_id": "readingList-ai-facial-recognition-error-jails-innocent-woman-for-six-months-1773356726350",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Facial Recognition",
+      "Civil Liberties",
+      "Criminal Justice Reform",
+      "Corporate Accountability",
+      "AI Bias"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47356968",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "To Implement or Not: A Minimalist Rejection",
+    "_id": "readingList-to-implement-or-not-a-minimalist-rejection-1773356713157",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Vibe Coding",
+      "Internet Culture",
+      "Anthropic"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47357042",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Grid Lanes: Native Masonry Layouts with CSS Grid",
+    "_id": "readingList-grid-lanes-native-masonry-layouts-with-css-grid-1766199966061",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "CSS",
+      "CSS Grid",
+      "Web Standards",
+      "Browser Compatibility"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46331586",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Ranke-4B: Time-Locked Historical LLMs as Windows into the Past",
+    "_id": "readingList-ranke-4b-time-locked-historical-llms-as-windows-into-the-past-1766123459738",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Training Data",
+      "AI Ethics",
+      "Digital Humanities",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46319826",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Supply‑Chain XSS in Mintlify Let Attackers Run JS on Discord, X, and More",
+    "_id": "readingList-supplychain-xss-in-mintlify-let-attackers-run-js-on-discord-x-and-more-1766116080289",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Supply Chain Security",
+      "Vulnerability Research",
+      "Cybersecurity",
+      "Bug Bounty"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46317098",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  }
+]

@@ -1,0 +1,456 @@
+[
+  {
+    "title": "AI Boom: Real Progress, Bubble Risks, and a Case for Cautious Participation",
+    "_id": "readingList-ai-boom-real-progress-bubble-risks-and-a-case-for-cautious-participation-1765410034537",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Technology Economics",
+      "AI Hype",
+      "Labor Economics",
+      "Corporate AI Strategy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46220640",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Apple’s AI Restraint Turns Defensive Edge, But Valuation Stretches",
+    "_id": "readingList-apples-ai-restraint-turns-defensive-edge-but-valuation-stretches-1765294631633",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Corporate AI Strategy",
+      "AI Hype",
+      "Technology Economics",
+      "AI Business Models"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46205724",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "error",
+    "error": "No completion marker received after retry"
+  },
+  {
+    "title": "Steady Progress, Sudden Displacement: From Horses and Chess to Claude",
+    "_id": "readingList-steady-progress-sudden-displacement-from-horses-and-chess-to-claude-1765246074587",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Labor Economics",
+      "Technology Economics",
+      "AI & Productivity",
+      "AI Hype"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46199723",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Pixel-Perfect, Not Intent-Perfect: Rebuilding Space Jam ’96 with Tests and Nori",
+    "_id": "readingList-pixel-perfect-not-intent-perfect-rebuilding-space-jam-96-with-tests-and-nori-1765224920501",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "Software Craftsmanship",
+      "Automated Testing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46193412",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Stop Vibes, Start Verifying: Deterministic Guardrails for AI Agents",
+    "_id": "readingList-stop-vibes-start-verifying-deterministic-guardrails-for-ai-agents-1765224812040",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI Safety",
+      "Software Craftsmanship",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46152838",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Nested Learning: Unifying Architecture and Optimization for Continual AI",
+    "_id": "readingList-nested-learning-unifying-architecture-and-optimization-for-continual-ai-1765142389170",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Architecture",
+      "Continual Learning",
+      "LLM Context Management",
+      "Self-Modifying AI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46182031",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The AI Backlash and a Looming Bubble",
+    "_id": "readingList-the-ai-backlash-and-a-looming-bubble-1764958683006",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "Technology Economics",
+      "Corporate Accountability",
+      "AI-Generated Content",
+      "AI Ethics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46164419",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "error",
+    "error": "Agent halted without providing an error description"
+  },
+  {
+    "title": "Microsoft cuts AI agent sales targets as enterprises balk at unproven tech",
+    "_id": "readingList-microsoft-cuts-ai-agent-sales-targets-amid-enterprise-skepticism-1764874803368",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI Hype",
+      "Corporate AI Strategy",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46148748",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Modern CSS, No Build: How 37signals Ships Complex Apps with Vanilla Styles",
+    "_id": "readingList-modern-css-no-build-how-37signals-ships-complex-apps-with-vanilla-styles-1764863025598",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "CSS",
+      "Frontend Development",
+      "Web Standards",
+      "Software Craftsmanship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46141986",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Critical Next.js RCE via React Server Components—Update Now",
+    "_id": "readingList-critical-nextjs-rce-via-react-server-componentsupdate-now-1764809167562",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Cybersecurity",
+      "Vulnerability Research",
+      "React",
+      "Web Frameworks"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46136026",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Seattle’s AI Backlash: Culture Over Innovation",
+    "_id": "readingList-seattles-ai-backlash-culture-over-innovation-1764797401972",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "Corporate AI Strategy",
+      "AI Culture",
+      "Workplace Wellbeing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46138952",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "From Diffusion to TTF: Making an AI Font and Tackling Normalization",
+    "_id": "readingList-from-diffusion-to-ttf-making-an-ai-font-and-tackling-normalization-1764721262465",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "AI Image Generation",
+      "Typography",
+      "Generative Art"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46127400",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Anthropic Confirms Claude 4.5 ‘Soul Doc’ Training, Tied to Better Prompt-Injection Defense",
+    "_id": "readingList-anthropic-confirms-claude-45-soul-doc-training-tied-to-better-prompt-injection-defense-1764714383716",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Safety",
+      "Prompt Injection",
+      "AI Ethics",
+      "Model Fine-Tuning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46125184",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Is 2026 Next Year? A Confused Answer That Ultimately Says Yes",
+    "_id": "readingList-is-2026-next-year-a-confused-answer-that-ultimately-says-yes-1764690907102",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "LLM Reasoning",
+      "AI Benchmarks",
+      "AI-Generated Content",
+      "AI Hype"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46122071",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "DeepSeek‑V3.2: Sparse Attention and Scaled RL Power an Open, Agentic Reasoner",
+    "_id": "readingList-deepseekv32-sparse-attention-and-scaled-rl-power-an-open-agentic-reasoner-1764630740948",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Architecture",
+      "LLM Reasoning",
+      "AI Agents",
+      "Open Source",
+      "Reinforcement Learning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46108780",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Find Pre-AI Content: A Browser Extension That Filters Results Before Nov 2022",
+    "_id": "readingList-find-pre-ai-content-a-browser-extension-that-filters-results-before-nov-2022-1764601105534",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI-Generated Content",
+      "Search Quality",
+      "Browser Extensions"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46103376",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Write a Minimal, High-Leverage CLAUDE.md",
+    "_id": "readingList-write-a-minimal-high-leverage-claudemd-1764596133126",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "LLM Context Management",
+      "Prompt Engineering",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46098838",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Fed Moves to Cushion a Softening U.S. Job Market",
+    "_id": "readingList-us-jobs-wobble-as-fed-cuts-to-avert-a-downturn-1764558321187",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Labor Economics",
+      "Monetary Policy",
+      "AI & Inequality",
+      "Consumer Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46102202",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Pixel Snapper: Grid-Perfect, Palette-Strict Cleanup for AI Pixel Art",
+    "_id": "readingList-pixel-snapper-grid-perfect-palette-strict-cleanup-for-ai-pixel-art-1764530892688",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Pixel Art",
+      "AI Image Generation",
+      "Game Development",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46058566",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Stop Force‑Feeding AI: Adopt It Only When It Works",
+    "_id": "readingList-stop-forcefeeding-ai-adopt-it-only-when-it-works-1764530768129",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "Corporate Accountability",
+      "Technology Economics",
+      "AI Ethics",
+      "AI Training Data"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46098992",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Fix the Process, Then Add AI",
+    "_id": "readingList-fix-the-process-then-add-ai-1764465861704",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Corporate AI Strategy",
+      "Human-AI Collaboration",
+      "AI Hype",
+      "Business Process Optimization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46087737",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "AI’s Real Agenda: Power, Not Productivity",
+    "_id": "readingList-ais-real-agenda-power-not-productivity-1764177164507",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Ethics",
+      "Corporate Accountability",
+      "Software Craftsmanship",
+      "Labor Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46055944",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "FLUX.2: Production-Ready Visual Intelligence, Open Core and State of the Art",
+    "_id": "readingList-flux2-production-ready-visual-intelligence-open-core-and-state-of-the-art-1764089800766",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Image Generation",
+      "Open Source",
+      "Multimodal AI",
+      "AI Architecture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46046916",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "Onyx: Open-source enterprise chat UI for any LLM with RAG, tools, and deep research",
+    "_id": "readingList-onyx-open-source-enterprise-chat-ui-for-any-llm-with-rag-tools-and-deep-research-1764089800766",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Open Source",
+      "Retrieval-Augmented Generation",
+      "Corporate AI Strategy",
+      "Self-Hosting",
+      "LLM Context Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46045987",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  },
+  {
+    "title": "From Chatbot to Coworker: Gemini 3 Ushers in the Agent Era",
+    "_id": "readingList-from-chatbot-to-coworker-gemini-3-ushers-in-the-agent-era-1764027513361",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Human-AI Collaboration",
+      "AI Coding Agents",
+      "AI for Science"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=46019898",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "unprocessed"
+  }
+]

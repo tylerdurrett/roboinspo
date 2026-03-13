@@ -1,0 +1,472 @@
+[
+  {
+    "title": "The Dehumanizing Rise of the AI Job Interview",
+    "_id": "readingList-the-dehumanizing-rise-of-the-ai-job-interview-1773259976957",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Future of Work",
+      "AI Bias",
+      "AI Ethics",
+      "AI Hiring"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339164",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Perplexity's Objective-Driven AI Operating System",
+    "_id": "readingList-perplexity-s-objective-driven-ai-operating-system-1773259938412",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI Operating System",
+      "On-Device AI",
+      "AI & Productivity",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339223",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Hisense TVs Spark Outrage with Intrusive UI Ads",
+    "_id": "readingList-hisense-tvs-spark-outrage-with-intrusive-ui-ads-1773259867080",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Consumer Electronics",
+      "Dark Patterns",
+      "Surveillance Capitalism",
+      "Digital Advertising",
+      "Consumer Rights"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339888",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "The MacBook Neo: Apple's $600 iPad Killer",
+    "_id": "readingList-the-macbook-neo-apple-s-600-ipad-killer-1773259764847",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Apple",
+      "macOS",
+      "Consumer Electronics",
+      "Semiconductor Industry",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47334293",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Hacker News: Standards for Intellectual Curiosity and Civil Discourse",
+    "_id": "readingList-hacker-news-standards-for-intellectual-curiosity-and-civil-discourse-1773259638743",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Online Communities",
+      "Content Moderation",
+      "Digital Communication",
+      "Information Literacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47340079",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Autonomous AI Agent Breaches McKinsey’s Lilli Platform",
+    "_id": "readingList-autonomous-ai-agent-breaches-mckinsey-s-lilli-platform-1773241014358",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Prompt Injection",
+      "AI Agents",
+      "Vulnerability Research",
+      "Retrieval-Augmented Generation",
+      "AI-Enabled Cybercrime"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47333627",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Cloudflare Simplifies AI Data Ingestion with New Site-Wide Crawling API",
+    "_id": "readingList-cloudflare-simplifies-ai-data-ingestion-with-new-site-wide-crawling-api-1773202329960",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Web Scraping",
+      "Retrieval-Augmented Generation",
+      "Browser Automation",
+      "AI Training Data",
+      "Cloud Infrastructure"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47329557",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "The 8 Levels of Agentic Engineering: A Roadmap to Autonomous Coding",
+    "_id": "readingList-the-8-levels-of-agentic-engineering-a-roadmap-to-autonomous-coding-1773179325982",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Multi-Agent Systems",
+      "Human-AI Collaboration",
+      "LLM Context Management",
+      "Future of Work"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47320614",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "The Teenager Making $400,000 a Month on Roblox",
+    "_id": "readingList-the-teenager-making-400-000-a-month-on-roblox-1773177576860",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Creator Economy",
+      "Game Development",
+      "Indie Development",
+      "Entrepreneurship",
+      "Youth Culture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47293337",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "ffmpeg-over-ip: Remote GPU Transcoding Without the Infrastructure Headache",
+    "_id": "readingList-ffmpeg-over-ip-remote-gpu-transcoding-without-the-infrastructure-headache-1773177489979",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Media Processing",
+      "GPU Computing",
+      "Open Source",
+      "Self-Hosting",
+      "Networking"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47327015",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Verifying the Autonomous Agent: Why AI Coding Needs TDD",
+    "_id": "readingList-verifying-the-autonomous-agent-why-ai-coding-needs-tdd-1773176856593",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Automated Testing",
+      "Code Review",
+      "AI Deskilling",
+      "Vibe Coding"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47327559",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Meta Acquires AI-Agent Social Network Moltbook",
+    "_id": "readingList-meta-acquires-ai-agent-social-network-moltbook-1773158617300",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Multi-Agent Systems",
+      "Corporate AI Strategy",
+      "Social Media",
+      "AI Infrastructure"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47323900",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Debunking the $5,000 Claude Code Loss Myth",
+    "_id": "readingList-debunking-the-5-000-claude-code-loss-myth-1773151633000",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "AI Business Models",
+      "LLM Inference",
+      "AI Hype",
+      "Competitive Moats"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47317132",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Remote Access to a Physical Boss TU3 Tuner",
+    "_id": "readingList-remote-access-to-a-physical-boss-tu3-tuner-1773151595359",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "DIY Electronics",
+      "Interactive Web Tools",
+      "IoT Security",
+      "Internet Culture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47280654",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Florida Judge Rules Red-Light Camera Law Unconstitutional",
+    "_id": "readingList-florida-judge-rules-red-light-camera-law-unconstitutional-1773091421880",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Constitutional Law",
+      "Surveillance Technology",
+      "Civil Liberties",
+      "Automated Traffic Enforcement"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47312090",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "DenchClaw: The Local AI CRM and Productivity Framework",
+    "_id": "readingList-denchclaw-the-local-ai-crm-and-productivity-framework-1773090827923",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Self-Hosting",
+      "Open Source",
+      "AI Agents",
+      "AI & Productivity",
+      "Local-First Software"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47309953",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "The End of Writing Code: A Developer's AI Productivity Explosion",
+    "_id": "readingList-the-end-of-writing-code-a-developer-s-ai-productivity-explosion-1773090745870",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Vibe Coding",
+      "AI & Productivity",
+      "AI Coding Agents",
+      "AI Deskilling",
+      "Automated Testing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47314123",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Grammarly's AI 'Expert' Avatars Spark Ethical Outrage",
+    "_id": "readingList-grammarly-s-ai-expert-avatars-spark-ethical-outrage-1773084205884",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Ethics",
+      "AI-Generated Content",
+      "Intellectual Property",
+      "Academic Integrity",
+      "Writing & AI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47259366",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Building Procedural Hex Worlds with WebGPU",
+    "_id": "readingList-building-procedural-hex-worlds-with-webgpu-1773079862371",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Procedural Generation",
+      "Three.js",
+      "Shaders",
+      "WebGPU",
+      "Constraint Solving"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47311815",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Agent Kanban: Persistent AI Task Management for VS Code",
+    "_id": "readingList-agent-kanban-persistent-ai-task-management-for-vs-code-1773059662175",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "LLM Context Management",
+      "Task Orchestration",
+      "Knowledge Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47307169",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "AI Agents: The Missing Link for Literate Programming",
+    "_id": "readingList-ai-agents-the-missing-link-for-literate-programming-1773031344958",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Literate Programming",
+      "Technical Writing",
+      "Human-AI Collaboration",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47300747",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Safehouse: Secure Kernel-Level Sandboxing for AI Agents",
+    "_id": "readingList-safehouse-secure-kernel-level-sandboxing-for-ai-agents-1773006922573",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Sandboxing",
+      "AI Agents",
+      "AI Coding Agents",
+      "macOS",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47301085",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Autoresearch: Autonomous AI Agents for Self-Improving LLMs",
+    "_id": "readingList-autoresearch-autonomous-ai-agents-for-self-improving-llms-1772930597316",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Self-Modifying AI",
+      "LLM Training",
+      "AI for Science",
+      "Model Fine-Tuning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47291123",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Senators Introduce Bill to Ban Federal Officials from Prediction Markets",
+    "_id": "readingList-senators-introduce-bill-to-ban-federal-officials-from-prediction-markets-1772930556667",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Financial Markets",
+      "Government Accountability",
+      "Public Policy",
+      "Prediction Markets"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47291406",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Plausibility vs. Performance: The Hidden Cost of LLM Code",
+    "_id": "readingList-plausibility-vs-performance-the-hidden-cost-of-llm-code-1772904239200",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Sycophancy",
+      "Vibe Coding",
+      "AI Coding Agents",
+      "AI Deskilling",
+      "Rust"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47283337",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  }
+]

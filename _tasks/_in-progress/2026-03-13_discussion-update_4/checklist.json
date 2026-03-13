@@ -1,0 +1,116 @@
+[
+  {
+    "title": "Claude AI Accelerates Firefox Security Research",
+    "_id": "readingList-claude-ai-accelerates-firefox-security-research-1772830309525",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Cybersecurity",
+      "Vulnerability Research",
+      "Anthropic",
+      "AI Coding Agents",
+      "AI Safety"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47273854",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "From Coder to AI System Architect",
+    "_id": "readingList-from-coder-to-ai-system-architect-1772829960663",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Future of Work",
+      "AI Deskilling",
+      "Software Architecture",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47272734",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Claude-Replay: Interactive HTML Players for AI Coding Sessions",
+    "_id": "readingList-claude-replay-interactive-html-players-for-ai-coding-sessions-1772829845185",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "Technical Writing",
+      "Open Source",
+      "API Key Security"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47276604",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "RFC 406i: Standardized Rejection of AI-Generated Slop",
+    "_id": "readingList-rfc-406i-standardized-rejection-of-ai-generated-slop-1772754533413",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI-Generated Content",
+      "Open Source",
+      "AI Deskilling",
+      "Code Review",
+      "AI Hype"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47267947",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Pentagon Blacklists Anthropic as National Security Risk",
+    "_id": "readingList-pentagon-blacklists-anthropic-as-national-security-risk-1772739940860",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "Military AI",
+      "AI Regulation",
+      "AI Safety",
+      "Government Contracting"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47266084",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "OpenAI Debuts GPT-5.4: The Frontier Model for Professional Agents",
+    "_id": "readingList-openai-debuts-gpt-5-4-the-frontier-model-for-professional-agents-1772739820237",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "AI Agents",
+      "Foundation Models",
+      "LLM Reasoning",
+      "LLM Context Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47265005",
+    "discussionLastFetchedAt": "2026-03-12T01:30:00.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  }
+]
