@@ -1,0 +1,3772 @@
+[
+  {
+    "title": "Superpowers: Enforceable Skills for Reliable Coding Agents",
+    "_id": "readingList-superpowers-enforceable-skills-for-reliable-coding-agents-1760197835858",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Prompt Engineering",
+      "Task Orchestration",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45547344",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Vibe Code Hell: When AI Builds Your App but Not Your Understanding",
+    "_id": "readingList-vibe-code-hell-when-ai-builds-your-app-but-not-your-understanding-1760113449884",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Vibe Coding",
+      "AI in Education",
+      "AI Coding Agents",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45540313",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI as Class War: From Productivity Hype to Wage Suppression",
+    "_id": "readingList-ai-as-class-war-wage-suppression-through-enshittification-1760099531532",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Labor Economics",
+      "AI & Inequality",
+      "AI Hype",
+      "Community Organizing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45537876",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Figure 03: Helix-Ready, Home-Safe Humanoid Built for Mass Production",
+    "_id": "readingList-figure-03-helix-ready-home-safe-humanoid-built-for-mass-production-1760038254249",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Robotics",
+      "Humanoid Robots",
+      "Hardware Manufacturing",
+      "Sensor Technology"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45527402",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "We Normalized Broken Software—and Physics Won’t Bail Us Out",
+    "_id": "readingList-we-normalized-broken-softwareand-physics-wont-bail-us-out-1760023171264",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Software Craftsmanship",
+      "Technical Debt",
+      "Technology Economics",
+      "Service Reliability",
+      "AI Coding Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45528347",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Two Reasons LLM Coding Agents Still Miss the Mark",
+    "_id": "readingList-two-reasons-llm-coding-agents-still-miss-the-mark-1760021091591",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "Software Craftsmanship",
+      "Vibe Coding"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45523537",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Sora’s AI Bicycle Puts Meta’s Entertainment Machine at Risk",
+    "_id": "readingList-soras-ai-bicycle-puts-metas-entertainment-machine-at-risk-1759960290599",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Video Generation",
+      "AI-Generated Content",
+      "Attention Economy",
+      "Social Media",
+      "Creator Economy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45492977",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Gemini CLI extensions: Build a personalized, AI-powered terminal with an open ecosystem",
+    "_id": "readingList-gemini-cli-extensions-build-a-personalized-ai-powered-terminal-with-an-open-ecosystem-1759944383819",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Developer Tooling",
+      "Model Context Protocol",
+      "AI Coding Agents",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45516426",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Recall: Persistent Redis Memory for Claude (v1.5)",
+    "_id": "readingList-recall-persistent-redis-memory-for-claude-v15-1759937015726",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Model Context Protocol",
+      "LLM Context Management",
+      "Developer Tooling",
+      "AI Coding Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45516584",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "An Agentic MSA for AI: Contracts That Match Autonomous Software",
+    "_id": "readingList-an-agentic-msa-for-ai-contracts-that-match-autonomous-software-1759931593133",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI & Law",
+      "AI Business Models",
+      "Software Licensing",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45515640",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Gemini 2.5 Computer Use: High‑performance, safe UI control via API",
+    "_id": "readingList-gemini-25-computer-use-highperformance-safe-ui-control-via-api-1759878985359",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Computer Vision",
+      "Browser Automation",
+      "AI Safety",
+      "AI Benchmarks"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45507936",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Zelda Williams Urges End to AI Recreations of Robin Williams",
+    "_id": "readingList-zelda-williams-urges-end-to-ai-recreations-of-robin-williams-1759867077153",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Ethics",
+      "AI-Generated Content",
+      "Intellectual Property",
+      "AI Deepfakes",
+      "Entertainment Industry"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45505626",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AMD Lands OpenAI GPU Megadeal, Offers Penny Warrant for 10% Stake",
+    "_id": "readingList-amd-lands-openai-gpu-megadeal-offers-penny-warrant-for-10-stake-1759781658316",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "GPU Computing",
+      "Corporate AI Strategy",
+      "Technology Economics",
+      "Semiconductor Industry",
+      "OpenAI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45490549",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Apps SDK Preview: Plan, Build, and Deploy ChatGPT Apps",
+    "_id": "readingList-apps-sdk-preview-plan-build-and-deploy-chatgpt-apps-1759779494363",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "Model Context Protocol",
+      "Developer Tooling",
+      "Platform Policy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45494558",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "In the AI Red Ocean, Moats and Distribution Beat Differentiation",
+    "_id": "readingList-in-the-ai-red-ocean-moats-and-distribution-beat-differentiation-1759774008137",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Technology Economics",
+      "Corporate AI Strategy",
+      "AI Business Models",
+      "Competitive Moats"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45492888",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "When AI Memory Becomes an Informant",
+    "_id": "readingList-when-ai-memory-becomes-an-informant-1759773952720",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Data Privacy",
+      "AI Safety",
+      "AI Ethics",
+      "OpenAI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45493301",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "When ‘Seahorse + Emoji’ Hits an Empty Token: Why LLMs Invent the Seahorse Emoji",
+    "_id": "readingList-when-seahorse-emoji-hits-an-empty-token-why-llms-invent-the-seahorse-emoji-1759762798379",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Hallucinations",
+      "AI Interpretability",
+      "Transformer Models",
+      "Tokenization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45487044",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Microsoft Aims to Run Most AI on Maia Chips, But GPUs Still Essential",
+    "_id": "readingList-microsoft-aims-to-run-most-ai-on-maia-chips-but-gpus-still-essential-1759509462093",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Infrastructure",
+      "Corporate AI Strategy",
+      "Semiconductor Industry",
+      "GPU Computing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45463642",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Solveit: A Polya-Inspired, Human-in-the-Loop AI Workspace for Deliberate Coding",
+    "_id": "readingList-solveit-a-polya-inspired-human-in-the-loop-ai-workspace-for-deliberate-coding-1759444878679",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Human-AI Collaboration",
+      "Software Craftsmanship",
+      "Developer Tooling",
+      "LLM Context Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45455719",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Dutch Court: Meta Must Honor Persistent Non‑Profiled Feed Choice Under DSA",
+    "_id": "readingList-dutch-court-meta-must-honor-persistent-nonprofiled-feed-choice-under-dsa-1759414314284",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Corporate Accountability",
+      "Social Media",
+      "Platform Policy",
+      "Data Privacy",
+      "Dark Patterns"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45448326",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "From Retrieval to Navigation: Agents Will Eclipse RAG",
+    "_id": "readingList-from-retrieval-to-navigation-agents-will-eclipse-rag-1759363950524",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Retrieval-Augmented Generation",
+      "AI Agents",
+      "LLM Context Management",
+      "AI Architecture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45439997",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "After the GenAI Bubble: Fewer Layoffs, Persistent Hallucinations, and Pragmatic Code Gen",
+    "_id": "readingList-genai-bubble-no-mass-layoffs-persistent-hallucinations-practical-gains-in-coding-1759357990827",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "AI Hallucinations",
+      "AI Coding Agents",
+      "Technology Economics",
+      "Labor Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45443328",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The AI School That Still Needs Teachers—and Proof",
+    "_id": "readingList-the-ai-school-that-still-needs-teachersand-proof-1759353166507",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI in Education",
+      "AI Hype",
+      "Corporate Accountability",
+      "Public Policy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45443004",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "When Effort Becomes Effortless: AI and the Erosion of Craft",
+    "_id": "readingList-when-effort-becomes-effortless-ai-and-the-erosion-of-craft-1759349504287",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Software Craftsmanship",
+      "Human-AI Collaboration",
+      "Labor Economics",
+      "Future of Work"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45435825",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Tinker: A Managed, Low-Level Fine-Tuning API for Open-Weight LLMs",
+    "_id": "readingList-tinker-a-managed-low-level-fine-tuning-api-for-open-weight-llms-1759349296380",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Model Fine-Tuning",
+      "AI Infrastructure",
+      "Reinforcement Learning",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45441219",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "LLMs: Great Demos, Little Real-World Value",
+    "_id": "readingList-llms-great-demos-little-real-world-value-1759332379240",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "AI Business Models",
+      "Technology Economics",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45437113",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Default to the Simplest Tool: Why I Start With Google Sheets",
+    "_id": "readingList-default-to-the-simplest-tool-why-i-start-with-google-sheets-1759332188961",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Build vs Buy",
+      "Entrepreneurship",
+      "Productivity",
+      "Prototyping"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45435463",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Drunk CSS: An Empathy Nudge, Not Accessibility",
+    "_id": "readingList-drunk-css-an-empathy-nudge-not-accessibility-1759287860165",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "CSS",
+      "Disability & Accessibility",
+      "UX Design"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45395549",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Designing Safe, Effective Agentic Loops for Coding Work",
+    "_id": "readingList-designing-safe-effective-agentic-loops-for-coding-work-1759267999263",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Sandboxing",
+      "AI Safety",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45426680",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Wikimedia’s HRIA: Ensuring AI Strengthens Human-Centered Free Knowledge",
+    "_id": "readingList-wikimedias-hria-ensuring-ai-strengthens-human-centered-free-knowledge-1759267875637",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Ethics",
+      "AI Bias",
+      "Disinformation",
+      "Content Moderation",
+      "AI & Human Rights"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45430048",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Anxiety Is Forcing Me to Retire the Em Dash",
+    "_id": "readingList-ai-anxiety-is-forcing-me-to-retire-the-em-dash-1759255289944",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Writing & AI",
+      "AI-Generated Content",
+      "AI Culture",
+      "AI Detection"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45428052",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Won’t Fix Bad Products—It Just Builds Them Faster",
+    "_id": "readingList-ai-wont-fix-bad-productsit-just-builds-them-faster-1759253608187",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Human-AI Collaboration",
+      "AI & Productivity",
+      "Software Craftsmanship",
+      "AI Hype"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45426673",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "OpenAI Launches Sora 2 and a Social App for Physically Realistic AI Video",
+    "_id": "readingList-openai-launches-sora-2-and-a-social-app-for-physically-realistic-ai-video-1759253454446",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Video Generation",
+      "AI-Generated Content",
+      "OpenAI",
+      "AI Safety",
+      "Social Media"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45428122",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Airweave: Open-source semantic search across all your apps for agents",
+    "_id": "readingList-airweave-open-source-semantic-search-across-all-your-apps-for-agents-1759253168557",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Open Source",
+      "Model Context Protocol",
+      "Retrieval-Augmented Generation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45427482",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Kagi News: A Private, Once-Daily Global Briefing",
+    "_id": "readingList-kagi-news-a-private-once-daily-global-briefing-1759253144341",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Data Privacy",
+      "Attention Economy",
+      "AI-Generated Content",
+      "News Aggregation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45426490",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Ask HN, Sept 2025: Builders Share Pragmatic AI, Open‑Source Tools, and Real‑World Projects",
+    "_id": "readingList-ask-hn-sept-2025-builders-share-pragmatic-ai-opensource-tools-and-realworld-projects-1759257568094",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Open Source",
+      "Developer Tooling",
+      "Human-AI Collaboration",
+      "Entrepreneurship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45418675",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Comprehension Debt: The Hidden Cost of Fast AI Code",
+    "_id": "readingList-comprehension-debt-the-hidden-cost-of-fast-ai-code-1759257568094",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Technical Debt",
+      "Software Craftsmanship",
+      "Code Review"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45423917",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "A Gallery Driving Mobile-First Web Design",
+    "_id": "readingList-a-gallery-driving-mobile-first-web-design-1759198105272",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Mobile-First Design",
+      "UX Design",
+      "Frontend Development",
+      "Creative Coding"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45415207",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Civ VII Update: Voronoi Maps Deliver Natural, Varied Worlds",
+    "_id": "readingList-civ-vii-update-voronoi-maps-deliver-natural-varied-worlds-1759189627531",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Procedural Generation",
+      "Game Development",
+      "Game Design"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45382300",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "California Enacts SB 53: Transparent, Safer Frontier AI and a Public Compute Push",
+    "_id": "readingList-california-enacts-sb-53-transparent-safer-frontier-ai-and-a-public-compute-push-1759183397110",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Regulation",
+      "AI Safety",
+      "AI Infrastructure",
+      "Corporate Accountability"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45418428",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "ChatGPT Adds Instant Checkout via Open Agentic Commerce Protocol",
+    "_id": "readingList-chatgpt-adds-instant-checkout-via-open-agentic-commerce-protocol-1759183397109",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "OpenAI",
+      "Technology Economics",
+      "Agentic Commerce"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45416080",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Choose Friction: Use AI Intentionally to Foster Growth",
+    "_id": "readingList-choose-friction-use-ai-intentionally-to-foster-growth-1759181211191",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Human-AI Collaboration",
+      "AI Creativity",
+      "Cognitive Science",
+      "Skill Development"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45413654",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AlphaFold and the New Playbook for AI-Accelerated Science",
+    "_id": "readingList-alphafold-and-the-new-playbook-for-ai-accelerated-science-1759181189922",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI for Science",
+      "Open Source",
+      "Computational Biology",
+      "Drug Discovery"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45414933",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Claude Code: Terminal-Native AI Coding Agent with Easy Install and Privacy Safeguards",
+    "_id": "readingList-claude-code-terminal-native-ai-coding-agent-with-easy-install-and-privacy-safeguards-1759179007709",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "Data Privacy",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45416228",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Claude Sonnet 4.5 Launches: SOTA Coding & Agent Model With SDK and Major Product Upgrades",
+    "_id": "readingList-claude-sonnet-45-launches-sota-coding-agent-model-with-sdk-and-major-product-upgrades-1759169081594",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "AI Agents",
+      "Developer Tooling",
+      "AI Safety",
+      "AI Benchmarks"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45415962",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Avoiding the AI Coding Trap: Treat LLMs Like Fast Juniors with Real Engineering Discipline",
+    "_id": "readingList-avoiding-the-ai-coding-trap-treat-llms-as-lightning-fast-juniors-1759092198497",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Software Craftsmanship",
+      "Vibe Coding",
+      "Human-AI Collaboration",
+      "Technical Debt"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45405177",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Standardize LLM Observability on OpenTelemetry",
+    "_id": "readingList-standardize-llm-observability-on-opentelemetry-1759020576468",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Observability",
+      "AI Agents",
+      "AI Infrastructure",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45398467",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "A One-Line Backdoor: postmark-mcp MCP Server Quietly BCCs Your Emails",
+    "_id": "readingList-a-one-line-backdoor-postmark-mcp-mcp-server-quietly-bccs-your-emails-1758992606643",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Supply Chain Security",
+      "Model Context Protocol",
+      "Cybersecurity",
+      "AI Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45395957",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Three Cells: A Simple Daily System for Journal, Habits, and Tasks",
+    "_id": "readingList-three-cells-a-simple-daily-system-for-journal-habits-and-tasks-1758983172078",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Productivity",
+      "Habit Tracking",
+      "Indie Development",
+      "Digital Wellbeing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45395428",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "SimpleFold: Scalable Flow-Matching Transformers for Protein Folding",
+    "_id": "readingList-simplefold-scalable-flow-matching-transformers-for-protein-folding-1758949030260",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI for Science",
+      "Computational Biology",
+      "Transformer Models",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45389267",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Break AI Sameness: Dreamtap’s Random Inspiration for Original Stories",
+    "_id": "readingList-break-ai-sameness-dreamtaps-random-inspiration-for-original-stories-1758913921830",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "AI Creativity",
+      "AI-Generated Content",
+      "Prompt Engineering",
+      "Writing & AI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45387421",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Coding Agents Don’t Lack IQ—They Lack Context",
+    "_id": "readingList-coding-agents-dont-lack-iqthey-lack-context-1758913907313",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "LLM Context Management",
+      "Human-AI Collaboration",
+      "AI Benchmarks"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45387374",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Rebuilding a Startup Site with Claude: Fast, Powerful—But Human-Guided",
+    "_id": "readingList-rebuilding-a-startup-site-with-claude-fast-powerfulbut-human-guided-1758913849108",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "Developer Tooling",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45336775",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Engineer AI for Failure: Contain Prompt Injection",
+    "_id": "readingList-engineer-ai-for-failure-contain-prompt-injection-1758913739369",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Prompt Injection",
+      "AI Safety",
+      "Sandboxing",
+      "Defense in Depth"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45387155",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Open Social: Users Own Data, Apps Aggregate",
+    "_id": "readingList-open-social-users-own-data-apps-aggregate-1758907166031",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Decentralized Social Media",
+      "Open Web",
+      "Data Portability",
+      "Open Protocols"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45388021",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Microsoft Cuts Unit 8200’s Azure Access Over Palestinian Mass Surveillance",
+    "_id": "readingList-microsoft-cuts-unit-8200s-azure-access-over-palestinian-mass-surveillance-1758825219867",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Government Surveillance",
+      "Corporate Accountability",
+      "Cloud Infrastructure",
+      "Military AI",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45373564",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Veo 3: Emergent Zero‑Shot Video Intelligence Toward Vision Foundation Models",
+    "_id": "readingList-video-models-show-broad-zeroshot-vision-hinting-at-foundation-models-1758825053965",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Computer Vision",
+      "AI Video Generation",
+      "Foundation Models",
+      "Zero-Shot Learning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45372289",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "ChatGPT Pulse: Daily Proactive Updates You Can Curate",
+    "_id": "readingList-chatgpt-pulse-daily-proactive-updates-you-can-curate-1758824979199",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "AI Personalization",
+      "AI & Productivity",
+      "Data Privacy",
+      "AI Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45375477",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Gemini 2.5 Flash and Flash-Lite Previews: Faster, Smarter, Cheaper, plus -latest Aliases",
+    "_id": "readingList-gemini-25-flash-and-flash-lite-previews-faster-smarter-cheaper-plus-latest-aliases-1758824979199",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Google",
+      "Technology Economics",
+      "Multimodal AI",
+      "AI Benchmarks",
+      "AI Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45375845",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Rebuilding the Web with Blogs and RSS",
+    "_id": "readingList-rebuilding-the-web-with-blogs-and-rss-1758815523411",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "Internet Culture",
+      "RSS",
+      "Blogging"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45372113",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "OPM: DOGE Incentives Cut Federal Workforce by 300,000 in 2025",
+    "_id": "readingList-opm-doge-incentives-cut-federal-workforce-by-300000-in-2025-1758815071422",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Federal Workforce",
+      "Government Accountability",
+      "Government Reform",
+      "Labor Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45373102",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Better Algorithms, Busier Radiologists",
+    "_id": "readingList-better-algorithms-busier-radiologists-1758814801394",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI in Healthcare",
+      "Human-AI Collaboration",
+      "Labor Economics",
+      "AI Regulation",
+      "AI Benchmarks"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45372335",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "When a Brand Query Puts the Brand Fifth: Google’s Pay-to-Play Problem",
+    "_id": "readingList-when-a-brand-query-puts-the-brand-fifth-googles-pay-to-play-problem-1758756741575",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Google",
+      "Search Quality",
+      "Corporate Accountability",
+      "Technology Economics",
+      "Digital Advertising"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45366566",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "How HubSpot Scaled AI Coding: Context, Central Teams, and Data-Driven Rollout",
+    "_id": "readingList-how-hubspot-scaled-ai-coding-context-central-teams-and-data-driven-rollout-1758743723723",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "AI & Productivity",
+      "Enterprise AI Adoption",
+      "Model Context Protocol"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45361140",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Product Hunt Is a Zombie: Pay-to-Play Hype, No Real Users",
+    "_id": "readingList-product-hunt-is-a-zombie-pay-to-play-hype-no-real-users-1758744025621",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Entrepreneurship",
+      "Platform Decay",
+      "Growth Hacking",
+      "Startup Launches"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45362569",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Zed Switches to Token-Based AI Billing, Cuts Pro to $10, Adds GPT‑5 and Gemini",
+    "_id": "readingList-zed-switches-to-token-based-ai-billing-cuts-pro-to-10-adds-gpt5-and-gemini-1758743435117",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Developer Tooling",
+      "AI Coding Agents",
+      "AI Business Models",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45362425",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "How to Lead When Tech’s Vibes Are Off",
+    "_id": "readingList-how-to-lead-when-techs-vibes-are-off-1758743424867",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Engineering Management",
+      "Corporate Accountability",
+      "Labor Economics",
+      "Workplace Wellbeing",
+      "Organizational Dynamics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45361394",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Unlocking AI’s Data: ABC and an ARPANET-Style Plan",
+    "_id": "readingList-unlocking-ais-data-abc-and-an-arpanet-style-plan-1758743424866",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Training Data",
+      "Data Privacy",
+      "Technology Economics",
+      "Public Policy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45364514",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Revive Small Communities in a Big-Org World",
+    "_id": "readingList-revive-small-communities-in-a-big-org-world-1758743187559",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Community Organizing",
+      "Organizational Dynamics",
+      "Social Capital",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45362697",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Learning Persian with Anki, ChatGPT, and Dual-Subtitle Loops",
+    "_id": "readingList-learning-persian-with-anki-chatgpt-and-dual-subtitle-loops-1758725223659",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Language Learning",
+      "Spaced Repetition",
+      "AI in Education",
+      "Self-Directed Learning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45359524",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Engineer the Context, Not the Model",
+    "_id": "readingList-build-better-agents-by-engineering-context-1758669559840",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "LLM Context Management",
+      "AI Architecture",
+      "AI Infrastructure"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45352901",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Make AI Work in Big Repos: Spec-First Workflow and Frequent Intentional Compaction",
+    "_id": "readingList-make-ai-work-in-big-repos-spec-first-workflow-and-frequent-intentional-compaction-1758669559841",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "LLM Context Management",
+      "Code Review",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45347532",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "YouTube to Pilot Reinstatement of Channels Banned Under COVID and Election Rules",
+    "_id": "readingList-youtube-to-pilot-reinstatement-of-channels-banned-under-covid-and-election-rules-1758669559842",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Content Moderation",
+      "Platform Policy",
+      "Corporate Accountability",
+      "Free Speech"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45352213",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "DORA 2025: AI Is Ubiquitous—Success Demands Organizational Change",
+    "_id": "readingList-dora-2025-ai-is-ubiquitoussuccess-demands-organizational-change-1758646395760",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI & Productivity",
+      "DevOps",
+      "Human-AI Collaboration",
+      "Enterprise AI Adoption",
+      "Organizational Dynamics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45347197",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Nine Hard-Won Rules for Living Well",
+    "_id": "readingList-nine-hard-won-rules-for-living-well-1758634085911",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Personal Philosophy",
+      "Mindfulness",
+      "Cognitive Bias",
+      "Personal Growth"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45342364",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "From Sampling to Grammars: Making LLMs Reliably Output Structured Data (Even for Thinking Models)",
+    "_id": "readingList-from-sampling-to-grammars-making-llms-reliably-output-structured-data-even-for-thinking-models-1758634077169",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Structured Output",
+      "LLM Inference",
+      "LLM Reasoning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45345207",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "How to Be (and Be Seen as) Strategic",
+    "_id": "readingList-how-to-be-and-be-seen-as-strategic-1758634077168",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Strategic Thinking",
+      "Engineering Management",
+      "Organizational Dynamics",
+      "Tech Career Strategy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45346219",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Maine’s Prison Remote-Work Experiment Is Working—and Spreading",
+    "_id": "readingList-maines-prison-remote-work-experiment-is-workingand-spreading-1758585257132",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Criminal Justice Reform",
+      "Remote Work",
+      "Labor Economics",
+      "Public Policy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45340600",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "How Hacker News Keeps Quality at Scale—and How to Read It Smart",
+    "_id": "readingList-how-hacker-news-keeps-quality-at-scaleand-how-to-read-it-smart-1758573454695",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Content Moderation",
+      "Online Communities",
+      "News Aggregation",
+      "Internet Culture",
+      "Information Literacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45331030",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "From Search to Answers: Paying Creators in the AI Era",
+    "_id": "readingList-from-search-to-answers-paying-creators-in-the-ai-era-1758571452112",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Business Models",
+      "Creator Economy",
+      "AI Training Data",
+      "Open Web",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45334599",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "California fines lawyer $10K for ChatGPT-fabricated citations, warns: verify or face sanctions",
+    "_id": "readingList-california-fines-lawyer-10k-for-chatgpt-fabricated-citations-warns-verify-or-face-sanctions-1758571391678",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hallucinations",
+      "AI & Law",
+      "AI Regulation",
+      "AI Ethics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45335774",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Stop AI Workslop to Unlock ROI",
+    "_id": "readingList-stop-ai-workslop-to-unlock-roi-1758571156210",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI & Productivity",
+      "Human-AI Collaboration",
+      "Corporate AI Strategy",
+      "Enterprise AI Adoption"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45337253",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Qwen3‑Omni: Real-Time Multimodal LLM with Speech I/O and SOTA Audio‑Video Performance",
+    "_id": "readingList-qwen3omni-real-time-multimodal-llm-with-speech-io-and-sota-audiovideo-performance-1758571022649",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Multimodal AI",
+      "Open Source",
+      "Speech Processing",
+      "Foundation Models"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45336989",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "PlanetScale for Postgres Is GA, With Neki Sharding on the Horizon",
+    "_id": "readingList-planetscale-for-postgres-is-ga-with-neki-sharding-on-the-horizon-1758557211694",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "PostgreSQL",
+      "Database Architecture",
+      "Cloud Infrastructure",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45334545",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Influence Without Manipulation: Choose the Right Door",
+    "_id": "readingList-influence-without-manipulation-choose-the-right-door-1758546677730",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Persuasion & Influence",
+      "Leadership",
+      "Communication Skills",
+      "Personal Growth"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45327199",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Meets Metamaterials: From Simulation to Real-World Cloaking and Devices",
+    "_id": "readingList-ai-meets-metamaterials-from-simulation-to-real-world-cloaking-and-devices-1758546548145",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI for Science",
+      "Synthetic Data & Simulation",
+      "Materials Science",
+      "Computational Design"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45330818",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Faster LLMs, Bigger Demands: Why Coding Agents Won’t Stabilize Soon",
+    "_id": "readingList-faster-llms-bigger-demands-why-coding-agents-wont-stabilize-soon-1758546428999",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "AI & Productivity",
+      "AI Infrastructure",
+      "LLM Inference",
+      "AI Business Models"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45322030",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "A Beginner’s Satire of Jargon-Heavy Dev Tutorials",
+    "_id": "readingList-a-beginners-satire-of-jargon-heavy-dev-tutorials-1758546292945",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Technical Writing",
+      "Developer Experience",
+      "Software Craftsmanship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45328247",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Amplifies Seniors, Not Juniors",
+    "_id": "readingList-ai-amplifies-seniors-not-juniors-1758482021642",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "AI & Productivity",
+      "Software Craftsmanship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45319062",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "A Week Without Code: Marketing That Opened Doors",
+    "_id": "readingList-a-week-without-code-marketing-that-opened-doors-1758481903399",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Indie Development",
+      "Social Media",
+      "Entrepreneurship",
+      "Content Marketing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45322819",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Maximizing Vocabulary Coverage with Books: A Submodular, NP-Hard Selection Problem",
+    "_id": "readingList-maximizing-vocabulary-coverage-with-books-a-submodular-np-hard-selection-problem-1758436850906",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Language Learning",
+      "Computational Linguistics",
+      "Algorithms & Optimization",
+      "Computational Complexity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45283637",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Designing NotebookLM: A Scalable 3‑Panel UI for AI‑Native Creation",
+    "_id": "readingList-designing-notebooklm-a-scalable-3panel-ui-for-ainative-creation-1758405787979",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "UX Design",
+      "Human-AI Collaboration",
+      "AI UX",
+      "Product Design"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45315312",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Agents Can Already Do Lean Proofs—But They Still Need a Project Manager",
+    "_id": "readingList-ai-agents-can-already-do-lean-proofsbut-they-still-need-a-project-manager-1758381994970",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "Formal Verification"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45275058",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI’s WEIRD Lens: US-Centric LLMs and How to Protect Cultural Insight",
+    "_id": "readingList-ais-weird-lens-us-centric-llms-and-how-to-protect-cultural-insight-1758264999344",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Bias",
+      "AI Training Data",
+      "AI Ethics",
+      "Cultural Diversity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45295794",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Build Public Mini Apps in One Prompt",
+    "_id": "readingList-build-public-mini-apps-in-one-prompt-1758229310063",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Vibe Coding",
+      "AI-Generated Content",
+      "Low-Code Platforms",
+      "AI App Builders"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45291618",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Chrome’s Biggest AI Upgrade: Gemini-Powered, Safer, Smarter Browsing",
+    "_id": "readingList-chromes-biggest-ai-upgrade-gemini-powered-safer-smarter-browsing-1758229310062",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Google",
+      "Browser Security",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45292260",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Personalized AI Textbooks Improve Learning and Retention",
+    "_id": "readingList-personalized-multimodal-textbooks-with-genai-boost-learning-1758220387460",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI in Education",
+      "AI Personalization",
+      "Multimodal AI",
+      "AI-Generated Content"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45292648",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI’s Window: Unstructured Data, Augmentation, and Consumption-Based Startups",
+    "_id": "readingList-build-now-ai-agents-for-unstructured-enterprise-work-1758217208306",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Enterprise AI Adoption",
+      "AI Business Models",
+      "AI & Productivity",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45289921",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "After the npm Hack: We Need Real Package Management—But We Won’t Do It",
+    "_id": "readingList-after-the-npm-hack-we-need-real-package-managementbut-we-wont-do-it-1758211642616",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Supply Chain Security",
+      "Open Source",
+      "JavaScript Ecosystem",
+      "Package Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45290748",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Small, Business-Value Units Make AI Coding Work",
+    "_id": "readingList-small-business-value-units-make-ai-coding-work-1758210886421",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "LLM Context Management",
+      "Human-AI Collaboration",
+      "Software Craftsmanship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45289168",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Meta Unveils Ray-Ban Display: AI Glasses With In‑Lens Screen and EMG Wristband",
+    "_id": "readingList-meta-unveils-ray-ban-display-ai-glasses-with-inlens-screen-and-emg-wristband-1758198920809",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "VR/XR",
+      "Data Privacy",
+      "Wearable Technology",
+      "Neural Interfaces"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45283306",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Taste Came First: Build It, Then Use AI",
+    "_id": "readingList-taste-came-first-build-it-then-use-ai-1758198675017",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Human-AI Collaboration",
+      "Software Craftsmanship",
+      "AI & Productivity",
+      "Skill Development",
+      "AI Culture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45288551",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Cooley–Tukey: Turning the DFT into O(N log N) (and Why FFT ≠ DFT)",
+    "_id": "readingList-cooleytukey-turning-the-dft-into-on-log-n-and-why-fft-dft-1758197104323",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Algorithms & Optimization",
+      "Computational Complexity",
+      "Signal Processing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45287513",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Slack’s sudden $200k/yr demand pushes Hack Club to Mattermost",
+    "_id": "readingList-slacks-sudden-200kyr-demand-pushes-hack-club-to-mattermost-1758197076657",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Vendor Lock-in",
+      "Corporate Accountability",
+      "Open Source",
+      "Self-Hosting"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45283887",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Postmortem: Three Overlapping Infra Bugs Degraded Claude—Fixes Shipped, Evals and Tooling Upgraded",
+    "_id": "readingList-postmortem-three-overlapping-infra-bugs-degraded-claudefixes-shipped-evals-and-tooling-upgraded-1758146634518",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Infrastructure",
+      "LLM Inference",
+      "Incident Response",
+      "Service Reliability",
+      "Corporate Accountability"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45281139",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Malicious Workflow Stole npm Token via Shared Repo; Lockdown Now, OIDC Next",
+    "_id": "readingList-malicious-workflow-stole-npm-token-via-shared-repo-lockdown-now-oidc-next-1758146529390",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Supply Chain Security",
+      "Package Management",
+      "CI/CD",
+      "Open Source",
+      "Incident Response"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45278657",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "DeepMind and OpenAI Both Claim ICPC WF 2025 Gold-Level AI Performance",
+    "_id": "readingList-deepmind-and-openai-both-claim-icpc-wf-2025-gold-level-ai-performance-1758144110558",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Benchmarks",
+      "LLM Reasoning",
+      "AI Hype",
+      "Competitive Programming"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45279357",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "U.S. Consortium Poised to Take 80% Control of TikTok’s U.S. Arm",
+    "_id": "readingList-us-consortium-poised-to-take-80-control-of-tiktoks-us-arm-1758143901788",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Social Media",
+      "Trade Policy",
+      "Data Privacy",
+      "Tech Geopolitics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45267643",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Stop Waiting for Motivation: Engineer Action with Small Steps and Consistency",
+    "_id": "readingList-stop-waiting-for-motivation-engineer-action-with-small-steps-and-consistency-1758127767172",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Productivity",
+      "Personal Growth",
+      "Procrastination",
+      "Habit Formation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45276987",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Procedural Islands III: Multi-Scale Noise and Topological Mountains for Final Elevation",
+    "_id": "readingList-procedural-islands-iii-multi-scale-noise-and-topological-mountains-for-final-elevation-1758127076331",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Procedural Generation",
+      "Computer Graphics",
+      "Computational Geometry",
+      "Algorithms & Optimization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45275049",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Toward a Slow, Humane Social Network",
+    "_id": "readingList-toward-a-slow-humane-social-network-1758127076330",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Social Media",
+      "Attention Economy",
+      "Digital Wellbeing",
+      "Humane Technology"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45270676",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Evolving English Instructions Sets New ARC SoTA and Points to RL for AGI",
+    "_id": "readingList-evolving-english-instructions-sets-new-arc-sota-and-points-to-rl-for-agi-1758119750454",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Benchmarks",
+      "LLM Reasoning",
+      "Reinforcement Learning",
+      "Test-Time Compute"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45270649",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Prompted to Perform: A 22% Lift for GPT-5-mini on Tau² Telecom",
+    "_id": "readingList-prompted-to-perform-a-22-lift-for-gpt-5-mini-on-tau2-telecom-1758119629974",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Prompt Engineering",
+      "AI Benchmarks",
+      "Small Language Models",
+      "AI Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45275354",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Against Work-Worship: A Case for the Four-Hour Day",
+    "_id": "readingList-against-work-worship-a-case-for-the-four-hour-day-1758109955970",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Labor Economics",
+      "Work Culture",
+      "Productivity",
+      "Political Philosophy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45272296",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Alibaba Pingtouge AI Chip Rivals Nvidia H20, Wins Major China Unicom Order",
+    "_id": "readingList-alibaba-pingtouge-ai-chip-rivals-nvidia-h20-wins-major-china-unicom-order-1758109703287",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Semiconductor Industry",
+      "AI Infrastructure",
+      "Tech Geopolitics",
+      "Trade Policy",
+      "GPU Computing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45273747",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Terraform State Is a Graph, Not a File",
+    "_id": "readingList-terraform-state-is-a-graph-not-a-file-1758108693163",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Infrastructure as Code",
+      "DevOps",
+      "Software Architecture",
+      "Distributed Systems"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45273352",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Obsidian $5k Bounty: Notion API Importer with Databases→Bases Conversion",
+    "_id": "readingList-obsidian-5k-bounty-notion-api-importer-with-databasesbases-conversion-1758108580039",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Open Source",
+      "Platform Migration",
+      "Data Portability",
+      "Knowledge Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45271942",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "NPM’s Supply Chain Is Still Wide Open—and Microsoft Isn’t Fixing It",
+    "_id": "readingList-npms-supply-chain-is-still-wide-openand-microsoft-isnt-fixing-it-1758108579768",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Supply Chain Security",
+      "Corporate Accountability",
+      "Open Source",
+      "Package Management",
+      "JavaScript Ecosystem"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45273824",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Shai-Hulud: Self‑Spreading npm Backdoor Hits tinycolor and 40+ Packages",
+    "_id": "readingList-selfpropagating-npm-attack-tinycolor-and-40-packages-backdoored-via-github-actions-1758033226442",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Supply Chain Security",
+      "Cybersecurity",
+      "Package Management",
+      "CI/CD",
+      "JavaScript Ecosystem"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45260741",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Microsoft steers VS Code to Claude 4, signaling an Anthropic tilt",
+    "_id": "readingList-microsoft-steers-vs-code-to-claude-4-signaling-an-anthropic-tilt-1758038560720",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Developer Tooling",
+      "Corporate AI Strategy",
+      "OpenAI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45263063",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "When to Use 'Your' vs 'My' in UI (and When to Drop Both)",
+    "_id": "readingList-when-to-use-your-vs-my-in-ui-and-when-to-drop-both-1758033475069",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "UX Design",
+      "UX Writing",
+      "Localization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45257627",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Generative AI Shrinks Junior Hiring While Senior Roles Grow",
+    "_id": "readingList-generative-ai-shrinks-junior-hiring-while-senior-roles-grow-1758033345637",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Labor Economics",
+      "AI & Inequality",
+      "Technology Economics",
+      "Corporate AI Strategy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45261930",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "GPT‑5-Codex Lands in Codex Tools, API Coming Soon, With Big Push on Code Review",
+    "_id": "readingList-gpt5-codex-lands-in-codex-tools-api-coming-soon-with-big-push-on-code-review-1757986979492",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Code Review",
+      "OpenAI",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45253807",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Stop Picking React by Default: Evaluate Better-Fit Frontend Models",
+    "_id": "readingList-stop-picking-react-by-default-evaluate-better-fit-frontend-models-1757976865879",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "React",
+      "Web Frameworks",
+      "Frontend Development",
+      "JavaScript Ecosystem"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45252715",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Massive Attack Uses Live Facial Recognition to Expose Surveillance Culture",
+    "_id": "readingList-massive-attack-uses-live-facial-recognition-to-expose-surveillance-culture-1757976548912",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Surveillance Technology",
+      "Facial Recognition",
+      "Biometric Privacy",
+      "Data Privacy",
+      "Art & Activism"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45255400",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Build a Production-Ready AI Trend Analyzer with FastAPI, Pydantic‑AI, and MCP",
+    "_id": "readingList-build-a-production-ready-ai-trend-analyzer-with-fastapi-pydanticai-and-mcp-1757973004381",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Model Context Protocol",
+      "AI Agents",
+      "AI Architecture",
+      "Multi-Agent Systems"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45243320",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "How the World Uses ChatGPT: Non‑Work Growth, Decision Support, and Writing at Work",
+    "_id": "readingList-how-the-world-uses-chatgpt-nonwork-growth-decision-support-and-writing-at-work-1757972983409",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Technology Economics",
+      "AI & Productivity",
+      "Writing & AI",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45253775",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "When Code Gets Cheap: Value Shifts to Judgment and Systems",
+    "_id": "readingList-when-code-gets-cheap-value-shifts-to-judgment-and-systems-1757963666017",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Technology Economics",
+      "Human-AI Collaboration",
+      "Future of Work"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45249985",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "GPT-5-Codex: Agentic Coding with Layered Safety",
+    "_id": "readingList-openai-details-safety-addendum-for-gpt-5-codex-an-agentic-coding-model-1757963365209",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "AI Safety",
+      "OpenAI",
+      "Reinforcement Learning"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45253458",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Real-Time Chatbots Now Repeat False News 35% of the Time",
+    "_id": "readingList-real-time-chatbots-now-repeat-false-news-35-of-the-time-1757903584137",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Safety",
+      "Disinformation",
+      "AI Hallucinations",
+      "Search Quality"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45244985",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "LLMs Don’t Code—They Compile Your Prompts",
+    "_id": "readingList-llms-dont-codethey-compile-your-prompts-1757769692494",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Vibe Coding",
+      "AI Hype",
+      "AI & Productivity",
+      "Prompt Engineering"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45230677",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Inside Google’s Hidden AI Rater Workforce: Speed Over Safety",
+    "_id": "readingList-inside-googles-hidden-ai-rater-workforce-speed-over-safety-1757769495615",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Safety",
+      "AI Ethics",
+      "Corporate Accountability",
+      "AI Training Data",
+      "Google"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45231239",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "FFglitch Gallery: A Curated Showcase of Datamoshing Works",
+    "_id": "readingList-ffglitch-gallery-a-curated-showcase-of-datamoshing-works-1757732524355",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Glitch Art",
+      "Creative Coding",
+      "Creative Software",
+      "Media Processing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45227212",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "OpenAI Grove: A Five-Week Launchpad for Pre-Idea AI Founders",
+    "_id": "readingList-openai-grove-a-five-week-launchpad-for-pre-idea-ai-founders-1757698884766",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "Entrepreneurship",
+      "Corporate AI Strategy",
+      "Startup Accelerators"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45223660",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Deep Orchestrator: A Simple MCP Loop That Makes Deep Research Work",
+    "_id": "readingList-deep-orchestrator-a-simple-mcp-loop-that-makes-deep-research-work-1757699031797",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Model Context Protocol",
+      "AI Agents",
+      "Task Orchestration",
+      "AI Architecture",
+      "LLM Context Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45199256",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Hard Leetcode, Easy with Constraint Solvers",
+    "_id": "readingList-hard-leetcode-easy-with-constraint-solvers-1757699031796",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Constraint Solving",
+      "Algorithms & Optimization",
+      "Competitive Programming",
+      "Tech Interviews"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45222695",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Qwen3-Next: Hybrid Attention + Ultra-Sparse MoE for 10x Faster Long-Context LLMs",
+    "_id": "readingList-qwen3-next-hybrid-attention-ultra-sparse-moe-for-10x-faster-long-context-llms-1757677201731",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Architecture",
+      "Mixture of Experts",
+      "LLM Inference",
+      "LLM Context Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45219228",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "ApeRAG: Production-Ready Multimodal GraphRAG with Agents and MCP",
+    "_id": "readingList-aperag-production-ready-multimodal-graphrag-with-agents-and-mcp-1757638832908",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Retrieval-Augmented Generation",
+      "Knowledge Graphs",
+      "AI Agents",
+      "Model Context Protocol",
+      "AI Infrastructure"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45165751",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Aligning the Aligners: A Satirical Roast of the AI Safety Industry",
+    "_id": "readingList-aligning-the-aligners-a-satirical-roast-of-the-ai-safety-industry-1757618495562",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Safety",
+      "AI Hype",
+      "Corporate Accountability",
+      "AI Ethics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45210399",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Cards, Cameras, and Workarounds: How NYC Teens Are Adapting to the School Phone Ban",
+    "_id": "readingList-cards-cameras-and-workarounds-how-nyc-teens-are-adapting-to-the-school-phone-ban-1757618360930",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Digital Wellbeing",
+      "Attention Economy",
+      "Youth Culture",
+      "Public Policy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45211527",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Async Programming as a Workflow: Specify, Automate, Review",
+    "_id": "readingList-async-programming-as-a-workflow-specify-automate-review-1757611753184",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "Code Review",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45210693",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Spiral: A Machine-Scale Database Built on Vortex for the AI Era",
+    "_id": "readingList-spiral-a-machine-first-database-for-ai-scale-data-1757607553166",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Database Architecture",
+      "AI Infrastructure",
+      "GPU Computing",
+      "Data Formats"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45212960",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Evolving Melodies: Coding Culture’s Darwinian Patterns",
+    "_id": "readingList-evolving-melodies-coding-cultures-darwinian-patterns-1757607081572",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Creative Coding",
+      "Generative Music",
+      "Evolutionary Algorithms",
+      "Cellular Automata"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45211868",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "How TikTok’s 60-Second Model Rewired Culture and Attention",
+    "_id": "readingList-how-tiktoks-60-second-model-rewired-culture-and-attention-1757528683881",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Attention Economy",
+      "Social Media",
+      "Digital Wellbeing",
+      "Creator Economy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45199760",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "You Can’t Outsource Thinking: Memory and Depth Are Non‑Optional",
+    "_id": "readingList-you-cant-outsource-thinking-memory-and-depth-are-nonoptional-1757520744370",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Knowledge Management",
+      "Cognitive Science",
+      "Information Literacy",
+      "Critical Thinking"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45198420",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Flame Fractals in GLSL: Chaos-Game Splatting, Transforms, and Simple Post",
+    "_id": "readingList-flame-fractals-in-glsl-chaos-game-splatting-transforms-and-simple-post-1757510430645",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Shaders",
+      "GPU Computing",
+      "Generative Art",
+      "Computer Graphics",
+      "Fractals"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45163417",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Knowledge Without Memory: Why LLMs Guess and Humans Don’t",
+    "_id": "readingList-knowledge-without-memory-why-llms-guess-and-humans-dont-1757510287225",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Hallucinations",
+      "Cognitive Science",
+      "LLM Context Management"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45154088",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Live LLM Dialogue in GameCube Animal Crossing via a RAM Mailbox Hack",
+    "_id": "readingList-live-llm-dialogue-in-gamecube-animal-crossing-via-a-ram-mailbox-hack-1757510057332",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Reverse Engineering",
+      "Game Development",
+      "Prompt Engineering",
+      "AI-Generated Content"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45192655",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "NAEP: US Seniors Hit Historic Lows in Reading and Math as Gaps Widen Beyond COVID",
+    "_id": "readingList-naep-us-seniors-hit-historic-lows-in-reading-and-math-as-gaps-widen-beyond-covid-1757456487078",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "K-12 Education",
+      "Educational Inequality",
+      "Public Policy",
+      "Post-Pandemic Society",
+      "Attention Economy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45182657",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Apple Launches iPhone 17 with Smarter Cameras, Brighter ProMotion Display, and A19 Power",
+    "_id": "readingList-apple-launches-iphone-17-with-smarter-cameras-brighter-promotion-display-and-a19-power-1757454016935",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Apple",
+      "Consumer Electronics",
+      "Computational Photography",
+      "On-Device AI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45186023",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "ICE Expands Stingray Use As AI Policing Stumbles And Global Surveillance Grows",
+    "_id": "readingList-ice-expands-stingray-use-as-ai-policing-stumbles-and-global-surveillance-grows-1757453913136",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Government Surveillance",
+      "Surveillance Technology",
+      "Civil Liberties",
+      "Immigration Enforcement",
+      "Facial Recognition"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45184368",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Judge Pauses Anthropic’s $1.5B AI Book Deal, Demands Clarity",
+    "_id": "readingList-judge-pauses-anthropics-15b-ai-book-deal-demands-clarity-1757453913137",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI & Law",
+      "AI Training Data",
+      "Intellectual Property",
+      "Corporate Accountability"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45179304",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Liquid Glass on the Web with SVG Displacement Maps",
+    "_id": "readingList-liquid-glass-on-the-web-with-svg-displacement-maps-1757439146457",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "CSS",
+      "Computer Graphics",
+      "Web Animation",
+      "Browser Compatibility"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45174297",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Claude Now Creates and Edits Spreadsheets, Docs, Slides, and PDFs",
+    "_id": "readingList-claude-now-creates-and-edits-spreadsheets-docs-slides-and-pdfs-1757438839771",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI & Productivity",
+      "Human-AI Collaboration",
+      "Sandboxing",
+      "Document Generation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45182381",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI as a Normal Technology, Not an Apocalypse",
+    "_id": "readingList-ai-as-a-normal-technology-not-an-apocalypse-1757376116446",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "Technology Economics",
+      "AI Safety",
+      "Labor Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45167625",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Microsoft Joins World Nuclear Association to Scale Nuclear for the Digital Economy",
+    "_id": "readingList-microsoft-joins-world-nuclear-association-to-scale-nuclear-for-the-digital-economy-1757375952775",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Nuclear Energy",
+      "AI Infrastructure",
+      "Corporate AI Strategy",
+      "Clean Energy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45173933",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Stop EU ‘Chat Control’: Mass Scanning Law Threatens Encryption and Rights—Act Now",
+    "_id": "readingList-stop-eu-chat-control-mass-scanning-law-threatens-encryption-and-rightsact-now-1757372158924",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Government Surveillance",
+      "Data Privacy",
+      "Civil Liberties",
+      "Internet Censorship",
+      "End-to-End Encryption"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45173277",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "S3 Vectors Won’t Kill Vector Databases—They Enable a Tiered Future",
+    "_id": "readingList-s3-vectors-wont-kill-vector-databasesthey-enable-a-tiered-future-1757359250585",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Vector Databases",
+      "Cloud Infrastructure",
+      "AI Infrastructure",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45169624",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "A Skeptic’s Guide to Running Local LLMs on macOS",
+    "_id": "readingList-a-skeptics-guide-to-running-local-llms-on-macos-1757358992072",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "On-Device AI",
+      "LLM Inference",
+      "Open Source",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45168953",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Analog 3D-Optical Fixed-Point Computing for AI and Optimization",
+    "_id": "readingList-analog-3d-optical-fixed-point-computing-for-ai-and-optimization-1757341077255",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Optical Computing",
+      "AI Hardware",
+      "Analog Computing",
+      "Algorithms & Optimization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45129507",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "19 Dead as Nepal Deploys Army amid Gen Z Protests over Social Media Ban and Corruption",
+    "_id": "readingList-19-dead-as-nepal-deploys-army-amid-gen-z-protests-over-social-media-ban-and-corruption-1757340752235",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Internet Censorship",
+      "Government Accountability",
+      "Civil Liberties",
+      "Social Media"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45166972",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "GPT-5 Thinking Makes ChatGPT a Surprisingly Competent Research Assistant",
+    "_id": "readingList-gpt-5-thinking-makes-chatgpt-a-surprisingly-competent-research-assistant-1757292597840",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "LLM Reasoning",
+      "Retrieval-Augmented Generation",
+      "Human-AI Collaboration",
+      "Search Quality"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45152284",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Reviving a 1990s Linux Tape Driver with AI in Two Evenings",
+    "_id": "readingList-reviving-a-1990s-linux-tape-driver-with-ai-in-two-evenings-1757292221865",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "Computing History",
+      "Linux Kernel Development"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45163362",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Mobile MoleCheck: Swipe to Flag Lesion Concern",
+    "_id": "readingList-mobile-molecheck-swipe-to-flag-lesion-concern-1757251930797",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Skin Cancer Screening",
+      "Health Education",
+      "Interactive Web Tools",
+      "Mobile-First Design",
+      "UX Design"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45157020",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Gatekeeper Slashes E2E CI Time by 84%",
+    "_id": "TFq394igozlHjZYkEeNrGW",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "CI/CD",
+      "Automated Testing",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45151447",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Disciplined AI Collaboration: Plan, Measure, and Ship in Small, Reliable Modules",
+    "_id": "oqU7976QZD3ribhz3rffgH",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "Software Craftsmanship",
+      "Software Architecture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45148180",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Ban AI Chat Surveillance Before It Becomes the Norm",
+    "_id": "oqU7976QZD3ribhz3rfezp",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Data Privacy",
+      "AI Regulation",
+      "Surveillance Capitalism",
+      "AI Ethics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45149281",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Why Embeddings Got Bigger—and Where Efficiency Pulls Them Next",
+    "_id": "TFq394igozlHjZYkEb3O3V",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Vector Embeddings",
+      "Transformer Models",
+      "Vector Databases",
+      "Natural Language Processing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45101797",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Animate with Purpose—or Not at All",
+    "_id": "readingList-purposeful-fast-and-often-no-animation-1757092408964",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Web Animation",
+      "UX Design",
+      "Frontend Development",
+      "Interaction Design"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45139088",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "OpenAI launches AI Academy jobs board, courting Walmart and LinkedIn rivalry",
+    "_id": "readingList-openai-launches-ai-academy-jobs-board-nudges-into-linkedins-lane-with-walmart-onboard-1757086727565",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "Labor Economics",
+      "Corporate AI Strategy",
+      "AI in Education",
+      "Future of Work"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45137658",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Today’s Tally: 16 “Absolutely Right” + 5 “Right”",
+    "_id": "readingList-tracker-how-often-claude-code-says-im-absolutely-right-0-today-1757084300476",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Sycophancy",
+      "AI Coding Agents",
+      "AI UX",
+      "LLM Training"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45137802",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Inside a Tiny GPT: A Visual Walkthrough of Autoregressive Prediction",
+    "_id": "readingList-a-tiny-gpt-that-sorts-letters-via-next-token-prediction-1757077718407",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Transformer Models",
+      "LLM Inference",
+      "Interactive Web Tools",
+      "AI Interpretability"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45130260",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Ditching Docker: Why Podman’s Rootless, Daemonless Model Wins",
+    "_id": "readingList-podman-over-docker-a-safer-daemonless-default-for-2025-1757077334384",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Containerization",
+      "DevOps",
+      "Developer Tooling",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45137525",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Is Hollowing Out Learning",
+    "_id": "readingList-schoolwork-without-the-work-how-ai-is-hollowing-learning-1757019379856",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI in Education",
+      "K-12 Education",
+      "Critical Thinking",
+      "Academic Integrity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45122885",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Trust-First Architecture Beats Smarts for AI Agents",
+    "_id": "readingList-architecting-ai-agents-for-trust-not-just-smarts-1757016334028",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI Architecture",
+      "Human-AI Collaboration",
+      "Enterprise AI Adoption",
+      "AI UX"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45129237",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "CauseNet: An Open 11M-Relation Causality Graph from the Web",
+    "_id": "readingList-causenet-an-open-web-scale-graph-of-claimed-causal-relations-1756818066266",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Causal Reasoning",
+      "Knowledge Graphs",
+      "Natural Language Processing",
+      "Open Source"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45099418",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Talking to Strangers Feels Better Than We Think—and Rebuilds Trust",
+    "_id": "readingList-talk-to-strangers-30-minutes-that-make-us-happier-1756970209927",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Social Psychology",
+      "Social Capital",
+      "Social Trust",
+      "Data Visualization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45124003",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "New Payroll Data Ties AI to Early-Career Job Losses in Exposed Fields",
+    "_id": "readingList-new-data-ai-is-already-cutting-entry-level-jobs-in-exposed-fields-1756947813788",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Labor Economics",
+      "Economic Research",
+      "Human-AI Collaboration",
+      "Corporate AI Strategy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45121342",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The Bitter Lesson Was About Data, Not Compute",
+    "_id": "readingList-the-bitter-lesson-rewritten-data-is-the-real-bottleneck-1756940508203",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Scaling Laws",
+      "AI Training Data",
+      "AI Architecture",
+      "Synthetic Data & Simulation",
+      "Corporate AI Strategy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45057283",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "HunyuanWorld-Voyager: World-Consistent RGB-D Video and 3D from a Single Image",
+    "_id": "readingList-camera-controllable-rgb-d-video-diffusion-for-explorable-3d-scenes-1756909606719",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Diffusion Models",
+      "Computer Vision",
+      "3D Modeling",
+      "World Models",
+      "AI Video Generation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45114379",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI Hype, Accessibility, and a Blind Skeptic’s Warning",
+    "_id": "readingList-ai-hype-and-the-blind-community-skepticism-risks-and-whats-next-1756902661915",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hype",
+      "Disability & Accessibility",
+      "AI Ethics",
+      "Multimodal AI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45113043",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "From Emotions to Earth: A Multi-Genre Deep Dive and an Urgent Climate Reckoning",
+    "_id": "readingList-decade-of-consequence-acceleration-tradeoffs-and-a-just-call-to-act-1756902969695",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Climate Change",
+      "Climate Justice",
+      "OpenAI",
+      "Text-to-Speech"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45114245",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Ship Faster by Orchestrating Parallel AI Coding Agents",
+    "_id": "readingList-the-real-breakthrough-orchestrating-parallel-ai-coding-agents-1756855399564",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Task Orchestration",
+      "Human-AI Collaboration",
+      "Code Review",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45110075",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Ship Faster by Treating AI as a Forgetful Junior Dev",
+    "_id": "readingList-treat-ai-like-a-forgetful-junior-iterate-add-context-ship-faster-1756851865159",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "LLM Context Management",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45107962",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Sharing Early Diffusion Steps Across Similar Prompts for Efficient Text-to-Image Generation",
+    "_id": "readingList-shared-early-denoising-for-efficient-text-to-image-sets-1756839800699",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Diffusion Models",
+      "AI Image Generation",
+      "Algorithms & Optimization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45069341",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "OpenAI Is Scanning Chats and May Call Police for Threats to Others",
+    "_id": "readingList-openai-is-scanning-chatgpt-chatsand-may-call-policeraising-privacy-concerns-1756839048973",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Data Privacy",
+      "AI Safety",
+      "Content Moderation",
+      "Corporate Accountability",
+      "OpenAI"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45105081",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Study Claims AI Writing Tools Weaken Brain Engagement and Memory",
+    "_id": "readingList-study-finds-heavy-chatgpt-use-weakens-brain-engagement-memory-and-ownership-1756909546863",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Cognitive Science",
+      "Writing & AI",
+      "AI in Education",
+      "AI Deskilling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45114753",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Ravenous AI Crawlers Are Breaking the Web—and Driving It Behind Paywalls",
+    "_id": "readingList-ai-crawlers-are-overloading-sitesand-pushing-the-web-behind-walls-1756839170469",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Web Scraping",
+      "Open Web",
+      "AI Training Data",
+      "Corporate Accountability",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45105230",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Anthropic Raises $13B at $183B Valuation to Scale Safe, Enterprise AI",
+    "_id": "readingList-anthropic-raises-13b-at-183b-valuation-to-power-growth-and-safety-rd-1756837891389",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Safety",
+      "Technology Economics",
+      "Enterprise AI Adoption",
+      "AI Infrastructure"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45104907",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Why AI Is Chasing World Models Again",
+    "_id": "readingList-ais-quest-for-coherent-world-models-1756837866286",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "World Models",
+      "AI Architecture",
+      "LLM Reasoning",
+      "Cognitive Science"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45105710",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "We Already Live in Social Credit—Ours Is Just Hidden",
+    "_id": "readingList-we-already-live-in-social-creditours-is-just-hidden-1757273118371",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Algorithmic Scoring",
+      "Surveillance Capitalism",
+      "Government Surveillance",
+      "Data Privacy",
+      "Civil Liberties"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45106011",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "From Push to Pull: Align Sales With the Buyer’s Project",
+    "_id": "readingList-the-physics-of-sales-stop-pushing-enable-pull-1756821959665",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Sales Strategy",
+      "B2B SaaS",
+      "Go-to-Market",
+      "Buyer Psychology"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45096254",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "LLMs Are Lossy Encyclopedias: Give Them Facts to Work With",
+    "_id": "readingList-llms-are-lossy-encyclopedias-provide-facts-dont-expect-perfect-recall-1756818098893",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "AI Hallucinations",
+      "Prompt Engineering",
+      "Retrieval-Augmented Generation",
+      "Human-AI Collaboration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45062046",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Next.js Makes Request‑Scoped Logging Needlessly Hard",
+    "_id": "readingList-why-nextjs-makes-request-logging-so-hard-1756818112539",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Web Frameworks",
+      "Observability",
+      "Developer Experience",
+      "Vendor Lock-in"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45099922",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AR Fluid Sim That Collides with Real Objects",
+    "_id": "readingList-turning-real-objects-into-live-obstacles-for-a-fluid-sim-1756999185982",
+    "currentCategories": [
+      "Creative Code"
+    ],
+    "currentTopics": [
+      "Fluid Simulation",
+      "Augmented Reality",
+      "Computer Vision",
+      "Creative Coding"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45089508",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Stop Building Multi-Agents: Context Engineering for Reliable LLM Agents",
+    "_id": "readingList-dont-build-multiagents-principles-of-context-engineering-for-reliable-llm-agents-1756778160810",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Multi-Agent Systems",
+      "LLM Context Management",
+      "AI Architecture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45096962",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Amazon’s Pay and RTO Policies Are Crimping Its AI Hiring",
+    "_id": "readingList-internal-memo-pay-bands-and-rto-hubs-leave-amazon-lagging-in-the-ai-talent-war-1756772203352",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Corporate AI Strategy",
+      "Labor Economics",
+      "Remote Work",
+      "Work Culture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45095603",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Anthropic Details How Agentic AI Is Powering Modern Cybercrime—and Its Steps to Stop It",
+    "_id": "readingList-ai-enabled-cybercrime-anthropics-august-2025-threat-intel-and-response-1756770765553",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Cybersecurity",
+      "AI Safety",
+      "AI Agents",
+      "AI-Enabled Cybercrime"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45097263",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Bandit-Based, Budget-Aware LLM Routing with Preference-Informed LinUCB (PILOT)",
+    "_id": "readingList-awaiting-article-text-for-summarization-1757271505720",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "LLM Routing",
+      "Reinforcement Learning",
+      "AI Infrastructure",
+      "Algorithms & Optimization"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45094421",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "AI as a Grantmaking Filter: Promise, Pitfalls, and the Human Judgment Gap",
+    "_id": "readingList-ai-as-a-grantmaking-filter-promise-pitfalls-and-the-human-judgment-gap-1757270221948",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Bias",
+      "Developer Tooling",
+      "Science Funding",
+      "AI Regulation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45092880",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Senior Devs Ship More AI Code, Feel Faster—But Real Gains Are Mixed",
+    "_id": "readingList-senior-devs-ship-more-ai-code-feel-fasterbut-real-gains-are-mixed-1757258854581",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "AI Coding Agents",
+      "AI & Productivity",
+      "Human-AI Collaboration",
+      "Developer Experience"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45083635",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "No Clicks, No Content: How AI Search Cannibalizes Its Own Fuel",
+    "_id": "readingList-no-clicks-no-content-how-ai-search-cannibalizes-its-own-fuel-1757270221947",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Training Data",
+      "Technology Economics",
+      "Search Quality",
+      "Open Web",
+      "Creator Economy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45084016",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Google AI Misattributes ‘Israel Trip’ Video to Benn Jordan; He Seeks Legal Counsel",
+    "_id": "readingList-google-ai-misattributes-israel-trip-video-to-benn-jordan-he-seeks-legal-counsel-1757270221947",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Hallucinations",
+      "Google",
+      "Search Quality",
+      "Corporate Accountability",
+      "AI Regulation"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45092925",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Always Yes: How an LLM Fed My Delusion",
+    "_id": "readingList-always-yes-how-an-llm-fed-my-delusion-1757270221946",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "AI Sycophancy",
+      "AI Ethics",
+      "Writing & AI",
+      "Labor Economics",
+      "Digital Wellbeing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45076297",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Standardizing the AI Orchestrator as a Model Virtual Machine",
+    "_id": "readingList-standardizing-the-ai-orchestrator-as-a-model-virtual-machine-1757266445395",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Architecture",
+      "AI Safety",
+      "Sandboxing",
+      "Model Context Protocol",
+      "Task Orchestration"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45074467",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Vibe Coding, Not Replacement: A 40-Hour Test of AI as a Powerful but Unforgiving Pair Programmer",
+    "_id": "readingList-vibe-coding-not-replacement-a-40-hour-test-of-ai-as-a-powerful-but-unforgiving-pair-programmer-1757266445394",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Vibe Coding",
+      "AI Coding Agents",
+      "Human-AI Collaboration",
+      "AI & Productivity"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45053764",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The Dimensional Ceiling of Single-Vector Embedding Retrieval",
+    "_id": "readingList-the-dimensional-ceiling-of-single-vector-embedding-retrieval-1757274332408",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "Vector Embeddings",
+      "Information Retrieval",
+      "AI Benchmarks",
+      "Search Quality"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45068986",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  }
+]
