@@ -1,0 +1,393 @@
+[
+  {
+    "title": "GitAgent: A Git-Native Open Standard for AI Agents",
+    "_id": "readingList-gitagent-a-git-native-open-standard-for-ai-agents-1773537063815",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Open Source",
+      "Developer Tooling",
+      "Compliance Automation",
+      "Git-Native Workflows"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47376584",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Ageless Linux: Challenging California's Age-Verification 'Compliance Moat'",
+    "_id": "readingList-ageless-linux-defying-california-s-age-verification-compliance-moat-1773532853180",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Age Verification",
+      "Open Source",
+      "Data Privacy",
+      "Civil Liberties",
+      "Surveillance Capitalism"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47381791",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Anthropic Invests $100M in New Claude Partner Network for Enterprise AI",
+    "_id": "readingList-anthropic-invests-100m-in-new-claude-partner-network-for-enterprise-ai-1773532819536",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "Enterprise AI Adoption",
+      "AI Business Models",
+      "Go-to-Market"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47381340",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Claude Off-Peak Usage Double Promotion March 2026",
+    "_id": "readingList-claude-off-peak-usage-double-promotion-march-2026-1773528269811",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "AI Business Models",
+      "AI & Productivity",
+      "LLM Inference"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47380647",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Qatar Helium Crisis Threatens Global Chip Supply",
+    "_id": "readingList-qatar-helium-crisis-threatens-global-chip-supply-1773451892786",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Semiconductor Industry",
+      "Supply Chain Security",
+      "Tech Geopolitics",
+      "Hardware Manufacturing"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47363584",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Musk Purges xAI Founders as Startup Struggles to Rival OpenAI",
+    "_id": "readingList-musk-purges-xai-founders-as-startup-struggles-to-rival-openai-1773451886508",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "OpenAI",
+      "AI Business Models",
+      "Corporate Accountability",
+      "Organizational Dynamics",
+      "AI Coding Agents"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47366666",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Claude 4.6 Models Now Feature 1M Context Window at Standard Pricing",
+    "_id": "readingList-claude-4-6-models-now-feature-1m-context-window-at-standard-pricing-1773449424056",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Anthropic",
+      "LLM Context Management",
+      "AI Infrastructure",
+      "AI Agents",
+      "Foundation Models"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47367129",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "Can I Run AI: The Local LLM Hardware Compatibility Guide",
+    "_id": "readingList-can-i-run-ai-the-local-llm-hardware-compatibility-guide-1773421759746",
+    "currentCategories": [
+      "Under the Hood"
+    ],
+    "currentTopics": [
+      "On-Device AI",
+      "LLM Inference",
+      "Self-Hosting",
+      "AI Hardware",
+      "Developer Tooling"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47363754",
+    "discussionLastFetchedAt": "2026-03-14T00:41:53.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "Spine Swarm: Democratizing High-Performance AI Agent Orchestration",
+    "_id": "readingList-spine-swarm-democratizing-high-performance-ai-agent-orchestration-1773413769546",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Multi-Agent Systems",
+      "Task Orchestration",
+      "AI Benchmarks",
+      "AI UX"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47364116",
+    "discussionLastFetchedAt": "2026-03-14T00:46:47.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "NanoClaw and Docker: Hardened Isolation for AI Agent Teams",
+    "_id": "readingList-nanoclaw-and-docker-hardened-isolation-for-ai-agent-teams-1773411081806",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "Sandboxing",
+      "Containerization",
+      "Multi-Agent Systems",
+      "Prompt Injection"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47364397",
+    "discussionLastFetchedAt": "2026-03-14T00:51:01.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "The Creative Power of Looking Stupid",
+    "_id": "readingList-the-creative-power-of-looking-stupid-1773408240051",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Perfectionism",
+      "AI Creativity",
+      "Personal Growth",
+      "Creative Risk-Taking"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47307124",
+    "discussionLastFetchedAt": "2026-03-14T00:53:48.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  },
+  {
+    "title": "The Political Dismantling of America's Iconic Climate Lab",
+    "_id": "readingList-the-political-dismantling-of-america-s-iconic-climate-lab-1773345549804",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Climate Change",
+      "Science Funding",
+      "Executive Power",
+      "AI for Science",
+      "Government Reform"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47355702",
+    "discussionLastFetchedAt": "2026-03-14T00:55:09.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "Paradigms, Not Tasks: The Real Driver of Job Loss",
+    "_id": "readingList-paradigms-not-tasks-the-real-driver-of-job-loss-1773340212869",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Future of Work",
+      "Labor Economics",
+      "AI Deskilling",
+      "Technology Economics",
+      "Paradigm Shifts"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47351371",
+    "discussionLastFetchedAt": "2026-03-14T01:02:21.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "The Dehumanizing Rise of the AI Job Interview",
+    "_id": "readingList-the-dehumanizing-rise-of-the-ai-job-interview-1773259976957",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Future of Work",
+      "AI Bias",
+      "AI Ethics",
+      "AI Hiring"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339164",
+    "discussionLastFetchedAt": "2026-03-13T01:49:47.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "Perplexity's Objective-Driven AI Operating System",
+    "_id": "readingList-perplexity-s-objective-driven-ai-operating-system-1773259938412",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "AI Agents",
+      "AI Operating System",
+      "On-Device AI",
+      "AI & Productivity",
+      "Data Privacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339223",
+    "discussionLastFetchedAt": "2026-03-13T01:53:26.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "Hisense TVs Spark Outrage with Intrusive UI Ads",
+    "_id": "readingList-hisense-tvs-spark-outrage-with-intrusive-ui-ads-1773259867080",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Consumer Electronics",
+      "Dark Patterns",
+      "Surveillance Capitalism",
+      "Digital Advertising",
+      "Consumer Rights"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47339888",
+    "discussionLastFetchedAt": "2026-03-13T01:55:19.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "The MacBook Neo: Apple's $600 iPad Killer",
+    "_id": "readingList-the-macbook-neo-apple-s-600-ipad-killer-1773259764847",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Apple",
+      "macOS",
+      "Consumer Electronics",
+      "Semiconductor Industry",
+      "Technology Economics"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47334293",
+    "discussionLastFetchedAt": "2026-03-13T01:58:15.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "Hacker News: Standards for Intellectual Curiosity and Civil Discourse",
+    "_id": "readingList-hacker-news-standards-for-intellectual-curiosity-and-civil-discourse-1773259638743",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Online Communities",
+      "Content Moderation",
+      "Digital Communication",
+      "Information Literacy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47340079",
+    "discussionLastFetchedAt": "2026-03-13T02:01:34.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "Autonomous AI Agent Breaches McKinsey’s Lilli Platform",
+    "_id": "readingList-autonomous-ai-agent-breaches-mckinsey-s-lilli-platform-1773241014358",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Prompt Injection",
+      "AI Agents",
+      "Vulnerability Research",
+      "Retrieval-Augmented Generation",
+      "AI-Enabled Cybercrime"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47333627",
+    "discussionLastFetchedAt": "2026-03-13T02:04:42.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "The Teenager Making $400,000 a Month on Roblox",
+    "_id": "readingList-the-teenager-making-400-000-a-month-on-roblox-1773177576860",
+    "currentCategories": [
+      "Products & Announcements"
+    ],
+    "currentTopics": [
+      "Creator Economy",
+      "Game Development",
+      "Indie Development",
+      "Entrepreneurship",
+      "Youth Culture"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47293337",
+    "discussionLastFetchedAt": "2026-03-13T02:15:52.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 2,
+    "status": "complete"
+  },
+  {
+    "title": "A Beginner’s Satire of Jargon-Heavy Dev Tutorials",
+    "_id": "readingList-a-beginners-satire-of-jargon-heavy-dev-tutorials-1758546292945",
+    "currentCategories": [
+      "Programming"
+    ],
+    "currentTopics": [
+      "Technical Writing",
+      "Developer Experience",
+      "Software Craftsmanship"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=45328247",
+    "discussionLastFetchedAt": "2026-03-13T17:32:38.000Z",
+    "discussionNeedsRefetch": true,
+    "discussionRefetchCount": 1,
+    "status": "complete"
+  }
+]
