@@ -1,0 +1,76 @@
+[
+  {
+    "title": "Minnesota Tech Giant Caught in Tariff Storm",
+    "_id": "readingList-minnesota-tech-giant-caught-in-tariff-storm-1773585852274",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Trade Policy",
+      "Consumer Electronics",
+      "Technology Economics",
+      "Supply Chain Security",
+      "Industrial Policy"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47386993",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The Captain Underpants Doctrine: How Juvenile Logic is Destroying the World",
+    "_id": "readingList-the-captain-underpants-doctrine-how-juvenile-logic-is-destroying-the-world-1773585752377",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Political Philosophy",
+      "Corporate Accountability",
+      "Internet Culture",
+      "Cultural Criticism"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47386908",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "MCP: The Foundation for Enterprise Agentic Engineering",
+    "_id": "readingList-mcp-the-foundation-for-enterprise-agentic-engineering-1773571403254",
+    "currentCategories": [
+      "Agentic Systems"
+    ],
+    "currentTopics": [
+      "Model Context Protocol",
+      "AI Agents",
+      "Enterprise AI Adoption",
+      "Observability",
+      "Vibe Coding"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47380270",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  },
+  {
+    "title": "The Case Against Genericized Communication: Why AI Robs Us of Human Connection",
+    "_id": "readingList-the-case-against-genericized-communication-why-ai-robs-us-of-human-connection-1773571269705",
+    "currentCategories": [
+      "Damage Control"
+    ],
+    "currentTopics": [
+      "Digital Communication",
+      "AI Deskilling",
+      "Human-AI Collaboration",
+      "Authenticity in Communication"
+    ],
+    "discussionUrl": "https://news.ycombinator.com/item?id=47381736",
+    "discussionLastFetchedAt": null,
+    "discussionNeedsRefetch": null,
+    "discussionRefetchCount": 0,
+    "status": "complete"
+  }
+]
